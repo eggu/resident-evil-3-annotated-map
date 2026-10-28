@@ -1,0 +1,642 @@
+{
+ "_note": "Display names. English room names follow Evil Resource; English item names follow the in-game English display names (SDK items_simple.xml slots 0xB0+ where the generic slot name differs). Korean names are project translations for review.",
+ "rooms": {
+  "Warehouse Office": "창고 사무실",
+  "Warehouse": "창고",
+  "Back Alleyway": "뒷골목",
+  "Business Main Street": "상업지구 큰길",
+  "Business Back Street": "상업지구 뒷길",
+  "Private Backyard": "개인 뒷마당",
+  "Residential Street": "주택가",
+  "Black Jack's Bar": "블랙잭 바",
+  "Barricaded Back Passage": "바리케이드 뒷길",
+  "Forked Alley": "갈림길 골목",
+  "Book Shop Street": "서점 거리",
+  "Sales Office Patio": "영업소 안뜰",
+  "Uptown Store Room": "업타운 창고방",
+  "'T' Dumpster Alley": "T자 쓰레기통 골목",
+  "Dark Alley": "어두운 골목",
+  "Boutique": "부티크",
+  "Sales Office": "영업소",
+  "Sales Office Storeroom": "영업소 창고",
+  "Parking Area": "주차장",
+  "Straight Alleyway": "곧은 골목",
+  "Zigzag Alley": "지그재그 골목",
+  "Garage": "차고",
+  "Construction Street": "공사 중인 거리",
+  "Maintenance Area": "정비 구역",
+  "Sub Station Entrance": "변전소 입구",
+  "Water Feature Area": "분수 광장",
+  "Shopping District": "상점가",
+  "City Hall Gate": "시청 정문",
+  "Three Points Street": "삼거리",
+  "Dirty Alley": "지저분한 골목",
+  "Lonsdale Yard": "론스데일 야적장",
+  "Cable Car Area": "노면전차 승강장",
+  "Cable Car Rear Carriage": "노면전차",
+  "Gas Station Shop": "주유소 매점",
+  "Gas Station": "주유소",
+  "Press Office": "신문사",
+  "Restaurant": "레스토랑",
+  "Restaurant Basement": "레스토랑 지하",
+  "Sub Station Gate Area": "변전소 정문",
+  "Sub Station": "변전소",
+  "Downtown Storeroom": "다운타운 창고방",
+  "Garage Office": "차고 사무실",
+  "Chapel": "예배당",
+  "Piano Room": "피아노실",
+  "Dining Room": "식당",
+  "Courtyard": "안뜰",
+  "Main Hall": "중앙 홀",
+  "Bedroom": "침실",
+  "Living Room": "거실",
+  "Small Library": "작은 서재",
+  "Spider Corridor": "거미 복도",
+  "Clock Room": "시계실",
+  "Main Hall Second Floor": "중앙 홀 2층",
+  "Balcony": "발코니",
+  "Cog Room": "톱니바퀴실",
+  "Park Alleyway": "공원 골목",
+  "Park Office": "공원 관리소",
+  "Main Park": "공원 광장",
+  "Fountain": "분수",
+  "Wooden Jetty": "나무 선착장",
+  "Forest Path": "숲길",
+  "Drainage Passage": "배수로",
+  "Graveyard": "묘지",
+  "Graveyard Cabin": "묘지 오두막",
+  "Graveyard Cabin Storeroom": "오두막 창고",
+  "Secret Communications Room": "비밀 통신실",
+  "Park Exit Walkway": "공원 출구 통로",
+  "Entry Corridor": "입구 복도",
+  "Resting Room": "휴게실",
+  "Steam Room": "증기실",
+  "Control Room": "제어실",
+  "Water Filter Passage": "정수 통로",
+  "Monitoring Room": "감시실",
+  "Water Control Room": "수질 관리실",
+  "Water Pollution Pool": "오수 처리조",
+  "Treatment Room Entry": "처리실 입구",
+  "Treatment Room": "처리실",
+  "Communications Tower": "통신탑",
+  "Emergency Tunnel": "비상 통로",
+  "Car Yard": "폐차장",
+  "Rail Cannon Room": "레일 캐논실",
+  "Helicopter Landing Zone": "헬기 착륙장",
+  "Maintenance Elevator": "정비용 승강기",
+  "West Office": "서쪽 사무실",
+  "Evidence Room": "증거물 보관실",
+  "West Stairway 1F": "서쪽 계단 1층",
+  "Winding Corridor": "굽은 복도",
+  "Operations Room": "작전실",
+  "Dark Room": "암실",
+  "West Stairway 2F": "서쪽 계단 2층",
+  "Office Corridor": "사무실 복도",
+  "S.T.A.R.S. Office": "S.T.A.R.S. 사무실",
+  "Waiting Room": "대기실",
+  "Reception Office": "접수실",
+  "Doctor's Lounge": "의사 휴게실",
+  "Entry Hallway": "입구 복도",
+  "Room 402": "402호실",
+  "Room 401": "401호실",
+  "Data Room": "자료실",
+  "Basement Hallway": "지하 복도",
+  "Basement Storeroom": "지하 창고",
+  "Experiment Room": "실험실",
+  "Weapons Storage": "무기 보관실"
+ },
+ "items": {
+  "4": [
+   "Benelli M3S",
+   "베넬리 M3S"
+  ],
+  "5": [
+   "S&W M629C",
+   "S&W M629C"
+  ],
+  "6": [
+   "Grenade Launcher",
+   "유탄 발사기"
+  ],
+  "10": [
+   "Rocket Launcher",
+   "로켓 발사기"
+  ],
+  "12": [
+   "Mine Thrower",
+   "마인 스로워"
+  ],
+  "21": [
+   "Handgun Bullets",
+   "권총 탄"
+  ],
+  "22": [
+   "Magnum Bullets",
+   "매그넘 탄"
+  ],
+  "23": [
+   "Shotgun Shells",
+   "샷건 탄"
+  ],
+  "24": [
+   "Grenade Rounds",
+   "유탄"
+  ],
+  "25": [
+   "Flame Rounds",
+   "화염탄"
+  ],
+  "27": [
+   "Freeze Rounds",
+   "냉동탄"
+  ],
+  "28": [
+   "Mine Thrower Rounds",
+   "마인 스로워 탄"
+  ],
+  "30": [
+   "Enhanced Handgun Bullets",
+   "강화 권총 탄"
+  ],
+  "31": [
+   "Enhanced Shotgun Shells",
+   "강화 샷건 탄"
+  ],
+  "32": [
+   "First Aid Spray",
+   "구급 스프레이"
+  ],
+  "33": [
+   "Green Herb",
+   "녹색 허브"
+  ],
+  "34": [
+   "Blue Herb",
+   "파란 허브"
+  ],
+  "35": [
+   "Red Herb",
+   "빨간 허브"
+  ],
+  "43": [
+   "Square Crank",
+   "사각 크랭크"
+  ],
+  "47": [
+   "S.T.A.R.S. Card",
+   "S.T.A.R.S. 카드"
+  ],
+  "49": [
+   "Battery",
+   "배터리"
+  ],
+  "50": [
+   "Fire Hook",
+   "갈고리 막대"
+  ],
+  "51": [
+   "Power Cable",
+   "전원 케이블"
+  ],
+  "52": [
+   "Fuse",
+   "퓨즈"
+  ],
+  "53": [
+   "Fire Hose",
+   "소방 호스"
+  ],
+  "54": [
+   "Oil Additive",
+   "오일 첨가제"
+  ],
+  "55": [
+   "Card Case",
+   "카드 케이스"
+  ],
+  "57": [
+   "Machine Oil",
+   "기계유"
+  ],
+  "58": [
+   "Mixed Oil",
+   "혼합유"
+  ],
+  "60": [
+   "Wrench",
+   "렌치"
+  ],
+  "61": [
+   "Iron Pipe",
+   "쇠파이프"
+  ],
+  "62": [
+   "Fire Hose",
+   "소방 호스"
+  ],
+  "63": [
+   "Fire Hose",
+   "소방 호스"
+  ],
+  "64": [
+   "Tape Recorder",
+   "녹음기"
+  ],
+  "65": [
+   "Lighter Oil",
+   "라이터 기름"
+  ],
+  "66": [
+   "Lighter",
+   "라이터"
+  ],
+  "67": [
+   "Empty Lighter",
+   "빈 라이터"
+  ],
+  "68": [
+   "Emerald",
+   "에메랄드"
+  ],
+  "69": [
+   "Sapphire",
+   "사파이어"
+  ],
+  "70": [
+   "Amber Ball",
+   "호박 구슬"
+  ],
+  "71": [
+   "Obsidian Ball",
+   "흑요석 구슬"
+  ],
+  "72": [
+   "Crystal Ball",
+   "수정 구슬"
+  ],
+  "76": [
+   "Gold Gear",
+   "금 톱니바퀴"
+  ],
+  "77": [
+   "Silver Gear",
+   "은 톱니바퀴"
+  ],
+  "78": [
+   "Chronos Gear",
+   "크로노스 톱니바퀴"
+  ],
+  "79": [
+   "Book of Wisdom",
+   "지혜의 책"
+  ],
+  "80": [
+   "Future Compass",
+   "미래의 나침반"
+  ],
+  "81": [
+   "Vaccine Medium",
+   "백신 배양액"
+  ],
+  "82": [
+   "Vaccine Base",
+   "백신 베이스"
+  ],
+  "85": [
+   "Vaccine",
+   "백신"
+  ],
+  "88": [
+   "Medium Base",
+   "배양 기제"
+  ],
+  "94": [
+   "Chronos Chain",
+   "크로노스 사슬"
+  ],
+  "95": [
+   "Rust Hex Crank",
+   "녹슨 육각 크랭크"
+  ],
+  "96": [
+   "Card Key",
+   "카드 키"
+  ],
+  "97": [
+   "Gun Powder A",
+   "화약 A"
+  ],
+  "98": [
+   "Gun Powder B",
+   "화약 B"
+  ],
+  "99": [
+   "Gun Powder C",
+   "화약 C"
+  ],
+  "111": [
+   "Water Sample",
+   "수질 샘플"
+  ],
+  "112": [
+   "System Disk",
+   "시스템 디스크"
+  ],
+  "113": [
+   "Dummy Key",
+   "가짜 열쇠"
+  ],
+  "114": [
+   "Lockpick",
+   "락픽"
+  ],
+  "115": [
+   "Backdoor Key",
+   "뒷문 열쇠"
+  ],
+  "116": [
+   "Sickroom Key",
+   "병실 열쇠"
+  ],
+  "117": [
+   "S.T.A.R.S. Key",
+   "S.T.A.R.S. 열쇠"
+  ],
+  "118": [
+   "Keys",
+   "열쇠 꾸러미"
+  ],
+  "119": [
+   "Bezel Key",
+   "베젤 열쇠"
+  ],
+  "120": [
+   "Winder Key",
+   "태엽 열쇠"
+  ],
+  "121": [
+   "Chronos Key",
+   "크로노스 열쇠"
+  ],
+  "123": [
+   "Main Gate Key",
+   "정문 열쇠"
+  ],
+  "124": [
+   "Graveyard Key",
+   "묘지 열쇠"
+  ],
+  "125": [
+   "Rear Gate Key",
+   "후문 열쇠"
+  ],
+  "126": [
+   "Facility Key",
+   "시설 열쇠"
+  ],
+  "127": [
+   "Facility Key",
+   "시설 열쇠"
+  ],
+  "129": [
+   "Ink Ribbon",
+   "잉크 리본"
+  ],
+  "134": [
+   "Dario's Memo",
+   "다리오의 메모"
+  ],
+  "135": [
+   "Mercenary's Diary",
+   "용병의 일기"
+  ],
+  "136": [
+   "Business Fax",
+   "업무 팩스"
+  ],
+  "137": [
+   "Marvin's Report",
+   "마빈의 보고서"
+  ],
+  "138": [
+   "David's Memo",
+   "데이비드의 메모"
+  ],
+  "139": [
+   "City Guide",
+   "시가지 안내서"
+  ],
+  "140": [
+   "Reporter's Memo",
+   "기자의 메모"
+  ],
+  "141": [
+   "Operation Instruction",
+   "작전 지시서"
+  ],
+  "142": [
+   "Mercenary's Pocketbook",
+   "용병의 수첩"
+  ],
+  "143": [
+   "Art Picture Postcard",
+   "미술 그림엽서"
+  ],
+  "144": [
+   "Supervisor's Report",
+   "감독관의 보고서"
+  ],
+  "145": [
+   "Written Order",
+   "감독관 지령서"
+  ],
+  "146": [
+   "Director's Diary",
+   "원장의 일기"
+  ],
+  "147": [
+   "Manager's Diary",
+   "관리인의 일기"
+  ],
+  "148": [
+   "Security Manual",
+   "보안 매뉴얼"
+  ],
+  "149": [
+   "Mechanic's Memo",
+   "정비사의 메모"
+  ],
+  "150": [
+   "Fax from Kendo",
+   "켄도의 팩스"
+  ],
+  "151": [
+   "Manager's Report",
+   "점장의 보고서"
+  ],
+  "152": [
+   "Medical Instruction Manual",
+   "의료 지침서"
+  ],
+  "153": [
+   "Fax from Headquarters",
+   "본부의 팩스"
+  ],
+  "154": [
+   "Incinerator Manual",
+   "소각로 매뉴얼"
+  ],
+  "155": [
+   "Photo A",
+   "사진 A"
+  ],
+  "156": [
+   "Photo B",
+   "사진 B"
+  ],
+  "157": [
+   "Photo C",
+   "사진 C"
+  ],
+  "158": [
+   "Photo E",
+   "사진 E"
+  ],
+  "159": [
+   "Photo D",
+   "사진 D"
+  ],
+  "160": [
+   "Clock Tower Postcard",
+   "시계탑 엽서"
+  ],
+  "162": [
+   "Classified Photo File",
+   "기밀 사진 파일"
+  ],
+  "164": [
+   "Uptown Map",
+   "업타운 지도"
+  ],
+  "165": [
+   "Downtown Map",
+   "다운타운 지도"
+  ],
+  "166": [
+   "Clock Tower Map",
+   "시계탑 지도"
+  ],
+  "167": [
+   "Park Map",
+   "공원 지도"
+  ],
+  "168": [
+   "Dead Factory Map",
+   "폐공장 지도"
+  ],
+  "169": [
+   "Police Station Map",
+   "경찰서 지도"
+  ],
+  "170": [
+   "Hospital Map",
+   "병원 지도"
+  ]
+ },
+ "monsters": {
+  "zombie": [
+   "Zombie",
+   "좀비"
+  ],
+  "dog": [
+   "Zombie Dog",
+   "좀비견"
+  ],
+  "crow": [
+   "Crow",
+   "까마귀"
+  ],
+  "hunter": [
+   "Hunter",
+   "헌터"
+  ],
+  "drain": [
+   "Drain Deimos",
+   "드레인 디모스"
+  ],
+  "spider": [
+   "Spider",
+   "거미"
+  ],
+  "worm": [
+   "Sliding Worm",
+   "슬라이딩 웜"
+  ],
+  "nemesis": [
+   "Nemesis",
+   "네메시스"
+  ]
+ },
+ "legend": {
+  "title": [
+   "Map Notes",
+   "지도 메모"
+  ],
+  "all": [
+   "All",
+   "전체"
+  ],
+  "rooms": [
+   "Rooms",
+   "방 이름"
+  ],
+  "locks": [
+   "Locks",
+   "잠긴 문"
+  ],
+  "key": [
+   "Key items",
+   "핵심 아이템"
+  ],
+  "docs": [
+   "Files/Maps",
+   "문서·지도"
+  ],
+  "puzzles": [
+   "Puzzles/Events",
+   "퍼즐·이벤트"
+  ],
+  "common": [
+   "Items",
+   "일반 아이템"
+  ],
+  "monsters": [
+   "Enemies",
+   "적"
+  ],
+  "scope1": [
+   "Visited",
+   "방문한 방"
+  ],
+  "scope2": [
+   "Revealed",
+   "공개된 방"
+  ],
+  "scope3": [
+   "All rooms",
+   "모든 방"
+  ],
+  "lang": [
+   "English",
+   "한국어"
+  ],
+  "on": [
+   "ON",
+   "켜짐"
+  ],
+  "off": [
+   "OFF",
+   "꺼짐"
+  ]
+ }
+}

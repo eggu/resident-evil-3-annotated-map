@@ -1,0 +1,16 @@
+{
+ "note": "Verified prospective locations, not a countdown or active-choice UI. Persistent guards only; bank54/var24 is native Stage_no <= last_stage. Room anchors are explicitly approximate. R416/R510 are one event family. Rail-cannon completion uses a current-room-only runtime check.",
+ "source": "local/scd/{DATA_J,DATA_AJ}/R*.bio; docs/PUZZLE-EXTERNAL-CROSSCHECK.md",
+ "events": [
+  {"id":0,"key":"courtyard","rdts":["110"],"aot":null,"last_stage":0,"guard":[[[3,139,0]]]},
+  {"id":1,"key":"restaurant","rdts":["211"],"aot":null,"last_stage":1,"guard":[[[3,49,0]],[[3,2,0]]]},
+  {"id":2,"key":"press-office","rdts":["20F"],"aot":3,"last_stage":1,"guard":[[[3,13,0]],[[3,2,0]]]},
+  {"id":3,"key":"substation","rdts":["214"],"aot":null,"last_stage":1,"guard":[[[3,97,0]]]},
+  {"id":4,"key":"garage","rdts":["201"],"aot":5,"last_stage":1,"guard":[[[3,141,0]],[[7,35,1]]]},
+  {"id":5,"key":"cable-car","rdts":["215"],"aot":null,"last_stage":1,"guard":[]},
+  {"id":6,"key":"balcony","rdts":["30B"],"aot":7,"last_stage":2,"guard":[[[3,138,0]]]},
+  {"id":7,"key":"park-bridge","rdts":["416","510"],"aot":2,"last_stage":4,"guard":[[[3,219,0]]]},
+  {"id":8,"key":"communications-tower","rdts":["50A"],"aot":null,"last_stage":4,"guard":[[[3,88,1]],[[3,199,0]]]},
+  {"id":9,"key":"rail-cannon","rdts":["50D"],"aot":12,"last_stage":4,"guard":[]}
+ ]
+}

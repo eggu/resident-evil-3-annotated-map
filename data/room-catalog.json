@@ -1,0 +1,5757 @@
+[
+ {
+  "key": "uptown-and-downtown/uptown/warehouse-office",
+  "name": "Warehouse Office - Uptown",
+  "rdts": [
+   "100"
+  ],
+  "items": [
+   {
+    "rdt": "100",
+    "name": "Warehouse Key",
+    "amount": 1,
+    "flag": 2,
+    "x": -22144,
+    "z": -19291,
+    "tags": []
+   },
+   {
+    "rdt": "100",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 0,
+    "x": -29516,
+    "z": -28922,
+    "tags": []
+   },
+   {
+    "rdt": "100",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 81,
+    "x": -29516,
+    "z": -28922,
+    "tags": []
+   },
+   {
+    "rdt": "100",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 1,
+    "x": -26393,
+    "z": -20689,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "100",
+    "x": -25832,
+    "z": -20682
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "100",
+    "x": -28902,
+    "z": -23031
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "uptown-and-downtown/uptown/warehouse",
+  "name": "Warehouse - Uptown",
+  "rdts": [
+   "101"
+  ],
+  "items": [
+   {
+    "rdt": "101",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 30,
+    "x": -27435,
+    "z": -21600,
+    "tags": []
+   },
+   {
+    "rdt": "101",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 31,
+    "x": -32000,
+    "z": -32000,
+    "tags": [
+     "Hard",
+     "story"
+    ]
+   },
+   {
+    "rdt": "101",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 113,
+    "x": -14680,
+    "z": -12400,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "101",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 114,
+    "x": -14680,
+    "z": -12400,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "101",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 28,
+    "x": -12280,
+    "z": -11900,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "101",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 29,
+    "x": -12280,
+    "z": -11900,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "101",
+    "name": "Dario's Memo",
+    "amount": 0,
+    "flag": 45,
+    "x": -14800,
+    "z": -13585,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "101",
+    "to": "102",
+    "key": "Warehouse Key",
+    "lock_id": 134
+   },
+   {
+    "rdt": "101",
+    "to": "11D",
+    "key": "Warehouse Key",
+    "lock_id": 134
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "DARIO_ZOMBIE_": 1,
+   "ZOMBIE_GUY_1_": 7
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/back-alleyway",
+  "name": "Back Alleyway - Uptown",
+  "rdts": [
+   "102",
+   "11D"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GIRL_3_": 2,
+   "ZOMBIE_GUY_1_": 2
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/business-main-street",
+  "name": "Business Main Street - Uptown",
+  "rdts": [
+   "103",
+   "11E"
+  ],
+  "items": [
+   {
+    "rdt": "103",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 57,
+    "x": -3215,
+    "z": 21579,
+    "tags": []
+   },
+   {
+    "rdt": "11E",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 57,
+    "x": -3215,
+    "z": 21579,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [
+   {
+    "rdt": "103",
+    "to": "105",
+    "lock_id": 156
+   },
+   {
+    "rdt": "11E",
+    "to": "120",
+    "lock_id": 156
+   }
+  ],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GIRL_3_": 2,
+   "ZOMBIE_GUY_7_": 18
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/business-back-street",
+  "name": "Business Back Street - Uptown",
+  "rdts": [
+   "104",
+   "11F"
+  ],
+  "items": [
+   {
+    "rdt": "104",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 21,
+    "x": -8424,
+    "z": -17883,
+    "tags": []
+   },
+   {
+    "rdt": "104",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 22,
+    "x": -7820,
+    "z": -22215,
+    "tags": []
+   },
+   {
+    "rdt": "104",
+    "name": "Lighter Oil",
+    "amount": 1,
+    "flag": 59,
+    "x": 10967,
+    "z": -11940,
+    "tags": []
+   },
+   {
+    "rdt": "104",
+    "name": "Shotgun",
+    "amount": 7,
+    "flag": 23,
+    "x": 10320,
+    "z": -8145,
+    "tags": []
+   },
+   {
+    "rdt": "11F",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 21,
+    "x": -8424,
+    "z": -17883,
+    "tags": []
+   },
+   {
+    "rdt": "11F",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 22,
+    "x": -7820,
+    "z": -22215,
+    "tags": []
+   },
+   {
+    "rdt": "11F",
+    "name": "Shotgun",
+    "amount": 7,
+    "flag": 23,
+    "x": 10320,
+    "z": -8145,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_7_": 16
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/private-backyard",
+  "name": "Private Backyard - Uptown",
+  "rdts": [
+   "105",
+   "120"
+  ],
+  "items": [
+   {
+    "rdt": "105",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 94,
+    "x": -5549,
+    "z": -7033,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "120",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 79,
+    "x": -316,
+    "z": -15622,
+    "tags": []
+   },
+   {
+    "rdt": "120",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 80,
+    "x": -316,
+    "z": -15622,
+    "tags": []
+   },
+   {
+    "rdt": "120",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 118,
+    "x": -316,
+    "z": -15622,
+    "tags": []
+   },
+   {
+    "rdt": "120",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 94,
+    "x": -5549,
+    "z": -7033,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "105",
+    "item": "Crank",
+    "x": -908,
+    "z": -16314
+   },
+   {
+    "rdt": "120",
+    "item": "Crank",
+    "x": -1008,
+    "z": -16314
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_8_": 6,
+   "NEMESIS": 7,
+   "CROW": 20,
+   "ZOMBIE_GUY_7_": 9
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/residential-street",
+  "name": "Residential Street - Uptown",
+  "rdts": [
+   "106",
+   "121"
+  ],
+  "items": [
+   {
+    "rdt": "106",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 50,
+    "x": -17985,
+    "z": -100,
+    "tags": []
+   },
+   {
+    "rdt": "106",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 51,
+    "x": -17985,
+    "z": 600,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [
+   {
+    "rdt": "106",
+    "name": "Uptown Map",
+    "amount": 1,
+    "flag": 249,
+    "x": -18197,
+    "z": 2825,
+    "tags": []
+   },
+   {
+    "rdt": "121",
+    "name": "Uptown Map",
+    "amount": 1,
+    "flag": 249,
+    "x": -18197,
+    "z": 2825,
+    "tags": []
+   }
+  ],
+  "key_doors": [],
+  "locked_doors": [
+   {
+    "rdt": "106",
+    "to": "107",
+    "lock_id": 157
+   },
+   {
+    "rdt": "121",
+    "to": "107",
+    "lock_id": 157
+   }
+  ],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_7_": 18,
+   "NEMESIS": 6,
+   "ZOMBIE_DOG": 4,
+   "ZOMBIE_GUY_3_": 8
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/black-jacks-bar",
+  "name": "Black Jack's Bar - Uptown",
+  "rdts": [
+   "107"
+  ],
+  "items": [
+   {
+    "rdt": "107",
+    "name": "Lighter",
+    "amount": 1,
+    "flag": 12,
+    "x": -13740,
+    "z": -27244,
+    "tags": []
+   },
+   {
+    "rdt": "107",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 11,
+    "x": -22660,
+    "z": -26665,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "107",
+    "name": "Clock Tower Postcard",
+    "amount": 1,
+    "flag": 70,
+    "x": -21260,
+    "z": -19384,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_RPD_1_": 1,
+   "ZOMBIE_GUY_2_": 4,
+   "ZOMBIE_GIRL_1_": 1,
+   "NEMESIS": 3
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/barricaded-back-passage",
+  "name": "Barricaded Back Passage - Uptown",
+  "rdts": [
+   "108",
+   "122"
+  ],
+  "items": [
+   {
+    "rdt": "108",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 55,
+    "x": -20900,
+    "z": -23270,
+    "tags": []
+   },
+   {
+    "rdt": "108",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 56,
+    "x": -20900,
+    "z": -23970,
+    "tags": []
+   },
+   {
+    "rdt": "122",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 55,
+    "x": -20900,
+    "z": -23270,
+    "tags": []
+   },
+   {
+    "rdt": "122",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 56,
+    "x": -20900,
+    "z": -23970,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "108",
+    "name": "Photo A",
+    "amount": 1,
+    "flag": 48,
+    "x": -22829,
+    "z": -26740,
+    "tags": []
+   },
+   {
+    "rdt": "122",
+    "name": "Photo A",
+    "amount": 1,
+    "flag": 48,
+    "x": -22829,
+    "z": -26740,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "108",
+    "item": "Lighter",
+    "x": -11710,
+    "z": -21981
+   },
+   {
+    "rdt": "108",
+    "item": "Lighter",
+    "x": -11710,
+    "z": -21981
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_RPD_2_": 16,
+   "NEMESIS": 3,
+   "ZOMBIE_GUY_1_": 10
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/forked-alley",
+  "name": "Forked Alley - Uptown",
+  "rdts": [
+   "109",
+   "123"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "109",
+    "item": "BOTU",
+    "x": 4714,
+    "z": -7046
+   },
+   {
+    "rdt": "109",
+    "item": "BOTU",
+    "x": 4714,
+    "z": -7046
+   },
+   {
+    "rdt": "123",
+    "item": "BOTU",
+    "x": 4714,
+    "z": -7046
+   },
+   {
+    "rdt": "123",
+    "item": "Fire Hose",
+    "x": 4714,
+    "z": -7046
+   },
+   {
+    "rdt": "123",
+    "item": "BOTU",
+    "x": 4714,
+    "z": -7046
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_DOG": 5,
+   "NEMESIS": 2
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/book-shop-street",
+  "name": "Book Shop Street - Uptown",
+  "rdts": [
+   "10A",
+   "124"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "10A",
+    "to": "10F",
+    "key": "Lockpick",
+    "lock_id": 130
+   },
+   {
+    "rdt": "124",
+    "to": "21A",
+    "key": "Lockpick",
+    "lock_id": 130
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 2,
+   "ZOMBIE_RPD_2_": 7,
+   "ZOMBIE_DOG": 3,
+   "ZOMBIE_RPD_1_": 3
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/sales-office-patio",
+  "name": "Sales Office Patio - Uptown",
+  "rdts": [
+   "10B"
+  ],
+  "items": [
+   {
+    "rdt": "10B",
+    "name": "Crank",
+    "amount": 1,
+    "flag": 38,
+    "x": 3586,
+    "z": 981,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "BS23": 2,
+   "BS28": 2,
+   "NEMESIS": 3
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/uptown-store-room",
+  "name": "Uptown Store Room - Uptown",
+  "rdts": [
+   "10C"
+  ],
+  "items": [
+   {
+    "rdt": "10C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 99,
+    "x": -25814,
+    "z": -26889,
+    "tags": []
+   },
+   {
+    "rdt": "10C",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 100,
+    "x": -25814,
+    "z": -26889,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "10C",
+    "x": -26741,
+    "z": -24417
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "10C",
+    "x": -23842,
+    "z": -23331
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "uptown-and-downtown/uptown/t-dumpster-alley",
+  "name": "'T' Dumpster Alley - Uptown",
+  "rdts": [
+   "10D"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_7_": 8,
+   "ARM": 6
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/dark-alley",
+  "name": "Dark Alley - Uptown",
+  "rdts": [
+   "10E"
+  ],
+  "items": [
+   {
+    "rdt": "10E",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 26,
+    "x": -11200,
+    "z": -20350,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "10E",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 27,
+    "x": -12000,
+    "z": -20350,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 1,
+   "ZOMBIE_RPD_1_": 1
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/boutique",
+  "name": "Boutique - Uptown",
+  "rdts": [
+   "10F"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "police-station/police-station-1f/courtyard",
+  "name": "Courtyard - Police Station 1F",
+  "rdts": [
+   "110",
+   "125"
+  ],
+  "items": [
+   {
+    "rdt": "110",
+    "name": "Card Case",
+    "amount": 1,
+    "flag": 69,
+    "x": 18220,
+    "z": -19700,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 1,
+   "BRAD_ZOMBIE_": 2
+  }
+ },
+ {
+  "key": "police-station/police-station-1f/main-hall",
+  "name": "Main Hall - Police Station 1F",
+  "rdts": [
+   "111"
+  ],
+  "items": [
+   {
+    "rdt": "111",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 15,
+    "x": -8964,
+    "z": 561,
+    "tags": []
+   },
+   {
+    "rdt": "111",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 16,
+    "x": -4337,
+    "z": -26890,
+    "tags": []
+   },
+   {
+    "rdt": "111",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 17,
+    "x": -4876,
+    "z": -26841,
+    "tags": []
+   },
+   {
+    "rdt": "111",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 18,
+    "x": -5483,
+    "z": -26893,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [
+   {
+    "rdt": "111",
+    "name": "Police Station Map",
+    "amount": 1,
+    "flag": 248,
+    "x": -14703,
+    "z": -2063,
+    "tags": []
+   }
+  ],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "111",
+    "x": -12549,
+    "z": -4749
+   }
+  ],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "police-station/police-station-1f/west-office",
+  "name": "West Office - Police Station 1F",
+  "rdts": [
+   "112"
+  ],
+  "items": [
+   {
+    "rdt": "112",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 52,
+    "x": -24200,
+    "z": -23980,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "112",
+    "name": "Marvin's Report",
+    "amount": 0,
+    "flag": 3,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "112",
+    "name": "Marvin's Report",
+    "amount": 0,
+    "flag": 3,
+    "x": -21110,
+    "z": -24190,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_RPD_1_": 16,
+   "NEMESIS": 1
+  }
+ },
+ {
+  "key": "police-station/police-station-1f/evidence-room",
+  "name": "Evidence Room - Police Station 1F",
+  "rdts": [
+   "113"
+  ],
+  "items": [
+   {
+    "rdt": "113",
+    "name": "Emblem Key",
+    "amount": 1,
+    "flag": 8,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "113",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 9,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "113",
+    "name": "Blue Gem",
+    "amount": 1,
+    "flag": 72,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 3
+  }
+ },
+ {
+  "key": "police-station/police-station-1f/west-stairway-1f",
+  "name": "West Stairway 1F - Police Station 1F",
+  "rdts": [
+   "114"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_1_": 3,
+   "ZOMBIE_GIRL_1_": 1,
+   "NEMESIS": 2
+  }
+ },
+ {
+  "key": "police-station/police-station-1f/winding-corridor",
+  "name": "Winding Corridor - Police Station 1F",
+  "rdts": [
+   "115"
+  ],
+  "items": [
+   {
+    "rdt": "115",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 53,
+    "x": -24234,
+    "z": -25929,
+    "tags": []
+   },
+   {
+    "rdt": "115",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 54,
+    "x": -24044,
+    "z": -25059,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 3,
+   "ZOMBIE_DOG": 2,
+   "ZOMBIE_RPD_2_": 10
+  }
+ },
+ {
+  "key": "police-station/police-station-1f/operations-room",
+  "name": "Operations Room - Police Station 1F",
+  "rdts": [
+   "116"
+  ],
+  "items": [
+   {
+    "rdt": "116",
+    "name": "ＳＴＡＲＳ Card",
+    "amount": 1,
+    "flag": 20,
+    "x": -25400,
+    "z": -19500,
+    "tags": []
+   },
+   {
+    "rdt": "116",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 52,
+    "x": -22580,
+    "z": -27500,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "116",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 129,
+    "x": -17800,
+    "z": -8500,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "police-station/police-station-1f/dark-room",
+  "name": "Dark Room - Police Station 1F",
+  "rdts": [
+   "117"
+  ],
+  "items": [
+   {
+    "rdt": "117",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 14,
+    "x": -19670,
+    "z": -20444,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "117",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 13,
+    "x": -22213,
+    "z": -15129,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "117",
+    "name": "David's Memo",
+    "amount": 1,
+    "flag": 112,
+    "x": -18450,
+    "z": -19364,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "117",
+    "x": -19670,
+    "z": -20444
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "117",
+    "x": -15742,
+    "z": -22111
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "police-station/police-station-2f/west-stairway-2f",
+  "name": "West Stairway 2F - Police Station 2F",
+  "rdts": [
+   "118"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 3,
+   "ZOMBIE_GUY_4_": 9,
+   "ZOMBIE_FAT_": 2
+  }
+ },
+ {
+  "key": "police-station/police-station-2f/office-corridor",
+  "name": "Office Corridor - Police Station 2F",
+  "rdts": [
+   "119"
+  ],
+  "items": [
+   {
+    "rdt": "119",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 53,
+    "x": -16600,
+    "z": -24200,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "119",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 54,
+    "x": -16300,
+    "z": -24200,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "119",
+    "to": "11A",
+    "key": "Emblem Key",
+    "lock_id": 135
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 4
+  }
+ },
+ {
+  "key": "police-station/police-station-2f/stars-office",
+  "name": "S.T.A.R.S. Office - Police Station 2F",
+  "rdts": [
+   "11A"
+  ],
+  "items": [
+   {
+    "rdt": "11A",
+    "name": "Magnum",
+    "amount": 6,
+    "flag": 7,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "11A",
+    "name": "G. Launcher",
+    "amount": 6,
+    "flag": 7,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "11A",
+    "name": "Lockpick",
+    "amount": 255,
+    "flag": 5,
+    "x": -20978,
+    "z": -21082,
+    "tags": []
+   },
+   {
+    "rdt": "11A",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 6,
+    "x": -20945,
+    "z": -15483,
+    "tags": []
+   },
+   {
+    "rdt": "11A",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 4,
+    "x": -18305,
+    "z": -24837,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "11A",
+    "name": "Fax from Kendo",
+    "amount": 1,
+    "flag": 39,
+    "x": -27875,
+    "z": -15818,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "uptown-and-downtown/uptown/sales-office",
+  "name": "Sales Office - Uptown",
+  "rdts": [
+   "11B"
+  ],
+  "items": [
+   {
+    "rdt": "11B",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 78,
+    "x": -8863,
+    "z": -5899,
+    "tags": []
+   },
+   {
+    "rdt": "11B",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 96,
+    "x": -18113,
+    "z": -10839,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "11B",
+    "name": "Business Fax",
+    "amount": 1,
+    "flag": 49,
+    "x": -10022,
+    "z": -6009,
+    "tags": []
+   },
+   {
+    "rdt": "11B",
+    "name": "Manager's Report",
+    "amount": 1,
+    "flag": 40,
+    "x": -14859,
+    "z": -15252,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_8_": 7
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/sales-office-storeroom",
+  "name": "Sales Office Storeroom - Uptown",
+  "rdts": [
+   "11C"
+  ],
+  "items": [
+   {
+    "rdt": "11C",
+    "name": "Oil Additive",
+    "amount": 1,
+    "flag": 35,
+    "x": -7300,
+    "z": 800,
+    "tags": []
+   },
+   {
+    "rdt": "11C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 115,
+    "x": -12400,
+    "z": -4200,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "11C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 116,
+    "x": -12400,
+    "z": -4200,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "11C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 117,
+    "x": -12400,
+    "z": -4200,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "11C",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 75,
+    "x": -13150,
+    "z": 1000,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "11C",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 76,
+    "x": -13150,
+    "z": 1000,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "11C",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 127,
+    "x": -13150,
+    "z": 1000,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_8_": 12
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/parking-area",
+  "name": "Parking Area - Uptown",
+  "rdts": [
+   "200"
+  ],
+  "items": [
+   {
+    "rdt": "200",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 101,
+    "x": -14693,
+    "z": 19663,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_DOG": 10,
+   "2C": 1,
+   "CROW": 16
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/garage",
+  "name": "Garage - Downtown",
+  "rdts": [
+   "201"
+  ],
+  "items": [
+   {
+    "rdt": "201",
+    "name": "Power Cable",
+    "amount": 1,
+    "flag": 47,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_DOG": 2,
+   "SLIDING_WORM": 5
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/construction-street",
+  "name": "Construction Street - Downtown",
+  "rdts": [
+   "202"
+  ],
+  "items": [
+   {
+    "rdt": "202",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 85,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "BS23": 2,
+   "MINI_BRAINSUCKER": 2,
+   "BS28": 2,
+   "ZOMBIE_DOG": 3,
+   "ZOMBIE_GUY_5_": 7,
+   "ZOMBIE_GUY_7_": 6,
+   "NEMESIS": 3
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/maintenance-area",
+  "name": "Maintenance Area - Downtown",
+  "rdts": [
+   "203"
+  ],
+  "items": [
+   {
+    "rdt": "203",
+    "name": "Battery",
+    "amount": 1,
+    "flag": 62,
+    "x": -32000,
+    "z": -32000,
+    "tags": []
+   },
+   {
+    "rdt": "203",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 121,
+    "x": -2911,
+    "z": -5620,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [
+   {
+    "rdt": "203",
+    "name": "Downtown Map",
+    "amount": 1,
+    "flag": 250,
+    "x": -17242,
+    "z": -1001,
+    "tags": []
+   }
+  ],
+  "key_doors": [
+   {
+    "rdt": "203",
+    "to": "202",
+    "key": "BOTU",
+    "lock_id": 128
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "203",
+    "item": "Battery",
+    "x": 12315,
+    "z": -966
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "BS23": 6,
+   "BS28": 2,
+   "2C": 1,
+   "NEMESIS": 7
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/sub-station-entrance",
+  "name": "Sub Station Entrance - Downtown",
+  "rdts": [
+   "204"
+  ],
+  "items": [
+   {
+    "rdt": "204",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 125,
+    "x": -8300,
+    "z": 18600,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [
+   {
+    "rdt": "204",
+    "to": "214",
+    "lock_id": 145
+   }
+  ],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 7,
+   "ZOMBIE_GUY_5_": 21,
+   "ZOMBIE_GUY_7_": 4
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/water-feature-area",
+  "name": "Water Feature Area - Downtown",
+  "rdts": [
+   "205"
+  ],
+  "items": [
+   {
+    "rdt": "205",
+    "name": "Bronze Book",
+    "amount": 1,
+    "flag": 68,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "205",
+    "name": "Bronze Compass",
+    "amount": 1,
+    "flag": 67,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "205",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 73,
+    "x": 22875,
+    "z": -25731,
+    "tags": []
+   },
+   {
+    "rdt": "205",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 74,
+    "x": 24075,
+    "z": -25731,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "205",
+    "item": "Bronze Book",
+    "x": 26675,
+    "z": -25331
+   },
+   {
+    "rdt": "205",
+    "item": "Bronze Compass",
+    "x": 26955,
+    "z": -20931
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_1_": 1,
+   "NEMESIS": 14
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/shopping-district",
+  "name": "Shopping District - Downtown",
+  "rdts": [
+   "206"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 3,
+   "ZOMBIE_GUY_7_": 18,
+   "ZOMBIE_GUY_8_": 6
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/city-hall-gate",
+  "name": "City Hall Gate - Downtown",
+  "rdts": [
+   "207"
+  ],
+  "items": [
+   {
+    "rdt": "207",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 105,
+    "x": -17334,
+    "z": -10259,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [
+   {
+    "rdt": "207",
+    "to": "20F",
+    "lock_id": 146
+   }
+  ],
+  "puzzles": [
+   {
+    "rdt": "207",
+    "item": "Green Gem",
+    "x": -20640,
+    "z": -4563
+   },
+   {
+    "rdt": "207",
+    "item": "Blue Gem",
+    "x": -20640,
+    "z": -4563
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 6,
+   "ZOMBIE_DOG": 6,
+   "CROW": 12
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/three-points-street",
+  "name": "Three Points Street - Downtown",
+  "rdts": [
+   "208"
+  ],
+  "items": [
+   {
+    "rdt": "208",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 41,
+    "x": 3000,
+    "z": -5730,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "208",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 42,
+    "x": 3000,
+    "z": -5030,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "208",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 77,
+    "x": 3000,
+    "z": -4330,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "208",
+    "name": "Bronze Book",
+    "amount": 1,
+    "flag": 66,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "208",
+    "name": "Battery",
+    "amount": 1,
+    "flag": 92,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "208",
+    "item": "Bronze Book",
+    "x": 14740,
+    "z": -2740
+   },
+   {
+    "rdt": "208",
+    "item": "Bronze Compass",
+    "x": 14740,
+    "z": -2740
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_6_": 13,
+   "NEMESIS": 2
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/dirty-alley",
+  "name": "Dirty Alley - Downtown",
+  "rdts": [
+   "209"
+  ],
+  "items": [
+   {
+    "rdt": "209",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 87,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_7_": 15
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/lonsdale-yard",
+  "name": "Lonsdale Yard - Downtown",
+  "rdts": [
+   "20A"
+  ],
+  "items": [
+   {
+    "rdt": "20A",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 119,
+    "x": -6440,
+    "z": -21200,
+    "tags": []
+   },
+   {
+    "rdt": "20A",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 120,
+    "x": -6440,
+    "z": -21200,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "33": 1
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/cable-car-area",
+  "name": "Cable Car Area - Downtown",
+  "rdts": [
+   "20B"
+  ],
+  "items": [
+   {
+    "rdt": "20B",
+    "name": "Shotgun Shells",
+    "amount": 14,
+    "flag": 126,
+    "x": -11988,
+    "z": -19947,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [
+   {
+    "rdt": "20B",
+    "to": "20C",
+    "lock_id": 136
+   }
+  ],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_DOG": 4,
+   "ZOMBIE_RPD_2_": 23
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/cable-car-rear-carriage",
+  "name": "Cable Car Rear Carriage - Downtown",
+  "rdts": [
+   "20C",
+   "215"
+  ],
+  "items": [
+   {
+    "rdt": "20C",
+    "name": "Wrench",
+    "amount": 1,
+    "flag": 33,
+    "x": -20514,
+    "z": -26491,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "20C",
+    "name": "Flame Rounds",
+    "amount": 6,
+    "flag": 98,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "20C",
+    "name": "Mechanic's Memo",
+    "amount": 1,
+    "flag": 107,
+    "x": 2700,
+    "z": -24663,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "215",
+    "name": "Mechanic's Memo",
+    "amount": 1,
+    "flag": 107,
+    "x": 2700,
+    "z": -24663,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "20C",
+    "item": "Mixed Oil",
+    "x": 2700,
+    "z": -24663
+   },
+   {
+    "rdt": "20C",
+    "item": "Machine Oil",
+    "x": 2700,
+    "z": -24663
+   },
+   {
+    "rdt": "20C",
+    "item": "Oil Additive",
+    "x": 2700,
+    "z": -24663
+   },
+   {
+    "rdt": "20C",
+    "item": "Power Cable",
+    "x": 2700,
+    "z": -24663
+   },
+   {
+    "rdt": "20C",
+    "item": "Fuse",
+    "x": 2700,
+    "z": -24663
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 1
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/gas-station-shop",
+  "name": "Gas Station Shop - Downtown",
+  "rdts": [
+   "20D"
+  ],
+  "items": [
+   {
+    "rdt": "20D",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 108,
+    "x": -24294,
+    "z": -15599,
+    "tags": []
+   },
+   {
+    "rdt": "20D",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 115,
+    "x": -21614,
+    "z": -23189,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "20D",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 116,
+    "x": -21614,
+    "z": -23189,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "20D",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 117,
+    "x": -21614,
+    "z": -23189,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "20D",
+    "name": "Machine Oil",
+    "amount": 1,
+    "flag": 34,
+    "x": -27923,
+    "z": -16029,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_7_": 5
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/gas-station",
+  "name": "Gas Station - Downtown",
+  "rdts": [
+   "20E",
+   "217"
+  ],
+  "items": [
+   {
+    "rdt": "20E",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 60,
+    "x": -6106,
+    "z": -10993,
+    "tags": []
+   },
+   {
+    "rdt": "20E",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 61,
+    "x": -6706,
+    "z": -10993,
+    "tags": []
+   },
+   {
+    "rdt": "217",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 60,
+    "x": -6106,
+    "z": -10993,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "217",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 61,
+    "x": -6706,
+    "z": -10993,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "20E",
+    "item": "Rusted Crank",
+    "x": -7107,
+    "z": -4758
+   },
+   {
+    "rdt": "20E",
+    "item": "Wrench",
+    "x": -7307,
+    "z": -4958
+   },
+   {
+    "rdt": "20E",
+    "item": "Wrench",
+    "x": -8397,
+    "z": -4958
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_7_": 10
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/press-office",
+  "name": "Press Office - Downtown",
+  "rdts": [
+   "20F"
+  ],
+  "items": [
+   {
+    "rdt": "20F",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 43,
+    "x": -12714,
+    "z": -6989,
+    "tags": []
+   },
+   {
+    "rdt": "20F",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 109,
+    "x": -12714,
+    "z": -6989,
+    "tags": []
+   },
+   {
+    "rdt": "20F",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 83,
+    "x": -8274,
+    "z": -24099,
+    "tags": []
+   },
+   {
+    "rdt": "20F",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 84,
+    "x": -8334,
+    "z": -24919,
+    "tags": []
+   },
+   {
+    "rdt": "20F",
+    "name": "Green Gem",
+    "amount": 1,
+    "flag": 95,
+    "x": -12634,
+    "z": -9219,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "20F",
+    "name": "Reporter's Memo",
+    "amount": 1,
+    "flag": 106,
+    "x": -22689,
+    "z": -13414,
+    "tags": []
+   },
+   {
+    "rdt": "20F",
+    "name": "Photo C",
+    "amount": 1,
+    "flag": 58,
+    "x": -18309,
+    "z": -10804,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 4,
+   "ZOMBIE_GUY_2_": 6,
+   "ZOMBIE_FAT_": 2
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/press-office-lobby",
+  "name": "Press Office Lobby - Downtown",
+  "rdts": [
+   "210",
+   "219"
+  ],
+  "items": [
+   {
+    "rdt": "210",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 46,
+    "x": -11035,
+    "z": -20500,
+    "tags": []
+   },
+   {
+    "rdt": "210",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 90,
+    "x": -9635,
+    "z": -22800,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "219",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 46,
+    "x": -11035,
+    "z": -20500,
+    "tags": []
+   },
+   {
+    "rdt": "219",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 90,
+    "x": -9635,
+    "z": -22800,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "210",
+    "name": "Photo B",
+    "amount": 0,
+    "flag": 63,
+    "x": -24100,
+    "z": -22985,
+    "tags": []
+   },
+   {
+    "rdt": "219",
+    "name": "Photo B",
+    "amount": 0,
+    "flag": 63,
+    "x": -24100,
+    "z": -22985,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 2
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/restaurant",
+  "name": "Restaurant - Downtown",
+  "rdts": [
+   "211"
+  ],
+  "items": [
+   {
+    "rdt": "211",
+    "name": "Fire Hook",
+    "amount": 1,
+    "flag": 19,
+    "x": 23553,
+    "z": 7113,
+    "tags": []
+   },
+   {
+    "rdt": "211",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 43,
+    "x": -2558,
+    "z": -8656,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "211",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 109,
+    "x": -2558,
+    "z": -8656,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "211",
+    "name": "City Guide",
+    "amount": 1,
+    "flag": 122,
+    "x": -5468,
+    "z": -23647,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "211",
+    "item": "Fire Hook",
+    "x": -15218,
+    "z": -18117
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 3,
+   "ZOMBIE_GUY_1_": 6
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/restaurant-basement",
+  "name": "Restaurant Basement - Downtown",
+  "rdts": [
+   "212"
+  ],
+  "items": [
+   {
+    "rdt": "212",
+    "name": "Green Gem",
+    "amount": 1,
+    "flag": 64,
+    "x": -29522,
+    "z": -19228,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "3A": 1,
+   "ZOMBIE_GUY_1_": 3
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/sub-station-gate-area",
+  "name": "Sub Station Gate Area - Downtown",
+  "rdts": [
+   "213"
+  ],
+  "items": [
+   {
+    "rdt": "213",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 60,
+    "x": -14252,
+    "z": -12188,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "213",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 61,
+    "x": -14982,
+    "z": -12188,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_4_": 14
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/sub-station",
+  "name": "Sub Station - Downtown",
+  "rdts": [
+   "214"
+  ],
+  "items": [
+   {
+    "rdt": "214",
+    "name": "G. Launcher",
+    "amount": 6,
+    "flag": 37,
+    "x": -17148,
+    "z": -20915,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "214",
+    "name": "Magnum",
+    "amount": 6,
+    "flag": 37,
+    "x": -17148,
+    "z": -20915,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "214",
+    "name": "Fuse",
+    "amount": 1,
+    "flag": 36,
+    "x": -17148,
+    "z": -27395,
+    "tags": []
+   },
+   {
+    "rdt": "214",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 75,
+    "x": -2508,
+    "z": -24545,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "214",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 76,
+    "x": -2508,
+    "z": -24545,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "214",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 127,
+    "x": -2508,
+    "z": -24545,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_4_": 12,
+   "NEMESIS": 1
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/downtown-storeroom",
+  "name": "Downtown Storeroom - Downtown",
+  "rdts": [
+   "216"
+  ],
+  "items": [
+   {
+    "rdt": "216",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 88,
+    "x": -25914,
+    "z": -23079,
+    "tags": []
+   },
+   {
+    "rdt": "216",
+    "name": "Rusted Crank",
+    "amount": 1,
+    "flag": 97,
+    "x": -25714,
+    "z": -27329,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "216",
+    "x": -27041,
+    "z": -26517
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "216",
+    "x": -23842,
+    "z": -23331
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "uptown-and-downtown/uptown/straight-alleyway",
+  "name": "Straight Alleyway - Uptown",
+  "rdts": [
+   "218"
+  ],
+  "items": [
+   {
+    "rdt": "218",
+    "name": "Fire Hose",
+    "amount": 1,
+    "flag": 65,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "218",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 41,
+    "x": -18249,
+    "z": 9491,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "218",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 42,
+    "x": -18249,
+    "z": 8891,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "218",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 77,
+    "x": -18249,
+    "z": 8291,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "218",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 102,
+    "x": -18249,
+    "z": 7691,
+    "tags": []
+   },
+   {
+    "rdt": "218",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 103,
+    "x": -18249,
+    "z": 7091,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "218",
+    "item": "Wrench",
+    "x": -16397,
+    "z": -26322
+   },
+   {
+    "rdt": "218",
+    "item": "Wrench",
+    "x": -17499,
+    "z": -28662
+   },
+   {
+    "rdt": "218",
+    "item": "Wrench",
+    "x": -16397,
+    "z": -26322
+   },
+   {
+    "rdt": "218",
+    "item": "Wrench",
+    "x": -17499,
+    "z": -28662
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 4
+  }
+ },
+ {
+  "key": "uptown-and-downtown/uptown/zigzag-alley",
+  "name": "Zigzag Alley - Uptown",
+  "rdts": [
+   "21A"
+  ],
+  "items": [
+   {
+    "rdt": "21A",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 104,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "21A",
+    "name": "Merc's Diary",
+    "amount": 1,
+    "flag": 104,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "BS23": 3,
+   "MINI_BRAINSUCKER": 2,
+   "BS28": 2,
+   "NEMESIS": 5
+  }
+ },
+ {
+  "key": "uptown-and-downtown/downtown/garage-office",
+  "name": "Garage Office - Downtown",
+  "rdts": [
+   "21B"
+  ],
+  "items": [
+   {
+    "rdt": "21B",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 44,
+    "x": 4420,
+    "z": 16000,
+    "tags": []
+   },
+   {
+    "rdt": "21B",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 89,
+    "x": 8220,
+    "z": 17600,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "21B",
+    "x": 8220,
+    "z": 17600
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "21B",
+    "x": 14020,
+    "z": 15000
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/chapel",
+  "name": "Chapel - Clock Tower 1F",
+  "rdts": [
+   "300",
+   "310"
+  ],
+  "items": [
+   {
+    "rdt": "300",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 95,
+    "x": -8494,
+    "z": -13089,
+    "tags": []
+   },
+   {
+    "rdt": "300",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 96,
+    "x": -8494,
+    "z": -13089,
+    "tags": []
+   },
+   {
+    "rdt": "300",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 97,
+    "x": -14364,
+    "z": -15089,
+    "tags": []
+   },
+   {
+    "rdt": "300",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 98,
+    "x": -14364,
+    "z": -15089,
+    "tags": []
+   },
+   {
+    "rdt": "300",
+    "name": "Clock T. Key",
+    "amount": 255,
+    "flag": 51,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "300",
+    "name": "Clock T. Key",
+    "amount": 1,
+    "flag": 51,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "story"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "310",
+    "item": "Vaccine",
+    "x": -12143,
+    "z": -14775
+   }
+  ],
+  "typewriters": [
+   {
+    "rdt": "300",
+    "x": -13956,
+    "z": -5785
+   },
+   {
+    "rdt": "310",
+    "x": -13956,
+    "z": -5785
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "300",
+    "x": -15056,
+    "z": -8285
+   },
+   {
+    "rdt": "310",
+    "x": -15056,
+    "z": -8285
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/piano-room",
+  "name": "Piano Room - Clock Tower 1F",
+  "rdts": [
+   "301"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "301",
+    "to": "302",
+    "key": "Clock T. Key",
+    "lock_id": 149
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 4,
+   "ZOMBIE_GUY_7_": 10
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/dining-room",
+  "name": "Dining Room - Clock Tower 1F",
+  "rdts": [
+   "302",
+   "30F",
+   "317"
+  ],
+  "items": [
+   {
+    "rdt": "302",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 99,
+    "x": -18975,
+    "z": -1152,
+    "tags": []
+   },
+   {
+    "rdt": "30F",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 99,
+    "x": -18975,
+    "z": -1152,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "302",
+    "to": "301",
+    "key": "Clock T. Key",
+    "lock_id": 149
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "BS23": 3,
+   "MINI_BRAINSUCKER": 2,
+   "BS28": 3,
+   "ZOMBIE_GUY_1_": 3,
+   "NEMESIS": 3,
+   "NEMESIS_3": 3,
+   "37": 3,
+   "ZOMBIE_GUY_3_": 9
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/courtyard",
+  "name": "Courtyard - Clock Tower 1F",
+  "rdts": [
+   "303"
+  ],
+  "items": [
+   {
+    "rdt": "303",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 49,
+    "x": -12682,
+    "z": -15154,
+    "tags": []
+   },
+   {
+    "rdt": "303",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 60,
+    "x": -12682,
+    "z": -14398,
+    "tags": []
+   },
+   {
+    "rdt": "303",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 61,
+    "x": -12682,
+    "z": -13565,
+    "tags": []
+   },
+   {
+    "rdt": "303",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 100,
+    "x": -12682,
+    "z": -12175,
+    "tags": []
+   },
+   {
+    "rdt": "303",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 105,
+    "x": -12682,
+    "z": -11494,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [
+   {
+    "rdt": "303",
+    "to": "301",
+    "lock_id": 153
+   },
+   {
+    "rdt": "303",
+    "to": "304",
+    "lock_id": 148
+   }
+  ],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "CROW": 17,
+   "ZOMBIE_DOG": 3,
+   "NEMESIS": 1
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/main-hall",
+  "name": "Main Hall - Clock Tower 1F",
+  "rdts": [
+   "304",
+   "30E",
+   "316"
+  ],
+  "items": [
+   {
+    "rdt": "304",
+    "name": "Mine Thrower",
+    "amount": 6,
+    "flag": 41,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "304",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 41,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "Easy"
+    ]
+   },
+   {
+    "rdt": "304",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 48,
+    "x": -4821,
+    "z": -3190,
+    "tags": []
+   },
+   {
+    "rdt": "30E",
+    "name": "Mine Thrower",
+    "amount": 6,
+    "flag": 41,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "30E",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 41,
+    "x": 0,
+    "z": 0,
+    "tags": [
+     "Easy"
+    ]
+   },
+   {
+    "rdt": "30E",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 48,
+    "x": -4821,
+    "z": -3190,
+    "tags": []
+   },
+   {
+    "rdt": "316",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 48,
+    "x": -4821,
+    "z": -3190,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "304",
+    "name": "Operation Instruction",
+    "amount": 1,
+    "flag": 56,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "30E",
+    "name": "Operation Instruction",
+    "amount": 1,
+    "flag": 56,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "316",
+    "name": "Operation Instruction",
+    "amount": 1,
+    "flag": 56,
+    "x": -14193,
+    "z": -8380,
+    "tags": []
+   }
+  ],
+  "maps": [
+   {
+    "rdt": "304",
+    "name": "Clock Tower Map",
+    "amount": 1,
+    "flag": 249,
+    "x": -6651,
+    "z": -3190,
+    "tags": []
+   },
+   {
+    "rdt": "30E",
+    "name": "Clock Tower Map",
+    "amount": 1,
+    "flag": 249,
+    "x": -6651,
+    "z": -3190,
+    "tags": []
+   },
+   {
+    "rdt": "316",
+    "name": "Clock Tower Map",
+    "amount": 1,
+    "flag": 249,
+    "x": -6651,
+    "z": -3190,
+    "tags": []
+   }
+  ],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 2,
+   "NEMESIS_3": 3,
+   "37": 3
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/bedroom",
+  "name": "Bedroom - Clock Tower 1F",
+  "rdts": [
+   "305",
+   "311"
+  ],
+  "items": [
+   {
+    "rdt": "305",
+    "name": "Clock T. Key",
+    "amount": 1,
+    "flag": 20,
+    "x": -7288,
+    "z": -171,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "305",
+    "name": "Clock T. Key",
+    "amount": 255,
+    "flag": 20,
+    "x": -7288,
+    "z": -171,
+    "tags": [
+     "story"
+    ]
+   },
+   {
+    "rdt": "305",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 97,
+    "x": -14521,
+    "z": 1908,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "305",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 98,
+    "x": -14521,
+    "z": 1908,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "305",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 95,
+    "x": -14011,
+    "z": 1978,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "305",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 96,
+    "x": -14011,
+    "z": 1978,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_1_": 16,
+   "ZOMBIE_DOG": 4
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/living-room",
+  "name": "Living Room - Clock Tower 1F",
+  "rdts": [
+   "306",
+   "312"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "306",
+    "to": "307",
+    "key": "Clock T. Key",
+    "lock_id": 142
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "306",
+    "x": -20419,
+    "z": -27580
+   },
+   {
+    "rdt": "312",
+    "x": -20419,
+    "z": -27580
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "306",
+    "x": -26662,
+    "z": -26771
+   },
+   {
+    "rdt": "312",
+    "x": -26662,
+    "z": -26771
+   }
+  ],
+  "enemies": {
+   "NEMESIS_3": 1,
+   "37": 1
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/small-library",
+  "name": "Small Library - Clock Tower 1F",
+  "rdts": [
+   "307",
+   "313"
+  ],
+  "items": [
+   {
+    "rdt": "307",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 99,
+    "x": -21182,
+    "z": -13610,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "307",
+    "name": "Freeze Rounds",
+    "amount": 6,
+    "flag": 40,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "307",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 111,
+    "x": -13472,
+    "z": -12110,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "313",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 111,
+    "x": -13472,
+    "z": -12110,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "307",
+    "name": "Art Picture Postcard",
+    "amount": 1,
+    "flag": 5,
+    "x": -13412,
+    "z": -12750,
+    "tags": []
+   },
+   {
+    "rdt": "313",
+    "name": "Art Picture Postcard",
+    "amount": 1,
+    "flag": 5,
+    "x": -13412,
+    "z": -12750,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "307",
+    "to": "308",
+    "key": "Chronos Key",
+    "lock_id": 152
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_2_": 12,
+   "ZOMBIE_GIRL_1_": 2,
+   "MINI_SPIDER": 18,
+   "NEMESIS": 1,
+   "NEMESIS_3": 2,
+   "37": 2,
+   "3A": 2
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/spider-corridor",
+  "name": "Spider Corridor - Clock Tower 1F",
+  "rdts": [
+   "308",
+   "314"
+  ],
+  "items": [
+   {
+    "rdt": "308",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 52,
+    "x": -18047,
+    "z": -18077,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "SPIDER": 6,
+   "MINI_SPIDER": 1,
+   "NEMESIS_3": 4,
+   "37": 3,
+   "BS23": 3,
+   "BS28": 3,
+   "3A": 2
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-1f/clock-room",
+  "name": "Clock Room - Clock Tower 1F",
+  "rdts": [
+   "309",
+   "315"
+  ],
+  "items": [
+   {
+    "rdt": "309",
+    "name": "Amber Ball",
+    "amount": 1,
+    "flag": 34,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "309",
+    "name": "M.T. Rounds",
+    "amount": 6,
+    "flag": 38,
+    "x": -25679,
+    "z": -26281,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "309",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 38,
+    "x": -25679,
+    "z": -26281,
+    "tags": [
+     "Easy"
+    ]
+   },
+   {
+    "rdt": "309",
+    "name": "Gold Gear",
+    "amount": 1,
+    "flag": 37,
+    "x": -17048,
+    "z": -29490,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "309",
+    "name": "Merc's Pocketbook",
+    "amount": 1,
+    "flag": 7,
+    "x": -12459,
+    "z": -29303,
+    "tags": []
+   },
+   {
+    "rdt": "315",
+    "name": "Merc's Pocketbook",
+    "amount": 1,
+    "flag": 7,
+    "x": -12459,
+    "z": -29303,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "309",
+    "item": "Amber Ball",
+    "x": -15147,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Obsidian Ball",
+    "x": -15147,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Crystal Ball",
+    "x": -15147,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Amber Ball",
+    "x": -17048,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Obsidian Ball",
+    "x": -17048,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Crystal Ball",
+    "x": -17048,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Amber Ball",
+    "x": -18868,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Obsidian Ball",
+    "x": -18868,
+    "z": -29000
+   },
+   {
+    "rdt": "309",
+    "item": "Crystal Ball",
+    "x": -18868,
+    "z": -29000
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "SLIDING_WORM": 8,
+   "ZOMBIE_GIRL_2_": 4,
+   "3A": 2
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-2f/main-hall-second-floor",
+  "name": "Main Hall Second Floor - Clock Tower 2F",
+  "rdts": [
+   "30A"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "SPIDER": 3,
+   "MINI_SPIDER": 1,
+   "NEMESIS": 6
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-2f/balcony",
+  "name": "Balcony - Clock Tower 2F",
+  "rdts": [
+   "30B"
+  ],
+  "items": [
+   {
+    "rdt": "30B",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 44,
+    "x": 6348,
+    "z": 4096,
+    "tags": []
+   },
+   {
+    "rdt": "30B",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 45,
+    "x": 5496,
+    "z": 4096,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS": 4,
+   "40": 1
+  }
+ },
+ {
+  "key": "raccoon-city-clock-tower/clock-tower-3f/cog-room",
+  "name": "Cog Room - Clock Tower 3F",
+  "rdts": [
+   "30C"
+  ],
+  "items": [
+   {
+    "rdt": "30C",
+    "name": "M.T. Rounds",
+    "amount": 6,
+    "flag": 24,
+    "x": -16300,
+    "z": -6100,
+    "tags": [
+     "Hard",
+     "random"
+    ]
+   },
+   {
+    "rdt": "30C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 4,
+    "x": -15000,
+    "z": -17200,
+    "tags": [
+     "Hard",
+     "random"
+    ]
+   },
+   {
+    "rdt": "30C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 106,
+    "x": -15000,
+    "z": -17200,
+    "tags": [
+     "Hard",
+     "random"
+    ]
+   },
+   {
+    "rdt": "30C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 4,
+    "x": -15000,
+    "z": -17200,
+    "tags": [
+     "Easy"
+    ]
+   },
+   {
+    "rdt": "30C",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 106,
+    "x": -15000,
+    "z": -17200,
+    "tags": [
+     "Easy"
+    ]
+   },
+   {
+    "rdt": "30C",
+    "name": "Chronos Chain",
+    "amount": 1,
+    "flag": 25,
+    "x": -23700,
+    "z": -17100,
+    "tags": []
+   },
+   {
+    "rdt": "30C",
+    "name": "Silver Gear",
+    "amount": 1,
+    "flag": 14,
+    "x": -15000,
+    "z": -15600,
+    "tags": []
+   },
+   {
+    "rdt": "30C",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 114,
+    "x": -17880,
+    "z": -17500,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "30C",
+    "item": "Chronos Gear",
+    "x": -21200,
+    "z": -7000
+   },
+   {
+    "rdt": "30C",
+    "item": "Gold Gear",
+    "x": -21200,
+    "z": -7000
+   },
+   {
+    "rdt": "30C",
+    "item": "Silver Gear",
+    "x": -21200,
+    "z": -7000
+   }
+  ],
+  "typewriters": [
+   {
+    "rdt": "30C",
+    "x": -17880,
+    "z": -17500
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "30C",
+    "x": -19380,
+    "z": -9200
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/park/park-alleyway",
+  "name": "Park Alleyway - Park",
+  "rdts": [
+   "400",
+   "417"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "400",
+    "to": "401",
+    "key": "Lockpick",
+    "lock_id": 137
+   },
+   {
+    "rdt": "400",
+    "to": "40C",
+    "key": "Park Key",
+    "lock_id": 143
+   },
+   {
+    "rdt": "417",
+    "to": "401",
+    "key": "Lockpick",
+    "lock_id": 137
+   },
+   {
+    "rdt": "417",
+    "to": "40C",
+    "key": "Park Key",
+    "lock_id": 143
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_LAB_": 8,
+   "HUNTER": 2
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/park/park-office",
+  "name": "Park Office - Park",
+  "rdts": [
+   "401"
+  ],
+  "items": [
+   {
+    "rdt": "401",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 18,
+    "x": -21584,
+    "z": -22252,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "401",
+    "name": "Park Key",
+    "amount": 1,
+    "flag": 17,
+    "x": -16877,
+    "z": -21850,
+    "tags": []
+   },
+   {
+    "rdt": "401",
+    "name": "M.T. Rounds",
+    "amount": 6,
+    "flag": 62,
+    "x": -21349,
+    "z": -20129,
+    "tags": [
+     "Hard",
+     "random"
+    ]
+   },
+   {
+    "rdt": "401",
+    "name": "M.T. Rounds",
+    "amount": 6,
+    "flag": 118,
+    "x": -20365,
+    "z": -23909,
+    "tags": [
+     "Hard",
+     "random"
+    ]
+   },
+   {
+    "rdt": "401",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 3,
+    "x": -21349,
+    "z": -20129,
+    "tags": [
+     "Hard",
+     "random"
+    ]
+   },
+   {
+    "rdt": "401",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 118,
+    "x": -20365,
+    "z": -23909,
+    "tags": [
+     "Hard",
+     "random"
+    ]
+   },
+   {
+    "rdt": "401",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 3,
+    "x": -21349,
+    "z": -20129,
+    "tags": [
+     "Easy"
+    ]
+   },
+   {
+    "rdt": "401",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 118,
+    "x": -20365,
+    "z": -23909,
+    "tags": [
+     "Easy"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "401",
+    "name": "Photo E",
+    "amount": 1,
+    "flag": 2,
+    "x": -21977,
+    "z": -23470,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "401",
+    "x": -21117,
+    "z": -22865
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "401",
+    "x": -17919,
+    "z": -26556
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-1f/waiting-room",
+  "name": "Waiting Room - Hospital 1F",
+  "rdts": [
+   "402"
+  ],
+  "items": [
+   {
+    "rdt": "402",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 64,
+    "x": -16529,
+    "z": -15794,
+    "tags": []
+   },
+   {
+    "rdt": "402",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 65,
+    "x": -16529,
+    "z": -16614,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "HUNTER": 4,
+   "ZOMBIE_GUY_1_": 1
+  }
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-1f/reception-office",
+  "name": "Reception Office - Hospital 1F",
+  "rdts": [
+   "403"
+  ],
+  "items": [
+   {
+    "rdt": "403",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 33,
+    "x": -22499,
+    "z": -24291,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "403",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 103,
+    "x": -15854,
+    "z": -21421,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "403",
+    "x": -22116,
+    "z": -24412
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "403",
+    "x": -19812,
+    "z": -19031
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-1f/doctors-lounge",
+  "name": "Doctor's Lounge - Hospital 1F",
+  "rdts": [
+   "404"
+  ],
+  "items": [
+   {
+    "rdt": "404",
+    "name": "Tape Recorder",
+    "amount": 1,
+    "flag": 21,
+    "x": -26729,
+    "z": -22162,
+    "tags": []
+   },
+   {
+    "rdt": "404",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 57,
+    "x": -28462,
+    "z": -27976,
+    "tags": []
+   },
+   {
+    "rdt": "404",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 121,
+    "x": -16579,
+    "z": -25177,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "404",
+    "name": "Director's Diary",
+    "amount": 1,
+    "flag": 58,
+    "x": -23766,
+    "z": -27378,
+    "tags": []
+   }
+  ],
+  "maps": [
+   {
+    "rdt": "404",
+    "name": "Hospital Map",
+    "amount": 1,
+    "flag": 248,
+    "x": -29399,
+    "z": -22708,
+    "tags": []
+   }
+  ],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "404",
+    "item": "Tape Recorder",
+    "x": -15589,
+    "z": -21062
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_LAB_": 10,
+   "HUNTER": 2
+  }
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-4f/entry-hallway",
+  "name": "Entry Hallway - Hospital 4F",
+  "rdts": [
+   "405"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "405",
+    "to": "406",
+    "key": "Sickroom Key",
+    "lock_id": 138
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_LAB_": 10,
+   "HUNTER": 2
+  }
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-4f/room-402",
+  "name": "Room 402 - Hospital 4F",
+  "rdts": [
+   "406"
+  ],
+  "items": [
+   {
+    "rdt": "406",
+    "name": "Vaccine Base",
+    "amount": 1,
+    "flag": 54,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-4f/room-401",
+  "name": "Room 401 - Hospital 4F",
+  "rdts": [
+   "407"
+  ],
+  "items": [
+   {
+    "rdt": "407",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 9,
+    "x": -26307,
+    "z": -27858,
+    "tags": []
+   },
+   {
+    "rdt": "407",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 10,
+    "x": -26807,
+    "z": -27858,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_8_": 3,
+   "SLIDING_WORM": 6
+  }
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-4f/data-room",
+  "name": "Data Room - Hospital 4F",
+  "rdts": [
+   "408"
+  ],
+  "items": [
+   {
+    "rdt": "408",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 86,
+    "x": -16620,
+    "z": -20149,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "408",
+    "name": "Sickroom Key",
+    "amount": 1,
+    "flag": 29,
+    "x": -10450,
+    "z": -8549,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "408",
+    "name": "Photo D",
+    "amount": 1,
+    "flag": 6,
+    "x": -10450,
+    "z": -8549,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "HUNTER": 2
+  }
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-b3/basement-hallway",
+  "name": "Basement Hallway - Hospital B3",
+  "rdts": [
+   "409"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_LAB_": 10,
+   "HUNTER": 2
+  }
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-b3/basement-storeroom",
+  "name": "Basement Storeroom - Hospital B3",
+  "rdts": [
+   "40A"
+  ],
+  "items": [
+   {
+    "rdt": "40A",
+    "name": "H. Gun Bullets",
+    "amount": 30,
+    "flag": 86,
+    "x": -12459,
+    "z": -18956,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "40A",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 9,
+    "x": -8144,
+    "z": -20311,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "40A",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 10,
+    "x": -7124,
+    "z": -20311,
+    "tags": [
+     "random"
+    ]
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "HUNTER": 2
+  }
+ },
+ {
+  "key": "raccoon-city-hospital/hospital-b3/experiment-room",
+  "name": "Experiment Room - Hospital B3",
+  "rdts": [
+   "40B"
+  ],
+  "items": [
+   {
+    "rdt": "40B",
+    "name": "Vaccine Medium",
+    "amount": 1,
+    "flag": 39,
+    "x": -14422,
+    "z": -21060,
+    "tags": []
+   },
+   {
+    "rdt": "40B",
+    "name": "Medium Base",
+    "amount": 1,
+    "flag": 53,
+    "x": -29179,
+    "z": -23534,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "40B",
+    "name": "Med. Instr. Manual",
+    "amount": 1,
+    "flag": 30,
+    "x": -20711,
+    "z": -20273,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "40B",
+    "item": "Medium Base",
+    "x": -14422,
+    "z": -21060
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "HUNTER_GAMMA": 4
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/park/main-park",
+  "name": "Main Park - Park",
+  "rdts": [
+   "40C"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_8_": 7,
+   "SLIDING_WORM": 6,
+   "HUNTER": 2
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/park/fountain",
+  "name": "Fountain - Park",
+  "rdts": [
+   "40D"
+  ],
+  "items": [
+   {
+    "rdt": "40D",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 74,
+    "x": -18010,
+    "z": -3848,
+    "tags": []
+   },
+   {
+    "rdt": "40D",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 75,
+    "x": -18510,
+    "z": -3257,
+    "tags": []
+   },
+   {
+    "rdt": "40D",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 76,
+    "x": -18464,
+    "z": -2554,
+    "tags": []
+   },
+   {
+    "rdt": "40D",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 15,
+    "x": -16960,
+    "z": -4960,
+    "tags": []
+   },
+   {
+    "rdt": "40D",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 19,
+    "x": -17010,
+    "z": -5800,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [
+   {
+    "rdt": "40D",
+    "name": "Park Map",
+    "amount": 1,
+    "flag": 250,
+    "x": -7264,
+    "z": -6404,
+    "tags": []
+   }
+  ],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/park/wooden-jetty",
+  "name": "Wooden Jetty - Park",
+  "rdts": [
+   "40E"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "HUNTER_GAMMA": 4,
+   "ZOMBIE_GUY_2_": 4
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/park/forest-path",
+  "name": "Forest Path - Park",
+  "rdts": [
+   "40F"
+  ],
+  "items": [
+   {
+    "rdt": "40F",
+    "name": "Magnum Bullets",
+    "amount": 6,
+    "flag": 88,
+    "x": 21879,
+    "z": 5151,
+    "tags": []
+   },
+   {
+    "rdt": "40F",
+    "name": "Park Key",
+    "amount": 1,
+    "flag": 87,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "40F",
+    "name": "Written Order",
+    "amount": 1,
+    "flag": 87,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "HUNTER": 3,
+   "ZOMBIE_DOG": 3
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/park/drainage-passage",
+  "name": "Drainage Passage - Park",
+  "rdts": [
+   "410"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "SLIDING_WORM": 20,
+   "SPIDER": 3
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/park/graveyard",
+  "name": "Graveyard - Park",
+  "rdts": [
+   "411",
+   "415"
+  ],
+  "items": [
+   {
+    "rdt": "411",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 77,
+    "x": -7565,
+    "z": -6879,
+    "tags": []
+   },
+   {
+    "rdt": "411",
+    "name": "Red Herb",
+    "amount": 1,
+    "flag": 78,
+    "x": -7565,
+    "z": -6879,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "411",
+    "to": "412",
+    "key": "Park Key",
+    "lock_id": 158
+   },
+   {
+    "rdt": "415",
+    "to": "412",
+    "key": "Park Key",
+    "lock_id": 158
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_8_": 10,
+   "GRAVE_DIGGER": 1
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/park/graveyard-cabin",
+  "name": "Graveyard Cabin - Park",
+  "rdts": [
+   "412"
+  ],
+  "items": [
+   {
+    "rdt": "412",
+    "name": "Iron Pipe",
+    "amount": 1,
+    "flag": 23,
+    "x": -8334,
+    "z": -18536,
+    "tags": []
+   },
+   {
+    "rdt": "412",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 8,
+    "x": -8972,
+    "z": -11279,
+    "tags": []
+   },
+   {
+    "rdt": "412",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 26,
+    "x": -8972,
+    "z": -11279,
+    "tags": []
+   },
+   {
+    "rdt": "412",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 27,
+    "x": -11772,
+    "z": -11279,
+    "tags": []
+   },
+   {
+    "rdt": "412",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 102,
+    "x": -11772,
+    "z": -11279,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "412",
+    "item": "Lighter",
+    "x": -17536,
+    "z": -10287
+   },
+   {
+    "rdt": "412",
+    "item": "Iron Pipe",
+    "x": -17536,
+    "z": -10287
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/park/graveyard-cabin-storeroom",
+  "name": "Graveyard Cabin Storeroom - Park",
+  "rdts": [
+   "413"
+  ],
+  "items": [
+   {
+    "rdt": "413",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 22,
+    "x": -23898,
+    "z": -26171,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "413",
+    "x": -27441,
+    "z": -27153
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "413",
+    "x": -24441,
+    "z": -24963
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/park/secret-communications-room",
+  "name": "Secret Communications Room - Park",
+  "rdts": [
+   "414"
+  ],
+  "items": [
+   {
+    "rdt": "414",
+    "name": "Park Key",
+    "amount": 1,
+    "flag": 28,
+    "x": -23418,
+    "z": -4339,
+    "tags": []
+   },
+   {
+    "rdt": "414",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 55,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "414",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 12,
+    "x": -19216,
+    "z": -6455,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "414",
+    "name": "Fax from the H.Q.",
+    "amount": 1,
+    "flag": 13,
+    "x": -25256,
+    "z": -890,
+    "tags": []
+   },
+   {
+    "rdt": "414",
+    "name": "Supervisor's Report",
+    "amount": 1,
+    "flag": 94,
+    "x": -22388,
+    "z": -6563,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/park/park-exit-walkway",
+  "name": "Park Exit Walkway - Park",
+  "rdts": [
+   "416",
+   "510"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS_3": 2,
+   "37": 4
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-2f/entry-corridor",
+  "name": "Entry Corridor - Dead Factory 2F",
+  "rdts": [
+   "500"
+  ],
+  "items": [
+   {
+    "rdt": "500",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 66,
+    "x": -9201,
+    "z": -18413,
+    "tags": []
+   },
+   {
+    "rdt": "500",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 67,
+    "x": -9201,
+    "z": -19063,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "500",
+    "to": "503",
+    "key": "Facility Key",
+    "lock_id": 159
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "500",
+    "item": "Card Key",
+    "x": -9636,
+    "z": -2737
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_NAKED_": 3,
+   "BS23": 4,
+   "MINI_BRAINSUCKER": 4,
+   "BS28": 4
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-2f/resting-room",
+  "name": "Resting Room - Dead Factory 2F",
+  "rdts": [
+   "501"
+  ],
+  "items": [
+   {
+    "rdt": "501",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 72,
+    "x": -22656,
+    "z": -20905,
+    "tags": [
+     "Hard"
+    ]
+   },
+   {
+    "rdt": "501",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 79,
+    "x": -28086,
+    "z": -26195,
+    "tags": []
+   },
+   {
+    "rdt": "501",
+    "name": "Facility Key",
+    "amount": 2,
+    "flag": 101,
+    "x": -26246,
+    "z": -28835,
+    "tags": []
+   },
+   {
+    "rdt": "501",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 80,
+    "x": -23756,
+    "z": -28185,
+    "tags": []
+   },
+   {
+    "rdt": "501",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 81,
+    "x": -23756,
+    "z": -28185,
+    "tags": []
+   },
+   {
+    "rdt": "501",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 82,
+    "x": -23756,
+    "z": -28185,
+    "tags": []
+   },
+   {
+    "rdt": "501",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 43,
+    "x": -23936,
+    "z": -26185,
+    "tags": []
+   },
+   {
+    "rdt": "501",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 46,
+    "x": -23936,
+    "z": -26185,
+    "tags": []
+   },
+   {
+    "rdt": "501",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 47,
+    "x": -23936,
+    "z": -26185,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "501",
+    "name": "Manager's Diary",
+    "amount": 1,
+    "flag": 83,
+    "x": -23136,
+    "z": -20925,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "501",
+    "x": -22181,
+    "z": -20867
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "501",
+    "x": -29002,
+    "z": -24711
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-2f/steam-room",
+  "name": "Steam Room - Dead Factory 2F",
+  "rdts": [
+   "502"
+  ],
+  "items": [
+   {
+    "rdt": "502",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 89,
+    "x": -20590,
+    "z": -10280,
+    "tags": []
+   },
+   {
+    "rdt": "502",
+    "name": "Grenade Rounds",
+    "amount": 6,
+    "flag": 90,
+    "x": -20590,
+    "z": -10280,
+    "tags": []
+   },
+   {
+    "rdt": "502",
+    "name": "R. Launcher",
+    "amount": 4,
+    "flag": 104,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   },
+   {
+    "rdt": "502",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 107,
+    "x": -22784,
+    "z": -15000,
+    "tags": []
+   },
+   {
+    "rdt": "502",
+    "name": "Blue Herb",
+    "amount": 1,
+    "flag": 108,
+    "x": -22784,
+    "z": -15700,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "502",
+    "item": "Facility Key",
+    "x": -22983,
+    "z": -21140
+   },
+   {
+    "rdt": "502",
+    "item": "Card Key",
+    "x": -20654,
+    "z": -6064
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-2f/control-room",
+  "name": "Control Room - Dead Factory 2F",
+  "rdts": [
+   "503"
+  ],
+  "items": [
+   {
+    "rdt": "503",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 91,
+    "x": -17115,
+    "z": -11514,
+    "tags": []
+   },
+   {
+    "rdt": "503",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 92,
+    "x": -17115,
+    "z": -12414,
+    "tags": []
+   },
+   {
+    "rdt": "503",
+    "name": "Green Herb",
+    "amount": 1,
+    "flag": 93,
+    "x": -17115,
+    "z": -13114,
+    "tags": []
+   },
+   {
+    "rdt": "503",
+    "name": "System Disc",
+    "amount": 1,
+    "flag": 110,
+    "x": -25161,
+    "z": -8098,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [
+   {
+    "rdt": "503",
+    "name": "Dead Factory Map",
+    "amount": 1,
+    "flag": 251,
+    "x": -30281,
+    "z": -1218,
+    "tags": []
+   }
+  ],
+  "key_doors": [
+   {
+    "rdt": "503",
+    "to": "508",
+    "key": "Dummy Key",
+    "lock_id": 163
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_NAKED_": 6,
+   "ZOMBIE_LAB_": 10
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/water-filter-passage",
+  "name": "Water Filter Passage - Dead Factory 1F",
+  "rdts": [
+   "504"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_GUY_1_": 4,
+   "HUNTER": 2,
+   "SLIDING_WORM": 7
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/monitoring-room",
+  "name": "Monitoring Room - Dead Factory 1F",
+  "rdts": [
+   "505"
+  ],
+  "items": [
+   {
+    "rdt": "505",
+    "name": "Water Sample",
+    "amount": 1,
+    "flag": 11,
+    "x": -17260,
+    "z": -27451,
+    "tags": []
+   },
+   {
+    "rdt": "505",
+    "name": "Ink Ribbon",
+    "amount": 3,
+    "flag": 112,
+    "x": -25392,
+    "z": -20982,
+    "tags": [
+     "Hard"
+    ]
+   }
+  ],
+  "files": [
+   {
+    "rdt": "505",
+    "name": "Security Manual",
+    "amount": 1,
+    "flag": 0,
+    "x": -18802,
+    "z": -28888,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [
+   {
+    "rdt": "505",
+    "x": -25392,
+    "z": -20982
+   }
+  ],
+  "item_boxes": [
+   {
+    "rdt": "505",
+    "x": -27722,
+    "z": -20651
+   }
+  ],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/water-control-room",
+  "name": "Water Control Room - Dead Factory 1F",
+  "rdts": [
+   "506"
+  ],
+  "items": [
+   {
+    "rdt": "506",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 80,
+    "x": -5735,
+    "z": -19549,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "506",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 81,
+    "x": -5735,
+    "z": -19749,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "506",
+    "name": "Gun Powder A",
+    "amount": 1,
+    "flag": 82,
+    "x": -5735,
+    "z": -19949,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "506",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 43,
+    "x": -12405,
+    "z": -20699,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "506",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 46,
+    "x": -12705,
+    "z": -20699,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "506",
+    "name": "Gun Powder B",
+    "amount": 1,
+    "flag": 47,
+    "x": -13005,
+    "z": -20699,
+    "tags": [
+     "random"
+    ]
+   },
+   {
+    "rdt": "506",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 71,
+    "x": -5471,
+    "z": -24066,
+    "tags": []
+   },
+   {
+    "rdt": "506",
+    "name": "Facility Key",
+    "amount": 1,
+    "flag": 109,
+    "x": 0,
+    "z": 0,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "506",
+    "item": "Facility Key",
+    "x": -3673,
+    "z": -27392
+   },
+   {
+    "rdt": "506",
+    "item": "Water Sample",
+    "x": -1583,
+    "z": -21579
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/water-pollution-pool",
+  "name": "Water Pollution Pool - Dead Factory 1F",
+  "rdts": [
+   "507"
+  ],
+  "items": [
+   {
+    "rdt": "507",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 84,
+    "x": -20961,
+    "z": -12024,
+    "tags": []
+   },
+   {
+    "rdt": "507",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 85,
+    "x": -20961,
+    "z": -12024,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "ZOMBIE_NAKED_": 20,
+   "HUNTER": 12,
+   "BS23": 9,
+   "BS28": 9
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-2f/treatment-room-entry",
+  "name": "Treatment Room Entry - Dead Factory 2F",
+  "rdts": [
+   "508"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [
+   {
+    "rdt": "508",
+    "to": "509",
+    "key": "Dummy Key",
+    "lock_id": 139
+   },
+   {
+    "rdt": "508",
+    "to": "509",
+    "key": "Dummy Key",
+    "lock_id": 139
+   }
+  ],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "508",
+    "item": "System Disc",
+    "x": -1765,
+    "z": -23627
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-2f/treatment-room",
+  "name": "Treatment Room - Dead Factory 2F",
+  "rdts": [
+   "509"
+  ],
+  "items": [
+   {
+    "rdt": "509",
+    "name": "Card Key",
+    "amount": 1,
+    "flag": 42,
+    "x": -23970,
+    "z": -20730,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [
+   {
+    "rdt": "509",
+    "item": "Card Key",
+    "x": -17050,
+    "z": -7935
+   }
+  ],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "NEMESIS_3": 1,
+   "37": 1
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-2f/communications-tower",
+  "name": "Communications Tower - Dead Factory 2F",
+  "rdts": [
+   "50A"
+  ],
+  "items": [
+   {
+    "rdt": "50A",
+    "name": "Magnum Bullets",
+    "amount": 6,
+    "flag": 73,
+    "x": 16143,
+    "z": 24004,
+    "tags": []
+   },
+   {
+    "rdt": "50A",
+    "name": "F. Aid Spray",
+    "amount": 1,
+    "flag": 31,
+    "x": 23680,
+    "z": 17250,
+    "tags": []
+   }
+  ],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "3F": 1
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/emergency-tunnel",
+  "name": "Emergency Tunnel - Dead Factory 1F",
+  "rdts": [
+   "50B"
+  ],
+  "items": [
+   {
+    "rdt": "50B",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 119,
+    "x": -219,
+    "z": -16538,
+    "tags": []
+   },
+   {
+    "rdt": "50B",
+    "name": "Shotgun Shells",
+    "amount": 7,
+    "flag": 120,
+    "x": -219,
+    "z": -16538,
+    "tags": []
+   }
+  ],
+  "files": [
+   {
+    "rdt": "50B",
+    "name": "Incinerator Manual",
+    "amount": 1,
+    "flag": 1,
+    "x": -20746,
+    "z": -22594,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [
+   {
+    "rdt": "50B",
+    "x": -24882,
+    "z": -17068
+   }
+  ],
+  "enemies": {
+   "CROW": 1,
+   "ZOMBIE_NAKED_": 6
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/car-yard",
+  "name": "Car Yard - Dead Factory 1F",
+  "rdts": [
+   "50C"
+  ],
+  "items": [],
+  "files": [
+   {
+    "rdt": "50C",
+    "name": "Classified Photo File",
+    "amount": 0,
+    "flag": 59,
+    "x": -13900,
+    "z": -25085,
+    "tags": []
+   }
+  ],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "CROW": 6
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/rail-cannon-room",
+  "name": "Rail Cannon Room - Dead Factory 1F",
+  "rdts": [
+   "50D"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "38": 1,
+   "39": 2
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/helicopter-landing-zone",
+  "name": "Helicopter Landing Zone - Dead Factory 1F",
+  "rdts": [
+   "50E"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {
+   "3E": 1
+  }
+ },
+ {
+  "key": "raccoon-city-outskirts/dead-factory-1f/maintenance-elevator",
+  "name": "Maintenance Elevator - Dead Factory 1F",
+  "rdts": [
+   "50F"
+  ],
+  "items": [],
+  "files": [],
+  "maps": [],
+  "key_doors": [],
+  "locked_doors": [],
+  "puzzles": [],
+  "typewriters": [],
+  "item_boxes": [],
+  "enemies": {}
+ }
+]

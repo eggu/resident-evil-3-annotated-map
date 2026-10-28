@@ -1,0 +1,550 @@
+{
+  "style": "RE3 object identities redrawn as 2D C-style pixel art; original sprites used only as references",
+  "generator": "built-in image_gen",
+  "items": [
+    4,
+    5,
+    6,
+    21,
+    22,
+    23,
+    24,
+    28,
+    32,
+    33,
+    34,
+    35,
+    43,
+    47,
+    50,
+    52,
+    54,
+    55,
+    57,
+    60,
+    61,
+    64,
+    65,
+    66,
+    68,
+    76,
+    77,
+    79,
+    80,
+    81,
+    88,
+    94,
+    95,
+    96,
+    97,
+    98,
+    111,
+    112,
+    114,
+    115,
+    116,
+    119,
+    120,
+    123,
+    125,
+    126,
+    129,
+    117,
+    121,
+    124,
+    113,
+    118,
+    10,
+    12,
+    25,
+    27,
+    49,
+    51,
+    63,
+    69,
+    70,
+    82,
+    127
+  ],
+  "facilities": [
+    "typewriter",
+    "itembox",
+    "map",
+    "document",
+    "key",
+    "diamond"
+  ],
+  "source_sheet": "artwork/re3-pixel-sheet.png",
+  "cell_bounds_x": [
+    0,
+    177,
+    332,
+    496,
+    660,
+    810,
+    974,
+    1129,
+    1294,
+    1442,
+    1619
+  ],
+  "cell_bounds_y": [
+    0,
+    176,
+    324,
+    474,
+    626,
+    774,
+    971
+  ],
+  "corrections": {
+    "item-04": {
+      "source": "artwork/re3-pixel-corrections.png",
+      "bounds": [
+        0,
+        0,
+        737,
+        724
+      ]
+    },
+    "item-2f": {
+      "source": "artwork/re3-pixel-corrections.png",
+      "bounds": [
+        737,
+        0,
+        1165,
+        724
+      ]
+    },
+    "item-37": {
+      "source": "artwork/re3-pixel-corrections.png",
+      "bounds": [
+        1165,
+        0,
+        1657,
+        724
+      ]
+    },
+    "item-70": {
+      "source": "artwork/re3-pixel-corrections.png",
+      "bounds": [
+        1657,
+        0,
+        2172,
+        724
+      ]
+    },
+    "monster-zombie": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        0,
+        0,
+        360,
+        351
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-dog": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        360,
+        0,
+        720,
+        351
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-crow": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        720,
+        0,
+        1100,
+        351
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-hunter": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        1100,
+        0,
+        1448,
+        351
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-drain": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        0,
+        351,
+        324,
+        723
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-spider": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        324,
+        351,
+        772,
+        723
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-worm": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        772,
+        351,
+        1096,
+        723
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-nemesis": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        1096,
+        351,
+        1448,
+        723
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-hunter_gamma": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        0,
+        723,
+        373,
+        1086
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-brain": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        373,
+        723,
+        716,
+        1086
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-small_spider": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        716,
+        723,
+        1050,
+        1086
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "monster-grave": {
+      "source": "artwork/re3-enemies-approved.png",
+      "bounds": [
+        1050,
+        723,
+        1448,
+        1086
+      ],
+      "approved_variant": "Final-20261028",
+      "approval_source": "previews/enemy-icons-final/concept.png"
+    },
+    "item-75": {
+      "source": "artwork/re3-key-C-75-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "approved_variant": "C",
+      "original_artwork": "previews/key-resolution-v1/artwork/key-75.png"
+    },
+    "item-79": {
+      "source": "artwork/re3-key-C-79-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "approved_variant": "C",
+      "original_artwork": "previews/key-resolution-v1/artwork/key-79.png"
+    },
+    "item-7c": {
+      "source": "artwork/re3-key-C-7c-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "approved_variant": "C",
+      "original_artwork": "previews/key-resolution-v1/artwork/key-7c.png"
+    },
+    "item-71": {
+      "source": "artwork/re3-key-C-71-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "approved_variant": "C",
+      "original_artwork": "previews/key-resolution-v1/artwork/key-71.png"
+    },
+    "item-76": {
+      "source": "artwork/re3-key-C-76-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "approved_variant": "C",
+      "original_artwork": "previews/key-resolution-v1/artwork/key-76.png"
+    },
+    "item-0a": {
+      "source": "artwork/re3-extra-0a-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-0a.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-0c": {
+      "source": "artwork/re3-extra-0c-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-0c.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-19": {
+      "source": "artwork/re3-extra-19-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-19.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-1b": {
+      "source": "artwork/re3-extra-1b-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-1b.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-31": {
+      "source": "artwork/re3-extra-31-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-31.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-33": {
+      "source": "artwork/re3-extra-33-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-33.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-3f": {
+      "source": "artwork/re3-extra-3f-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-3f.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-45": {
+      "source": "artwork/re3-extra-45-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-45.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-46": {
+      "source": "artwork/re3-extra-46-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-46.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-52": {
+      "source": "artwork/re3-extra-52-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-52.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "item-7f": {
+      "source": "artwork/re3-extra-7f-32.png",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "prepared": true,
+      "original_artwork": "artwork/re3-extra-7f.png",
+      "processing": "C: Lanczos to 64px work canvas, then 32px; 16 colours, binary alpha"
+    },
+    "puzzle-marker": {
+      "source": "artwork/puzzle-live-diamonds.png",
+      "bounds": [
+        0,
+        0,
+        887,
+        887
+      ]
+    },
+    "selection-marker": {
+      "source": "artwork/puzzle-live-diamonds.png",
+      "bounds": [
+        887,
+        0,
+        1774,
+        887
+      ]
+    }
+  },
+  "source_sha256": {
+    "artwork/re3-pixel-corrections.png": "ba4cca51f59d2920e6d3f94f26a1e3de869ea3b06f9bfbe6f025eeda03789538",
+    "artwork/re3-pixel-sheet.png": "d1ecd3f84d8120240c4dab0841f59189581568fa88c8f31e806963716ed26c4a",
+    "artwork/re3-monster-heads.png": "1fe29b01517dd3053ef70017c063915b9ac2382af07781c0babad75519846e24",
+    "artwork/re3-drain-head.png": "67225e5690ade20ade3cd6e74333c043f236ec59abde0e083b03951ffacd914f",
+    "artwork/re3-key-75.png": "ba38ac9f56e9aa1c1a1680789e6d19476ff271e42a6af35b82efdd9f0362c8c5",
+    "artwork/re3-key-79.png": "5a1fe45ab4c10a90661ed09791d7934c9c1fd578f32ddf913d2b3c5986da762e",
+    "artwork/re3-key-7c.png": "865d4602efe05b887d64ff4db8ee2f191fc008977b1a6e707b58b751a50ea582",
+    "artwork/re3-key-71.png": "2252a8c1c39faf583afeee8901b579203e1c1aa3a7788d78bd2dee3c858ff217",
+    "artwork/re3-key-76.png": "96d4600cecf1e6027c24aa23e11028531195f367191bce778e8e7e12067bade1",
+    "artwork/re3-key-C-75-32.png": "195e76c4d8c5b9e35e7ac334921890e5a75e5c3885cf29c6248594d2ea121dd6",
+    "artwork/re3-key-C-79-32.png": "70943577910cbbc9921d61ef4d9cd03dfaa75cd14b9da6eddfa643e295a9507a",
+    "artwork/re3-key-C-7c-32.png": "e12849eba7bcb09bb35b7f90ff2a3adabdae212fe9917380fbc4ba8029673b03",
+    "artwork/re3-key-C-71-32.png": "e254a9336962bcda6c6b747207a1ac237ee00c8b6c466c4098a5f84331adc48d",
+    "artwork/re3-key-C-76-32.png": "728a04ce8db908c9d0251fad4d3007ae2c41da4b5272f3bfec2b7c3dfc621b16",
+    "artwork/re3-extra-0a.png": "3eec65c009edbb35c6848f0efaa5155c328108707d9584d26c7083744ef8b971",
+    "artwork/re3-extra-0a-32.png": "dc21f1bffe51416c60bc37d8d58868c9e6ccceec9e09e9613e0879607db4fe95",
+    "artwork/re3-extra-0a-64.png": "5fbb75dcc134ee6db6e15637c21cec17a9083531816fb121097fd7681004eb6d",
+    "artwork/re3-extra-0c.png": "a1cc7ca4be74be84121d4c94502cb2ad84b6698661fd76ee6378205ac57ffeb4",
+    "artwork/re3-extra-0c-32.png": "e994f1681673646a636cef4b1c61d920364d76619e823109002d1615f16517ac",
+    "artwork/re3-extra-0c-64.png": "88ba71d7fe9a3838d4b89975b3a7d21d73bad7eef1d7f4b28db26c770aa3e44e",
+    "artwork/re3-extra-19.png": "cc0bb6a53ea0b3428e4f12168c755ca12c6d921904b09b4fd569f1a90f046ef5",
+    "artwork/re3-extra-19-32.png": "78873fb1219057a736403514c27d7301694f00c91fd1984ac9a95b270466dd2b",
+    "artwork/re3-extra-19-64.png": "394e51ce124e78db2ff965f4640ac4287688cbc643c7190b670ca5913d7f7004",
+    "artwork/re3-extra-1b.png": "650818918eaf348a610188478ee54b72d9ad93d7d0fdf09c08c1fbeca994e0eb",
+    "artwork/re3-extra-1b-32.png": "8589fbaba3b87d866ae30e55448dafb79f20d50675ebd89289c2f31b181c90ac",
+    "artwork/re3-extra-1b-64.png": "7d1103f52e61220096b7fb5c5fe5d2f5b7a69aa2be894c1675112e4c5a3b17b1",
+    "artwork/re3-extra-31.png": "985a4d54649ae1b6b318c848926ce8f9c6625b95d20a80b1855b4caf4aec9f0f",
+    "artwork/re3-extra-31-32.png": "455e1aa577cb61de92f5324c20677a532cfd4b6d6d7fc782ab2066d729f84721",
+    "artwork/re3-extra-31-64.png": "0c1ba60f2b414808fba581526f5652b4fc607fac5fbe2a1a4762e2906470d07a",
+    "artwork/re3-extra-33.png": "9ef5a49e5685c8aa2b84469b9deb22024485bd5eb238e0d5390720fbed5002e4",
+    "artwork/re3-extra-33-32.png": "e0fd2db6a4756186f7d60f37d43933c6129e960d27c45b45aeb500a3d660002a",
+    "artwork/re3-extra-33-64.png": "8edd8f536a4213f39c0b77d3fc17beed992f204081bc03dff8d5b132807ffd03",
+    "artwork/re3-extra-3f.png": "f0ca187af918aaacaa0324ad49049df389abd94d2e2b26385c995684a2ca66e9",
+    "artwork/re3-extra-3f-32.png": "fc0b89726a683b3a31bc83665a40308f3a061a20c583637bcd7ae070cbce6782",
+    "artwork/re3-extra-3f-64.png": "cbaf4024ca97fefd1242c623cce372ef1f8515635dfb83bd5efaa1660e2ec077",
+    "artwork/re3-extra-45.png": "6a03ee9566cfa83eb8118d4496689ebf5763f5190359a867da31e5d928b4a88b",
+    "artwork/re3-extra-45-32.png": "fc4a5ec43e9ba4db5b25f8f9a9f47f18d1ce5f6de3cd299e48d527f2f2a4df94",
+    "artwork/re3-extra-45-64.png": "7a9a0e2df1467fbeb0fe09b6dd480a50c60599537691ae2d49498563616e2293",
+    "artwork/re3-extra-46.png": "ed671654adeddcc3a005f44607e5470302a73f4eb79f5fea6ce495bf85756bb9",
+    "artwork/re3-extra-46-32.png": "bbb9f0aabac0f1cebca66ebd33842a68512da7ea598ee0baab310fd8fae6bcdc",
+    "artwork/re3-extra-46-64.png": "cddce976458ee65d7c409f94b8e3cc91b4aabdbce563b820adf140d06f6f7089",
+    "artwork/re3-extra-52.png": "705b3f3e0fa0fff35278239ec4f751071c93aa1b7ae655b561791f3b6aa33020",
+    "artwork/re3-extra-52-32.png": "a37ef4466c41a21ae61b4f1b3e19b72f6635bdb2d0f18d1885b2db568f7b32f8",
+    "artwork/re3-extra-52-64.png": "624350762d7da2a1f42fb60e8a99e34ec0ddf7a70d399e4afe507a18259ffe2f",
+    "artwork/re3-extra-7f.png": "9d9172f66991625d7be488ab7c40aac5044e6f53a21c50d4eb503157c2a65350",
+    "artwork/re3-extra-7f-32.png": "ece19828894cd7bfbaa332f6cdb5a1b019b7b77a4d73d64d324cd7d8f196cc87",
+    "artwork/re3-extra-7f-64.png": "c97ac0aaa9979ceb3900824bf01158a8b9e0c1f17a929b87dbab05282725af35"
+  },
+  "monsters": [
+    "zombie",
+    "dog",
+    "crow",
+    "hunter",
+    "drain",
+    "spider",
+    "worm",
+    "nemesis",
+    "hunter_gamma",
+    "brain",
+    "small_spider",
+    "grave"
+  ],
+  "markers": [
+    "puzzle-marker",
+    "selection-marker"
+  ],
+  "source_hashes": {
+    "artwork/re3-enemies-approved.png": "dc6f196c4ec60a6b82d81ae1aaf1c1555dd0986855aaf6baabee63bb1b239c8d"
+  }
+}

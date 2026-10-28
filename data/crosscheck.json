@@ -1,0 +1,2703 @@
+[
+ {
+  "er": "police-station/police-station-1f/courtyard",
+  "rooms": [
+   "110",
+   "125"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "card case"
+  ]
+ },
+ {
+  "er": "police-station/police-station-1f/courtyard",
+  "rooms": [
+   "110",
+   "125"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "card case"
+  ]
+ },
+ {
+  "er": "police-station/police-station-1f/dark-room",
+  "rooms": [
+   "117"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/dark-room",
+  "rooms": [
+   "117"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/evidence-room",
+  "rooms": [
+   "113"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/evidence-room",
+  "rooms": [
+   "113"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/main-hall",
+  "rooms": [
+   "111"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/main-hall",
+  "rooms": [
+   "111"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/operations-room",
+  "rooms": [
+   "116"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "shotgun shells"
+  ]
+ },
+ {
+  "er": "police-station/police-station-1f/operations-room",
+  "rooms": [
+   "116"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "shotgun shells"
+  ]
+ },
+ {
+  "er": "police-station/police-station-1f/west-office",
+  "rooms": [
+   "112"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "marvin's report",
+   "shotgun shells"
+  ]
+ },
+ {
+  "er": "police-station/police-station-1f/west-office",
+  "rooms": [
+   "112"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "marvin's report",
+   "shotgun shells"
+  ]
+ },
+ {
+  "er": "police-station/police-station-1f/west-stairway-1f",
+  "rooms": [
+   "114"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/west-stairway-1f",
+  "rooms": [
+   "114"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/winding-corridor",
+  "rooms": [
+   "115"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-1f/winding-corridor",
+  "rooms": [
+   "115"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-2f/office-corridor",
+  "rooms": [
+   "119"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "red herb"
+  ]
+ },
+ {
+  "er": "police-station/police-station-2f/office-corridor",
+  "rooms": [
+   "119"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "red herb"
+  ]
+ },
+ {
+  "er": "police-station/police-station-2f/stars-office",
+  "rooms": [
+   "11A"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "hk-p grenade launcher",
+   "s&w m629c"
+  ]
+ },
+ {
+  "er": "police-station/police-station-2f/stars-office",
+  "rooms": [
+   "11A"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "hk-p grenade launcher",
+   "s&w m629c"
+  ]
+ },
+ {
+  "er": "police-station/police-station-2f/west-stairway-2f",
+  "rooms": [
+   "118"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "police-station/police-station-2f/west-stairway-2f",
+  "rooms": [
+   "118"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/bedroom",
+  "rooms": [
+   "305",
+   "311"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "clock tower key",
+   "gun powder a",
+   "gun powder b"
+  ]
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/bedroom",
+  "rooms": [
+   "305",
+   "311"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "clock tower key",
+   "gun powder a",
+   "gun powder b"
+  ]
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/chapel",
+  "rooms": [
+   "300",
+   "310"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "clock tower key"
+  ]
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/chapel",
+  "rooms": [
+   "300",
+   "310"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "clock tower key"
+  ]
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/clock-room",
+  "rooms": [
+   "309",
+   "315"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/clock-room",
+  "rooms": [
+   "309",
+   "315"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/courtyard",
+  "rooms": [
+   "303"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/courtyard",
+  "rooms": [
+   "303"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/dining-room",
+  "rooms": [
+   "302",
+   "30F",
+   "317"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/dining-room",
+  "rooms": [
+   "302",
+   "30F",
+   "317"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/living-room",
+  "rooms": [
+   "306",
+   "312"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/living-room",
+  "rooms": [
+   "306",
+   "312"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/main-hall",
+  "rooms": [
+   "304",
+   "30E",
+   "316"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/main-hall",
+  "rooms": [
+   "304",
+   "30E",
+   "316"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/piano-room",
+  "rooms": [
+   "301"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/piano-room",
+  "rooms": [
+   "301"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/small-library",
+  "rooms": [
+   "307",
+   "313"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "grenade rounds"
+  ]
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/small-library",
+  "rooms": [
+   "307",
+   "313"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "grenade rounds"
+  ]
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/spider-corridor",
+  "rooms": [
+   "308",
+   "314"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-1f/spider-corridor",
+  "rooms": [
+   "308",
+   "314"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-2f/balcony",
+  "rooms": [
+   "30B"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-2f/balcony",
+  "rooms": [
+   "30B"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-2f/main-hall-second-floor",
+  "rooms": [
+   "30A"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-2f/main-hall-second-floor",
+  "rooms": [
+   "30A"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-3f/cog-room",
+  "rooms": [
+   "30C"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-clock-tower/clock-tower-3f/cog-room",
+  "rooms": [
+   "30C"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a",
+   "mine thrower rounds"
+  ]
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-1f/doctors-lounge",
+  "rooms": [
+   "404"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-1f/doctors-lounge",
+  "rooms": [
+   "404"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-1f/reception-office",
+  "rooms": [
+   "403"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-1f/reception-office",
+  "rooms": [
+   "403"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-1f/waiting-room",
+  "rooms": [
+   "402"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-1f/waiting-room",
+  "rooms": [
+   "402"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/data-room",
+  "rooms": [
+   "408"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "hand gun bullets"
+  ]
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/data-room",
+  "rooms": [
+   "408"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "hand gun bullets"
+  ]
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/entry-hallway",
+  "rooms": [
+   "405"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/entry-hallway",
+  "rooms": [
+   "405"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/room-401",
+  "rooms": [
+   "407"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/room-401",
+  "rooms": [
+   "407"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/room-402",
+  "rooms": [
+   "406"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-4f/room-402",
+  "rooms": [
+   "406"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-b3/basement-hallway",
+  "rooms": [
+   "409"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-b3/basement-hallway",
+  "rooms": [
+   "409"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-b3/basement-storeroom",
+  "rooms": [
+   "40A"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "green herb",
+   "hand gun bullets"
+  ]
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-b3/basement-storeroom",
+  "rooms": [
+   "40A"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "green herb",
+   "hand gun bullets"
+  ]
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-b3/experiment-room",
+  "rooms": [
+   "40B"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-hospital/hospital-b3/experiment-room",
+  "rooms": [
+   "40B"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/car-yard",
+  "rooms": [
+   "50C"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/car-yard",
+  "rooms": [
+   "50C"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/emergency-tunnel",
+  "rooms": [
+   "50B"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/emergency-tunnel",
+  "rooms": [
+   "50B"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/helicopter-landing-zone",
+  "rooms": [
+   "50E"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/helicopter-landing-zone",
+  "rooms": [
+   "50E"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/maintenance-elevator",
+  "rooms": [
+   "50F"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/maintenance-elevator",
+  "rooms": [
+   "50F"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/monitoring-room",
+  "rooms": [
+   "505"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/monitoring-room",
+  "rooms": [
+   "505"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/rail-cannon-room",
+  "rooms": [
+   "50D"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/rail-cannon-room",
+  "rooms": [
+   "50D"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/water-control-room",
+  "rooms": [
+   "506"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a",
+   "gun powder b"
+  ]
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/water-control-room",
+  "rooms": [
+   "506"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a",
+   "gun powder b"
+  ]
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/water-filter-passage",
+  "rooms": [
+   "504"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/water-filter-passage",
+  "rooms": [
+   "504"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/water-pollution-pool",
+  "rooms": [
+   "507"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-1f/water-pollution-pool",
+  "rooms": [
+   "507"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/communications-tower",
+  "rooms": [
+   "50A"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/communications-tower",
+  "rooms": [
+   "50A"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/control-room",
+  "rooms": [
+   "503"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/control-room",
+  "rooms": [
+   "503"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/entry-corridor",
+  "rooms": [
+   "500"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/entry-corridor",
+  "rooms": [
+   "500"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/resting-room",
+  "rooms": [
+   "501"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/resting-room",
+  "rooms": [
+   "501"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/steam-room",
+  "rooms": [
+   "502"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/steam-room",
+  "rooms": [
+   "502"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/treatment-room",
+  "rooms": [
+   "509"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/treatment-room",
+  "rooms": [
+   "509"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/treatment-room-entry",
+  "rooms": [
+   "508"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/dead-factory-2f/treatment-room-entry",
+  "rooms": [
+   "508"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/drainage-passage",
+  "rooms": [
+   "410"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/drainage-passage",
+  "rooms": [
+   "410"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/forest-path",
+  "rooms": [
+   "40F"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/forest-path",
+  "rooms": [
+   "40F"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/fountain",
+  "rooms": [
+   "40D"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/fountain",
+  "rooms": [
+   "40D"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/graveyard",
+  "rooms": [
+   "411",
+   "415"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/graveyard",
+  "rooms": [
+   "411",
+   "415"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/graveyard-cabin",
+  "rooms": [
+   "412"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/graveyard-cabin",
+  "rooms": [
+   "412"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/graveyard-cabin-storeroom",
+  "rooms": [
+   "413"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/graveyard-cabin-storeroom",
+  "rooms": [
+   "413"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/main-park",
+  "rooms": [
+   "40C"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/main-park",
+  "rooms": [
+   "40C"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/park-alleyway",
+  "rooms": [
+   "400",
+   "417"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/park-alleyway",
+  "rooms": [
+   "400",
+   "417"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/park-exit-walkway",
+  "rooms": [
+   "416",
+   "510"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/park-exit-walkway",
+  "rooms": [
+   "416",
+   "510"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/park-office",
+  "rooms": [
+   "401"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/park-office",
+  "rooms": [
+   "401"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "grenade rounds",
+   "mine thrower rounds"
+  ]
+ },
+ {
+  "er": "raccoon-city-outskirts/park/secret-communications-room",
+  "rooms": [
+   "414"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/secret-communications-room",
+  "rooms": [
+   "414"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/wooden-jetty",
+  "rooms": [
+   "40E"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "raccoon-city-outskirts/park/wooden-jetty",
+  "rooms": [
+   "40E"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/cable-car-area",
+  "rooms": [
+   "20B"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/cable-car-area",
+  "rooms": [
+   "20B"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/cable-car-rear-carriage",
+  "rooms": [
+   "20C",
+   "215"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "flame rounds",
+   "mechanic's memo",
+   "wrench"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/cable-car-rear-carriage",
+  "rooms": [
+   "20C",
+   "215"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "flame rounds",
+   "mechanic's memo",
+   "wrench"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/city-hall-gate",
+  "rooms": [
+   "207"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/city-hall-gate",
+  "rooms": [
+   "207"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/construction-street",
+  "rooms": [
+   "202"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/construction-street",
+  "rooms": [
+   "202"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/dirty-alley",
+  "rooms": [
+   "209"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/dirty-alley",
+  "rooms": [
+   "209"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/downtown-storeroom",
+  "rooms": [
+   "216"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/downtown-storeroom",
+  "rooms": [
+   "216"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/garage",
+  "rooms": [
+   "201"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "power cable"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/garage",
+  "rooms": [
+   "201"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "power cable"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/garage-office",
+  "rooms": [
+   "21B"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/garage-office",
+  "rooms": [
+   "21B"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/gas-station",
+  "rooms": [
+   "20E",
+   "217"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "red herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/gas-station",
+  "rooms": [
+   "20E",
+   "217"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "red herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/gas-station-shop",
+  "rooms": [
+   "20D"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/gas-station-shop",
+  "rooms": [
+   "20D"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/lonsdale-yard",
+  "rooms": [
+   "20A"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/lonsdale-yard",
+  "rooms": [
+   "20A"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/maintenance-area",
+  "rooms": [
+   "203"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/maintenance-area",
+  "rooms": [
+   "203"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/press-office",
+  "rooms": [
+   "20F"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/press-office",
+  "rooms": [
+   "20F"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/press-office-lobby",
+  "rooms": [
+   "210",
+   "219"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/press-office-lobby",
+  "rooms": [
+   "210",
+   "219"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/restaurant",
+  "rooms": [
+   "211"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/restaurant",
+  "rooms": [
+   "211"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/restaurant-basement",
+  "rooms": [
+   "212"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "emerald"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/restaurant-basement",
+  "rooms": [
+   "212"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "emerald"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/shopping-district",
+  "rooms": [
+   "206"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/shopping-district",
+  "rooms": [
+   "206"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/sub-station",
+  "rooms": [
+   "214"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder b",
+   "hk-p grenade launcher",
+   "s&w m629c"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/sub-station",
+  "rooms": [
+   "214"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder b",
+   "hk-p grenade launcher",
+   "s&w m629c"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/sub-station-entrance",
+  "rooms": [
+   "204"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/sub-station-entrance",
+  "rooms": [
+   "204"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/sub-station-gate-area",
+  "rooms": [
+   "213"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "red herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/sub-station-gate-area",
+  "rooms": [
+   "213"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "red herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/three-points-street",
+  "rooms": [
+   "208"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "book of wisdom",
+   "green herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/three-points-street",
+  "rooms": [
+   "208"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "book of wisdom",
+   "green herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/downtown/water-feature-area",
+  "rooms": [
+   "205"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/downtown/water-feature-area",
+  "rooms": [
+   "205"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/back-alleyway",
+  "rooms": [
+   "102",
+   "11D"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/back-alleyway",
+  "rooms": [
+   "102",
+   "11D"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/barricaded-back-passage",
+  "rooms": [
+   "108",
+   "122"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/barricaded-back-passage",
+  "rooms": [
+   "108",
+   "122"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/black-jacks-bar",
+  "rooms": [
+   "107"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/black-jacks-bar",
+  "rooms": [
+   "107"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/book-shop-street",
+  "rooms": [
+   "10A",
+   "124"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/book-shop-street",
+  "rooms": [
+   "10A",
+   "124"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/boutique",
+  "rooms": [
+   "10F"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/boutique",
+  "rooms": [
+   "10F"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/business-back-street",
+  "rooms": [
+   "104",
+   "11F"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/business-back-street",
+  "rooms": [
+   "104",
+   "11F"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/business-main-street",
+  "rooms": [
+   "103",
+   "11E"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/business-main-street",
+  "rooms": [
+   "103",
+   "11E"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/dark-alley",
+  "rooms": [
+   "10E"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "blue herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/dark-alley",
+  "rooms": [
+   "10E"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "blue herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/forked-alley",
+  "rooms": [
+   "109",
+   "123"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/forked-alley",
+  "rooms": [
+   "109",
+   "123"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/parking-area",
+  "rooms": [
+   "200"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/parking-area",
+  "rooms": [
+   "200"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/private-backyard",
+  "rooms": [
+   "105",
+   "120"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/private-backyard",
+  "rooms": [
+   "105",
+   "120"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/residential-street",
+  "rooms": [
+   "106",
+   "121"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/residential-street",
+  "rooms": [
+   "106",
+   "121"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/sales-office",
+  "rooms": [
+   "11B"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/sales-office",
+  "rooms": [
+   "11B"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/sales-office-patio",
+  "rooms": [
+   "10B"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/sales-office-patio",
+  "rooms": [
+   "10B"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/sales-office-storeroom",
+  "rooms": [
+   "11C"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a",
+   "gun powder b"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/sales-office-storeroom",
+  "rooms": [
+   "11C"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "gun powder a",
+   "gun powder b"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/straight-alleyway",
+  "rooms": [
+   "218"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "green herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/straight-alleyway",
+  "rooms": [
+   "218"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "green herb"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/t-dumpster-alley",
+  "rooms": [
+   "10D"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/t-dumpster-alley",
+  "rooms": [
+   "10D"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/uptown-store-room",
+  "rooms": [
+   "10C"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/uptown-store-room",
+  "rooms": [
+   "10C"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/warehouse",
+  "rooms": [
+   "101"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "dario's memo",
+   "gun powder a",
+   "gun powder b"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/warehouse",
+  "rooms": [
+   "101"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": [
+   "dario's memo",
+   "gun powder a",
+   "gun powder b",
+   "hand gun bullets"
+  ]
+ },
+ {
+  "er": "uptown-and-downtown/uptown/warehouse-office",
+  "rooms": [
+   "100"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/warehouse-office",
+  "rooms": [
+   "100"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/zigzag-alley",
+  "rooms": [
+   "21A"
+  ],
+  "mode": "Easy",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ },
+ {
+  "er": "uptown-and-downtown/uptown/zigzag-alley",
+  "rooms": [
+   "21A"
+  ],
+  "mode": "Hard",
+  "items_only_scd": [],
+  "items_only_er": [],
+  "enemies_only_scd": [],
+  "enemies_only_er": [],
+  "conditional": []
+ }
+]

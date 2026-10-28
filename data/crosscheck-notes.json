@@ -1,0 +1,69 @@
+{
+ "police-station/police-station-1f/courtyard": {
+  "s.t.a.r.s. card": "Inside Brad's Card Case (SCD places the Card Case); obtained by examining the case, not a separate pickup."
+ },
+ "raccoon-city-clock-tower/clock-tower-1f/clock-room": {
+  "crystal ball": "Statue-tray puzzle balls are SCE_FLAG_CHG/om objects, not item_aot_set (room text: 'An Obsidian/Crystal Ball is on the tray').",
+  "obsidian ball": "Same statue-tray puzzle mechanism as crystal ball."
+ },
+ "raccoon-city-clock-tower/clock-tower-1f/main-hall": {
+  "blue herb": "Infinite blue herb planter: interaction AOT, not item_aot_set."
+ },
+ "uptown-and-downtown/downtown/garage": {
+  "blue herb": "Infinite blue herb planter: interaction AOT, not item_aot_set.",
+  "sliding worm": "SCD sets worms in the garage RDT; Evil Resource lists them under the merged Underground Area sub-location."
+ },
+ "raccoon-city-outskirts/dead-factory-2f/control-room": {
+  "blue herb": "Infinite blue herb planter: interaction AOT, not item_aot_set."
+ },
+ "uptown-and-downtown/downtown/cable-car-rear-carriage": {
+  "wrench": "Cable car front and rear carriages are one RDT (20C/215); Evil Resource lists the wrench under the front carriage."
+ },
+ "raccoon-city-outskirts/dead-factory-2f/steam-room": {
+  "grenade rounds": "Weapons Storage is part of the steam room RDT 502.",
+  "m66 rocket launcher": "Weapons Storage is part of the steam room RDT 502."
+ },
+ "uptown-and-downtown/downtown/press-office": {
+  "red herb": "Press Office Side Alley is part of RDT 20F; Evil Resource lists 2 red herbs there."
+ },
+ "uptown-and-downtown/downtown/water-feature-area": {
+  "book of wisdom": "Statue state item at (0,0) after the Book of Wisdom is placed; not a pickup."
+ },
+ "raccoon-city-outskirts/park/park-office": {
+  "mine thrower rounds": "SCD (DATA_J and DATA_AJ identical) gives Mine Thrower Rounds only on Hard under ck(0,23,0)&ck(48,65,1); Evil Resource says 50% on Easy too. Game script is authoritative."
+ },
+ "uptown-and-downtown/downtown/maintenance-area": {
+  "battery": "Battery inserted into the elevator slot: item_aot_set at sentinel (-32000) re-enabled by aot_reset + set(7,62,0) so it can be taken back; Evil Resource lists the Battery where it is first found (Three Points Street)."
+ },
+ "raccoon-city-clock-tower/clock-tower-1f/spider-corridor": {
+  "brain sucker": "SCD em_set present (BS23/mini); Evil Resource lists Drain Deimos/Giant Spiders only. Enemy type lists on Evil Resource are not exhaustive per variant.",
+  "small spiders": "Mini spiders spawned by giant spiders are em_set in SCD."
+ },
+ "raccoon-city-clock-tower/clock-tower-2f/main-hall-second-floor": {
+  "small spiders": "Mini spiders spawned by giant spiders are em_set in SCD."
+ },
+ "raccoon-city-outskirts/dead-factory-2f/communications-tower": {
+  "nicholai ginovaef": "Evil Resource lists Nicholai as an enemy encounter; SCD places him as an NPC type (not a monster category)."
+ },
+ "raccoon-city-hospital/hospital-1f/waiting-room": {
+  "zombie": "Single zombie under story guard ck(3,226,0); conditional spawn not listed by Evil Resource."
+ },
+ "raccoon-city-outskirts/dead-factory-1f/car-yard": {
+  "crow": "Ambient crows (kill id 255, special state 195); not tracked enemies."
+ },
+ "raccoon-city-outskirts/dead-factory-1f/emergency-tunnel": {
+  "crow": "Ambient crow (kill id 255, state 132)."
+ },
+ "raccoon-city-outskirts/dead-factory-1f/water-filter-passage": {
+  "zombie": "Four zombies under story guards ck(3,88,1)/ck(3,98,1) (Carlos segment); conditional."
+ },
+ "uptown-and-downtown/downtown/gas-station": {
+  "zombie": "Event zombies in gas-station explosion sequence (proc main_22/main_23, ck(3,250,1)); no kill flags."
+ },
+ "uptown-and-downtown/downtown/gas-station-shop": {
+  "zombie": "Event zombies (ck(3,45,0), main_0B), no kill flags."
+ },
+ "uptown-and-downtown/uptown/dark-alley": {
+  "zombie": "One RPD zombie under cmp(0,39,==5)/ck(4,1,1) (later revisit state)."
+ }
+}

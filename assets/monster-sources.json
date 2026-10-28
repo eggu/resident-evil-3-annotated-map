@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "zombie",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/zombie",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/zombie.png?7fe70001",
+    "sha256": "f77fc1d9628895521d5f993d1a2ca5d3b72354782cd7df77203607c49cb560b4",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "zombie-dog",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/zombie-dog",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/zombie-dog.png?b7981974",
+    "sha256": "726b537215b20eec3a4913e83ff7b91f93808d55564dde6f9f7d8959da56cf26",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "crow",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/crow",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/crow.png?883fb7e0",
+    "sha256": "7539291bd3a892b6d023e550dacc7011471f05b262aeea84dcae8d2f7c574b7b",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "hunter-beta",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/hunter-beta",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/hunter-beta.png?1c56709f",
+    "sha256": "04f012bddcd357878d068f5251809595a83f6af4890bb9f59a53a818ce4d5af2",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "drain-deimos",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/drain-deimos",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/drain-deimos.png?132572a3",
+    "sha256": "f9df359c3df62a23335cd414d00e15e2885c1320ccc33a49cfa363a1e46ee818",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "giant-spider",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/giant-spider",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/giant-spider.png?60fe3a59",
+    "sha256": "b3467ed786e82b044c7001f85cd50681eb648cd5badcf9071706bf867db8c1ac",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "sliding-worm",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/sliding-worm",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/sliding-worm.png?7448b007",
+    "sha256": "fce86236ac15281c0fbc89497916f22c67b34d684c564108708446ff979d2047",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "nemesis",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/nemesis",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/nemesis.png?83b9584b",
+    "sha256": "281c94d27c20374aced6c989d93a9c51112aee14ee4b212250b7c3114f44facc",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "hunter-gamma",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/hunter-gamma",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/hunter-gamma.png?46d9e438",
+    "sha256": "7bb0be5b4fadd4c439f8bc3ea2fb10677ca4cc3f41e8986e61eff80998ef4c9f",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "brain-sucker",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/brain-sucker",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/brain-sucker.png?5c68eb2c",
+    "sha256": "737cab8da6b20837b49401aec85b058ff5240447e8eb02437b331926703904ed",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "small-spider",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/small-spider",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/small-spider.png?25357f4b",
+    "sha256": "375ed168b5ea6e7745d8d7a3d188f5c3c7466c37623642da75f7cdb18daf9e3d",
+    "as_of": "2026-10-24"
+  },
+  {
+    "slug": "grave-digger",
+    "page": "https://www.evilresource.com/resident-evil-3-nemesis/enemies/grave-digger",
+    "image_url": "https://www.evilresource.com/images/data/full/re3/grave-digger.png?b719d93f",
+    "sha256": "0a07273d5a6baa95e6c6cdb4053126e4087a4622f8dc4ac894b27095a3687224",
+    "as_of": "2026-10-24"
+  }
+]

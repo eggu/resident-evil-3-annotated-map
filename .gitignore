@@ -1,0 +1,20 @@
+local/
+build/
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+*.asi
+*.log
+*.ini
+
+# Source artwork and local-only inputs
+assets/artwork/
+assets/references/
+assets/previews/*
+!assets/previews/key-resolution-v1/
+assets/previews/key-resolution-v1/*
+!assets/previews/key-resolution-v1/C/
+assets/map/clock-header-reference.webp
+docs/room-catalog.md
+docs/data-crosscheck.md

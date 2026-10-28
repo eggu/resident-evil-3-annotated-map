@@ -1,0 +1,8 @@
+{
+ "source": "Installed RE3 HD pack hires/misc/DCC2E13C.webp",
+ "source_sha256": "c3d1724dc6340aba30b629c48ddb968bdb9fc6b03f38d275078cb30c20b219b9",
+ "purpose": "Reuse compass, scale and floor glyphs for missing Disused Plant header",
+ "generated": "4D420B84.webp",
+ "native_source": "DATA_J/ETC2/MAP_J.MAP segment4 header7",
+ "as_of": "2026-10-27"
+}

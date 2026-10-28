@@ -1,0 +1,73 @@
+{
+  "inventory_file_sha256": "1d0b05f7e9097b68e67bbaa27abb996f0549bc506bcbc8c42e1461bef9a7607e",
+  "palette_file_sha256": "9fa04aae55967712e05fedda72827c975f90263534ed3320a26fad621e84c3cb",
+  "items": [
+    {
+      "item_id": "75",
+      "name": "S.T.A.R.S. Key",
+      "inventory_reference": "references/keys/item-75-inventory.png",
+      "inventory_reference_sha256": "287508258ecec7da48783dbec312c456d802f56534bb8071304ea196deae3b0d",
+      "inventory_source": "DATA/ETC/ITEMI.PIX",
+      "slot_size": 2048,
+      "slot_index": 117,
+      "palette_source": "DATA_J/ETC2/STMAIN0J.TIM CLUT row 1",
+      "as_of": "2026-10-24",
+      "web_page": "https://www.evilresource.com/resident-evil-3-nemesis/items/stars-key",
+      "web_image": "https://www.evilresource.com/images/data/full/re3/stars-key.png",
+      "web_reference": "references/keys/stars-key.png",
+      "web_reference_sha256": "06cf3958e48f0ea52cdc88aac803d23908da0756f7dcf12bea170502cef0f5c9"
+    },
+    {
+      "item_id": "79",
+      "name": "Chronos Key",
+      "inventory_reference": "references/keys/item-79-inventory.png",
+      "inventory_reference_sha256": "bd3a3c5ba1cb637779187c34ea795b06de75c44be22aee40420a9d472dda267e",
+      "inventory_source": "DATA/ETC/ITEMI.PIX",
+      "slot_size": 2048,
+      "slot_index": 121,
+      "palette_source": "DATA_J/ETC2/STMAIN0J.TIM CLUT row 1",
+      "as_of": "2026-10-24",
+      "web_page": "https://www.evilresource.com/resident-evil-3-nemesis/items/chronos-key",
+      "web_image": "https://www.evilresource.com/images/data/full/re3/chronos-key.png",
+      "web_reference": "references/keys/chronos-key.png",
+      "web_reference_sha256": "40cd57cee83c2e5fff2a75690fe0037aec4943952803debcd1fa5ece01d7d460"
+    },
+    {
+      "item_id": "7c",
+      "name": "Graveyard Key",
+      "inventory_reference": "references/keys/item-7c-inventory.png",
+      "inventory_reference_sha256": "05956ad09c1fd272e3ea292a3c85a80c9a6fd0140295a618b76f1c389eb9c627",
+      "inventory_source": "DATA/ETC/ITEMI.PIX",
+      "slot_size": 2048,
+      "slot_index": 124,
+      "palette_source": "DATA_J/ETC2/STMAIN0J.TIM CLUT row 1",
+      "as_of": "2026-10-24",
+      "web_page": "https://www.evilresource.com/resident-evil-3-nemesis/items/graveyard-key",
+      "web_image": "https://www.evilresource.com/images/data/full/re3/graveyard-key.png",
+      "web_reference": "references/keys/graveyard-key.png",
+      "web_reference_sha256": "142ad432789c34b2c0138154d684f61d39633134dd24e4eafc93ed7de6b7dfdb"
+    },
+    {
+      "item_id": "71",
+      "name": "Dummy Key",
+      "inventory_reference": "references/keys/item-71-inventory.png",
+      "inventory_reference_sha256": "714c7846da4b7a73598684790fdc17602784bc466d7dd4da527599c9893932ae",
+      "inventory_source": "DATA/ETC/ITEMI.PIX",
+      "slot_size": 2048,
+      "slot_index": 113,
+      "palette_source": "DATA_J/ETC2/STMAIN0J.TIM CLUT row 1",
+      "as_of": "2026-10-24"
+    },
+    {
+      "item_id": "76",
+      "name": "Keys",
+      "inventory_reference": "references/keys/item-76-inventory.png",
+      "inventory_reference_sha256": "faddbb0b724326fff3c9b482469dc8d405c3ebfc95694b961f0d8ccc9bac8e84",
+      "inventory_source": "DATA/ETC/ITEMI.PIX",
+      "slot_size": 2048,
+      "slot_index": 118,
+      "palette_source": "DATA_J/ETC2/STMAIN0J.TIM CLUT row 1",
+      "as_of": "2026-10-24"
+    }
+  ]
+}

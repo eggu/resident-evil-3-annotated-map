@@ -1,0 +1,6332 @@
+{
+ "placements": 1092,
+ "compiled": 879,
+ "unresolved": [
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, 27, CMP_EQ, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 27, CMP_EQ, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 289))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (cmp(0, 27, CMP_EQ, 289))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, 27, CMP_EQ, 270))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 108, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 27, CMP_EQ, 270))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 270))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 108, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (cmp(0, 27, CMP_EQ, 270))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "113",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(5, 3, 0) && ck(3, 3, 1))",
+    "if (ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 275))",
+    "if (cmp(0, 27, CMP_EQ, 274))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "113",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(5, 3, 0) && ck(3, 3, 1))",
+    "if (ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 275))",
+    "if (cmp(0, 27, CMP_EQ, 276))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "115",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 277))",
+    "if (cmp(0, 27, CMP_EQ, 276))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "115",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 277))",
+    "else[if (cmp(0, 27, CMP_EQ, 276))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "118",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 280))",
+    "if (cmp(0, 27, CMP_EQ, 276))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "118",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 280))",
+    "else[if (cmp(0, 27, CMP_EQ, 276))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "119",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 281))",
+    "if (cmp(0, 27, CMP_EQ, 282))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "119",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 281))",
+    "else[if (cmp(0, 27, CMP_EQ, 282))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "119",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "else[if (cmp(0, 31, CMP_EQ, 281))]",
+    "if (cmp(0, 27, CMP_EQ, 282))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(48, 11, 0))",
+    "else[if (ck(3, 30, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "if (ck(3, 86, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(48, 11, 0))",
+    "else[if (ck(3, 30, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "else[if (ck(3, 86, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(48, 11, 0))",
+    "else[if (ck(3, 30, 1))]",
+    "else[if (cmp(0, 27, CMP_EQ, 513))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "else[if (ck(48, 11, 0))]",
+    "else[if (ck(7, 35, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "if (ck(3, 86, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "else[if (ck(48, 11, 0))]",
+    "else[if (ck(7, 35, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "else[if (ck(3, 86, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "else[if (ck(48, 11, 0))]",
+    "else[if (ck(7, 35, 1))]",
+    "else[if (cmp(0, 27, CMP_EQ, 513))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))",
+    "if (ck(3, 175, 1) && ck(3, 176, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))",
+    "else[if (ck(3, 175, 1) && ck(3, 176, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]",
+    "if (ck(3, 175, 1) && ck(3, 176, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]",
+    "else[if (ck(3, 175, 1) && ck(3, 176, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "if (ck(7, 36, 1) && ck(7, 37, 1))",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "else[if (ck(7, 36, 1) && ck(7, 37, 1))]",
+    "else[if (cmp(0, 6, CMP_EQ, 32))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 539))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 5))",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "if (ck(7, 36, 1) && ck(7, 37, 1))",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "else[if (ck(7, 36, 1) && ck(7, 37, 1))]",
+    "else[if (cmp(0, 6, CMP_EQ, 32))]",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 539))]",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 5))",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "203",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(4, 3, 0))",
+    "if (ck(3, 108, 0) && cmp(0, 27, CMP_EQ, 514))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "203",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(4, 3, 0))",
+    "if (ck(3, 109, 0) && cmp(0, 27, CMP_EQ, 514))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (cmp(0, 31, CMP_EQ, 516))",
+    "if (cmp(0, 27, CMP_EQ, 515))",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (cmp(0, 31, CMP_EQ, 516))",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]",
+    "if (cmp(0, 27, CMP_EQ, 531))",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (cmp(0, 31, CMP_EQ, 516))",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (ck(3, 150, 0))",
+    "if (cmp(0, var_2A, 0, 4))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 4))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "if (cmp(0, 27, CMP_EQ, 529))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 4))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 4))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6))",
+    "else[if (ck(4, 14, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "if (cmp(0, 27, CMP_EQ, 529))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6))",
+    "else[if (ck(4, 14, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6))",
+    "else[if (ck(4, 14, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 3))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "if (cmp(0, 27, CMP_EQ, 529))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 3))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 3))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 529))",
+    "else[if (ck(5, 39, 1))]",
+    "if (cmp(0, 39, CMP_EQ, 4))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "206",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 529))",
+    "else[if (ck(5, 39, 1))]",
+    "else[if (cmp(0, 39, CMP_EQ, 4))]",
+    "if (cmp(0, 39, CMP_EQ, 3))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "if (cmp(0, 5, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "if (cmp(0, 5, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "if (cmp(0, 5, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "if (ck(0, 27, 1))",
+    "if (ck(3, 134, 0))",
+    "if (cmp(0, 27, CMP_NE, 519))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "else[if (ck(0, 27, 1))]",
+    "if (ck(3, 30, 1))",
+    "if (ck(3, 159, 1))",
+    "if (ck(5, 159, 1) && ck(5, 160, 1) && ck(5, 161, 1) && ck(5, 162, 1))",
+    "if (ck(3, 134, 0))",
+    "if (cmp(0, 27, CMP_NE, 519))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "if (ck(0, 27, 1))",
+    "if (ck(3, 134, 0))",
+    "else[if (cmp(0, 27, CMP_NE, 519))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "else[if (ck(0, 27, 1))]",
+    "if (ck(3, 30, 1))",
+    "if (ck(3, 159, 1))",
+    "if (ck(5, 159, 1) && ck(5, 160, 1) && ck(5, 161, 1) && ck(5, 162, 1))",
+    "if (ck(3, 134, 0))",
+    "else[if (cmp(0, 27, CMP_NE, 519))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "if (cmp(0, 27, CMP_EQ, 524))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "if (cmp(0, 27, CMP_EQ, 524))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "if (cmp(0, 27, CMP_EQ, 524))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "else[if (cmp(0, 27, CMP_EQ, 524))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "else[if (cmp(0, 27, CMP_EQ, 524))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "else[if (cmp(0, 27, CMP_EQ, 524))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (ck(47, 86, 1))",
+    "else[if (ck(48, 86, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 3))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 86, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 3))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (ck(47, 86, 1))",
+    "else[if (ck(48, 86, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 4))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 86, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 4))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "215",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 2, 1))",
+    "if (ck(3, 58, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "218",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 512))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "21A",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "else[if (cmp(0, 42, CMP_EQ, 3))]",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 292))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "21A",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "else[if (cmp(0, 42, CMP_EQ, 3))]",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 292))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "301",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "else[if (ck(3, 112, 0) && ck(3, 81, 1))]",
+    "if (cmp(0, 31, CMP_EQ, 769))",
+    "if (cmp(0, 27, CMP_EQ, 768))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "301",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "else[if (ck(3, 112, 0) && ck(3, 81, 1))]",
+    "if (cmp(0, 31, CMP_EQ, 769))",
+    "else[if (cmp(0, 27, CMP_EQ, 768))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "302",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 769))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "302",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 772))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "308",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 55, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 10))",
+    "if (cmp(0, 31, CMP_EQ, 776))",
+    "if (cmp(0, 27, CMP_EQ, 775))",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "308",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 55, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 10))",
+    "if (cmp(0, 31, CMP_EQ, 776))",
+    "else[if (cmp(0, 27, CMP_EQ, 775))]",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 778))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 778))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 780))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 780))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "316",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 55, 1))",
+    "if (cmp(0, 39, CMP_EQ, 10) && cmp(0, 31, CMP_EQ, 790))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 1,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]",
+    "if (ck(0, 28, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]",
+    "else[if (ck(0, 28, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]",
+    "if (ck(0, 28, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 261))]",
+    "else[if (ck(0, 28, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))",
+    "if (ck(0, 28, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))",
+    "else[if (ck(0, 28, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))",
+    "if (ck(0, 28, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))",
+    "else[if (ck(0, 28, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "106",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 72, 0))",
+    "if (cmp(0, 27, CMP_EQ, 261))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, 27, CMP_EQ, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 27, CMP_EQ, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 289))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "107",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (cmp(0, 27, CMP_EQ, 289))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, 27, CMP_EQ, 270))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 108, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 27, CMP_EQ, 270))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 270))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "10B",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 108, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (cmp(0, 27, CMP_EQ, 270))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "113",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(5, 3, 0) && ck(3, 3, 1))",
+    "if (ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 275))",
+    "if (cmp(0, 27, CMP_EQ, 274))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "113",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(5, 3, 0) && ck(3, 3, 1))",
+    "if (ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 275))",
+    "if (cmp(0, 27, CMP_EQ, 276))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "115",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 277))",
+    "if (cmp(0, 27, CMP_EQ, 276))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "115",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 277))",
+    "else[if (cmp(0, 27, CMP_EQ, 276))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "118",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 280))",
+    "if (cmp(0, 27, CMP_EQ, 276))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "118",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 280))",
+    "else[if (cmp(0, 27, CMP_EQ, 276))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "119",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 281))",
+    "if (cmp(0, 27, CMP_EQ, 282))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "119",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "if (cmp(0, 31, CMP_EQ, 281))",
+    "else[if (cmp(0, 27, CMP_EQ, 282))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "119",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 3, 1) && ck(5, 3, 0))",
+    "else[if (cmp(0, 31, CMP_EQ, 281))]",
+    "if (cmp(0, 27, CMP_EQ, 282))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 290))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 289))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 290))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_0B, 0, 0))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 289))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "120",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 286))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "else[if (ck(47, 103, 1))]",
+    "if (cmp(0, var_1B, 0, 286))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 263))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 287))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 30, CMP_GE, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 271))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 263))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "121",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 287))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 271))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 291))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 291))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, var_1B, 0, 288))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "if (cmp(0, 27, CMP_EQ, 288))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "122",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (cmp(0, 39, CMP_EQ, 5))]",
+    "if (ck(3, 20, 0))",
+    "if (ck(3, 9, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 288))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(48, 11, 0))",
+    "else[if (ck(3, 30, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "if (ck(3, 86, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(48, 11, 0))",
+    "else[if (ck(3, 30, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "else[if (ck(3, 86, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(48, 11, 0))",
+    "else[if (ck(3, 30, 1))]",
+    "else[if (cmp(0, 27, CMP_EQ, 513))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "else[if (ck(48, 11, 0))]",
+    "else[if (ck(7, 35, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "if (ck(3, 86, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "else[if (ck(48, 11, 0))]",
+    "else[if (ck(7, 35, 1))]",
+    "if (cmp(0, 27, CMP_EQ, 513))",
+    "else[if (ck(3, 86, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "200",
+   "monster": "dog",
+   "conditions": [
+    "else[if (ck(48, 11, 0))]",
+    "else[if (ck(7, 35, 1))]",
+    "else[if (cmp(0, 27, CMP_EQ, 513))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "201",
+   "monster": "worm",
+   "conditions": [
+    "else[if (ck(3, 141, 0))]",
+    "if (memb_cmp(0, 15, 4, 2, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))",
+    "if (ck(3, 175, 1) && ck(3, 176, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))",
+    "else[if (ck(3, 175, 1) && ck(3, 176, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "if (ck(4, 3, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]",
+    "if (ck(3, 175, 1) && ck(3, 176, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 26, CMP_EQ, 3) && ck(3, 32, 1) && ck(3, 175, 0) && ck(3, 43, 0))",
+    "else[if (ck(4, 3, 0))]",
+    "else[if (ck(3, 175, 1) && ck(3, 176, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "if (ck(7, 36, 1) && ck(7, 37, 1))",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "else[if (ck(7, 36, 1) && ck(7, 37, 1))]",
+    "else[if (cmp(0, 6, CMP_EQ, 32))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 539))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 5))",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "if (ck(7, 36, 1) && ck(7, 37, 1))",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 539))",
+    "else[if (ck(7, 36, 1) && ck(7, 37, 1))]",
+    "else[if (cmp(0, 6, CMP_EQ, 32))]",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 539))]",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "202",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6) && ck(5, 131, 0))",
+    "if (cmp(0, 42, CMP_EQ, 5))",
+    "if (cmp(0, 27, CMP_EQ, 539))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "203",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(4, 3, 0))",
+    "if (ck(3, 108, 0) && cmp(0, 27, CMP_EQ, 514))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "203",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(4, 3, 0))",
+    "if (ck(3, 109, 0) && cmp(0, 27, CMP_EQ, 514))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (cmp(0, 31, CMP_EQ, 516))",
+    "if (cmp(0, 27, CMP_EQ, 515))",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (cmp(0, 31, CMP_EQ, 516))",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]",
+    "if (cmp(0, 27, CMP_EQ, 531))",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (cmp(0, 31, CMP_EQ, 516))",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "else[if (ck(3, 123, 0))]",
+    "if (ck(5, 131, 0))",
+    "if (ck(3, 150, 0))",
+    "if (cmp(0, var_2A, 0, 4))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "if (cmp(0, 7, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 4, 1))]",
+    "if (ck(47, 7, 0))",
+    "else[if (cmp(0, 7, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "if (cmp(0, 27, CMP_EQ, 531))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "204",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 4, 1))",
+    "if (ck(3, 123, 0))",
+    "else[if (cmp(0, 27, CMP_EQ, 531))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 4))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "if (cmp(0, 27, CMP_EQ, 529))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 4))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 4))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6))",
+    "else[if (ck(4, 14, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "if (cmp(0, 27, CMP_EQ, 529))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6))",
+    "else[if (ck(4, 14, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 6))",
+    "else[if (ck(4, 14, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 3))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "if (cmp(0, 27, CMP_EQ, 529))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 3))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "if (cmp(0, 27, CMP_EQ, 515))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "205",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 3))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, 31, CMP_EQ, 517))",
+    "else[if (cmp(0, 27, CMP_EQ, 529))]",
+    "else[if (cmp(0, 27, CMP_EQ, 515))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 530) && ck(3, 16, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 529))",
+    "else[if (ck(5, 39, 1))]",
+    "if (cmp(0, 39, CMP_EQ, 4))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "206",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 32, 1) && cmp(0, 26, CMP_EQ, 8) && ck(3, 177, 0))]",
+    "if (ck(3, 12, 0) && ck(3, 13, 1))",
+    "if (cmp(0, 27, CMP_EQ, 529))",
+    "else[if (ck(5, 39, 1))]",
+    "else[if (cmp(0, 39, CMP_EQ, 4))]",
+    "if (cmp(0, 39, CMP_EQ, 3))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "if (cmp(0, 5, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "if (cmp(0, 5, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "dog",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "if (cmp(0, 5, CMP_EQ, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "207",
+   "monster": "crow",
+   "conditions": [
+    "if (ck(1, 1, 0))",
+    "if (ck(7, 67, 1))",
+    "if (ck(3, 143, 0))",
+    "else[if (cmp(0, 5, CMP_EQ, 0))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "if (ck(0, 27, 1))",
+    "if (ck(3, 134, 0))",
+    "if (cmp(0, 27, CMP_NE, 519))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "else[if (ck(0, 27, 1))]",
+    "if (ck(3, 30, 1))",
+    "if (ck(3, 159, 1))",
+    "if (ck(5, 159, 1) && ck(5, 160, 1) && ck(5, 161, 1) && ck(5, 162, 1))",
+    "if (ck(3, 134, 0))",
+    "if (cmp(0, 27, CMP_NE, 519))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "if (ck(0, 27, 1))",
+    "if (ck(3, 134, 0))",
+    "else[if (cmp(0, 27, CMP_NE, 519))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "208",
+   "monster": "zombie",
+   "conditions": [
+    "else[if (ck(4, 0, 1))]",
+    "else[if (ck(0, 27, 1))]",
+    "if (ck(3, 30, 1))",
+    "if (ck(3, 159, 1))",
+    "if (ck(5, 159, 1) && ck(5, 160, 1) && ck(5, 161, 1) && ck(5, 162, 1))",
+    "if (ck(3, 134, 0))",
+    "else[if (cmp(0, 27, CMP_NE, 519))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "if (cmp(0, 27, CMP_EQ, 524))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "if (cmp(0, 27, CMP_EQ, 524))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "if (cmp(0, 27, CMP_EQ, 524))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "else[if (cmp(0, 27, CMP_EQ, 524))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "else[if (cmp(0, 27, CMP_EQ, 524))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(4, 0, 0))",
+    "else[if (ck(48, 12, 0))]",
+    "else[if (cmp(0, 27, CMP_EQ, 524))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "if (ck(3, 19, 0))",
+    "if (ck(3, 32, 1))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20B",
+   "monster": "zombie",
+   "conditions": [
+    "if (cmp(0, 27, CMP_EQ, 522))",
+    "else[if (ck(3, 19, 0))]",
+    "if (ck(3, 202, 0))",
+    "if (ck(4, 0, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (ck(47, 86, 1))",
+    "else[if (ck(48, 86, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 3))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 86, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 3))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "if (ck(47, 86, 1))",
+    "else[if (ck(48, 86, 0))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 4))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "20F",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(1, 1, 1))",
+    "else[if (ck(47, 86, 1))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_27, 0, 4))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "215",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(4, 2, 1))",
+    "if (ck(3, 58, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "218",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 512))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "21A",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "else[if (cmp(0, 42, CMP_EQ, 3))]",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 292))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "21A",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 5))",
+    "if (ck(5, 114, 0))",
+    "else[if (cmp(0, 42, CMP_EQ, 3))]",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "else[if (cmp(0, 27, CMP_EQ, 292))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "301",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "else[if (ck(3, 112, 0) && ck(3, 81, 1))]",
+    "if (cmp(0, 31, CMP_EQ, 769))",
+    "if (cmp(0, 27, CMP_EQ, 768))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "301",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "else[if (ck(3, 112, 0) && ck(3, 81, 1))]",
+    "if (cmp(0, 31, CMP_EQ, 769))",
+    "else[if (cmp(0, 27, CMP_EQ, 768))]",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "302",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 769))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "302",
+   "monster": "nemesis",
+   "conditions": [
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (cmp(0, 42, CMP_EQ, 4))",
+    "if (cmp(0, 27, CMP_EQ, 772))",
+    "if (ck(3, 55, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "308",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 55, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 10))",
+    "if (cmp(0, 31, CMP_EQ, 776))",
+    "if (cmp(0, 27, CMP_EQ, 775))",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "308",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 55, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 10))",
+    "if (cmp(0, 31, CMP_EQ, 776))",
+    "else[if (cmp(0, 27, CMP_EQ, 775))]",
+    "if (cmp(0, var_2A, 0, 5))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 778))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 778))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 4))",
+    "if (cmp(0, var_1B, 0, 780))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "30B",
+   "monster": "nemesis",
+   "conditions": [
+    "else[if (ck(3, 138, 0))]",
+    "if (cmp(0, 39, CMP_EQ, 9))",
+    "if (ck(6, 20, 0))",
+    "if (cmp(0, var_2A, 0, 5))",
+    "if (cmp(0, var_1B, 0, 780))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "316",
+   "monster": "nemesis",
+   "conditions": [
+    "if (ck(3, 55, 1))",
+    "if (cmp(0, 39, CMP_EQ, 10) && cmp(0, 31, CMP_EQ, 790))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "zombie",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "if (ck(8, 42, 1))",
+    "if (ck(1, 5, 0))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "if (ck(3, 88, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "if (ck(48, 56, 1))"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "drain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "if (cmp(0, 27, CMP_EQ, 1283))",
+    "else[if (ck(8, 42, 0))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  },
+  {
+   "dataset": 2,
+   "rdt": "500",
+   "monster": "brain",
+   "conditions": [
+    "if (ck(3, 235, 0))",
+    "if (ck(3, 88, 1))",
+    "else[if (cmp(0, 27, CMP_EQ, 1283))]",
+    "else[if (ck(8, 42, 1))]",
+    "else[if (ck(3, 88, 1))]",
+    "if (ck(8, 101, 1))",
+    "else[if (ck(48, 56, 1))]"
+   ]
+  }
+ ]
+}
