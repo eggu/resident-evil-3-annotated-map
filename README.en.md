@@ -86,6 +86,11 @@ When reporting an issue, describe the location and what is missing or incorrect,
 
 To build from source, see the [development guide](docs/DEVELOPMENT.md).
 
+## Other map mods
+
+- [RE1 Annotated Map - Survivor's Notes](https://github.com/eggu/resident-evil-annotated-map) — Resident Evil (1996)
+- [RE2 Annotated Map - Survivor's Notes](https://github.com/eggu/resident-evil-2-annotated-map) — Resident Evil 2 (1998)
+
 ## Credits and rights
 
 Created by **커트씨**. An unofficial fan mod, unaffiliated with Capcom or Classic REbirth. Source code is under the [MIT License](LICENSE). References and font credits are listed in [NOTICE](NOTICE.md).
