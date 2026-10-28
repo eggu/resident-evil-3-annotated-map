@@ -23,7 +23,7 @@ A Korean/English ASI map mod for the original Resident Evil 3 PC release (Source
 
 ## Visibility and defaults
 
-A new configuration starts in **Korean, name size 100%, opacity 70%, visited rooms only**. Monsters start off; other categories start on. Press `8` to change scope. **All rooms** reveals unexplored rooms and items and contains spoilers.
+A new configuration starts in **English, name size 100%, opacity 70%, visited rooms only, with only Rooms on**. Press `9` for Korean and `2`–`7` to turn on other categories. Press `8` to change scope. **All rooms** reveals unexplored rooms and items and contains spoilers.
 
 ## Installation (Windows · Steam)
 
@@ -72,7 +72,7 @@ Keys work on the map screen only. The legend shows the current state.
 | 4 | Documents and maps |
 | 5 | Puzzles and Live Selections |
 | 6 | Common items (ammo, healing, ribbons, gunpowder) |
-| 7 | Monsters (off by default) |
+| 7 | Enemies |
 | 8 | Visited → revealed by an area map → all rooms |
 | 9 | Korean / English |
 | - / = (+), numpad - / + | Name size in 10% steps (50–150%) |

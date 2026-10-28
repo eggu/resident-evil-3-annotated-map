@@ -44,8 +44,8 @@ def main():
             ['문서' if ko else 'Page'], [[f'[{e[1 if ko else 2]}]({e[0]}{suffix})'] for e in entries]) +
             '\n\n[README](../../README' + suffix + ')')
         write('01-native-map', entries[0][1 if ko else 2],
-              ('게임 자체의 지도에 주석을 겹칩니다. `8`은 방문 → 지역 지도로 공개 → 전체를 순환합니다. 전체는 미방문 윤곽도 공개하지만 층·진행별 원작 방 선택을 없애지 않습니다. 기본은 한국어·방문 범위·이름100%·불투명도70%, 몬스터만 끔입니다.\n\n`0`은 주석 전체, `1`–`7`은 분류, `9`는 언어입니다. 이름 크기는 -/=, 불투명도는 Shift와 함께 조절합니다. RE1 전용 전체 화면 지도·RE2 랭크 기능은 없습니다.' if ko else
-               'Annotations overlay the native map. `8` cycles visited → revealed by an area map → all. All reveals unexplored outlines but preserves native floor/story variants. Defaults: Korean, visited scope, size100%, opacity70%; monsters off, other categories on.\n\n`0` toggles all, `1`–`7` categories, `9` language. -/= changes size; hold Shift for opacity. No RE1 full-screen map or RE2 rank feature.'))
+              ('게임 자체의 지도에 주석을 겹칩니다. `8`은 방문 → 지역 지도로 공개 → 전체를 순환합니다. 전체는 미방문 윤곽도 공개하지만 층·진행별 원작 방 선택을 없애지 않습니다. 기본은 영어·방문 범위·이름100%·불투명도70%, 방 이름만 켬입니다.\n\n`0`은 주석 전체, `1`–`7`은 분류, `9`는 언어입니다. 이름 크기는 -/=, 불투명도는 Shift와 함께 조절합니다. RE1 전용 전체 화면 지도·RE2 랭크 기능은 없습니다.' if ko else
+               'Annotations overlay the native map. `8` cycles visited → revealed by an area map → all. All reveals unexplored outlines but preserves native floor/story variants. Defaults: English, visited scope, size100%, opacity70%; only Rooms on.\n\n`0` toggles all, `1`–`7` categories, `9` language. -/= changes size; hold Shift for opacity. No RE1 full-screen map or RE2 rank feature.'))
         write('02-data-pipeline', entries[1][1 if ko else 2], caveat + '\n\n' +
               ('원본 RDT → 외부 SCD 디컴파일 → 방 데이터/호출 조건 → 지도 좌표·표식 → atlas/ASI 순서입니다. 이 위키는 `python3 tools/gen_wiki.py`로 생성합니다.\n\n' if ko else
                'Pipeline: original RDT → external SCD decompiler → room data/call predicates → map coordinates/markers → atlas/ASI. Regenerate with `python3 tools/gen_wiki.py`.\n\n') +

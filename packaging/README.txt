@@ -47,7 +47,7 @@ rebirth/
 | 4 | 문서·지도 |
 | 5 | 퍼즐·Live Selection |
 | 6 | 일반 아이템(탄약·회복·리본·화약) |
-| 7 | 적(기본 끔) |
+| 7 | 적 |
 | 8 | 방문한 방 → 공개된 방(지역 지도 획득) → 모든 방 |
 | 9 | 한국어 / English |
 | - / = (+), 숫자패드 - / + | 이름 크기 10%씩(50–150%) |
@@ -116,7 +116,7 @@ Keys work on the map screen only. The legend shows the current state.
 | 4 | Documents and maps |
 | 5 | Puzzles and Live Selections |
 | 6 | Common items (ammo, healing, ribbons, gunpowder) |
-| 7 | Enemies (off by default) |
+| 7 | Enemies |
 | 8 | Visited → revealed by an area map → all rooms |
 | 9 | Korean / English |
 | - / = (+), numpad - / + | Name size in 10% steps (50–150%) |

@@ -39,7 +39,7 @@ void *__cdecl memset(void *d, int c, size_t n) { unsigned char *p = d; while (n-
 /* ---------- settings */
 enum { T_ALL, T_ROOMS, T_LOCKS, T_KEY, T_DOCS, T_PUZZLES, T_COMMON, T_MONSTERS, T_COUNT };
 static const char *const toggle_names[T_COUNT] = {"All", "Rooms", "Locks", "KeyItems", "Documents", "Puzzles", "CommonItems", "Monsters"};
-static const int toggle_default[T_COUNT] = {1, 1, 1, 1, 1, 1, 1, 0};
+static const int toggle_default[T_COUNT] = {1, 1, 0, 0, 0, 0, 0, 0};   /* RE1 parity: Rooms only */
 static int toggles[T_COUNT], scope = 1, korean, name_size = 100, name_opacity = 70, name_clut_dirty;   /* opacity: percent, 10..100 step 10 */
 static char ini_path[MAX_PATH], log_path[MAX_PATH];
 static unsigned log_lines;
@@ -72,7 +72,7 @@ static void load_settings(void) {
     if (name_size > 150) name_size = 150;
     name_size = (name_size + 5) / 10 * 10;
     char lang[8];
-    GetPrivateProfileStringA("AnnotatedMap", "Language", "ko", lang, sizeof lang, ini_path);
+    GetPrivateProfileStringA("AnnotatedMap", "Language", "en", lang, sizeof lang, ini_path);
     korean = lang[0] != 'e';
     /* Name pages' HD replacements bake this opacity in (one file per 10% step), see tools/build_assets.py. */
     name_opacity = (GetPrivateProfileIntA("AnnotatedMap", "NameOpacity", 70, ini_path) + 5) / 10 * 10;
