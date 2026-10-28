@@ -25,29 +25,15 @@ A Korean/English ASI map mod for the original Resident Evil 3 PC release (Source
 
 A new configuration starts in **English, name size 100%, opacity 70%, visited rooms only, with only Rooms on**. Press `9` for Korean and `2`–`7` to turn on other categories. Press `8` to change scope. **All rooms** reveals unexplored rooms and items and contains spoilers.
 
-## Installation (Windows · Steam)
+## Installation
 
-### 1. Prepare the game
-
-1. Install **Resident Evil 3 Nemesis (1999)** in Steam.
-2. Download the **Steam Enhancement Pack** from [Mulderland](https://www.mulderland.com/en/games/resident-evil-3-nemesis) and follow its installer. It provides Classic REbirth, the mod loader and HD textures needed for the map mod.
-3. Enable **Graphical improvements** (HD textures). If you already use this pack, you do not need to reinstall it.
-
-### 2. Open the game folder
-
-Right-click the game in your Steam library and choose **Manage → Browse local files**. Open the **`rebirth` folder** inside. You should see `BIOHAZARD(R) 3 PC.exe` there.
-
-### 3. Copy the map mod
-
-1. Close the game.
-2. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest), right-click it and choose **Extract All**. `Source code` is not the install package.
-3. Copy **`RE3.AnnotatedMap.asi` and the `hires` folder** from the extracted files into `rebirth`. Merge the folders and replace matching files. If you use another HD mod, back up your existing `hires` folder first.
-4. Launch the game through Steam as usual and choose **Classic REbirth**. Open the in-game map to see the annotations. The Korean translation mod is not required.
-
-The resulting folder should look like this:
+1. Install **Classic REbirth** for Resident Evil 3 first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
+2. Close the game. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest) and extract it. `Source code` is not the install package.
+3. Copy **`RE3.AnnotatedMap.asi` and the `hires` folder** into the game folder containing `BIOHAZARD(R) 3 PC.exe`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first.
+4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
 ```text
-rebirth/
+game folder/
 ├─ BIOHAZARD(R) 3 PC.exe
 ├─ RE3.AnnotatedMap.asi
 └─ hires/

@@ -25,29 +25,15 @@
 
 새 설정은 **영어, 이름 크기 100%, 불투명도 70%, 방문한 방만 표시, 방 이름만 켬**으로 시작합니다. `9`로 한국어로 바꾸고, `2`–`7`로 다른 항목을 켭니다. `8`로 범위를 바꿉니다. **모든 방**은 미방문 구역과 아이템을 미리 보여주므로 스포일러가 포함됩니다.
 
-## 설치 (Windows · Steam)
+## 설치
 
-### 1. 게임 준비
-
-1. Steam에서 **Resident Evil 3 Nemesis (1999)**를 설치합니다.
-2. [Mulderland](https://www.mulderland.com/en/games/resident-evil-3-nemesis)에서 **Steam Enhancement Pack**을 받아 안내에 따라 설치합니다. 지도 모드에 필요한 Classic REbirth와 모드 로더, HD 텍스처를 함께 준비할 수 있습니다.
-3. 설치 항목에서 **Graphical improvements**(HD 텍스처)를 켭니다. 이미 이 팩을 사용 중이면 다시 설치하지 않아도 됩니다.
-
-### 2. 게임 폴더 열기
-
-Steam 라이브러리에서 게임을 마우스 오른쪽 버튼으로 클릭하고 **관리 → 로컬 파일 탐색**을 선택합니다. 열린 폴더 안의 **`rebirth` 폴더**를 여세요. `BIOHAZARD(R) 3 PC.exe`가 보이면 맞는 위치입니다.
-
-### 3. 지도 모드 복사
-
-1. 게임을 종료합니다.
-2. [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest)에서 `RE3-Annotated-Map-<버전>.zip`을 받은 뒤, 마우스 오른쪽 버튼으로 클릭해 **모두 압축 풀기**를 선택합니다. `Source code`는 설치 파일이 아닙니다.
-3. 압축을 푼 폴더의 **`RE3.AnnotatedMap.asi` 파일과 `hires` 폴더**를 위에서 연 `rebirth` 폴더에 복사합니다. 기존 `hires` 폴더와 합치고 같은 이름의 파일은 교체합니다. 다른 HD 모드를 사용한다면 먼저 기존 `hires` 폴더를 백업하세요.
-4. 평소처럼 Steam에서 게임을 실행하고 **Classic REbirth**로 시작합니다. 게임 안에서 지도를 열면 표시됩니다. 한글 번역 모드는 필수가 아닙니다.
-
-복사 후 폴더 모양은 다음과 같습니다.
+1. **Classic REbirth**(바이오하자드 3용, 1.0.3에서 확인)를 먼저 설치합니다. [공식 다운로드](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
+2. 게임을 종료하고 [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest)에서 `RE3-Annotated-Map-<버전>.zip`을 받아 압축을 풉니다. `Source code`는 설치 파일이 아닙니다.
+3. **`RE3.AnnotatedMap.asi` 파일과 `hires` 폴더**를 `BIOHAZARD(R) 3 PC.exe`가 있는 게임 폴더에 복사합니다. 기존 `hires` 폴더가 있으면 합치고, 같은 이름의 파일은 교체합니다. 다른 HD 모드를 사용한다면 먼저 기존 `hires` 폴더를 백업하세요.
+4. Classic REbirth로 게임을 실행하고 지도를 열면 표시됩니다. 한글 번역 모드는 필수가 아닙니다.
 
 ```text
-rebirth/
+게임 폴더/
 ├─ BIOHAZARD(R) 3 PC.exe
 ├─ RE3.AnnotatedMap.asi
 └─ hires/
