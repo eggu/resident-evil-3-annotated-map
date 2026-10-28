@@ -27,8 +27,6 @@
 
 ## 설치 (Windows · Steam)
 
-> 배포 ZIP은 준비 중입니다. 릴리스가 올라오기 전까지는 [개발 안내](docs/DEVELOPMENT.md)를 따라 직접 빌드해야 합니다.
-
 ### 1. 게임 준비
 
 1. Steam에서 **Resident Evil 3 Nemesis (1999)**를 설치합니다.
@@ -42,7 +40,7 @@ Steam 라이브러리에서 게임을 마우스 오른쪽 버튼으로 클릭하
 ### 3. 지도 모드 복사
 
 1. 게임을 종료합니다.
-2. 지도 모드 ZIP을 마우스 오른쪽 버튼으로 클릭하고 **모두 압축 풀기**를 선택합니다. `Source code`는 설치 파일이 아닙니다.
+2. [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest)에서 `RE3-Annotated-Map-<버전>.zip`을 받은 뒤, 마우스 오른쪽 버튼으로 클릭해 **모두 압축 풀기**를 선택합니다. `Source code`는 설치 파일이 아닙니다.
 3. 압축을 푼 폴더의 **`RE3.AnnotatedMap.asi` 파일과 `hires` 폴더**를 위에서 연 `rebirth` 폴더에 복사합니다. 기존 `hires` 폴더와 합치고 같은 이름의 파일은 교체합니다. 다른 HD 모드를 사용한다면 먼저 기존 `hires` 폴더를 백업하세요.
 4. 평소처럼 Steam에서 게임을 실행하고 **Classic REbirth**로 시작합니다. 게임 안에서 지도를 열면 표시됩니다. 한글 번역 모드는 필수가 아닙니다.
 

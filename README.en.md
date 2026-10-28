@@ -27,8 +27,6 @@ A new configuration starts in **Korean, name size 100%, opacity 70%, visited roo
 
 ## Installation (Windows · Steam)
 
-> The release ZIP is in preparation. Until a release is published, build from source using the [development guide](docs/DEVELOPMENT.md).
-
 ### 1. Prepare the game
 
 1. Install **Resident Evil 3 Nemesis (1999)** in Steam.
@@ -42,7 +40,7 @@ Right-click the game in your Steam library and choose **Manage → Browse local 
 ### 3. Copy the map mod
 
 1. Close the game.
-2. Right-click the map mod ZIP and choose **Extract All**. `Source code` is not the install package.
+2. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest), right-click it and choose **Extract All**. `Source code` is not the install package.
 3. Copy **`RE3.AnnotatedMap.asi` and the `hires` folder** from the extracted files into `rebirth`. Merge the folders and replace matching files. If you use another HD mod, back up your existing `hires` folder first.
 4. Launch the game through Steam as usual and choose **Classic REbirth**. Open the in-game map to see the annotations. The Korean translation mod is not required.
 

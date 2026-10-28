@@ -4,6 +4,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 NAME = 'RE3.AnnotatedMap.asi'
+# ponytail: Plant header reuses third-party HD glyphs; the native SD header is shown instead.
+EXCLUDED_HD = {'4D420B84.webp'}
 
 
 def main():
@@ -17,12 +19,15 @@ def main():
     version = (ROOT / 'VERSION').read_text().strip()
     dist = ROOT / 'dist'
     dist.mkdir(exist_ok=True)
-    package = dist / f'RE3-AnnotatedMap-{version}.zip'
+    package = dist / f'RE3-Annotated-Map-{version}.zip'
     with zipfile.ZipFile(package, 'w', zipfile.ZIP_DEFLATED) as z:
         z.write(build / NAME, NAME)
         for p in sorted((build / 'hires/misc').glob('*.webp')):
-            z.write(p, f'hires/misc/{p.name}')
+            if p.name not in EXCLUDED_HD:
+                z.write(p, f'hires/misc/{p.name}')
         z.write(ROOT / 'packaging/README.txt', 'README-AnnotatedMap.txt')
+        z.write(ROOT / 'LICENSE', 'LICENSE.txt')
+        z.write(ROOT / 'NOTICE.md', 'NOTICE.md')
     report = dict(version=version, asi_sha256=hashlib.sha256((build / NAME).read_bytes()).hexdigest(),
                   package=package.name, files=zipfile.ZipFile(package).namelist())
     (build / 'build-report.json').write_text(json.dumps(report, indent=1) + '\n')

@@ -63,7 +63,7 @@ rebirth/
 
 주황색 `!`는 퍼즐, 보라색 `?`는 Live Selection(선택 이벤트)입니다. 이벤트 표시는 대략적인 위치를 안내하며, 선택 결과는 알려주지 않습니다.
 
-몬스터 표시는 일부 출현을 빠뜨릴 수 있습니다. 네메시스가 같은 방에 있어도 표시되지 않을 수 있으며, 네메시스가 떨어뜨리는 아이템은 표시하지 않습니다.
+몬스터 표시는 일부 출현을 빠뜨릴 수 있습니다. 네메시스의 예정 출현 위치는 일부만 표시하며, 네메시스가 떨어뜨리는 아이템은 표시하지 않습니다.
 
 
 
@@ -132,7 +132,7 @@ Enlarged names may overlap.
 
 Orange `!` marks puzzles; purple `?` marks Live Selections (choice events). Event markers show approximate locations, not choice outcomes.
 
-Some monster encounters may be missing. Nemesis may not appear on the map even when in the same room. Items dropped by Nemesis are not shown.
+Some monster encounters may be missing. Only some upcoming Nemesis appearances are shown. Items dropped by Nemesis are not shown.
 
 
 
