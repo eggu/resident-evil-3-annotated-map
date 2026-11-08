@@ -36,7 +36,7 @@ zombies = [m for m in ms if m['rdt'] == '206' and m['kind'] == 'enemy']
 assert sum([] not in m['guard'] for m in zombies) >= 12 and any([55, 39, 6] in c for m in zombies for c in m['guard'])
 print('placeholder positions and shopping district encounters OK')
 
-computer = [m for m in ms if m["rdt"] == "11B" and m["kind"] == "puzzle" and "aot" not in m]
+computer = [m for m in ms if m["rdt"] == "11B" and m["kind"] == "puzzle" and m.get("aot") == 4]
 assert len(computer) == 1 and computer[0]["sets"] == 3, computer
 assert computer[0]["guard"] == [[[9, 27, 0]]], computer
 print("Sales Office computer puzzle: both datasets, hidden after unlock OK")

@@ -7,6 +7,7 @@ from unicorn.x86_const import UC_X86_REG_EDI, UC_X86_REG_ESP
 ROOT = Path(__file__).resolve().parents[1]
 t = runpy.run_path(str(ROOT / 'tests/test_native.py'))
 u, call, setup, prims = (t[k] for k in ('u', 'call', 'setup', 'prims'))
+PANELS = t['LEGEND_N'] + t['READOUT_N']   # legend and readout quads
 set_bit, visit, S = (t[k] for k in ('set_bit', 'visit', 'S'))
 em, projection = 0x22000000, 0x22008000
 u.mem_map(em, 0x9000)
@@ -83,7 +84,7 @@ def draw(flags=1, ai=0, life=100, kind=0x34, kill=255, page=0, stage=0, room=7, 
     u.mem_write(projection, struct.pack('<I', 4))
     u.mem_write(projection + 4 + cell * 8, struct.pack('<4h', *(proj[k] for k in ('mx', 'my', 'wx', 'wz'))))
     call('AnnotatedMapTestSet', 1, 3, 0)
-    for key in [*range(1, 7), *([] if monsters else [7]), *([] if all_on else [0])]:
+    for key in [*range(1, 8), *([] if monsters else [8]), *([] if all_on else [0])]:
         call('AnnotatedMapTestKeys', 1 << key)
         call('AnnotatedMapTestKeys', 0)
     call('AnnotatedMapTestDraw', S)
@@ -95,7 +96,7 @@ for kwargs in ({'actors': 0}, {'flags': 0}, {'ai': 128}, {'ai': 192}, {'life': 0
     assert draw(**kwargs)[0] == 0, kwargs
 for kwargs in ({}, {'ai': 64}, {'kind': 0x36}, {'kind': 0x38}, {'actors': 2}):
     count, (base, n) = draw(**kwargs)
-    assert count == 1 and n == 15, (kwargs, count, n)
+    assert count == 1 and n == PANELS + 1, (kwargs, count, n)
     q = bytes(u.mem_read(base, 40))
     assert struct.unpack_from('<hh', q, 8) == (156, 116)
     pg, su, sv, sw, sh = t['sprites'][t['head_ids'][7]]
@@ -108,7 +109,7 @@ for kind, head in known.items():
     count, (base, n) = draw(kind=kind)
     assert count == (head == 7), hex(kind)
     if head != 7: continue
-    assert n == 15, hex(kind)
+    assert n == PANELS + 1, hex(kind)
     q = bytes(u.mem_read(base, 40))
     pg, su, sv, sw, sh = t['sprites'][t['head_ids'][head]]
     assert (q[12], q[13], q[36], q[37], struct.unpack_from('<H', q, 22)[0]) == (su, sv, su + sw, sv + sh, pg + 1), hex(kind)

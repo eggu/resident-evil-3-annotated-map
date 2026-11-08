@@ -60,27 +60,29 @@ m = next(m for m in t['markers'] if m[0] == 2 and m[1:3] == (2, 1) and m[6] == 1
 assert m[4:6] == (334, 228), m
 set_bit(9, 21); assert run(2, scope=1)[2] == 0
 
-# Header settings: same x, separate rows, small dimensions, inside panel in both languages/extremes.
+# Readouts (RE0 layout): four rows bottom-right, values right-aligned in one column, inside the panel, in both
+# languages and at the setting extremes; the legend keeps its own box.
+P = t['LEGEND_N'] + t['READOUT_N']
 for lang in (0, 1):
     for size, opacity in itertools.product((50, 150), (10, 100)):
         while call('AnnotatedMapTestSize') < size: t['tap'](1 << 10)
         while call('AnnotatedMapTestSize') > size: t['tap'](1 << 11)
-        while call('AnnotatedMapTestOpacity') < opacity: t['tap']((1 << 12) | (1 << 10))
-        while call('AnnotatedMapTestOpacity') > opacity: t['tap']((1 << 12) | (1 << 11))
+        while call('AnnotatedMapTestOpacity') < opacity: t['tap'](1 << 14)
+        while call('AnnotatedMapTestOpacity') > opacity: t['tap'](1 << 13)
         setup(2, zoom=100, ox=-320, oy=-228); run(2, scope=1, korean=lang)
         base, n = t['prims']()
-        quads = [bytes(u.mem_read(base + 40 * i, 40)) for i in range(n - 14, n)]
+        quads = [bytes(u.mem_read(base + 40 * i, 40)) for i in range(n - P, n)]
         xy = lambda q: struct.unpack_from('<hh', q, 8)
         end = lambda q: struct.unpack_from('<hh', q, 32)
-        panel, title, opacity, size_quad = quads[:4]
-        assert xy(opacity)[0] == xy(size_quad)[0] and xy(opacity)[1] < xy(size_quad)[1]
-        assert end(opacity)[1] <= xy(size_quad)[1]
-        assert max(end(opacity)[1], end(size_quad)[1]) <= xy(quads[4])[1]
-        for q in (opacity, size_quad):
-            assert xy(panel)[0] <= xy(q)[0] < end(q)[0] <= end(panel)[0]
-            assert xy(panel)[1] <= xy(q)[1] < end(q)[1] <= end(panel)[1]
-            assert end(q)[1] - xy(q)[1] < end(quads[4])[1] - xy(quads[4])[1]
-print(f'marker placement OK: {verified} alpha-backed points, {fallback} preserved native-rectangle fallbacks; visited-only Winder lock and bilingual compact header checked')
+        legend, ro = quads[:t['LEGEND_N']], quads[t['LEGEND_N']:]
+        panel, ro = ro[0], ro[1:]   # the readouts' own panel, then (hint, value) x 4
+        hints, values = ro[0::2], ro[1::2]
+        assert len({end(v)[0] for v in values}) == 1 and [xy(h)[1] for h in hints] == [xy(v)[1] for v in values]
+        assert all(6 <= xy(hints[k + 1])[1] - xy(hints[k])[1] <= 7 for k in range(3))   # 7 px rows drawn at 90%
+        for q in ro:
+            assert xy(panel)[0] <= xy(q)[0] < end(q)[0] <= end(panel)[0] and xy(panel)[1] <= xy(q)[1] < end(q)[1] <= end(panel)[1]
+        assert max(end(q)[0] for q in legend[3:14]) < min(xy(h)[0] for h in hints)   # to the right of the legend rows
+print(f'marker placement OK: {verified} alpha-backed points, {fallback} preserved native-rectangle fallbacks; visited-only Winder lock and bilingual readout panel checked')
 
 # Optional CPU reconstruction of the user's visited-only Clock Tower view; not a GPU screenshot.
 import os
@@ -90,8 +92,8 @@ if os.environ.get('PREVIEW'):
     set_bit(9, 21, False)
     while call('AnnotatedMapTestSize') > 100: t['tap'](1 << 11)
     while call('AnnotatedMapTestSize') < 100: t['tap'](1 << 10)
-    while call('AnnotatedMapTestOpacity') > 70: t['tap']((1 << 12) | (1 << 11))
-    while call('AnnotatedMapTestOpacity') < 70: t['tap']((1 << 12) | (1 << 10))
+    while call('AnnotatedMapTestOpacity') > 70: t['tap'](1 << 13)
+    while call('AnnotatedMapTestOpacity') < 70: t['tap'](1 << 14)
     atlas = [Image.open(ROOT / f'build/atlas-preview/page{i}-hd.png') for i in range(int(re.search(r'ATLAS_PAGES (\d+)', t['H'])[1]))]
     tim = Image.open(ROOT / 'local/map-preview/page2-tim.png')
     for lang in (0, 1):

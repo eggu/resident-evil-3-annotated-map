@@ -3,9 +3,10 @@ import json, runpy, struct
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 t = runpy.run_path(str(ROOT / 'tests/test_native.py'))
+PANELS = t['LEGEND_N'] + t['READOUT_N']   # legend and readout quads
 u, call, setup, run, set_bit, visit, native_room = [t[k] for k in ('u', 'call', 'setup', 'run', 'set_bit', 'visit', 'native_room')]
 markers = json.loads((ROOT / 'data/overlay.json').read_text())['markers']
-events = [m for m in markers if m['kind'] == 'live']
+events = [m for m in markers if m['kind'] == 'live' and m['event'] < 10]   # Live Selections; ids from 20 are story scenes (test_story_events.py)
 assert len(events) == 10 and {m['event'] for m in events} == set(range(10))
 assert all(m['sets'] == 3 for m in events)
 assert all(b not in (1, 2, 4) for m in events for clause in m['guard'] for b, n, v in clause)
@@ -38,6 +39,9 @@ scenarios = [
     (4, [(3, 219), (3, 88), (3, 199)], {9}),
     (5, [], set()),
 ]
+story = [m for m in markers if m['kind'] == 'live' and m['event'] >= 20]
+def story_visible(m, stage):
+    return all(any((t['get_bit'](b, n) == bool(v)) if b < 50 else stage <= v for b, n, v in clause) for clause in m['guard'])
 checks = 0
 for aj in (False, True):
     for stage, enabled, wanted in scenarios:
@@ -52,7 +56,8 @@ for aj in (False, True):
         for page in range(7):
             setup(page)
             want = sum(m['event'] in wanted and m['page'] == page and native_room(page, m['idx']) for m in events)
-            assert run(page, scope=3, aj=aj)[10] == want
+            want += len({(m['event'], m['idx'], m['x'], m['y']) for m in story if m['page'] == page and native_room(page, m['idx']) and story_visible(m, stage)})   # scenes (test_story_events.py); story variants of one spot draw once
+            got_ = run(page, scope=3, aj=aj)[10]; assert got_ == want, (page, aj, stage, enabled, got_, want, [m["event"] for m in story if m["page"] == page])
             checks += 1
 
 # Visited-only hides a first-entry warning. Revealed scope needs that page's map; all scope needs neither.
@@ -66,7 +71,7 @@ setup(page)
 assert run(page, scope=1)[10] == run(page, scope=2)[10] == 0
 u.mem_write(0xA67574, struct.pack('<I', 0x80000000 >> page))
 assert run(page, scope=2)[10] == run(page, scope=3)[10] == 1
-assert run(page, scope=3, toggles=(1, 1, 1, 1, 1, 0, 1, 1))[10] == 0
+assert run(page, scope=3, toggles=(1, 1, 1, 1, 1, 1, 0, 1, 1))[10] == 0
 
 # Temporary bits in another room must never hide a remote event.
 rail = next(m for m in events if m['event'] == 9)
@@ -93,15 +98,15 @@ for page in range(7):
     bounds = json.loads((ROOT / 'data/map-pages.json').read_text())[page]['bounds']
     cx, cy = (bounds[0] + bounds[2]) // 2, (bounds[1] + bounds[3]) // 2
     setup(page, zoom=50, ox=-cx // 2, oy=-cy // 2)
-    counts = run(page, scope=3, toggles=(1, 0, 0, 0, 0, 1, 0, 0))
+    counts = run(page, scope=3, toggles=(1, 0, 0, 0, 0, 1, 1, 0, 0))
     base, count = t['prims']()
     matches = {key: 0 for key in icons}
-    for i in range(count - 14):
+    for i in range(count - PANELS):
         q = bytes(u.mem_read(base + 40 * i, 40))
         for key, (pg, x, y, w, h) in icons.items():
             if (struct.unpack_from('<H', q, 22)[0] - 1, q[12], q[13]) == (pg, x, y): matches[key] += 1
     assert matches['PUZZLE_MARKER'] + matches['ROCKET_REWARD'] <= counts[6] and matches['SELECTION_MARKER'] <= counts[10]
-    assert sum(matches.values()) == count - 14  # all non-legend quads; viewport clipping can omit markers
+    assert sum(matches.values()) == count - PANELS  # all non-panel quads; viewport clipping can omit markers
     for key in seen: seen[key] += matches[key]
 assert all(seen.values()), seen
 print('Native punctuation UVs OK:', seen)
@@ -114,3 +119,13 @@ set_bit(2, 7); assert run(cable['page'], scope=3)[10] == before
 u.mem_write(0xA673C8, struct.pack('<H', 0x15))
 assert run(cable['page'], scope=3)[10] == before - 1
 print('Cable-car current-room cutscene lifetime OK')
+
+# EVENTS category (user 2026-11-08): Live Selections belong to [6] Events, no longer to [5] Puzzles; puzzles keep theirs.
+only_events = only_puzzles = 0
+for page in range(7):
+    setup(page, zoom=50, ox=0, oy=0)
+    ev = run(page, scope=3, toggles=(1, 0, 0, 0, 0, 0, 1, 0, 0)); pz = run(page, scope=3, toggles=(1, 0, 0, 0, 0, 1, 0, 0, 0))
+    assert ev[6] == 0 and pz[10] == 0, (page, ev, pz)   # events alone draw no puzzle marker, puzzles alone no selection marker
+    only_events += ev[10]; only_puzzles += pz[6]
+assert only_events > 0 and only_puzzles > 0, (only_events, only_puzzles)
+print('Events split from puzzles OK:', only_events, 'event markers,', only_puzzles, 'puzzle markers')

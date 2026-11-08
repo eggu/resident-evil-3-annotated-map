@@ -55,14 +55,14 @@ print('Plant: two floor labels; native floor/item/puzzle/locker lifecycle in bot
 # The locked rocket acquisition puzzle uses the reward weapon icon under key5.
 bit(9,34,False)
 setup(4,100,-325,-199);u.mem_write(native['S']+0xAD,bytes((1,0)))
-counts=run(4,scope=1,toggles=(1,0,0,0,0,1,0,0))
+counts=run(4,scope=1,toggles=(1,0,0,0,0,1,1,0,0))
 assert counts[6]==1 and counts[3]==0,counts
 base,count=native['prims']()
-assert count==15,count
+assert count==native['LEGEND_N']+native['READOUT_N']+1,count   # the reward icon and the panels
 q=bytes(u.mem_read(base,40))
 pg,x,y,w,h=native['sprites'][native['item_ids'][10]]
 assert (struct.unpack_from('<H',q,22)[0]-1,q[12],q[13])==(pg,x,y)
 bit(9,34,True)
-assert run(4,scope=1,toggles=(1,0,0,0,0,1,0,0))[6]==0
-assert run(4,scope=1,toggles=(1,0,0,1,0,0,0,0))[3]==1
+assert run(4,scope=1,toggles=(1,0,0,0,0,1,1,0,0))[6]==0
+assert run(4,scope=1,toggles=(1,0,0,1,0,0,0,0,0))[3]==1
 print('Rocket reward icon: actual UV on key5 before locker unlock, key3 pickup afterwards OK')

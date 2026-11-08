@@ -11,7 +11,7 @@ bit(3,112,True)
 bit(3,200,False)
 for aj, second, item_puzzles in itertools.product((False,True),repeat=3):
     bit(0,24,not second)
-    toggles=(1,1,1,int(item_puzzles),1,int(item_puzzles),1,1)
+    toggles=(1,1,1,int(item_puzzles),1,int(item_puzzles),1,1,1)
     bit(3,55,False)
     visit(2,1)
     setup(2,100,-330,-240)

@@ -67,7 +67,7 @@ for lang in (0,1):
             set_bit(3,125)
             setup(1,zoom=zoom,ox=-250,oy=-180)
             call('AnnotatedMapTestSet',1,3,lang);call('AnnotatedMapTestDraw',S)
-            heads=sprite_quads(t['head_ids'][7]);labels=sprite_quads(room_label[6+lang])
+            heads=sprite_quads(t['head_ids'][7]);labels=sprite_quads(room_label[8+lang])   # RoomLabel tuple: label ids at 8, 9
             assert len(heads)==len(labels)==1,(lang,size,zoom,len(heads),len(labels))
             hx,hy=struct.unpack_from('<hh',heads[0],8)
             lx,ly=struct.unpack_from('<hh',labels[0],8);right=struct.unpack_from('<h',labels[0],16)[0]
