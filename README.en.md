@@ -23,27 +23,33 @@ A Korean/English ASI map mod for the original Resident Evil 3 PC release (Source
 
 ## Visibility and defaults
 
-A new configuration starts in **English, name size 100%, opacity 70%, visited rooms only, with only Rooms on**. Press `9` for Korean and `2`–`7` to turn on other categories. Press `8` to change scope. **All rooms** reveals unexplored rooms and items and contains spoilers.
+A new configuration starts in **English, name size 100%, name opacity 70%, icon size and opacity 100%, visited rooms only, with only Rooms on and item names hidden**. Press `\` (the `₩` key on Korean keyboards) for Korean and `2`–`8` to turn on other categories. Press `9` to change scope. **All rooms** reveals unexplored rooms and items and contains spoilers.
 
 ## Installation
 
 1. Install **Classic REbirth** for Resident Evil 3 first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
 2. Close the game. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest) and extract it. `Source code` is not the install package.
-3. Copy **`RE3.AnnotatedMap.asi` and the `hires` folder** into the game folder containing `BIOHAZARD(R) 3 PC.exe`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first.
+3. Copy **`RE3.AnnotatedMap.asi` and the `hires` folder** into the game folder containing `BIOHAZARD(R) 3 PC.exe`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first. Also copy the default settings file `RE3.AnnotatedMap.ini` only if the game folder does not have one yet. Never overwrite an existing one (it holds your settings).
 4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
 ```text
 game folder/
 ├─ BIOHAZARD(R) 3 PC.exe
 ├─ RE3.AnnotatedMap.asi
+├─ RE3.AnnotatedMap.ini   (default settings; never overwrite an existing one)
 └─ hires/
    └─ misc/
       └─ the map mod's .webp files
 ```
 
-Keep `RE3.AnnotatedMap.ini` when upgrading to preserve your map settings.
+When upgrading, keep your existing `RE3.AnnotatedMap.ini`: do not delete it or overwrite it with the default file from the ZIP. It holds your map settings.
 
 Uninstall: remove `RE3.AnnotatedMap.asi`, `.ini`, `.log` and only the `.webp` files included in the map ZIP. Restore backed-up HD files if applicable. Do not delete the entire `hires` folder: other HD mods also use it.
+
+## Troubleshooting
+
+- **Nothing appears on the map**: the mod only runs on one build of the SourceNext `BIOHAZARD(R) 3 PC.exe` (PE timestamp `0x44642AAC`, image size `0xB01000`). On any other build it draws nothing and writes `Unsupported executable` to `RE3.AnnotatedMap.log`. Classic REbirth 1.0.3's `ddraw.dll` does not load `.asi` files, so a separate ASI loader (for example Ultimate ASI Loader named `dsound.dll`) is required.
+- **Map text or icons look blurry**: sharp text appears only when REbirth's HD texture feature reads the `.webp` files in `hires\misc\`. Without them the low-resolution text is simply scaled up. Check: (1) `config.ini` in the game folder has `HDTextures = 1` under `[DLL]` (with `HDTextures = 0` the map shows a large notice at the top left, `HD textures off: set HDTextures=1 in config.ini`, and `RE3.AnnotatedMap.log` gets a warning). (2) `hires\misc\` contains this mod's `.webp` files (copying only the `.asi` looks blurry). (3) REbirth's low-resolution and retro modes are off.
 
 ## Controls
 
@@ -56,23 +62,35 @@ Keys work on the map screen only. The legend shows the current state.
 | 2 | Locked doors and required keys |
 | 3 | Key items |
 | 4 | Documents and maps |
-| 5 | Puzzles and Live Selections |
-| 6 | Common items (ammo, healing, ribbons, gunpowder) |
-| 7 | Enemies |
-| 8 | Visited → revealed by an area map → all rooms |
-| 9 | Korean / English |
-| - / = (+), numpad - / + | Name size in 10% steps (50–150%) |
-| Shift + those keys | Name opacity in 10% steps (10–100%) |
+| 5 | Puzzles (devices that need an item or a solution) |
+| 6 | Events (story scenes that can spoil, Live Selections) |
+| 7 | Common items (ammo, healing, ribbons, gunpowder) |
+| 8 | Enemies |
+| 9 | Visited → revealed by an area map → all rooms |
+| \\(₩) | Korean / English |
+| - · = (+), numpad - · + | Name size in 10% steps (50–200%) |
+| [ · ] | Name opacity in 10% steps (10–100%) |
+| Shift + - · = (+) | Icon size in 10% steps (50–200%) |
+| Shift + [ · ] | Icon opacity in 10% steps (10–100%) |
+| H | Item names, 3 states per press: all → all except common items → hidden (keys, locked doors, documents, puzzles, common items) |
+| ~ | Fold or unfold the legend and the size and opacity readouts beside it |
 
 ## Settings
 
-Changes made on the map are saved automatically to `RE3.AnnotatedMap.ini` in the game folder. Close the game before opening it in Notepad to edit it manually.
+Changes made on the map are saved automatically to `RE3.AnnotatedMap.ini` in the game folder. Close the game before opening it in Notepad to edit it manually. Options available only in the file:
+
+- `Modifier=Shift`: the key held for icon size and opacity. It can be `Ctrl`.
+- `LockMarker=Door`: locked-door icons sit on the door. With `Unvisited` they sit in the room beyond the door (or on this side if only that room was visited).
+
+When upgrading from an earlier version, your settings are kept and key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
 
 Enlarged names may overlap.
 
 ## Marker guide
 
-Orange `!` marks puzzles; purple `?` marks Live Selections (choice events). Event markers show approximate locations, not choice outcomes.
+Room names sit at a fixed spot inside their room; a room too narrow for its name gets a short line to a spot outside. Icons and item names may cover room names. Puzzle markers show the name of the device (for example Book Stand, Fire Hydrant), not the item it needs. The same item listed twice at one spot is named once. Common item and enemy icons that fall on a key item or puzzle icon are hidden, and nothing is drawn under the legend or the readouts.
+
+Orange `!` marks puzzles; purple `?` marks events (Live Selection scenes and the spots where a movie or long cutscene starts). Events can spoil the story, so they start off (`6`) and disappear once you have passed them. Event markers have no name (the `H` toggle does not add one), only the purple `?`. Event markers show approximate locations, not choice outcomes. Only scenes that can be found in the game data are marked (some scenes are left out because the game gives no way to tell whether you have seen them); scenes that start by themselves when you enter a room are marked at the room's approximate centre.
 
 Some monster encounters may be missing. Only some upcoming Nemesis appearances are shown. Items dropped by Nemesis are not shown.
 

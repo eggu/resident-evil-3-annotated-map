@@ -4,7 +4,7 @@
 
 Spoilers. Rows are conditional variants from current data/overlay.json, not unique item counts or simultaneous spawns. Additional runtime gates apply; see the notes and technical documents.
 
-Orange ! = puzzle; purple ? = Live Selection. Room anchors are approximate; no activation-time or outcome prediction.
+Orange ! = puzzle; purple ? = event (Live Selections and story scenes, ids 20+: data/story-events.json). Room anchors are approximate; no activation-time or outcome prediction.
 
 | Cell | RDT | Room | Marker | x,y | sets | guard | metadata |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ Orange ! = puzzle; purple ? = Live Selection. Room anchors are approximate; no a
 | 5:3 | R113 | Evidence Room | puzzle | 245,196 | 3 | [[[9,1,0]],[[3,8,0]],[[9,1,0]]] | {"aot":8} |
 | 5:3 | R113 | Evidence Room | puzzle | 245,196 | 3 | [[[9,1,0]],[[3,8,1]],[[9,1,0]]] | {"aot":8} |
 | 0:27 | R11B | Sales Office | puzzle | 148,207 | 3 | [[[9,27,0]],[[9,27,0]]] | {"aot":18} |
-| 0:27 | R11B | Sales Office | puzzle | 147,200 | 3 | [[[9,27,0]]] | {} |
+| 0:27 | R11B | Sales Office | puzzle | 147,200 | 3 | [[[9,27,0]]] | {"aot":4} |
 | 0:9 | R123 | Forked Alley | Fire Hose | 312,191 | 3 | [[[3,28,0]],[[3,28,0]]] | {"item":53} |
 | 0:9 | R123 | Forked Alley | Fire Hose | 312,191 | 3 | [[[3,28,0]],[[3,28,0]]] | {"item":63} |
 | 0:9 | R123 | Forked Alley | Fire Hose | 312,191 | 3 | [[[3,28,0]],[[3,28,0]]] | {"item":62} |
@@ -32,12 +32,12 @@ Orange ! = puzzle; purple ? = Live Selection. Room anchors are approximate; no a
 | 1:12 | R20C | Cable Car Rear Carriage | Oil Additive | 134,103 | 3 | [[[4,2,1]],[[3,36,0]]] | {"item":54} |
 | 1:12 | R20C | Cable Car Rear Carriage | Power Cable | 134,103 | 3 | [[[4,2,1]],[[3,35,0]]] | {"item":51} |
 | 1:12 | R20C | Cable Car Rear Carriage | Fuse | 134,103 | 3 | [[[4,2,1]],[[3,34,0]]] | {"item":52} |
-| 1:13 | R20D | Gas Station Shop | puzzle | 210,23 | 3 | [[[3,47,0]]] | {} |
+| 1:13 | R20D | Gas Station Shop | puzzle | 210,23 | 3 | [[[3,47,0]]] | {"aot":2} |
 | 1:14 | R20E | Gas Station | Rust Hex Crank | 215,51 | 3 | [[[3,83,0]]] | {"item":95} |
 | 1:14 | R20E | Gas Station | Wrench | 215,51 | 3 | [[[3,83,0]]] | {"item":60} |
 | 1:17 | R211 | Restaurant | Fire Hook | 518,124 | 3 | [[[3,49,0]]] | {"item":50} |
-| 1:20 | R214 | Sub Station | puzzle | 561,305 | 3 | [[[3,92,0]]] | {} |
-| 1:20 | R214 | Sub Station | puzzle | 550,311 | 3 | [[[3,94,0],[3,95,0]]] | {} |
+| 1:20 | R214 | Sub Station | puzzle | 561,305 | 3 | [[[3,92,0]]] | {"aot":10} |
+| 1:20 | R214 | Sub Station | puzzle | 550,311 | 3 | [[[3,94,0],[3,95,0]]] | {"aot":11} |
 | 0:39 | R218 | Straight Alleyway | Wrench | 474,223 | 3 | [[[3,186,0]],[[7,65,0]]] | {"item":60} |
 | 0:39 | R218 | Straight Alleyway | Wrench | 474,223 | 3 | [[[7,65,0]],[[3,186,0]],[[3,186,0]],[[7,65,0]]] | {"item":60} |
 | 2:4 | R304 | Main Hall | puzzle | 400,183 | 3 | [[[3,136,0]]] | {"aot":14} |
@@ -52,7 +52,7 @@ Orange ! = puzzle; purple ? = Live Selection. Room anchors are approximate; no a
 | 2:9 | R309 | Clock Room | Obsidian Ball | 393,163 | 3 | [[[3,120,0]]] | {"item":71} |
 | 2:9 | R309 | Clock Room | Crystal Ball | 393,163 | 3 | [[[3,120,0]]] | {"item":72} |
 | 2:9 | R309 | Clock Room | puzzle | 372,153 | 3 | [[[3,55,1]],[[3,126,0]]] | {"aot":28} |
-| 2:12 | R30C | Cog Room | puzzle | 372,220 | 3 | [[[3,136,0]]] | {} |
+| 2:12 | R30C | Cog Room | puzzle | 372,220 | 3 | [[[3,136,0]]] | {"aot":9} |
 | 2:12 | R30C | Cog Room | Chronos Gear | 378,199 | 3 | [[[3,137,0]]] | {"item":78} |
 | 2:12 | R30C | Cog Room | Gold Gear | 378,199 | 3 | [[[3,137,0]]] | {"item":76} |
 | 2:12 | R30C | Cog Room | Silver Gear | 378,199 | 3 | [[[3,137,0]]] | {"item":77} |
@@ -65,7 +65,7 @@ Orange ! = puzzle; purple ? = Live Selection. Room anchors are approximate; no a
 | 6:6 | R406 | Room 402 | puzzle | 200,285 | 3 | [[[3,117,0]]] | {"aot":13} |
 | 6:11 | R40B | Experiment Room | puzzle | 218,258 | 3 | [[[3,179,0]]] | {"aot":1} |
 | 6:11 | R40B | Experiment Room | puzzle | 217,253 | 3 | [[[3,180,0]]] | {"aot":2} |
-| 3:13 | R40D | Fountain | puzzle | 288,238 | 3 | [[[3,224,0]]] | {} |
+| 3:13 | R40D | Fountain | puzzle | 288,238 | 3 | [[[3,224,0]]] | {"aot":2} |
 | 3:18 | R412 | Graveyard Cabin | Empty Lighter | 349,158 | 3 | [[[3,113,0]]] | {"item":67} |
 | 3:18 | R412 | Graveyard Cabin | Iron Pipe | 349,158 | 3 | [[[3,79,0]]] | {"item":61} |
 | 4:0 | R500 | Entry Corridor | Card Key | 289,221 | 3 | [[[3,234,0]]] | {"item":96} |
@@ -96,3 +96,26 @@ Orange ! = puzzle; purple ? = Live Selection. Room anchors are approximate; no a
 | 3:22 | R416 | Park Exit Walkway | live | 549,191 | 3 | [[[3,219,0]],[[54,24,4]]] | {"event":7,"anchor":"trigger"} |
 | 4:10 | R50A | Communications Tower | live | 293,278 | 3 | [[[3,88,1]],[[3,199,0]],[[54,24,4]]] | {"event":8,"anchor":"room"} |
 | 4:13 | R50D | Rail Cannon Room | live | 464,297 | 3 | [[[54,24,4]]] | {"event":9,"anchor":"trigger"} |
+| 0:28 | R11C | Sales Office Storeroom | event | 145,176 | 3 | [[[3,99,0]]] | {"event":20,"anchor":"room"} |
+| 1:11 | R20B | Cable Car Area | event | 56,134 | 3 | [[[3,19,0]],[[3,32,1]],[[3,202,0]]] | {"event":21,"anchor":"trigger"} |
+| 1:12 | R20C | Cable Car Rear Carriage | event | 124,103 | 3 | [[[3,30,0]]] | {"event":22,"anchor":"trigger"} |
+| 1:12 | R20C | Cable Car Rear Carriage | event | 110,103 | 3 | [[[3,31,0]]] | {"event":23,"anchor":"trigger"} |
+| 1:13 | R20D | Gas Station Shop | event | 217,24 | 3 | [[[3,43,0]]] | {"event":24,"anchor":"trigger"} |
+| 1:13 | R20D | Gas Station Shop | event | 217,24 | 3 | [[[3,45,0]]] | {"event":24,"anchor":"trigger"} |
+| 1:13 | R20D | Gas Station Shop | event | 216,35 | 3 | [[[3,44,0]]] | {"event":25,"anchor":"trigger"} |
+| 1:13 | R20D | Gas Station Shop | event | 224,24 | 3 | [[[3,46,0]]] | {"event":26,"anchor":"trigger"} |
+| 1:14 | R217 | Gas Station | event | 220,73 | 3 | [[[7,34,1]],[[3,157,0]]] | {"event":27,"anchor":"trigger"} |
+| 1:14 | R217 | Gas Station | event | 220,73 | 3 | [[[7,34,1]],[[3,44,1]],[[3,45,1]],[[3,157,0]]] | {"event":27,"anchor":"trigger"} |
+| 1:14 | R217 | Gas Station | event | 220,73 | 3 | [[[7,34,1]],[[3,44,1]],[[3,45,1]],[[7,34,0]],[[3,85,0]],[[3,157,0]]] | {"event":27,"anchor":"trigger"} |
+| 1:14 | R217 | Gas Station | event | 220,73 | 3 | [[[7,34,1]],[[3,43,1]],[[3,157,0]]] | {"event":27,"anchor":"trigger"} |
+| 1:14 | R217 | Gas Station | event | 220,73 | 3 | [[[7,34,1]],[[3,44,1]],[[3,45,1]],[[3,85,1]],[[3,157,0]]] | {"event":27,"anchor":"trigger"} |
+| 2:2 | R302 | Dining Room | event | 334,218 | 3 | [[[3,41,0]],[[3,167,0]]] | {"event":28,"anchor":"trigger"} |
+| 2:7 | R307 | Small Library | event | 416,216 | 3 | [[[3,41,1]],[[3,39,0]]] | {"event":29,"anchor":"trigger"} |
+| 2:4 | R316 | Main Hall | event | 369,208 | 3 | [[[8,54,1]],[[8,39,1]],[[3,122,0]]] | {"event":30,"anchor":"trigger"} |
+| 3:17 | R415 | Graveyard | event | 372,190 | 3 | [[[6,82,0]],[[8,28,1]],[[3,196,0]]] | {"event":31,"anchor":"trigger"} |
+| 3:17 | R415 | Graveyard | event | 372,204 | 3 | [[[6,82,0]],[[8,28,1]],[[3,196,0]]] | {"event":32,"anchor":"trigger"} |
+| 3:17 | R415 | Graveyard | event | 372,176 | 3 | [[[6,82,0]],[[8,28,1]],[[3,196,0]]] | {"event":33,"anchor":"trigger"} |
+| 3:0 | R417 | Park Alleyway | event | 349,241 | 3 | [[[8,39,1]],[[8,54,1]],[[3,187,0]]] | {"event":34,"anchor":"room"} |
+| 4:8 | R508 | Treatment Room Entry | event | 399,206 | 2 | [[[3,88,0]],[[0,28,1]],[[3,183,0]]] | {"event":35,"anchor":"trigger"} |
+| 4:8 | R508 | Treatment Room Entry | event | 399,206 | 3 | [[[3,88,0]],[[3,183,0]]] | {"event":35,"anchor":"trigger"} |
+| 4:14 | R50E | Helicopter Landing Zone | event | 464,248 | 3 | [[[0,17,0]]] | {"event":36,"anchor":"trigger"} |

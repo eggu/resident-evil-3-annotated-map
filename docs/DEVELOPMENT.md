@@ -8,11 +8,11 @@ local/.venv/bin/pip install capstone unicorn==2.1.4 ziglang pillow numpy
 local/.venv/bin/python build.py
 ```
 
-`build.py` compiles `src/re3_map.c` with the pinned `src/assets.h` and packages the HD files in `build/hires/misc/`. A fresh clone cannot regenerate every HD file: the Disused Plant map header needs `assets/map/clock-header-reference.webp`, which comes from an installed HD texture pack and is not included.
+`build.py` compiles `src/re3_map.c` with the pinned `src/assets.h` and packages the HD files in `build/hires/misc/`. `RE3_CANDIDATE=<n>` writes a test package `dist/RE3-Annotated-Map-<version>-candidate-<n>.zip` instead of the release ZIP; an existing ZIP is never overwritten unless `RE3_REPLACE=1`. A fresh clone cannot regenerate every HD file: the Disused Plant map header needs `assets/map/clock-header-reference.webp`, which comes from an installed HD texture pack and is not included.
 
 ## Data and assets
 
-Room data comes from the game's room scripts: `tools/rofs.py` extracts the archives, an external SCD decompiler produces scripts, and `tools/extract_scd.py` → `build_room_data.py` → `decode_map.py` → `build_overlay.py` → `pack_icons.py` → `build_assets.py` regenerate the overlay. Extracted game files stay in `local/` and are never committed. `tools/gen_wiki.py` regenerates `docs/wiki/` from the compiled overlay.
+Room data comes from the game's room scripts: `tools/rofs.py` extracts the archives, an external SCD decompiler produces scripts, and `tools/extract_scd.py` → `build_room_data.py` → `decode_map.py` → `build_overlay.py` → `pack_icons.py` → `build_assets.py` regenerate the overlay. `build_assets.py` fixes room names with `tools/room_layout.py` and stops when its checks fail; `build/room-layout-report.txt` lists names placed by a fallback. Extracted game files stay in `local/` and are never committed. `tools/gen_wiki.py` regenerates `docs/wiki/` from the compiled overlay.
 
 ## Tests
 
