@@ -207,6 +207,21 @@ def merge_variants(markers, tol=3):
     return [m for _, m in kept]
 
 
+def far_side(rooms, rid, door, table, pages):
+    """RE1 HD lock style (INI option): the matching door trigger in the destination room, as (idx, x, y) on the
+    same map page; omitted when the destination has no positioned door back or lies on another page."""
+    back = [d for d in rooms.get(door['target'], {}).get('doors', []) if d['target'] == rid and (d['w'] > 1 or d['d'] > 1)]
+    if not back:
+        return {}
+    stage, room = int(door['target'][0]) - 1, int(door['target'][1:], 16)
+    x, z = center(back[0])
+    found = [(p, i) for p, i, g in cells(stage, room, x, z, table, back[0]['floor']) if not g]
+    if len(found) != 1 or found[0][0] >= len(pages) or not pages[found[0][0]]['rooms'][found[0][1]]['parts']:
+        return {}
+    page, idx = found[0]
+    return dict(far=[page, idx, *project(pages[page]['rooms'][idx]['proj'], x, z)])
+
+
 def main():
     img = pe.Image()
     table = remap_table(img)
@@ -282,7 +297,8 @@ def main():
                     if spot is None:
                         continue
                 x, z = center(spot)
-                add('lock', ds, stage, room, x, z, d['cond'], d['callconds'], floor=spot['floor'], item=d['key'], lock=d['lock_id'] & 0x3F, to=d['target'])
+                add('lock', ds, stage, room, x, z, d['cond'], d['callconds'], floor=spot['floor'], item=d['key'], lock=d['lock_id'] & 0x3F, to=d['target'],
+                    **far_side(rooms, rid, d, table, pages))
             for a in r['aots']:
                 if a['path'] is None:
                     continue
@@ -297,14 +313,14 @@ def main():
                 elif a['sce'] == 'SCE_EVENT' and (rid, a['aot']) in (('20D', 2), ('30C', 9), ('40D', 2)):
                     # These real interaction areas invoke separate, positionless puzzle UIs.
                     pending = ['if (ck(3, 224, 0))'] if rid == '40D' else []
-                    add('puzzle', ds, stage, room, x, z, a['cond'] + pending, a['callconds'], floor=a['floor'])
+                    add('puzzle', ds, stage, room, x, z, a['cond'] + pending, a['callconds'], floor=a['floor'], aot=a['aot'])
                 elif rid == '214' and a['sce'] == 'SCE_EVENT' and a['aot'] in (10, 11):
                     # AOT 19 is a positionless voltage UI; AOT 11 invokes it, AOT 10 supplies power.
                     pending = 'if (ck(3, 92, 0))' if a['aot'] == 10 else 'else[if (ck(3, 94, 1) && ck(3, 95, 1))]'
-                    add('puzzle', ds, stage, room, x, z, a['cond'] + [pending], a['callconds'], floor=a['floor'])
+                    add('puzzle', ds, stage, room, x, z, a['cond'] + [pending], a['callconds'], floor=a['floor'], aot=a['aot'])
                 elif rid == '11B' and a['aot'] == 4 and a['sce'] == 'SCE_ITEMBOX':
                     # Computer password UI uses SCE_ITEMBOX; the storeroom opens at bank 9 bit 27.
-                    add('puzzle', ds, stage, room, x, z, a['cond'] + ['if (ck(9, 27, 0))'], a['callconds'], floor=a['floor'])
+                    add('puzzle', ds, stage, room, x, z, a['cond'] + ['if (ck(9, 27, 0))'], a['callconds'], floor=a['floor'], aot=a['aot'])
                 elif rid == '309' and a['aot'] == 28 and a['sce'] == 'SCE_FLAG_CHG':
                     # The bell's push area uses a flag trigger, not an item-use opcode.
                     add('puzzle', ds, stage, room, x, z, ['if (ck(3, 55, 1))', 'if (ck(3, 126, 0))'], aot=28)
@@ -365,6 +381,29 @@ def main():
                 else:
                     markers[key] = dict(kind='live', page=page, idx=idx, x=mx, y=my, guard=g, sets=ds,
                                         rdt=rid, event=event['id'], anchor='trigger' if event['aot'] is not None else 'room')
+    # Story scenes (tools/build_events.py): the same kind "live" marker, ids from 20, hidden by the scene's own done-flag.
+    for event in json.loads((ROOT / 'data/story-events.json').read_text())['events']:
+        rid = event['rdt']
+        stage, room = int(rid[0]) - 1, int(rid[1:], 16)
+        if event['kind'] == 'trigger':
+            x, z = event['x'] + event['w'] // 2, event['z'] + event['d'] // 2
+            variants = [(p, i, g, project(pages[p]['rooms'][i]['proj'], x, z)) for p, i, g in cells(stage, room, x, z, table, event['floor'])
+                        if p < len(pages) and i < len(pages[p]['rooms']) and pages[p]['rooms'][i]['parts']]
+        else:
+            variants = []
+            for p, i, g in cells(stage, room, 0, 0, table):
+                if p >= len(pages) or i >= len(pages[p]['rooms']) or not pages[p]['rooms'][i]['parts']:
+                    continue
+                counts = collections.Counter(tuple(q[:6]) for r in pages[p]['rooms'] for q in r['parts'])
+                variants.append((p, i, g, room_anchor(pages[p]['rooms'][i], {q for q, n in counts.items() if n > 1}, p, 8, 8)))
+        for page, idx, extra, (mx, my) in variants:
+            g = [[lit] for lit in event['guard']] + extra   # CNF: every literal is its own clause
+            key = json.dumps(['live', event['id'], page, idx, mx, my, g])
+            if key in markers:
+                markers[key]['sets'] |= event['sets']
+            else:
+                markers[key] = dict(kind='live', page=page, idx=idx, x=mx, y=my, guard=g, sets=event['sets'], rdt=rid, event=event['id'],
+                                    anchor=event['kind'])
     # R208 main_34 reconstructs local4:0 from these four persistent pickups;
     # main_1C creates Nemesis at 0,0 and main_1D/1F position/activate it later.
     page, idx = table[(1, 8)] if (1, 8) in table else (1, 8)

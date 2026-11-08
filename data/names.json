@@ -603,8 +603,8 @@
    "문서·지도"
   ],
   "puzzles": [
-   "Puzzles/Events",
-   "퍼즐·이벤트"
+   "Puzzles",
+   "퍼즐"
   ],
   "common": [
    "Items",
@@ -637,6 +637,18 @@
   "off": [
    "OFF",
    "꺼짐"
+  ],
+  "events": [
+   "Events",
+   "이벤트"
+  ],
+  "language": [
+   "Language",
+   "언어"
+  ],
+  "names": [
+   "Item names",
+   "아이템 이름"
   ]
  }
 }

@@ -21,6 +21,7 @@ def main():
         ('09-save-points', '타자기와 아이템 상자', 'Typewriters and item boxes', {'typewriter', 'itembox'}),
         ('11-monsters', '몬스터', 'Monsters', {'enemy'}),
     ]
+    story = {e['id']: e for e in json.loads((ROOT / 'data/story-events.json').read_text())['events']}
     assert len(rooms) == len(overlay['rooms']), 'duplicate map cells'
     assert all((m['page'], m['idx']) in rooms for m in markers), 'unknown marker cell'
     assert set.union(*(g[3] for g in groups if g[3])) == {m['kind'] for m in markers}
@@ -68,6 +69,8 @@ def main():
                     if item is not None:
                         pair = names['items'].get(str(item))
                         label = pair[1 if ko else 0] if pair else fallback[item] if item < len(fallback) else str(item)
+                    elif m['kind'] == 'live' and m.get('event', 0) >= 20:
+                        label = 'event' if not ko else '이벤트'   # no name on the map either: the room column says where
                     else:
                         label = m.get('monster', m['kind'])
                     meta = {k:v for k,v in m.items() if k not in {'page','idx','rdt','kind','x','y','sets','guard'}}
@@ -78,7 +81,7 @@ def main():
                 headers = ['Cell', 'RDT', '방' if ko else 'Room', '표식' if ko else 'Marker', 'x,y', 'sets', 'guard', 'metadata']
             intro = caveat
             if stem == '06-puzzles-events':
-                intro += '\n\nOrange ! = puzzle; purple ? = Live Selection. Room anchors are approximate; no activation-time or outcome prediction.'
+                intro += '\n\nOrange ! = puzzle; purple ? = event (Live Selections and story scenes, ids 20+: data/story-events.json). Room anchors are approximate; no activation-time or outcome prediction.'
             if stem == '11-monsters':
                 intro += '\n\nOrdinary monsters follow conditional scoped placements, including unloaded rooms. Unknown conditions are omitted. These rows exclude dynamically added live actors. Only some upcoming Nemesis appearances are shown.'
             write(stem, title_ko if ko else title_en, intro + '\n\n' + table(headers, rows))

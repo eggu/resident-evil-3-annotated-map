@@ -1,5 +1,5 @@
 """Build RE3.AnnotatedMap.asi (x86 Windows, zig cc) and the HD atlas files; never touches the game."""
-import importlib, shutil, subprocess, sys, zipfile, hashlib, json
+import importlib, os, shutil, subprocess, sys, zipfile, hashlib, json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -19,13 +19,18 @@ def main():
     version = (ROOT / 'VERSION').read_text().strip()
     dist = ROOT / 'dist'
     dist.mkdir(exist_ok=True)
-    package = dist / f'RE3-Annotated-Map-{version}.zip'
+    # RE3_CANDIDATE=<n> writes a numbered test candidate instead of the release ZIP, which is never rebuilt over.
+    candidate = os.environ.get('RE3_CANDIDATE')
+    package = dist / (f'RE3-Annotated-Map-{version}-candidate-{candidate}.zip' if candidate else f'RE3-Annotated-Map-{version}.zip')
+    if package.exists() and not os.environ.get('RE3_REPLACE'):
+        sys.exit(f'{package.name} exists; a built ZIP is never overwritten (RE3_REPLACE=1 to replace it on purpose)')
     with zipfile.ZipFile(package, 'w', zipfile.ZIP_DEFLATED) as z:
         z.write(build / NAME, NAME)
         for p in sorted((build / 'hires/misc').glob('*.webp')):
             if p.name not in EXCLUDED_HD:
                 z.write(p, f'hires/misc/{p.name}')
         z.write(ROOT / 'packaging/README.txt', 'README-AnnotatedMap.txt')
+        z.write(ROOT / 'packaging/RE3.AnnotatedMap.ini', 'RE3.AnnotatedMap.ini')   # defaults; an existing user INI is never replaced (README)
         z.write(ROOT / 'LICENSE', 'LICENSE.txt')
         z.write(ROOT / 'NOTICE.md', 'NOTICE.md')
     report = dict(version=version, asi_sha256=hashlib.sha256((build / NAME).read_bytes()).hexdigest(),

@@ -1,0 +1,978 @@
+{
+ "note": "Story scenes found in the room scripts (tools/build_events.py); markers use kind \"live\" with these ids. \"skipped\" lists scenes found but not placed.",
+ "events": [
+  {
+   "id": 20,
+   "kind": "room",
+   "rdt": "11C",
+   "aot": null,
+   "proc": "main_02",
+   "guard": [
+    [
+     3,
+     99,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    99
+   ],
+   "movie": 1,
+   "cuts": 1,
+   "voices": 1,
+   "name_en": "Sales Office Storeroom",
+   "name_ko": "영업소 창고",
+   "sets": 3
+  },
+  {
+   "id": 21,
+   "kind": "trigger",
+   "rdt": "20B",
+   "aot": 7,
+   "proc": "main_0B",
+   "x": -16009,
+   "z": -2735,
+   "w": 4550,
+   "d": 3280,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     19,
+     0
+    ],
+    [
+     3,
+     32,
+     1
+    ],
+    [
+     3,
+     202,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    202
+   ],
+   "movie": 0,
+   "cuts": 16,
+   "voices": 9,
+   "name_en": "Cable Car Area",
+   "name_ko": "노면전차 승강장",
+   "sets": 3
+  },
+  {
+   "id": 22,
+   "kind": "trigger",
+   "rdt": "20C",
+   "aot": 10,
+   "proc": "main_14",
+   "x": -1259,
+   "z": -26295,
+   "w": 770,
+   "d": 4600,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     30,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    30
+   ],
+   "movie": 0,
+   "cuts": 5,
+   "voices": 7,
+   "name_en": "Cable Car Rear Carriage",
+   "name_ko": "노면전차",
+   "sets": 3
+  },
+  {
+   "id": 23,
+   "kind": "trigger",
+   "rdt": "20C",
+   "aot": 11,
+   "proc": "main_1F",
+   "x": -7494,
+   "z": -26151,
+   "w": 800,
+   "d": 4500,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     31,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    31
+   ],
+   "movie": 0,
+   "cuts": 3,
+   "voices": 7,
+   "name_en": "Cable Car Rear Carriage",
+   "name_ko": "노면전차",
+   "sets": 3
+  },
+  {
+   "id": 24,
+   "kind": "trigger",
+   "rdt": "20D",
+   "aot": 4,
+   "proc": "main_0D",
+   "x": -26206,
+   "z": -17899,
+   "w": 5480,
+   "d": 4700,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     43,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    43
+   ],
+   "movie": 0,
+   "cuts": 5,
+   "voices": 1,
+   "name_en": "Gas Station Shop",
+   "name_ko": "주유소 매점",
+   "sets": 3
+  },
+  {
+   "id": 24,
+   "kind": "trigger",
+   "rdt": "20D",
+   "aot": 4,
+   "proc": "main_15",
+   "x": -26206,
+   "z": -17899,
+   "w": 5480,
+   "d": 4700,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     45,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    45
+   ],
+   "movie": 0,
+   "cuts": 9,
+   "voices": 10,
+   "name_en": "Gas Station Shop",
+   "name_ko": "주유소 매점",
+   "sets": 3
+  },
+  {
+   "id": 25,
+   "kind": "trigger",
+   "rdt": "20D",
+   "aot": 5,
+   "proc": "main_11",
+   "x": -26312,
+   "z": -21941,
+   "w": 4800,
+   "d": 2800,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     44,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    44
+   ],
+   "movie": 0,
+   "cuts": 6,
+   "voices": 4,
+   "name_en": "Gas Station Shop",
+   "name_ko": "주유소 매점",
+   "sets": 3
+  },
+  {
+   "id": 26,
+   "kind": "trigger",
+   "rdt": "20D",
+   "aot": 6,
+   "proc": "main_1D",
+   "x": -22053,
+   "z": -17619,
+   "w": 3790,
+   "d": 3800,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     46,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    46
+   ],
+   "movie": 0,
+   "cuts": 7,
+   "voices": 2,
+   "name_en": "Gas Station Shop",
+   "name_ko": "주유소 매점",
+   "sets": 3
+  },
+  {
+   "id": 27,
+   "kind": "trigger",
+   "rdt": "217",
+   "aot": 9,
+   "proc": "main_06",
+   "x": -7040,
+   "z": -16894,
+   "w": 5750,
+   "d": 5264,
+   "floor": 0,
+   "guard": [
+    [
+     7,
+     34,
+     1
+    ],
+    [
+     3,
+     157,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    157
+   ],
+   "movie": 1,
+   "cuts": 3,
+   "voices": 3,
+   "name_en": "Gas Station",
+   "name_ko": "주유소",
+   "sets": 3
+  },
+  {
+   "id": 27,
+   "kind": "trigger",
+   "rdt": "217",
+   "aot": 9,
+   "proc": "main_06",
+   "x": -7040,
+   "z": -16894,
+   "w": 5750,
+   "d": 5264,
+   "floor": 0,
+   "guard": [
+    [
+     7,
+     34,
+     1
+    ],
+    [
+     3,
+     44,
+     1
+    ],
+    [
+     3,
+     45,
+     1
+    ],
+    [
+     3,
+     157,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    157
+   ],
+   "movie": 1,
+   "cuts": 3,
+   "voices": 3,
+   "name_en": "Gas Station",
+   "name_ko": "주유소",
+   "sets": 3
+  },
+  {
+   "id": 27,
+   "kind": "trigger",
+   "rdt": "217",
+   "aot": 9,
+   "proc": "main_06",
+   "x": -7040,
+   "z": -16894,
+   "w": 5750,
+   "d": 5264,
+   "floor": 0,
+   "guard": [
+    [
+     7,
+     34,
+     1
+    ],
+    [
+     3,
+     44,
+     1
+    ],
+    [
+     3,
+     45,
+     1
+    ],
+    [
+     7,
+     34,
+     0
+    ],
+    [
+     3,
+     85,
+     0
+    ],
+    [
+     3,
+     157,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    157
+   ],
+   "movie": 1,
+   "cuts": 3,
+   "voices": 3,
+   "name_en": "Gas Station",
+   "name_ko": "주유소",
+   "sets": 3
+  },
+  {
+   "id": 27,
+   "kind": "trigger",
+   "rdt": "217",
+   "aot": 9,
+   "proc": "main_0E",
+   "x": -7040,
+   "z": -16894,
+   "w": 5750,
+   "d": 5264,
+   "floor": 0,
+   "guard": [
+    [
+     7,
+     34,
+     1
+    ],
+    [
+     3,
+     43,
+     1
+    ],
+    [
+     3,
+     157,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    157
+   ],
+   "movie": 1,
+   "cuts": 4,
+   "voices": 0,
+   "name_en": "Gas Station",
+   "name_ko": "주유소",
+   "sets": 3
+  },
+  {
+   "id": 27,
+   "kind": "trigger",
+   "rdt": "217",
+   "aot": 9,
+   "proc": "main_0E",
+   "x": -7040,
+   "z": -16894,
+   "w": 5750,
+   "d": 5264,
+   "floor": 0,
+   "guard": [
+    [
+     7,
+     34,
+     1
+    ],
+    [
+     3,
+     44,
+     1
+    ],
+    [
+     3,
+     45,
+     1
+    ],
+    [
+     3,
+     85,
+     1
+    ],
+    [
+     3,
+     157,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    157
+   ],
+   "movie": 1,
+   "cuts": 4,
+   "voices": 0,
+   "name_en": "Gas Station",
+   "name_ko": "주유소",
+   "sets": 3
+  },
+  {
+   "id": 28,
+   "kind": "trigger",
+   "rdt": "302",
+   "aot": 3,
+   "proc": "main_12",
+   "x": -10394,
+   "z": -6764,
+   "w": 4800,
+   "d": 1800,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     41,
+     0
+    ],
+    [
+     3,
+     167,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    167
+   ],
+   "movie": 0,
+   "cuts": 8,
+   "voices": 12,
+   "name_en": "Dining Room",
+   "name_ko": "식당",
+   "sets": 3
+  },
+  {
+   "id": 29,
+   "kind": "trigger",
+   "rdt": "307",
+   "aot": 8,
+   "proc": "main_0E",
+   "x": -26200,
+   "z": -17000,
+   "w": 7800,
+   "d": 6900,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     41,
+     1
+    ],
+    [
+     3,
+     39,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    39
+   ],
+   "movie": 0,
+   "cuts": 6,
+   "voices": 7,
+   "name_en": "Small Library",
+   "name_ko": "작은 서재",
+   "sets": 3
+  },
+  {
+   "id": 30,
+   "kind": "trigger",
+   "rdt": "316",
+   "aot": 2,
+   "proc": "main_18",
+   "x": -11237,
+   "z": -15462,
+   "w": 4500,
+   "d": 10900,
+   "floor": 0,
+   "guard": [
+    [
+     8,
+     54,
+     1
+    ],
+    [
+     8,
+     39,
+     1
+    ],
+    [
+     3,
+     122,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    122
+   ],
+   "movie": 0,
+   "cuts": 7,
+   "voices": 0,
+   "name_en": "Main Hall",
+   "name_ko": "중앙 홀",
+   "sets": 3
+  },
+  {
+   "id": 31,
+   "kind": "trigger",
+   "rdt": "415",
+   "aot": 12,
+   "proc": "main_08",
+   "x": 5466,
+   "z": -8117,
+   "w": 7800,
+   "d": 4500,
+   "floor": 0,
+   "guard": [
+    [
+     6,
+     82,
+     0
+    ],
+    [
+     8,
+     28,
+     1
+    ],
+    [
+     3,
+     196,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    196
+   ],
+   "movie": 1,
+   "cuts": 2,
+   "voices": 0,
+   "name_en": "Graveyard",
+   "name_ko": "묘지",
+   "sets": 3
+  },
+  {
+   "id": 32,
+   "kind": "trigger",
+   "rdt": "415",
+   "aot": 13,
+   "proc": "main_09",
+   "x": 5845,
+   "z": -14469,
+   "w": 7500,
+   "d": 5400,
+   "floor": 0,
+   "guard": [
+    [
+     6,
+     82,
+     0
+    ],
+    [
+     8,
+     28,
+     1
+    ],
+    [
+     3,
+     196,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    196
+   ],
+   "movie": 1,
+   "cuts": 2,
+   "voices": 0,
+   "name_en": "Graveyard",
+   "name_ko": "묘지",
+   "sets": 3
+  },
+  {
+   "id": 33,
+   "kind": "trigger",
+   "rdt": "415",
+   "aot": 14,
+   "proc": "main_09",
+   "x": 5745,
+   "z": -1919,
+   "w": 7500,
+   "d": 5400,
+   "floor": 0,
+   "guard": [
+    [
+     6,
+     82,
+     0
+    ],
+    [
+     8,
+     28,
+     1
+    ],
+    [
+     3,
+     196,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    196
+   ],
+   "movie": 1,
+   "cuts": 2,
+   "voices": 0,
+   "name_en": "Graveyard",
+   "name_ko": "묘지",
+   "sets": 3
+  },
+  {
+   "id": 34,
+   "kind": "room",
+   "rdt": "417",
+   "aot": null,
+   "proc": "main_07",
+   "guard": [
+    [
+     8,
+     39,
+     1
+    ],
+    [
+     8,
+     54,
+     1
+    ],
+    [
+     3,
+     187,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    187
+   ],
+   "movie": 1,
+   "cuts": 1,
+   "voices": 0,
+   "name_en": "Park Alleyway",
+   "name_ko": "공원 골목",
+   "sets": 3
+  },
+  {
+   "id": 35,
+   "kind": "trigger",
+   "rdt": "508",
+   "aot": 10,
+   "proc": "main_1D",
+   "x": -6771,
+   "z": -27715,
+   "w": 8271,
+   "d": 9215,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     88,
+     0
+    ],
+    [
+     0,
+     28,
+     1
+    ],
+    [
+     3,
+     183,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    183
+   ],
+   "movie": 0,
+   "cuts": 6,
+   "voices": 0,
+   "name_en": "Treatment Room Entry",
+   "name_ko": "처리실 입구",
+   "sets": 2
+  },
+  {
+   "id": 35,
+   "kind": "trigger",
+   "rdt": "508",
+   "aot": 10,
+   "proc": "main_1D",
+   "x": -6771,
+   "z": -27715,
+   "w": 8271,
+   "d": 9215,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     88,
+     0
+    ],
+    [
+     3,
+     183,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    183
+   ],
+   "movie": 0,
+   "cuts": 6,
+   "voices": 0,
+   "name_en": "Treatment Room Entry",
+   "name_ko": "처리실 입구",
+   "sets": 1
+  },
+  {
+   "id": 35,
+   "kind": "trigger",
+   "rdt": "508",
+   "aot": 10,
+   "proc": "main_1E",
+   "x": -6771,
+   "z": -27715,
+   "w": 8271,
+   "d": 9215,
+   "floor": 0,
+   "guard": [
+    [
+     3,
+     88,
+     0
+    ],
+    [
+     3,
+     183,
+     0
+    ]
+   ],
+   "done": [
+    3,
+    183
+   ],
+   "movie": 0,
+   "cuts": 6,
+   "voices": 0,
+   "name_en": "Treatment Room Entry",
+   "name_ko": "처리실 입구",
+   "sets": 2
+  },
+  {
+   "id": 36,
+   "kind": "trigger",
+   "rdt": "50E",
+   "aot": 0,
+   "proc": "main_09",
+   "x": -21037,
+   "z": -21154,
+   "w": 6500,
+   "d": 1800,
+   "floor": 0,
+   "guard": [
+    [
+     0,
+     17,
+     0
+    ]
+   ],
+   "done": [
+    0,
+    17
+   ],
+   "movie": 0,
+   "cuts": 4,
+   "voices": 8,
+   "name_en": "Helicopter Landing Zone",
+   "name_ko": "헬기 착륙장",
+   "sets": 3
+  }
+ ],
+ "skipped": [
+  {
+   "aot": 1,
+   "features": {
+    "cut_chg": 7,
+    "movie_on": 0,
+    "plc_motion": 17,
+    "sel_evt_on": 0,
+    "xa_on": 0
+   },
+   "name_en": "'T' Dumpster Alley",
+   "name_ko": "T자 쓰레기통 골목",
+   "proc": "main_0B",
+   "rdt": "10D",
+   "reason": "the scene sets no persistent flag, so it cannot be hidden once played"
+  },
+  {
+   "aot": 6,
+   "features": {
+    "cut_chg": 1,
+    "movie_on": 1,
+    "plc_motion": 3,
+    "sel_evt_on": 0,
+    "xa_on": 3
+   },
+   "name_en": "Cable Car Rear Carriage",
+   "name_ko": "노면전차",
+   "proc": "main_12",
+   "rdt": "215",
+   "reason": "the scene sets no persistent flag, so it cannot be hidden once played"
+  },
+  {
+   "aot": null,
+   "features": {
+    "cut_chg": 0,
+    "movie_on": 1,
+    "plc_motion": 0,
+    "sel_evt_on": 0,
+    "xa_on": 0
+   },
+   "name_en": "Cable Car Rear Carriage",
+   "name_ko": "노면전차",
+   "proc": "main_17",
+   "rdt": "215",
+   "reason": "starts when the room loads and sets no persistent flag"
+  },
+  {
+   "aot": null,
+   "features": {
+    "cut_chg": 0,
+    "movie_on": 1,
+    "plc_motion": 0,
+    "sel_evt_on": 0,
+    "xa_on": 0
+   },
+   "name_en": "Cable Car Rear Carriage",
+   "name_ko": "노면전차",
+   "proc": "main_34",
+   "rdt": "215",
+   "reason": "starts when the room loads and sets no persistent flag"
+  },
+  {
+   "aot": 21,
+   "features": {
+    "cut_chg": 21,
+    "movie_on": 0,
+    "plc_motion": 0,
+    "sel_evt_on": 0,
+    "xa_on": 0
+   },
+   "name_en": "Clock Room",
+   "name_ko": "시계실",
+   "proc": "main_46",
+   "rdt": "309",
+   "reason": "the scene sets no persistent flag, so it cannot be hidden once played"
+  },
+  {
+   "aot": null,
+   "features": {
+    "cut_chg": 21,
+    "movie_on": 1,
+    "plc_motion": 20,
+    "sel_evt_on": 0,
+    "xa_on": 5
+   },
+   "name_en": "30D",
+   "name_ko": "30D",
+   "proc": "main_08",
+   "rdt": "30D",
+   "reason": "starts when the room loads and sets no persistent flag"
+  },
+  {
+   "aot": null,
+   "features": {
+    "cut_chg": 1,
+    "movie_on": 1,
+    "plc_motion": 2,
+    "sel_evt_on": 0,
+    "xa_on": 1
+   },
+   "name_en": "Treatment Room Entry",
+   "name_ko": "처리실 입구",
+   "proc": "main_04",
+   "rdt": "508",
+   "reason": "starts when the room loads and sets no persistent flag"
+  },
+  {
+   "aot": 2,
+   "features": {
+    "cut_chg": 6,
+    "movie_on": 0,
+    "plc_motion": 0,
+    "sel_evt_on": 0,
+    "xa_on": 3
+   },
+   "name_en": "Rail Cannon Room",
+   "name_ko": "레일 캐논실",
+   "proc": "main_19",
+   "rdt": "50D",
+   "reason": "the scene sets no persistent flag, so it cannot be hidden once played"
+  }
+ ]
+}

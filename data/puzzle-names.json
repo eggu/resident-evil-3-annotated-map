@@ -1,0 +1,317 @@
+{
+ "_note": "Puzzle marker names (user decision 2026-11-07: the puzzle, not the item it needs). Key = \"RDT/AOT/item\" with - for none. M = room message text of the Korean HD project (translation/text/rooms.json; RDT table matched by stage, message count and table size), S = SCD handler of the interaction AOT (tools: local/scd/DATA_J), E = Evil Resource, P = earlier project analysis. English names are project wording (no English game text is extracted); Korean follows the game text where it names the object.",
+ "names": {
+  "105/-/43": {
+   "en": "Shutter",
+   "ko": "셔터",
+   "evidence": "M: 105 msg0 \"셔터가 닫혀 있다\", msg1 \"사각형으로 움푹 팬 곳이 있다\" (square crank recess)"
+  },
+  "108/-/66": {
+   "en": "Oil-Soaked Rope",
+   "ko": "기름 밴 로프",
+   "evidence": "M: 108 msg2 \"로프로 단단히 묶여 있어 … 로프에 기름이 배어 있는 것 같다\", msg3 lighter out of oil"
+  },
+  "108/-/67": {
+   "en": "Oil-Soaked Rope",
+   "ko": "기름 밴 로프",
+   "evidence": "M: 108 msg2 \"로프로 단단히 묶여 있어 … 로프에 기름이 배어 있는 것 같다\", msg3 lighter out of oil"
+  },
+  "109/-/53": {
+   "en": "Fire Hydrant",
+   "ko": "소화전",
+   "evidence": "M: 109/123 msg0-3 \"소화전이 있다 소방 호스가 있으면 …\", \"이 조인트만으로는 소화전을 쓸 수 없다\""
+  },
+  "109/-/62": {
+   "en": "Fire Hydrant",
+   "ko": "소화전",
+   "evidence": "M: 109/123 msg0-3 \"소화전이 있다 소방 호스가 있으면 …\", \"이 조인트만으로는 소화전을 쓸 수 없다\""
+  },
+  "123/-/53": {
+   "en": "Fire Hydrant",
+   "ko": "소화전",
+   "evidence": "M: 109/123 msg0-3 \"소화전이 있다 소방 호스가 있으면 …\", \"이 조인트만으로는 소화전을 쓸 수 없다\""
+  },
+  "123/-/62": {
+   "en": "Fire Hydrant",
+   "ko": "소화전",
+   "evidence": "M: 109/123 msg0-3 \"소화전이 있다 소방 호스가 있으면 …\", \"이 조인트만으로는 소화전을 쓸 수 없다\""
+  },
+  "123/-/63": {
+   "en": "Fire Hydrant",
+   "ko": "소화전",
+   "evidence": "M: 109/123 msg0-3 \"소화전이 있다 소방 호스가 있으면 …\", \"이 조인트만으로는 소화전을 쓸 수 없다\""
+  },
+  "218/-/60": {
+   "en": "Fire Hydrant",
+   "ko": "소화전",
+   "evidence": "M: 218 msg0 \"소화전이 있다 소방 호스가 볼트로 고정되어 있다\" (wrench)"
+  },
+  "113/8/-": {
+   "en": "Combination Lock",
+   "ko": "번호식 자물쇠",
+   "evidence": "S: R113 AOT8 main_0A -> main_0B digit entry, msg2-5 \"번호식 자물쇠 … 첫째 자리 숫자는?\", sets 9:1"
+  },
+  "11B/18/-": {
+   "en": "TV Monitor",
+   "ko": "TV 모니터",
+   "evidence": "S: R11B AOT18 main_0A message_on(26) \"리모컨을 사용하겠습니까?\"; M: msg20 \"TV 모니터다\""
+  },
+  "11B/4/-": {
+   "en": "Computer",
+   "ko": "컴퓨터",
+   "evidence": "S: R11B AOT4 SCE_ITEMBOX password UI (storeroom 9:27); M: msg23 \"보관실 출입은 컴퓨터로 관리되고 있습니다\""
+  },
+  "203/-/49": {
+   "en": "Battery Slot",
+   "ko": "배터리 슬롯",
+   "evidence": "M: 203 msg2 \"배터리를 넣는 슬롯이 있다\", msg3 \"배터리를 빼겠습니까?\""
+  },
+  "205/-/79": {
+   "en": "Book Stand",
+   "ko": "책 받침대",
+   "evidence": "User decision 2026-11-07 (example name); M: 205 msg0 \"주어진 지식을 여기에\" 무언가를 끼워 넣는 홈"
+  },
+  "205/-/80": {
+   "en": "Compass Stand",
+   "ko": "나침반 받침대",
+   "evidence": "M: 205 msg2 \"미래를 우리 손에\" 나침반이 끼워져 있던 홈 (parallel to Book Stand)"
+  },
+  "207/-/68": {
+   "en": "Stopped Clock",
+   "ko": "멈춘 시계",
+   "evidence": "M: 207 msg0/1 \"작동을 멈춘 시계다 문자판의 보석 2개가 빠져 있다\""
+  },
+  "207/-/69": {
+   "en": "Stopped Clock",
+   "ko": "멈춘 시계",
+   "evidence": "M: 207 msg0/1 \"작동을 멈춘 시계다 문자판의 보석 2개가 빠져 있다\""
+  },
+  "208/-/79": {
+   "en": "Mayor's Statue",
+   "ko": "시장 청동상",
+   "evidence": "M: 208 msg3/4 \"라쿤 시티 시장 마이클 워렌의 청동상이다 … 손에 무언가를 쥐여 줄 수 있겠다\""
+  },
+  "208/-/80": {
+   "en": "Mayor's Statue",
+   "ko": "시장 청동상",
+   "evidence": "M: 208 msg3/4 \"라쿤 시티 시장 마이클 워렌의 청동상이다 … 손에 무언가를 쥐여 줄 수 있겠다\""
+  },
+  "20C/-/51": {
+   "en": "Tram Cab",
+   "ko": "전차 운전석",
+   "evidence": "M: 20C msg0 \"몇몇 부품이 고장 난 것 같다\", msg3 \"잘 정비된 운전석이다\", msg7-9 cut/damaged/empty"
+  },
+  "20C/-/52": {
+   "en": "Tram Cab",
+   "ko": "전차 운전석",
+   "evidence": "M: 20C msg0 \"몇몇 부품이 고장 난 것 같다\", msg3 \"잘 정비된 운전석이다\", msg7-9 cut/damaged/empty"
+  },
+  "20C/-/54": {
+   "en": "Tram Cab",
+   "ko": "전차 운전석",
+   "evidence": "M: 20C msg0 \"몇몇 부품이 고장 난 것 같다\", msg3 \"잘 정비된 운전석이다\", msg7-9 cut/damaged/empty"
+  },
+  "20C/-/57": {
+   "en": "Tram Cab",
+   "ko": "전차 운전석",
+   "evidence": "M: 20C msg0 \"몇몇 부품이 고장 난 것 같다\", msg3 \"잘 정비된 운전석이다\", msg7-9 cut/damaged/empty"
+  },
+  "20C/-/58": {
+   "en": "Tram Cab",
+   "ko": "전차 운전석",
+   "evidence": "M: 20C msg0 \"몇몇 부품이 고장 난 것 같다\", msg3 \"잘 정비된 운전석이다\", msg7-9 cut/damaged/empty"
+  },
+  "20D/2/-": {
+   "en": "Oil Storage Lock",
+   "ko": "오일 저장고 잠금",
+   "evidence": "M: 20D msg14/15 \"오일을 일정 온도로 보관하는 저장고다 전자 잠금을 조작하겠습니까?\""
+  },
+  "20E/-/60": {
+   "en": "Hex Socket",
+   "ko": "육각 구멍",
+   "evidence": "M: 20E msg0 \"육각형 구멍이 나 있다\", msg1 \"부러진 육각 크랭크가 꽂혀 있다\""
+  },
+  "20E/-/95": {
+   "en": "Hex Socket",
+   "ko": "육각 구멍",
+   "evidence": "M: 20E msg0 \"육각형 구멍이 나 있다\", msg1 \"부러진 육각 크랭크가 꽂혀 있다\""
+  },
+  "211/-/50": {
+   "en": "Heavy Lid",
+   "ko": "무거운 뚜껑",
+   "evidence": "M: 211 msg5 \"무거워 보이는 뚜껑이다 무언가를 거는 구멍이 나 있다\" (fire hook)"
+  },
+  "214/10/-": {
+   "en": "Power Transmitter",
+   "ko": "송전기",
+   "evidence": "S: R214 AOT10 main_0E msg0 \"이 송전기를 반드시 수동 모드로 하십시오 … 수동 모드로 하겠습니까?\""
+  },
+  "214/11/-": {
+   "en": "Transformer",
+   "ko": "변압기",
+   "evidence": "S: R214 AOT11 main_0F msg4/5 \"시설을 가동하는 변압기가 있다 … 스위치를 누르겠습니까?\""
+  },
+  "304/14/-": {
+   "en": "Music Box",
+   "ko": "오르골",
+   "evidence": "S: R304 AOT14/15 main_14/15 play XA46/47; M: 304 msg1/2 \"낡은 오르골이다 / 음률이 어긋난 오르골이다\"; R30C msg0 \"정교한 장식의 오르골이다 A부터 F까지 스위치가 있다\""
+  },
+  "304/15/-": {
+   "en": "Music Box",
+   "ko": "오르골",
+   "evidence": "S: R304 AOT14/15 main_14/15 play XA46/47; M: 304 msg1/2 \"낡은 오르골이다 / 음률이 어긋난 오르골이다\"; R30C msg0 \"정교한 장식의 오르골이다 A부터 F까지 스위치가 있다\""
+  },
+  "30C/9/-": {
+   "en": "Music Box",
+   "ko": "오르골",
+   "evidence": "S: R304 AOT14/15 main_14/15 play XA46/47; M: 304 msg1/2 \"낡은 오르골이다 / 음률이 어긋난 오르골이다\"; R30C msg0 \"정교한 장식의 오르골이다 A부터 F까지 스위치가 있다\""
+  },
+  "309/-/70": {
+   "en": "Saucer",
+   "ko": "받침 접시",
+   "evidence": "M: 309 msg3-8 \"과거/현재/미래의 여신 그림 아래에 받침 접시가 있다\", \"호박 구슬을 접시에 놓겠습니까?\""
+  },
+  "309/-/71": {
+   "en": "Saucer",
+   "ko": "받침 접시",
+   "evidence": "M: 309 msg3-8 \"과거/현재/미래의 여신 그림 아래에 받침 접시가 있다\", \"호박 구슬을 접시에 놓겠습니까?\""
+  },
+  "309/-/72": {
+   "en": "Saucer",
+   "ko": "받침 접시",
+   "evidence": "M: 309 msg3-8 \"과거/현재/미래의 여신 그림 아래에 받침 접시가 있다\", \"호박 구슬을 접시에 놓겠습니까?\""
+  },
+  "309/28/-": {
+   "en": "Spare Bell",
+   "ko": "예비 종",
+   "evidence": "M: 309 msg11 \"시계탑의 예비 종이다 여자 힘으로는 못 움직이겠다\""
+  },
+  "30C/-/76": {
+   "en": "Gear Mechanism",
+   "ko": "톱니바퀴 장치",
+   "evidence": "M: 30C msg7-9 \"잘 손질된 오래된 기계다 / 정교하게 만든 기계 장치다 / 톱니바퀴가 돌고 있다\""
+  },
+  "30C/-/77": {
+   "en": "Gear Mechanism",
+   "ko": "톱니바퀴 장치",
+   "evidence": "M: 30C msg7-9 \"잘 손질된 오래된 기계다 / 정교하게 만든 기계 장치다 / 톱니바퀴가 돌고 있다\""
+  },
+  "30C/-/78": {
+   "en": "Gear Mechanism",
+   "ko": "톱니바퀴 장치",
+   "evidence": "M: 30C msg7-9 \"잘 손질된 오래된 기계다 / 정교하게 만든 기계 장치다 / 톱니바퀴가 돌고 있다\""
+  },
+  "310/-/85": {
+   "en": "Infected Carlos",
+   "ko": "감염된 카를로스",
+   "evidence": "M: 310 msg6 \"나 바이러스에 감염된 거지…\", msg8-13 (vaccine is used on him)"
+  },
+  "404/-/64": {
+   "en": "Voice Lock",
+   "ko": "음성 인식 잠금장치",
+   "evidence": "M: 404 msg4 \"음성 인식 잠금장치가 있다 마이크 버튼을 누르겠습니까?\""
+  },
+  "406/1/-": {
+   "en": "Combination Lock",
+   "ko": "번호식 자물쇠",
+   "evidence": "S: R406 AOT1 main_10 digit entry, msg1-3 \"번호식 자물쇠가 걸려 있다 첫째 자리 숫자는?\", sets 3:178"
+  },
+  "40B/1/-": {
+   "en": "Power Switch",
+   "ko": "전력 공급 전환기",
+   "evidence": "S: R40B AOT1 main_10 message_on(0) \"전력 공급 전환기인 것 같다 … 전력 공급을 전환하겠습니까?\""
+  },
+  "40B/2/-": {
+   "en": "Synthesizer",
+   "ko": "합성 장치",
+   "evidence": "S: R40B AOT2 main_1E msg1-5/10/11 \"약품 합성 장치다 … 합성 장치를 조작하겠습니까?\""
+  },
+  "40D/2/-": {
+   "en": "Fountain Control Panel",
+   "ko": "분수 제어반",
+   "evidence": "M: 40D msg3 \"분수 제어반이다 뚜껑을 열겠습니까?\", msg4 \"어느 기어를 움직이겠습니까?\""
+  },
+  "412/-/61": {
+   "en": "Fireplace",
+   "ko": "벽난로",
+   "evidence": "M: 412 msg0 \"벽난로 안쪽에서 불빛이 샌다\", msg15 \"잘 탈 듯한 장작이 놓여 있다 벽난로 안쪽에서 …\"; both markers share one map spot"
+  },
+  "412/-/67": {
+   "en": "Fireplace",
+   "ko": "벽난로",
+   "evidence": "M: 412 msg0 \"벽난로 안쪽에서 불빛이 샌다\", msg15 \"잘 탈 듯한 장작이 놓여 있다 벽난로 안쪽에서 …\"; both markers share one map spot"
+  },
+  "500/-/96": {
+   "en": "Card Reader",
+   "ko": "카드키 판독 장치",
+   "evidence": "M: 500 msg1, 502 msg3, 509 msg2 \"카드키 판독 장치가 있다\""
+  },
+  "502/-/96": {
+   "en": "Card Reader",
+   "ko": "카드키 판독 장치",
+   "evidence": "M: 500 msg1, 502 msg3, 509 msg2 \"카드키 판독 장치가 있다\""
+  },
+  "509/-/96": {
+   "en": "Card Reader",
+   "ko": "카드키 판독 장치",
+   "evidence": "M: 500 msg1, 502 msg3, 509 msg2 \"카드키 판독 장치가 있다\""
+  },
+  "502/15/-": {
+   "en": "Safety System Switch",
+   "ko": "안전 시스템 스위치",
+   "evidence": "S: R502 AOT15 main_1B message_on(0) \"안전 시스템 전원을 제어하고 있다 … 스위치를 누르겠습니까?\""
+  },
+  "502/10/-": {
+   "en": "Changeover Switch",
+   "ko": "전환 스위치",
+   "evidence": "S: R502 AOT10-14 main_0C..10 each message_on(2) \"전환 스위치를 누르겠습니까?\""
+  },
+  "502/11/-": {
+   "en": "Changeover Switch",
+   "ko": "전환 스위치",
+   "evidence": "S: R502 AOT10-14 main_0C..10 each message_on(2) \"전환 스위치를 누르겠습니까?\""
+  },
+  "502/12/-": {
+   "en": "Changeover Switch",
+   "ko": "전환 스위치",
+   "evidence": "S: R502 AOT10-14 main_0C..10 each message_on(2) \"전환 스위치를 누르겠습니까?\""
+  },
+  "502/13/-": {
+   "en": "Changeover Switch",
+   "ko": "전환 스위치",
+   "evidence": "S: R502 AOT10-14 main_0C..10 each message_on(2) \"전환 스위치를 누르겠습니까?\""
+  },
+  "502/14/-": {
+   "en": "Changeover Switch",
+   "ko": "전환 스위치",
+   "evidence": "S: R502 AOT10-14 main_0C..10 each message_on(2) \"전환 스위치를 누르겠습니까?\""
+  },
+  "502/-/127": {
+   "en": "Locker",
+   "ko": "로커",
+   "evidence": "E: Evil Resource Weapons Storage \"Inside the locker at the far end, requires the Coded Facility Key\"; P: opened by 9:34 (build_overlay). Korean term is a project translation (no locker string in the game text)"
+  },
+  "506/-/126": {
+   "en": "Card Slot",
+   "ko": "카드 슬롯",
+   "evidence": "M: 506 msg7 \"플라스틱 카드가 들어갈 듯한 작은 슬롯이 달려 있다\", msg8 sign, msg5 unlock"
+  },
+  "506/18/-": {
+   "en": "Water Quality Checker",
+   "ko": "수질 체크 장치",
+   "evidence": "S: R506 AOT18 main_24 msg1/2 \"수질 체크 장치가 있다 조작하겠습니까?\""
+  },
+  "508/-/112": {
+   "en": "Treatment Room Lock",
+   "ko": "처리실 잠금장치",
+   "evidence": "M: 508 msg1 \"문이 단단히 잠겨 있다\", msg16 \"처리실 잠금 해제를 위해 시스템 디스크를 넣어 주십시오\""
+  }
+ },
+ "unresolved": {
+  "406/10/-": "Room 402 corner events main_0A..0D: handlers only toggle 3:115-117 and aot_on(14); no message or object text names them",
+  "406/11/-": "same",
+  "406/12/-": "same",
+  "406/13/-": "same"
+ },
+ "exceptions": []
+}

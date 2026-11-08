@@ -56,7 +56,7 @@ static unsigned live_enemies(const unsigned char *s, unsigned page) {
         proj += offset + idx * 8;
         int mx = G16(proj) + (x - G16(proj + 4)) / 450;
         int my = G16(proj + 2) - (z - G16(proj + 6)) / 450;
-        icon_at(map_x(s, mx), map_y(s, my), monster_icons[kind], 8);
+        push_mark(CAT_ENEMY, 0, map_x(s, mx), map_y(s, my), monster_icons[kind], 8, K_ENEMY, (unsigned)kind);
         live_nemesis_cell = (int)idx;
         drawn++;
         if (kind == M_NEMESIS) nemesis_drawn = 1;

@@ -36,77 +36,7 @@ static void(__cdecl *map_draw)(void *) = (void(__cdecl *)(void *))0x4EAC60;
 
 void *__cdecl memset(void *d, int c, size_t n) { unsigned char *p = d; while (n--) *p++ = (unsigned char)c; return d; }
 
-/* ---------- settings */
-enum { T_ALL, T_ROOMS, T_LOCKS, T_KEY, T_DOCS, T_PUZZLES, T_COMMON, T_MONSTERS, T_COUNT };
-static const char *const toggle_names[T_COUNT] = {"All", "Rooms", "Locks", "KeyItems", "Documents", "Puzzles", "CommonItems", "Monsters"};
-static const int toggle_default[T_COUNT] = {1, 1, 0, 0, 0, 0, 0, 0};   /* RE1 parity: Rooms only */
-static int toggles[T_COUNT], scope = 1, korean, name_size = 100, name_opacity = 70, name_clut_dirty;   /* opacity: percent, 10..100 step 10 */
-static char ini_path[MAX_PATH], log_path[MAX_PATH];
-static unsigned log_lines;
-
-static void log_text(const char *s) {
-    if (log_lines++ > 300) return;
-    HANDLE h = CreateFileA(log_path, FILE_APPEND_DATA, FILE_SHARE_READ, NULL, OPEN_ALWAYS, 0, NULL);
-    if (h == INVALID_HANDLE_VALUE) return;
-    DWORD w;
-    WriteFile(h, s, (DWORD)lstrlenA(s), &w, NULL);
-    WriteFile(h, "\r\n", 2, &w, NULL);
-    CloseHandle(h);
-}
-static void log_fmt(const char *fmt, int a, int b, int c, int d) { char buf[256]; wsprintfA(buf, fmt, a, b, c, d); log_text(buf); }
-
-static void save_settings(void) {
-    char v[2] = {0, 0};
-    for (int i = 0; i < T_COUNT; i++) { v[0] = (char)('0' + toggles[i]); WritePrivateProfileStringA("AnnotatedMap", toggle_names[i], v, ini_path); }
-    v[0] = (char)('0' + scope); WritePrivateProfileStringA("AnnotatedMap", "Scope", v, ini_path);
-    WritePrivateProfileStringA("AnnotatedMap", "Language", korean ? "ko" : "en", ini_path);
-    char o[8]; wsprintfA(o, "%d", name_size); WritePrivateProfileStringA("AnnotatedMap", "NameSize", o, ini_path);
-    wsprintfA(o, "%d", name_opacity); WritePrivateProfileStringA("AnnotatedMap", "NameOpacity", o, ini_path);
-}
-static void load_settings(void) {
-    for (int i = 0; i < T_COUNT; i++) toggles[i] = GetPrivateProfileIntA("AnnotatedMap", toggle_names[i], toggle_default[i], ini_path) != 0;
-    scope = GetPrivateProfileIntA("AnnotatedMap", "Scope", 1, ini_path);
-    if (scope < 1 || scope > 3) scope = 1;
-    name_size = GetPrivateProfileIntA("AnnotatedMap", "NameSize", 100, ini_path);
-    if (name_size < 50) name_size = 50;
-    if (name_size > 150) name_size = 150;
-    name_size = (name_size + 5) / 10 * 10;
-    char lang[8];
-    GetPrivateProfileStringA("AnnotatedMap", "Language", "en", lang, sizeof lang, ini_path);
-    korean = lang[0] != 'e';
-    /* Name pages' HD replacements bake this opacity in (one file per 10% step), see tools/build_assets.py. */
-    name_opacity = (GetPrivateProfileIntA("AnnotatedMap", "NameOpacity", 70, ini_path) + 5) / 10 * 10;
-    if (name_opacity < 10) name_opacity = 10;
-    if (name_opacity > 100) name_opacity = 100;
-}
-
-/* ---------- input: edge-triggered keys while the map is drawn */
-static unsigned keys_held;
-static unsigned keys_down(void) {
-    unsigned k = 0;
-    for (int i = 0; i <= 9; i++) if (GetAsyncKeyState('0' + i) & 0x8000) k |= 1u << i;
-    if ((GetAsyncKeyState(VK_OEM_PLUS) | GetAsyncKeyState(VK_ADD)) & 0x8000) k |= 1u << 10;
-    if ((GetAsyncKeyState(VK_OEM_MINUS) | GetAsyncKeyState(VK_SUBTRACT)) & 0x8000) k |= 1u << 11;
-    if (GetAsyncKeyState(VK_SHIFT) & 0x8000) k |= 1u << 12;
-    return k;
-}
-__declspec(dllexport) void __cdecl AnnotatedMapTestKeys(unsigned down);
-void __cdecl AnnotatedMapTestKeys(unsigned down) {
-    unsigned pressed = down & ~keys_held;
-    keys_held = down;
-    if (!pressed) return;
-    for (int i = 0; i < T_COUNT; i++) if (pressed & (1u << i)) toggles[i] = !toggles[i];
-    if (pressed & (1u << 8)) scope = scope % 3 + 1;
-    if (pressed & (1u << 9)) korean = !korean;
-    if (down & (1u << 12)) {   /* Shift + +/-: name opacity in 10% steps (one HD variant per step) */
-        if ((pressed & (1u << 10)) && name_opacity < 100) { name_opacity += 10; name_clut_dirty = 1; }
-        if ((pressed & (1u << 11)) && name_opacity > 10) { name_opacity -= 10; name_clut_dirty = 1; }
-    } else {
-        if ((pressed & (1u << 10)) && name_size < 150) name_size += 10;
-        if ((pressed & (1u << 11)) && name_size > 50) name_size -= 10;
-    }
-    save_settings();
-}
+#include "settings.h"
 
 /* ---------- flags */
 static int bank_bit(unsigned bank, unsigned bit) {
@@ -163,7 +93,8 @@ static PolyFT4 *frame_prims;
 static unsigned prim_count;
 static int clip_x0, clip_y0, clip_x1 = 320, clip_y1 = 240;
 
-static void quad(int x, int y, unsigned sprite_id, int w, int h) {
+enum { CLUT_UI, CLUT_NAMES, CLUT_ICONS };
+static void quad_row(int x, int y, unsigned sprite_id, int w, int h, unsigned row) {
     if (prim_count >= MAX_PRIMS || sprite_id >= SPRITE_COUNT) return;
     if (x + w <= clip_x0 || y + h <= clip_y0 || x >= clip_x1 || y >= clip_y1) return;
     const Sprite *s = &sprites[sprite_id];
@@ -175,63 +106,17 @@ static void quad(int x, int y, unsigned sprite_id, int w, int h) {
     p->y0 = p->y1 = (int16_t)y; p->y2 = p->y3 = (int16_t)(y + h);
     p->u0 = p->u2 = s->u; p->u1 = p->u3 = (uint8_t)(s->u + s->w);
     p->v0 = p->v1 = s->v; p->v2 = p->v3 = (uint8_t)(s->v + s->h);
-    p->clut = (uint16_t)(((CLUT_Y + (s->page >= NAME_PAGE_FIRST)) << 6) | (CLUT_X >> 4));
+    p->clut = (uint16_t)(((CLUT_Y + row) << 6) | (CLUT_X >> 4));
     p->tpage = (uint16_t)((ATLAS_X0 / 64) + s->page);
 }
-/* occupied screen rectangles this frame: room names and icons first, then item names avoid them */
-typedef struct { int16_t x, y, w, h; } Box;
-static Box boxes[MAX_PRIMS];
-static unsigned box_count;
-static void reserve(int x, int y, int w, int h) { if (box_count < MAX_PRIMS) boxes[box_count++] = (Box){(int16_t)x, (int16_t)y, (int16_t)w, (int16_t)h}; }
-static int overlap(int x, int y, int w, int h) {
-    int sum = 0;
-    for (unsigned i = 0; i < box_count; i++) {
-        const Box *b = &boxes[i];
-        int l = x > b->x ? x : b->x, t = y > b->y ? y : b->y;
-        int r = x + w < b->x + b->w ? x + w : b->x + b->w, d = y + h < b->y + b->h ? y + h : b->y + b->h;
-        if (r > l && d > t) sum += (r - l) * (d - t);
-    }
-    return sum;
-}
-static void sprite_at(int cx, int cy, unsigned id) { const Sprite *s = &sprites[id]; quad(cx - s->w / 2, cy - s->h / 2, id, s->w, s->h); reserve(cx - s->w / 2, cy - s->h / 2, s->w, s->h); }
+/* Names (room, marker) take the name-opacity CLUT, icons the icon-opacity CLUT, the legend the opaque base. */
+static void quad(int x, int y, unsigned id, int w, int h) { quad_row(x, y, id, w, h, sprites[id].page >= NAME_PAGE_FIRST ? CLUT_NAMES : CLUT_UI); }
+static void icon_quad(int x, int y, unsigned id, int side) { quad_row(x, y, id, side, side, CLUT_ICONS); }
 /* Marker icons follow the map zoom (status +0xA4 animates 50..100%): full size zoomed in, smaller zoomed out. */
 static int map_zoom = 100;
 static int zoomed(int size) { int z = (size * map_zoom + 50) / 100; return z < 3 ? 3 : z; }
-static void icon_at(int cx, int cy, unsigned id, int size) {
-    size = zoomed(size);
-    quad(cx - size / 2, cy - size / 2, id, size, size); reserve(cx - size / 2, cy - size / 2, size, size);
-}
-/* room name centred on its anchor, nudged to the least-covered of a few nearby spots */
 /* Names shrink less than icons: 100% when zoomed in, 70% at the native 50% zoom-out. */
-static int name_dimension(int v) { int scaled = (v * name_size + 50) / 100; int z = (scaled * (100 - (100 - map_zoom) * 3 / 5) + 50) / 100; return z < 1 ? 1 : z; }
-static void room_label(int cx, int cy, unsigned id, int nemesis) {
-    int w = name_dimension(sprites[id].w), h = name_dimension(sprites[id].h);
-    int badge = nemesis ? zoomed(8) + 2 : 0;
-    int total_w = w + badge;
-    static const int8_t off[7][2] = {{0, 0}, {0, -5}, {0, 5}, {-8, 0}, {8, 0}, {0, -9}, {0, 9}};
-    int best = 0, score = 0x7fffffff;
-    for (int k = 0; k < 7; k++) {
-        int o = overlap(cx - total_w / 2 + off[k][0], cy - h / 2 + off[k][1], total_w, h > zoomed(8) ? h : zoomed(8)) + k;
-        if (o < score) { score = o; best = k; }
-    }
-    int x = cx - total_w / 2 + off[best][0], y = cy - h / 2 + off[best][1];
-    quad(x, y, id, w, h);
-    reserve(x, y, w, h);
-    if (nemesis) icon_at(x + w + 2 + zoomed(8) / 2, y + h / 2, monster_icons[M_NEMESIS], 8);
-}
-static void label_near(int cx, int cy, int r, unsigned id) {
-    int w = name_dimension(sprites[id].w), h = name_dimension(sprites[id].h);
-    const int xs[4] = {cx + r + 1, cx - r - 1 - w, cx - w / 2, cx - w / 2};
-    const int ys[4] = {cy - h / 2, cy - h / 2, cy + r + 1, cy - r - 1 - h};
-    int best = 0, score = 0x7fffffff;
-    for (int k = 0; k < 4; k++) {
-        int o = overlap(xs[k], ys[k], w, h) + (xs[k] < 0 || xs[k] + w > 320 || ys[k] < 0 || ys[k] + h > 240 ? 100000 : 0);
-        if (o < score) { score = o; best = k; }
-        if (!o) break;
-    }
-    quad(xs[best], ys[best], id, w, h);
-    reserve(xs[best], ys[best], w, h);
-}
+static int name_dimension(int v) { int scaled = (v * name_size * NAME_BASE + 5000) / 10000;   /* setting 100 = the old 80% */ int z = (scaled * (100 - (100 - map_zoom) * 3 / 5) + 50) / 100; return z < 1 ? 1 : z; }
 
 /* ---------- map transform (exe 0x4EAF50 / 0x4EB6A0) */
 static int div100(int v) { return v / 100; }
@@ -245,59 +130,169 @@ static void upload_atlas(void) {
         int16_t rect[4] = {(int16_t)(ATLAS_X0 + 64 * p), 0, 64, 256};
         load_image(rect, atlas_pixels[p]);
     }
-    int16_t clut_rect[4] = {CLUT_X, CLUT_Y, 16, 1};
+    int16_t clut_rect[4] = {CLUT_X, CLUT_Y + CLUT_UI, 16, 1};
     load_image(clut_rect, atlas_clut);
-    int16_t name_rect[4] = {CLUT_X, CLUT_Y + 1, 16, 1};
+    int16_t name_rect[4] = {CLUT_X, CLUT_Y + CLUT_NAMES, 16, 1};
     load_image(name_rect, name_cluts[name_opacity / 10 - 1]);
+    int16_t icon_rect[4] = {CLUT_X, CLUT_Y + CLUT_ICONS, 16, 1};
+    load_image(icon_rect, icon_cluts[icon_opacity / 10 - 1]);
     uploaded = 1;
 }
 
+/* Classic REbirth draws the map text from the hires/misc .webp files only with HDTextures=1 in its config.ini [DLL]; without it
+ * the overlay is the 4bpp atlas scaled up, i.e. blurry (community report 2026-11-06). -1 = key not found. */
+static char config_path[MAX_PATH];
+static int rebirth_hd_textures(void) { return (int)GetPrivateProfileIntA("DLL", "HDTextures", -1, config_path); }
+__declspec(dllexport) int __cdecl AnnotatedMapTestHdTextures(void) { return rebirth_hd_textures(); }
+static unsigned frame_no, shown_counts[11];
+#include "marks.h"
 #include "live_enemies.h"
-
-static const ItemLabel *item_label(unsigned item) {
-    for (unsigned i = 0; i < ITEM_LABEL_COUNT; i++) if (item_labels[i].item == item) return &item_labels[i];
-    return 0;
+/* HD textures off: a plain-pixel notice on the map (the HD-only text would be unreadable). Re-read config.ini at most
+ * once a second, so opening the map after the file changed is enough; only an explicit HDTextures=0 shows it. */
+static int hd_notice, hd_checked_at = -1;
+static int hd_off_now(void) {
+    DWORD now = GetTickCount();
+    if (hd_checked_at < 0 || now - (DWORD)hd_checked_at >= 1000) { hd_notice = rebirth_hd_textures() == 0; hd_checked_at = (int)now; }
+    return hd_notice;
+}
+static Rect notice_rect(void) {
+    const Sprite *n = &sprites[NOTICE_SPRITE];
+    return (Rect){3, 3, (int16_t)(3 + n->w + 4), (int16_t)(3 + n->h + 4)};   /* top-left: legend is bottom-left, scale bar bottom-right */
 }
 
-/* ---------- legend (bottom-left, two columns) */
-static void legend_box(int *x0, int *y0, int *w, int *h) {
-    int widths[2] = {0, 0};
-    for (unsigned r = 0; r < 8; r++) { int lw = sprites[legend_sprites[r][korean][1]].w; if (lw > widths[r / 4]) widths[r / 4] = lw; }
-    *x0 = 3; *y0 = 240 - 4 - 5 * 7 - 14; *w = widths[0] + widths[1] + 14; *h = 240 - *y0 - 1;
+/* ---------- panels: legend bottom-left, readouts bottom-right (RE0 candidate 49 layout, 320x240 lines of 7 px) */
+static void panel(int x, int y, int w, int h) {
+    quad(x, y, ICON_PANEL, w, h);
+    if (!prim_count) return;
+    PolyFT4 *p = &frame_prims[prim_count - 1];   /* semi-transparent, sampled inside the panel tile */
+    p->code |= 2; p->u1 = p->u3 = (uint8_t)(sprites[ICON_PANEL].u + 2); p->v2 = p->v3 = (uint8_t)(sprites[ICON_PANEL].v + 2);
+    p->u0 += 1; p->u2 += 1; p->v0 += 1; p->v1 += 1;
+}
+#define LEGEND_ROWS_Y (240 - 4 - 6 * 7)
+/* The legend and its readouts are laid out at full size, then drawn at 90% anchored at their bottom-left corner
+ * (user, candidate 4 live: the merged panel covered too much map). */
+#define LEGEND_SCALE 90
+static int lx(int x) { return 3 + ((x - 3) * LEGEND_SCALE + 50) / 100; }
+static int ly(int y) { return 239 - ((239 - y) * LEGEND_SCALE + 50) / 100; }
+static Rect lrect(Rect r) { return (Rect){(int16_t)lx(r.l), (int16_t)ly(r.t), (int16_t)lx(r.r), (int16_t)ly(r.b)}; }
+/* Position and size are scaled separately: a size taken from the difference of two rounded edges was 5 or 6 px for the same
+ * sprite depending on its row (candidate 12), so equal sprites now draw equally tall. */
+static void lquad(int x, int y, unsigned id, int w, int h) { quad(lx(x), ly(y + h) - (h * LEGEND_SCALE + 50) / 100, id, (w * LEGEND_SCALE + 50) / 100, (h * LEGEND_SCALE + 50) / 100); }
+/* Two columns (user 2026-11-08, as RE0): [0]..[4] and [H] item names under them | [5]..[8], [9] scope and [\\] language
+ * under them. Each column fits every state of its labels (all three item-name states, every scope text), so the panel
+ * does not resize when [H] or [9] cycles. */
+static int legend_cell_w(unsigned id) { return sprites[id].w; }
+static void legend_columns(int widths[2]) {
+    widths[0] = widths[1] = 0;
+    for (unsigned r = 0; r < 9; r++) { int w = legend_cell_w(legend_sprites[r][korean][1]); int c = r < 5 ? 0 : 1; if (w > widths[c]) widths[c] = w; }
+    for (unsigned n = 0; n < 3; n++) if (legend_cell_w(hint_names[korean][n]) > widths[0]) widths[0] = legend_cell_w(hint_names[korean][n]);
+    for (unsigned sc = 0; sc < 3; sc++) if (legend_cell_w(legend_scope[sc][korean]) > widths[1]) widths[1] = legend_cell_w(legend_scope[sc][korean]);
+    if (legend_cell_w(legend_lang[korean]) > widths[1]) widths[1] = legend_cell_w(legend_lang[korean]);
+}
+/* Title line close above the rows (user, candidate 2 live: the gap read as a separate block). */
+static int legend_top(void) { return LEGEND_ROWS_Y - sprites[legend_title[korean]].h - 1 - 3; }
+static Rect legend_rect(void) {
+    if (!legend_on) {
+        const Sprite *f = &sprites[hint_fold[korean]];
+        return (Rect){3, (int16_t)(240 - 4 - f->h - 3), (int16_t)(3 + f->w + 6), 239};
+    }
+    int widths[2]; legend_columns(widths);
+    int w = widths[0] + widths[1] + 8;
+    int head = sprites[legend_title[korean]].w + 6 + sprites[hint_hide[korean]].w;
+    if (head > w) w = head;
+    return (Rect){3, (int16_t)legend_top(), (int16_t)(3 + w + 6), 239};
+}
+static int value_width(void) { return sprites[value_sprites[19]].w; }   /* "200%" */
+/* Readouts sit on the legend's right side, rows level with its first four rows, one background with it (user,
+ * candidate 2 live: bottom-right they covered the game's own scale bar). */
+static Rect readout_rect(void) {
+    if (!legend_on) return (Rect){0, 0, 0, 0};
+    Rect l = legend_rect();
+    l.t = (int16_t)(LEGEND_ROWS_Y + 2 * 7 - 3);   /* its own panel starts at the first row: no empty band above 'Name opacity' */
+    int w = 0;
+    for (unsigned r = 0; r < 4; r++) if (sprites[readout_hints[r][korean][modifier_ctrl]].w > w) w = sprites[readout_hints[r][korean][modifier_ctrl]].w;
+    w += 4 + value_width() + 6;
+    return (Rect){l.r, l.t, (int16_t)(l.r + w), l.b};
 }
 static void legend(void) {
-    const unsigned rows = 8;
-    int y = 240 - 4 - (int)(rows / 2 + 1) * 7, x = 6;
-    int bx, by, bw, bh;
-    legend_box(&bx, &by, &bw, &bh);
-    quad(bx, by, ICON_PANEL, bw, bh);
-    if (prim_count) { frame_prims[prim_count - 1].code |= 2; frame_prims[prim_count - 1].u1 = frame_prims[prim_count - 1].u3 = (uint8_t)(sprites[ICON_PANEL].u + 2); frame_prims[prim_count - 1].v2 = frame_prims[prim_count - 1].v3 = (uint8_t)(sprites[ICON_PANEL].v + 2); frame_prims[prim_count - 1].u0 += 1; frame_prims[prim_count - 1].u2 += 1; frame_prims[prim_count - 1].v0 += 1; frame_prims[prim_count - 1].v1 += 1; }
-    sprite_at(x + sprites[legend_title[korean]].w / 2, y - 8, legend_title[korean]);
-    unsigned op = legend_opacity[name_opacity / 10 - 1][korean];
-    unsigned sz = legend_size[(name_size - 50) / 10][korean];
-    int settings_x = x + sprites[legend_title[korean]].w + 6;
-    quad(settings_x, y - 12, op, sprites[op].w, sprites[op].h);
-    quad(settings_x, y - 6, sz, sprites[sz].w, sprites[sz].h);
-    int widths[2] = {0, 0};
-    for (unsigned r = 0; r < rows; r++) { int w = sprites[legend_sprites[r][korean][1]].w; if (w > widths[r / 4]) widths[r / 4] = w; }
-    for (unsigned r = 0; r < rows; r++) {
-        int on = toggles[r] && (r == T_ALL || toggles[T_ALL]);
-        unsigned id = legend_sprites[r][korean][on];
-        int cx = r < 4 ? x : x + widths[0] + 8, cy = y + (int)(r % 4) * 7;
-        quad(cx, cy, id, sprites[id].w, sprites[id].h);
+    Rect b = legend_rect();
+    Rect p = lrect(b);
+    panel(p.l, p.t, p.r - p.l, p.b - p.t);
+    if (!legend_on) { unsigned f = hint_fold[korean]; lquad(6, b.t + 3, f, sprites[f].w, sprites[f].h); return; }
+    int x = 6, y = LEGEND_ROWS_Y;
+    unsigned title = legend_title[korean], hide = hint_hide[korean];
+    int title_y = y - sprites[title].h - 1;
+    lquad(x, title_y, title, sprites[title].w, sprites[title].h);
+    /* Same top: both sprites are rendered on the title font's baseline frame (tools/build_assets.py framed_sprite). */
+    lquad(x + sprites[title].w + 6, title_y, hide, sprites[hide].w, sprites[hide].h);
+    int widths[2]; legend_columns(widths);
+    int xs[2] = {x, x + widths[0] + 8};
+    for (unsigned r = 0; r < 9; r++) {
+        unsigned id = legend_sprites[r][korean][toggles[r] && (r == T_ALL || toggles[T_ALL])];
+        lquad(xs[r < 5 ? 0 : 1], y + (int)(r < 5 ? r : r - 5) * 7, id, sprites[id].w, sprites[id].h);
     }
-    int cy = y + 4 * 7, cx = x;
-    quad(cx, cy, legend_scope[scope - 1][korean], sprites[legend_scope[scope - 1][korean]].w, sprites[legend_scope[scope - 1][korean]].h);
-    cx += widths[0] + 8;
-    quad(cx, cy, legend_lang[korean], sprites[legend_lang[korean]].w, sprites[legend_lang[korean]].h);
-
+    unsigned names = hint_names[korean][item_names], scope_id = legend_scope[scope - 1][korean], lang = legend_lang[korean];
+    lquad(xs[0], y + 5 * 7, names, sprites[names].w, sprites[names].h);   /* [H] under [4] */
+    lquad(xs[1], y + 4 * 7, scope_id, sprites[scope_id].w, sprites[scope_id].h);   /* [9] under [8] */
+    lquad(xs[1], y + 5 * 7, lang, sprites[lang].w, sprites[lang].h);   /* [\\] under [9], same size and colour as [H] */
+}
+/* Readout rows are bottom-aligned: the last one level with the legend's last row (user, candidate 4). */
+static void readouts(void) {
+    if (!legend_on) return;
+    Rect b = readout_rect();
+    Rect p = lrect(b);
+    panel(p.l, p.t, p.r - p.l, p.b - p.t);
+    const int values[4] = {name_opacity, name_size, icon_opacity, icon_size};
+    for (unsigned r = 0; r < 4; r++) {
+        int y = LEGEND_ROWS_Y + (int)(r + 2) * 7;
+        unsigned hint = readout_hints[r][korean][modifier_ctrl], v = value_sprites[values[r] / 10 - 1];
+        lquad(b.l + 3, y, hint, sprites[hint].w, sprites[hint].h);
+        lquad(b.r - 3 - sprites[v].w, y, v, sprites[v].w, sprites[v].h);   /* right-aligned in the 200% column */
+    }
 }
 
-static unsigned frame_no, shown_counts[11];
-#define MAX_PENDING 128
-typedef struct { int16_t x, y; uint16_t id; } Pending;
-static Pending pending[MAX_PENDING];
-static unsigned pending_count;
+/* ---------- room names: fixed when generated (tools/room_layout.py) and drawn first. RE0 rule 11 (user 2026-11-07):
+ * they are not collision targets, so no mark or item name moves because of one; anything drawn later may cover them. */
+static int test_no_room_names;   /* tests: draw without room names, everything else unchanged */
+static void room_names(const unsigned char *s, unsigned page, const uint8_t *nemesis_badges) {
+    for (unsigned i = 0; i < ROOM_COUNT; i++) {
+        const RoomLabel *r = &room_labels[i];
+        if (r->page != page || !room_shown(r->page, r->idx)) continue;
+        shown_counts[9]++;
+        if (test_no_room_names) continue;
+        unsigned id = r->label[korean];
+        int sw = sprites[id].w, sh = sprites[id].h, w = name_dimension(sw), h = name_dimension(sh), cx, cy;
+        const int16_t *ln = r->line[korean];
+        if (r->lead[korean]) {   /* the leader's end stays put; a resized name grows away from it */
+            int ex = map_x(s, ln[2]), ey = map_y(s, ln[3]);
+            cx = ex + (r->x2[korean] - 2 * ln[2]) * w / (2 * sw);
+            cy = ey + (r->y2[korean] - 2 * ln[3]) * h / (2 * sh);
+        } else {
+            cx = map_x(s, r->x2[korean] >> 1); cy = map_y(s, r->y2[korean] >> 1);
+        }
+        int badge = r->idx < 80 && nemesis_badges[r->idx] ? mark_side(8) + 2 : 0;
+        Rect box = {(int16_t)(cx - w / 2), (int16_t)(cy - h / 2), (int16_t)(cx - w / 2 + w + badge), (int16_t)(cy - h / 2 + h)};
+        if (rects_hit(box, panel_boxes[0]) || rects_hit(box, panel_boxes[1]) || rects_hit(box, panel_boxes[2])) continue;   /* never under the legend */
+        if (r->lead[korean]) {
+            int x0 = map_x(s, ln[0]), y0 = map_y(s, ln[1]), x1 = map_x(s, ln[2]), y1 = map_y(s, ln[3]);
+            int l = x0 < x1 ? x0 : x1, t = y0 < y1 ? y0 : y1;
+            quad(l, t, LEADER_SPRITE, (x0 > x1 ? x0 - x1 : x1 - x0) + 1, (y0 > y1 ? y0 - y1 : y1 - y0) + 1);
+        }
+        quad(box.l, box.t, id, w, h);
+        if (badge) icon_quad(box.l + w + 2, box.t + h / 2 - (badge - 2) / 2, monster_icons[M_NEMESIS], badge - 2);
+    }
+}
+
+/* RE1 HD lock style (INI LockMarker=Unvisited): on the destination side of the door unless only it was visited. */
+static void lock_point(unsigned i, const Marker *m, int *x, int *y) {
+    if (!lock_far_side) return;
+    for (unsigned k = 0; k < LOCK_FAR_COUNT; k++) if (lock_far[k].marker == i) {
+        if (visited(m->page, lock_far[k].idx) && !visited(m->page, m->idx)) return;
+        *x = lock_far[k].x; *y = lock_far[k].y;
+        return;
+    }
+}
+
 static DWORD last_draw_tick;
 static void overlay(unsigned char *s) {
     unsigned page = G8((uintptr_t)s + 0xAB);
@@ -310,9 +305,12 @@ static void overlay(unsigned char *s) {
     unsigned set_bit = G32(DATA_AJ) ? 2 : 1;
     int all = toggles[T_ALL];
     for (unsigned i = 0; i < 11; i++) shown_counts[i] = 0;
-    box_count = 0; pending_count = 0;
-    { int bx, by, bw, bh; legend_box(&bx, &by, &bw, &bh); reserve(bx, by, bw, bh); }
-    /* painter order: room names, then markers, then their names, legend last (top) */
+    occ_count = 0; mark_count = 0; mark_dups = 0;
+    panel_boxes[0] = lrect(legend_rect()); panel_boxes[1] = legend_on ? lrect(readout_rect()) : readout_rect();
+    panel_boxes[2] = hd_off_now() ? notice_rect() : (Rect){0, 0, 0, 0};
+    occupy(panel_boxes[0], 8); occupy(panel_boxes[1], 8);
+    occupy(panel_boxes[2], 8);
+    /* painter order: room names, then marks with their names (lowest tier first), legend and readouts last (top) */
     unsigned live_count = 0;
     live_nemesis_cell = -1;
     if (all && toggles[T_MONSTERS]) live_count = live_enemies(s, page);
@@ -323,64 +321,55 @@ static void overlay(unsigned char *s) {
         if (!(i && same_place(m, m - 1))) group_drawn = 0;
         if (group_drawn) continue;
         if (m->page != page || !(m->sets & set_bit) || !room_shown(m->page, m->idx) || !guard_ok(m)) continue;
-        int x = map_x(s, m->x), y = map_y(s, m->y);
+        int mx = m->x, my = m->y;
+        unsigned item = m->extra;
         switch (m->kind) {
-        case K_TYPEWRITER: if (!toggles[T_ROOMS]) continue; icon_at(x, y, ICON_TYPEWRITER, 8); break;
-        case K_ITEMBOX: if (!toggles[T_ROOMS]) continue; icon_at(x, y, ICON_ITEMBOX, 8); break;
-        case K_LOCK: {
+        case K_TYPEWRITER: if (!toggles[T_ROOMS]) continue; push_mark(CAT_FACILITY, 0, map_x(s, mx), map_y(s, my), ICON_TYPEWRITER, 8, m->kind, 0); break;
+        case K_ITEMBOX: if (!toggles[T_ROOMS]) continue; push_mark(CAT_FACILITY, 0, map_x(s, mx), map_y(s, my), ICON_ITEMBOX, 8, m->kind, 0); break;
+        case K_LOCK:   /* the item that unlocks it */
             if (!toggles[T_LOCKS] || bank_bit(9, m->flag)) continue;
-            icon_at(x, y, item_icons[m->extra < 134 ? m->extra : 0], 7);   /* the item that unlocks it */
-            const ItemLabel *l = item_label(m->extra);
-            if (l && pending_count < MAX_PENDING) pending[pending_count++] = (Pending){(int16_t)x, (int16_t)y, l->lock_label[korean]};
-            break;
-        }
-        case K_KEY: {
+            lock_point(i, m, &mx, &my);
+            push_mark(CAT_LOCK, 0, map_x(s, mx), map_y(s, my), item_icons[item < 134 ? item : 0], 7, m->kind, item); break;
+        case K_KEY:    /* weapons are key items too (tools/build_overlay.py COMMON) */
             if (!toggles[T_KEY] || picked(m)) continue;
-            icon_at(x, y, item_icons[m->extra < 134 ? m->extra : 0], 7);   /* same size as common items */
-            const ItemLabel *l = item_label(m->extra);
-            if (l && pending_count < MAX_PENDING) pending[pending_count++] = (Pending){(int16_t)x, (int16_t)y, l->label[korean]};
-            break;
-        }
-        case K_FILE: if (!toggles[T_DOCS] || picked(m)) continue; icon_at(x, y, ICON_DOCUMENT, 8); break;
-        case K_MAP: if (!toggles[T_DOCS] || picked(m)) continue; icon_at(x, y, ICON_MAP, 7); break;
+            push_mark(CAT_KEY, 0, map_x(s, mx), map_y(s, my), item_icons[item < 134 ? item : 0], 7, m->kind, item); break;
+        case K_FILE: if (!toggles[T_DOCS] || picked(m)) continue; push_mark(CAT_FILE, 0, map_x(s, mx), map_y(s, my), ICON_DOCUMENT, 8, m->kind, item); break;
+        case K_MAP: if (!toggles[T_DOCS] || picked(m)) continue; push_mark(CAT_FILE, 0, map_x(s, mx), map_y(s, my), ICON_MAP, 7, m->kind, item); break;
         case K_PUZZLE:
             if (!toggles[T_PUZZLES]) continue;
             /* R509 reader has only room-local completion: remote eligibility cannot be proven. */
-            if (m->page == 4 && m->idx == 9 && m->extra == 96 &&
+            if (m->page == 4 && m->idx == 9 && item == 96 &&
                 (G16(0xA673C6) != 4 || G16(0xA673C8) != 9 || bank_bit(4, 26))) continue;
-            icon_at(x, y, m->page == 4 && m->idx == 17 && m->extra == 127 ? item_icons[10] : ICON_PUZZLE_MARKER, 8); break;
+            push_mark(CAT_PUZZLE, 0, map_x(s, mx), map_y(s, my), m->page == 4 && m->idx == 17 && item == 127 ? item_icons[10] : ICON_PUZZLE_MARKER, 8, m->kind,
+                      puzzle_names[i] ? puzzle_names[i] : item); break;   /* named after the puzzle, not the item it needs */
         case K_LIVE:
-            if (!toggles[T_PUZZLES]) continue;
+            if (!toggles[T_EVENTS]) continue;
             /* Bank 4 belongs to the loaded room: never apply its completion state remotely. */
-            if (m->extra == 9 && G16(0xA673C6) == 4 && G16(0xA673C8) == 0x0D && (bank_bit(4, 5) || (bank_bit(4, 4) && bank_bit(2, 7)))) continue;
-            if (m->extra == 5 && G16(0xA673C6) == 1 && G16(0xA673C8) == 0x15 && bank_bit(2, 7)) continue;
-            icon_at(x, y, ICON_SELECTION_MARKER, 8); break;
+            if (item == 9 && G16(0xA673C6) == 4 && G16(0xA673C8) == 0x0D && (bank_bit(4, 5) || (bank_bit(4, 4) && bank_bit(2, 7)))) continue;
+            if (item == 5 && G16(0xA673C6) == 1 && G16(0xA673C8) == 0x15 && bank_bit(2, 7)) continue;
+            push_mark(CAT_EVENT, 1, map_x(s, mx), map_y(s, my), ICON_SELECTION_MARKER, 8, m->kind, item); break;   /* purple ? diamond */
         case K_ENEMY:
-            if (!toggles[T_MONSTERS] || m->extra >= 12 ||
+            if (!toggles[T_MONSTERS] || item >= 12 ||
                 (m->flag != 255 && bank_bit(second_set(m->sets >> 4) ? 6 : 5, m->flag))) continue;
-            if (m->extra == M_NEMESIS) {
+            if (item == M_NEMESIS) {
                 if (m->idx >= 80 || (int)m->idx == live_nemesis_cell || nemesis_cells[m->idx]) continue;
                 nemesis_cells[m->idx] = 1;
             }
-            if (m->extra == M_NEMESIS && (m->sets & 4) && toggles[T_ROOMS])
+            if (item == M_NEMESIS && (m->sets & 4) && toggles[T_ROOMS])
                 nemesis_badges[m->idx] = 1;
-            else icon_at(x, y, monster_icons[m->extra], 8); break;
-        case K_COMMON: if (!toggles[T_COMMON] || picked(m)) continue; icon_at(x, y, item_icons[m->extra < 134 ? m->extra : 0], 7); break;
+            else push_mark(CAT_ENEMY, 0, map_x(s, mx), map_y(s, my), monster_icons[item], 8, m->kind, item); break;
+        case K_COMMON: if (!toggles[T_COMMON] || picked(m)) continue; push_mark(CAT_ITEM, 0, map_x(s, mx), map_y(s, my), item_icons[item < 134 ? item : 0], 7, m->kind, item); break;
         default: continue;
         }
         shown_counts[m->kind]++;
         group_drawn = 1;
     }
     shown_counts[K_ENEMY] += live_count;
-    if (all && toggles[T_ROOMS])
-        for (unsigned i = 0; i < ROOM_COUNT; i++) {
-            const RoomLabel *r = &room_labels[i];
-            if (r->page != page || !room_shown(r->page, r->idx)) continue;
-            room_label(map_x(s, r->x[korean]), map_y(s, r->y[korean]), r->label[korean], r->idx < 80 && nemesis_badges[r->idx]);
-            shown_counts[9]++;
-        }
-    for (unsigned i = 0; i < pending_count; i++) label_near(pending[i].x, pending[i].y, zoomed(7) / 2 + 1, pending[i].id);
+    if (all && toggles[T_ROOMS]) room_names(s, page, nemesis_badges);
+    draw_marks();
     legend();
+    readouts();
+    if (hd_off_now()) { Rect n = notice_rect(); panel(n.l, n.t, n.r - n.l, n.b - n.t); quad(n.l + 2, n.t + 2, NOTICE_SPRITE, sprites[NOTICE_SPRITE].w, sprites[NOTICE_SPRITE].h); }
     /* Insert after the native player arrow slot (exe 0x4EB0AE); later inserts are drawn earlier, so
      * walk our painter-ordered list from the top down. */
     void *anchor = (void *)G32(G32(OT2) + 4);
@@ -400,6 +389,7 @@ static void overlay(unsigned char *s) {
                     log_fmt("Nemesis position x=%d z=%d kill=%d dead=%d", G32(em + 0x34), G32(em + 0x3C), G8(em + 0x147), G8(em + 0x147) != 255 && bank_bit(second_set(G16(STAGE_NO)) ? 6 : 5, G8(em + 0x147)));
                 }
             }
+        if (mark_drops) log_fmt("marks over the %d cap: %d", MAX_MARKS, (int)mark_drops, 0, 0);
         log_fmt("map page=%d prims=%d rooms=%d markers=%d", (int)page, (int)prim_count, (int)shown_counts[9],
                 (int)(shown_counts[0] + shown_counts[1] + shown_counts[2] + shown_counts[3] + shown_counts[4] + shown_counts[5] + shown_counts[6] + shown_counts[7] + shown_counts[8] + shown_counts[10]));
     }
@@ -414,8 +404,8 @@ static void __cdecl hook_map(void *s) {
     last_draw_tick = now;
     /* REbirth re-resolves a page's HD replacement only when the page pixels are uploaded again, so an
      * opacity change re-uploads the whole atlas (as reopening the map does), not just the CLUT row. */
-    if (!uploaded || name_clut_dirty) upload_atlas();
-    name_clut_dirty = 0;
+    if (!uploaded || clut_dirty) upload_atlas();
+    clut_dirty = 0;
     overlay((unsigned char *)s);
 }
 
@@ -426,6 +416,15 @@ __declspec(dllexport) int __cdecl AnnotatedMapTestSize(void) { return name_size;
 __declspec(dllexport) int __cdecl AnnotatedMapTestScope(void) { return scope; }
 __declspec(dllexport) void __cdecl AnnotatedMapTestLoadSettings(void) { load_settings(); }
 __declspec(dllexport) int __cdecl AnnotatedMapTestOpacity(void) { return name_opacity; }
+/* 0 name size, 1 name opacity, 2 icon size, 3 icon opacity, 4 item names, 5 legend, 6 Ctrl modifier, 7 lock far side */
+__declspec(dllexport) int __cdecl AnnotatedMapTestSetting(int which) {
+    const int v[8] = {name_size, name_opacity, icon_size, icon_opacity, item_names, legend_on, modifier_ctrl, lock_far_side};
+    return which >= 0 && which < 8 ? v[which] : -1;
+}
+/* The marks of the last draw: count, and their array (Mark layout in src/marks.h) for full-data checks. */
+__declspec(dllexport) unsigned __cdecl AnnotatedMapTestMarks(void **out) { *out = marks; return mark_count | mark_dups << 16; }
+__declspec(dllexport) void __cdecl AnnotatedMapTestNoRoomNames(int off) { test_no_room_names = off; }
+__declspec(dllexport) void __cdecl AnnotatedMapTestOptions(int names, int legend, int far_side) { item_names = names; legend_on = legend; lock_far_side = far_side; }
 __declspec(dllexport) unsigned __cdecl AnnotatedMapTestCount(unsigned kind) { return kind < 11 ? shown_counts[kind] : 0; }
 __declspec(dllexport) void __cdecl AnnotatedMapTestSet(int all_on, int s, int ko) {
     for (int i = 0; i < T_COUNT; i++) toggles[i] = all_on;
@@ -487,9 +486,14 @@ BOOL WINAPI DllMain(HINSTANCE module, DWORD reason, LPVOID reserved) {
     char *slash = own;
     for (char *p = own; *p; p++) if (*p == '\\' || *p == '/') slash = p + 1;
     lstrcpyA(slash, "RE3.AnnotatedMap.ini"); lstrcpyA(ini_path, own);
+    lstrcpyA(slash, "RE3.AnnotatedMap.ini.tmp"); lstrcpyA(tmp_path, own);
     lstrcpyA(slash, "RE3.AnnotatedMap.log"); lstrcpyA(log_path, own);
+    lstrcpyA(slash, "config.ini"); lstrcpyA(config_path, own);
     DeleteFileA(log_path);
     load_settings();
+    { int hd = rebirth_hd_textures();
+      if (hd == 0) log_text("Classic REbirth config.ini has HDTextures=0: the map text is drawn from the low-resolution atlas (blurry). Set HDTextures=1.");
+      else if (hd < 0) log_text("Classic REbirth config.ini [DLL] HDTextures not found: HD map text needs HDTextures=1 (or the file is missing)."); }
     if (!supported_exe()) { log_text("Unsupported executable; no patch applied"); return TRUE; }
     for (unsigned i = 0; i < 2; i++) {
         unsigned char *p = (unsigned char *)hook_sites[i];
