@@ -10,6 +10,7 @@
 - Common items use a grey; one text size for the whole legend; item and puzzle names always sit next to their marker.
 - A default `RE3.AnnotatedMap.ini` is included in the ZIP.
 - A notice appears on the map if `HDTextures` is 0 in Classic REbirth's `config.ini`.
+- The download now includes Ultimate ASI Loader v9.7.4 (MIT) as `dsound.dll`, so no separate ASI loader is needed. If you already have Ultimate ASI Loader installed as `dsound.dll`, keep yours; if you have a different `dsound.dll` (e.g. DSOAL), copy the included one as `winmm.dll` instead.
 
 - 새 키: `6` 이벤트(새 분류, 기본 꺼짐), `7` 일반 아이템, `8` 적, `9` 범위. 언어 전환은 `\`(한국 키보드에서는 `₩`)로 이동.
 - 이벤트: 보라색 `?`가 스포일러가 될 수 있는 이야기 장면(Live Selection, 영상·긴 연출 시작 자리, 17개 장면)을 표시하며, 장면이 끝나면 사라집니다.
@@ -19,6 +20,7 @@
 - 일반 아이템 회색 표시, 범례 글자 크기 통일, 아이템·퍼즐 이름이 항상 표식 옆에 표시.
 - ZIP에 기본 `RE3.AnnotatedMap.ini` 포함.
 - Classic REbirth `config.ini`의 `HDTextures`가 0이면 지도에 안내 표시.
+- 다운로드에 Ultimate ASI Loader v9.7.4(MIT)를 `dsound.dll`로 포함해 별도의 ASI 로더가 필요 없습니다. 이미 Ultimate ASI Loader를 `dsound.dll`로 설치했다면 기존 것을 그대로 쓰세요. 다른 `dsound.dll`(예: DSOAL)이 있으면 포함된 파일을 `winmm.dll` 이름으로 복사하세요.
 
 ## 1.0.2
 

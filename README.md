@@ -29,14 +29,19 @@ A new configuration starts in **English, name size 100%, name opacity 70%, icon 
 
 1. Install **Classic REbirth** for Resident Evil 3 first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
 2. Close the game. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest) and extract it. `Source code` is not the install package.
-3. Copy **`RE3.AnnotatedMap.asi` and the `hires` folder** into the game folder containing `BIOHAZARD(R) 3 PC.exe`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first. Also copy the default settings file `RE3.AnnotatedMap.ini` only if the game folder does not have one yet. Never overwrite an existing one (it holds your settings).
+3. Copy the ZIP contents (`dsound.dll`, `RE3.AnnotatedMap.asi`, `hires`, `scripts`) into the game folder containing `BIOHAZARD(R) 3 PC.exe`, preserving the folder structure. [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) v9.7.4 (MIT) is included as `dsound.dll`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first. Copy the default settings file `RE3.AnnotatedMap.ini` only if the game folder does not have one yet. Never overwrite an existing one (it holds your settings).
+   - If Ultimate ASI Loader is already installed as `dsound.dll` (e.g. by a translation patch), keep yours and skip `dsound.dll`.
+   - If you have a different `dsound.dll` (e.g. DSOAL), do not overwrite it: copy the included one as `winmm.dll`.
 4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
 ```text
 game folder/
 ├─ BIOHAZARD(R) 3 PC.exe
+├─ dsound.dll   (Ultimate ASI Loader; skip if you already have it)
 ├─ RE3.AnnotatedMap.asi
 ├─ RE3.AnnotatedMap.ini   (default settings; never overwrite an existing one)
+├─ scripts/
+│  └─ UltimateASILoader-LICENSE.txt
 └─ hires/
    └─ misc/
       └─ the map mod's .webp files
@@ -44,11 +49,11 @@ game folder/
 
 When upgrading, keep your existing `RE3.AnnotatedMap.ini`: do not delete it or overwrite it with the default file from the ZIP. It holds your map settings.
 
-Uninstall: remove `RE3.AnnotatedMap.asi`, `.ini`, `.log` and only the `.webp` files included in the map ZIP. Restore backed-up HD files if applicable. Do not delete the entire `hires` folder: other HD mods also use it.
+Uninstall: remove `RE3.AnnotatedMap.asi`, `.ini`, `.log`, `scripts/UltimateASILoader-LICENSE.txt` (and `dsound.dll` if no other ASI mod uses it) and only the `.webp` files included in the map ZIP. Restore backed-up HD files if applicable. Do not delete the entire `hires` folder: other HD mods also use it.
 
 ## Troubleshooting
 
-- **Nothing appears on the map**: the mod only runs on one build of the SourceNext `BIOHAZARD(R) 3 PC.exe` (PE timestamp `0x44642AAC`, image size `0xB01000`). On any other build it draws nothing and writes `Unsupported executable` to `RE3.AnnotatedMap.log`. Classic REbirth 1.0.3's `ddraw.dll` does not load `.asi` files, so a separate ASI loader (for example Ultimate ASI Loader named `dsound.dll`) is required.
+- **Nothing appears on the map**: the mod only runs on one build of the SourceNext `BIOHAZARD(R) 3 PC.exe` (PE timestamp `0x44642AAC`, image size `0xB01000`). On any other build it draws nothing and writes `Unsupported executable` to `RE3.AnnotatedMap.log`. Classic REbirth 1.0.3's `ddraw.dll` does not load `.asi` files, so the ZIP includes Ultimate ASI Loader as `dsound.dll`. Check that `dsound.dll` sits next to `BIOHAZARD(R) 3 PC.exe` and was not replaced by a different `dsound.dll`.
 - **Map text or icons look blurry**: sharp text appears only when REbirth's HD texture feature reads the `.webp` files in `hires\misc\`. Without them the low-resolution text is simply scaled up. Check: (1) `config.ini` in the game folder has `HDTextures = 1` under `[DLL]` (with `HDTextures = 0` the map shows a large notice at the top left, `HD textures off: set HDTextures=1 in config.ini`, and `RE3.AnnotatedMap.log` gets a warning). (2) `hires\misc\` contains this mod's `.webp` files (copying only the `.asi` looks blurry). (3) REbirth's low-resolution and retro modes are off.
 
 ## Controls

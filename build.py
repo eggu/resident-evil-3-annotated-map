@@ -33,6 +33,9 @@ def main():
         z.write(ROOT / 'packaging/RE3.AnnotatedMap.ini', 'RE3.AnnotatedMap.ini')   # defaults; an existing user INI is never replaced (README)
         z.write(ROOT / 'LICENSE', 'LICENSE.txt')
         z.write(ROOT / 'NOTICE.md', 'NOTICE.md')
+        loader = ROOT / 'packaging/ultimate-asi-loader'   # RE3.exe imports DSOUND; loader is Ultimate ASI Loader renamed (MIT)
+        z.write(loader / 'dsound.dll', 'dsound.dll')
+        z.write(loader / 'UltimateASILoader-LICENSE.txt', 'scripts/UltimateASILoader-LICENSE.txt')
     report = dict(version=version, asi_sha256=hashlib.sha256((build / NAME).read_bytes()).hexdigest(),
                   package=package.name, files=zipfile.ZipFile(package).namelist())
     (build / 'build-report.json').write_text(json.dumps(report, indent=1) + '\n')

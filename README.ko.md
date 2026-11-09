@@ -29,14 +29,19 @@
 
 1. **Classic REbirth**(바이오하자드 3용, 1.0.3에서 확인)를 먼저 설치합니다. [공식 다운로드](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
 2. 게임을 종료하고 [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest)에서 `RE3-Annotated-Map-<버전>.zip`을 받아 압축을 풉니다. `Source code`는 설치 파일이 아닙니다.
-3. **`RE3.AnnotatedMap.asi` 파일과 `hires` 폴더**를 `BIOHAZARD(R) 3 PC.exe`가 있는 게임 폴더에 복사합니다. 기존 `hires` 폴더가 있으면 합치고, 같은 이름의 파일은 교체합니다. 다른 HD 모드를 사용한다면 먼저 기존 `hires` 폴더를 백업하세요. 기본 설정 파일 `RE3.AnnotatedMap.ini`는 게임 폴더에 아직 없을 때만 함께 복사하세요. 이미 있으면 덮어쓰지 마세요(내 설정이 사라집니다).
+3. ZIP의 내용(`dsound.dll`, `RE3.AnnotatedMap.asi`, `hires`, `scripts`)을 `BIOHAZARD(R) 3 PC.exe`가 있는 게임 폴더에 폴더 구조 그대로 복사합니다. ASI 로더인 [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) v9.7.4(MIT)가 `dsound.dll`로 포함되어 있습니다. 기존 `hires` 폴더가 있으면 합치고, 같은 이름의 파일은 교체합니다. 다른 HD 모드를 사용한다면 먼저 기존 `hires` 폴더를 백업하세요. 기본 설정 파일 `RE3.AnnotatedMap.ini`는 게임 폴더에 아직 없을 때만 복사하세요. 이미 있으면 덮어쓰지 마세요(내 설정이 사라집니다).
+   - 한글 패치 등으로 Ultimate ASI Loader가 이미 `dsound.dll`로 설치되어 있으면 기존 것을 그대로 두고 `dsound.dll`은 건너뛰세요.
+   - ASI 로더가 아닌 다른 `dsound.dll`(예: DSOAL)이 있으면 덮어쓰지 말고, 포함된 `dsound.dll`을 `winmm.dll` 이름으로 복사하세요.
 4. Classic REbirth로 게임을 실행하고 지도를 열면 표시됩니다. 한글 번역 모드는 필수가 아닙니다.
 
 ```text
 게임 폴더/
 ├─ BIOHAZARD(R) 3 PC.exe
+├─ dsound.dll   (Ultimate ASI Loader, 이미 있으면 건너뜀)
 ├─ RE3.AnnotatedMap.asi
 ├─ RE3.AnnotatedMap.ini   (기본 설정, 이미 있으면 덮어쓰지 않음)
+├─ scripts/
+│  └─ UltimateASILoader-LICENSE.txt
 └─ hires/
    └─ misc/
       └─ 지도 모드의 .webp 파일들
@@ -44,11 +49,11 @@
 
 업그레이드할 때는 기존 `RE3.AnnotatedMap.ini`를 지우거나 ZIP의 기본 파일로 덮어쓰지 마세요. 지도 표시 설정이 들어 있습니다.
 
-제거: `RE3.AnnotatedMap.asi`, `.ini`, `.log`와 지도 모드 ZIP에 포함된 `.webp` 파일만 지우세요. 기존 HD 파일을 백업했다면 복원합니다. `hires` 폴더 전체를 지우면 다른 HD 모드도 영향을 받습니다.
+제거: `RE3.AnnotatedMap.asi`, `.ini`, `.log`, `scripts/UltimateASILoader-LICENSE.txt`(다른 ASI 모드가 없으면 `dsound.dll`도)와 지도 모드 ZIP에 포함된 `.webp` 파일만 지우세요. 기존 HD 파일을 백업했다면 복원합니다. `hires` 폴더 전체를 지우면 다른 HD 모드도 영향을 받습니다.
 
 ## 문제 해결
 
-- **지도가 전혀 나오지 않을 때**: 이 모드는 SourceNext `BIOHAZARD(R) 3 PC.exe`의 한 가지 빌드(실행 파일 시간표시 `0x44642AAC`, 이미지 크기 `0xB01000`)에서만 동작합니다. 다른 빌드에서는 아무것도 그리지 않고 `RE3.AnnotatedMap.log`에 `Unsupported executable`을 남깁니다. 또 Classic REbirth 1.0.3의 `ddraw.dll`에는 ASI 로더가 들어 있지 않으므로, `.asi`를 읽어 주는 ASI 로더(예: Ultimate ASI Loader를 `dsound.dll`이라는 이름으로)가 따로 필요합니다.
+- **지도가 전혀 나오지 않을 때**: 이 모드는 SourceNext `BIOHAZARD(R) 3 PC.exe`의 한 가지 빌드(실행 파일 시간표시 `0x44642AAC`, 이미지 크기 `0xB01000`)에서만 동작합니다. 다른 빌드에서는 아무것도 그리지 않고 `RE3.AnnotatedMap.log`에 `Unsupported executable`을 남깁니다. 또 Classic REbirth 1.0.3의 `ddraw.dll`에는 ASI 로더가 들어 있지 않아, ZIP에 Ultimate ASI Loader를 `dsound.dll`로 포함했습니다. `dsound.dll`이 `BIOHAZARD(R) 3 PC.exe`와 같은 폴더에 있는지, 다른 `dsound.dll`로 바뀌지 않았는지 확인하세요.
 - **지도 글자·아이콘이 흐릿할 때**: 선명한 글자는 REbirth의 HD 텍스처 기능이 `hires\misc\`의 `.webp` 파일을 읽을 때만 나옵니다. 읽지 못하면 저해상도 글자를 그대로 확대해 흐릿하게 보입니다. 확인하세요. (1) 게임 폴더 `config.ini`의 `[DLL]` 항목에 `HDTextures = 1`이 있는지(`HDTextures = 0`이면 지도 왼쪽 위에 `HD textures off: set HDTextures=1 in config.ini` 안내가 크게 표시되고 `RE3.AnnotatedMap.log`에도 경고가 남습니다). (2) `hires\misc\`에 이 모드의 `.webp` 파일이 들어 있는지(`.asi`만 복사하면 흐릿합니다). (3) REbirth 설정에서 저해상도·레트로 모드가 꺼져 있는지.
 
 ## 단축키
