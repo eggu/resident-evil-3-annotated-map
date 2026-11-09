@@ -18,4 +18,4 @@ Spoilers. Rows are conditional variants from current data/overlay.json, not uniq
 | [Monsters](11-monsters.en.md) |
 | [Sources and distribution rights](10-sources.en.md) |
 
-[README](../../README.en.md)
+[README](../../README.md)

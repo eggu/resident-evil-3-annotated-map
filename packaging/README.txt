@@ -57,13 +57,13 @@ RE3 Annotated Map - Survivor's Notes — 한국어
 - `Modifier=Shift`: 아이콘 크기·불투명도에 함께 누르는 키. `Ctrl`로 바꿀 수 있습니다.
 - `LockMarker=Door`: 잠긴 문 아이콘을 문 위치에 표시합니다. `Unvisited`로 바꾸면 문 너머 방(그 방만 방문했다면 문 이쪽)에 표시합니다.
 
-이전 버전에서 업그레이드하면 기존 설정은 유지되고, 열쇠·잠긴 문 이름은 꺼진 상태로 시작합니다(`H`로 켬). 이름 불투명도는 이제 `[` · `]`이고, Shift + `-` · `+`는 아이콘 크기입니다.
+이전 버전에서 업그레이드하면 기존 설정은 유지되며 한 번 자동 변환됩니다. 이벤트는 예전 퍼즐 설정값으로 시작하고, 이름·아이템 아이콘 크기는 지금 보이는 크기가 유지됩니다. 열쇠·잠긴 문 이름은 꺼진 상태로 시작합니다(`H`로 켬). 이름 불투명도는 이제 `[` · `]`이고, Shift + `-` · `+`는 아이콘 크기입니다.
 
 이름을 크게 하면 서로 겹칠 수 있습니다.
 
 ## 표시 안내
 
-방 이름은 방 안의 정해진 자리에 표시되고, 너무 좁은 방은 짧은 선으로 이어진 바깥 자리에 표시됩니다. 아이콘과 아이템 이름이 방 이름을 가릴 수 있습니다. 같은 자리에 두 번 놓인 같은 아이템은 이름을 한 번만 표시합니다. 핵심 아이템·퍼즐 아이콘과 겹친 일반 아이템·적 아이콘은 숨기고, 범례·수치 패널 아래에 오는 표시는 그리지 않습니다.
+방 이름은 방 안의 정해진 자리에 표시되고, 너무 좁은 방은 짧은 선으로 이어진 바깥 자리에 표시됩니다. 아이콘과 아이템 이름이 방 이름을 가릴 수 있습니다. 퍼즐 표식은 필요한 아이템이 아니라 그 자리의 장치 이름(예: 책 받침대, 소화전)을 표시합니다. 같은 자리에 두 번 놓인 같은 아이템은 이름을 한 번만 표시합니다. 핵심 아이템·퍼즐 아이콘과 겹친 일반 아이템·적 아이콘은 숨기고, 범례·수치 패널 아래에 오는 표시는 그리지 않습니다.
 
 주황색 `!`는 퍼즐, 보라색 `?`는 이벤트(Live Selection 선택 장면과 영상·긴 연출이 시작되는 자리)입니다. 이벤트는 스포일러가 될 수 있어 기본으로 꺼져 있고(`6`), 한 번 지나가면 사라집니다. 이벤트 표식에는 이름이 없고(`H`로도 나타나지 않음) 보라색 `?`만 표시됩니다. 이벤트 표시는 대략적인 위치를 안내하며, 선택 결과는 알려주지 않습니다. 게임 데이터에서 찾을 수 있는 장면만 표시하며(일부 장면은 한 번 봤는지 알 수 없어 제외), 방에 들어가면 자동으로 시작되는 장면은 방 대략 위치에 표시합니다.
 
@@ -130,13 +130,13 @@ Changes made on the map are saved automatically to `RE3.AnnotatedMap.ini` in the
 - `Modifier=Shift`: the key held for icon size and opacity. It can be `Ctrl`.
 - `LockMarker=Door`: locked-door icons sit on the door. With `Unvisited` they sit in the room beyond the door (or on this side if only that room was visited).
 
-When upgrading from an earlier version, your settings are kept and key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
+When upgrading from an earlier version, your settings are kept and converted once: Events starts with your old Puzzles setting, and name and item-icon sizes keep the size you had. Key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
 
 Enlarged names may overlap.
 
 ## Marker guide
 
-Room names sit at a fixed spot inside their room; a room too narrow for its name gets a short line to a spot outside. Icons and item names may cover room names. The same item listed twice at one spot is named once. Common item and enemy icons that fall on a key item or puzzle icon are hidden, and nothing is drawn under the legend or the readouts.
+Room names sit at a fixed spot inside their room; a room too narrow for its name gets a short line to a spot outside. Icons and item names may cover room names. Puzzle markers show the name of the device (for example Book Stand, Fire Hydrant), not the item it needs. The same item listed twice at one spot is named once. Common item and enemy icons that fall on a key item or puzzle icon are hidden, and nothing is drawn under the legend or the readouts.
 
 Orange `!` marks puzzles; purple `?` marks events (Live Selection scenes and the spots where a movie or long cutscene starts). Events can spoil the story, so they start off (`6`) and disappear once you have passed them. Event markers have no name (the `H` toggle does not add one), only the purple `?`. Event markers show approximate locations, not choice outcomes. Only scenes that can be found in the game data are marked (some scenes are left out because the game gives no way to tell whether you have seen them); scenes that start by themselves when you enter a room are marked at the room's approximate centre.
 

@@ -1,6 +1,6 @@
 # RE3 Annotated Map - Survivor's Notes — Resident Evil 3 (1999)
 
-English | [한국어](README.md)
+English | [한국어](README.ko.md)
 
 <p align="center"><img src="docs/logo.png" alt="RE3 Annotated Map — Survivor’s Notes" width="320"></p>
 
@@ -82,7 +82,7 @@ Changes made on the map are saved automatically to `RE3.AnnotatedMap.ini` in the
 - `Modifier=Shift`: the key held for icon size and opacity. It can be `Ctrl`.
 - `LockMarker=Door`: locked-door icons sit on the door. With `Unvisited` they sit in the room beyond the door (or on this side if only that room was visited).
 
-When upgrading from an earlier version, your settings are kept and key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
+When upgrading from an earlier version, your settings are kept and converted once: Events starts with your old Puzzles setting, and name and item-icon sizes keep the size you had. Key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
 
 Enlarged names may overlap.
 

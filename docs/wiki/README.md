@@ -18,4 +18,4 @@
 | [몬스터](11-monsters.md) |
 | [출처와 배포 권리](10-sources.md) |
 
-[README](../../README.md)
+[README](../../README.ko.md)
