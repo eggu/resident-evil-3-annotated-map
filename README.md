@@ -1,114 +1,114 @@
 # RE3 Annotated Map - Survivor's Notes — Resident Evil 3 (1999)
 
-[English](README.en.md) | 한국어
+English | [한국어](README.md)
 
 <p align="center"><img src="docs/logo.png" alt="RE3 Annotated Map — Survivor’s Notes" width="320"></p>
 
-**상세 지도: 생존자의 메모** — 원작 Resident Evil 3 PC판(SourceNext `BIOHAZARD(R) 3 PC.exe` + Classic REbirth 1.0.3)의 지도에 방 이름, 잠긴 문과 열쇠, 아이템, 문서·지도, 퍼즐·Live Selection, 타자기·아이템 상자, 몬스터를 표시하는 ASI 모드입니다. 한국어/영어를 지원합니다. RE3 리메이크(2020)용이 아닙니다.
+A Korean/English ASI map mod for the original Resident Evil 3 PC release (SourceNext `BIOHAZARD(R) 3 PC.exe` + Classic REbirth 1.0.3). Adds room names, locked doors and keys, items, documents/maps, puzzles/Live Selections, typewriters, item boxes and monsters to the game's map. Not for the 2020 remake.
 
-- 게임 자체의 지도 화면에 표시합니다. 주운 아이템, 열린 문, 완료한 퍼즐과 쓰러뜨린 몬스터는 지도에서 사라집니다.
-- 방문한 방만 보거나, 지역 지도로 공개된 방 또는 모든 방을 볼 수 있습니다.
-- 아이템·시설·몬스터를 픽셀 아이콘으로 표시합니다.
+- Annotations appear on the game's own map. Picked-up items, opened doors, completed puzzles and defeated monsters disappear from the map.
+- Choose visited rooms, rooms revealed by an area map, or all rooms.
+- Pixel icons represent items, facilities and monsters.
 
-## 스크린샷
+## Screenshots
 
-![업타운 — 모든 방, 적 표시](docs/screenshots/1.png)
+![Uptown — all rooms, enemies on](docs/screenshots/1.png)
 
-| | 방문한 방 | 모든 방 |
+| | Visited rooms | All rooms |
 |---|---|---|
-| 확대 | ![업타운 확대 — 방문한 방](docs/screenshots/2-1-uptown-zoom-in-visited.png) | ![업타운 확대 — 모든 방](docs/screenshots/2-2-uptown-zoom-in-all.png) |
-| 축소 | ![업타운 축소 — 방문한 방](docs/screenshots/3-1-uptown-zoom-out-visited.png) | ![업타운 축소 — 모든 방](docs/screenshots/3-2-uptown-zoom-out-all.png) |
+| Zoomed in | ![Uptown zoomed in — visited rooms](docs/screenshots/2-1-uptown-zoom-in-visited.png) | ![Uptown zoomed in — all rooms](docs/screenshots/2-2-uptown-zoom-in-all.png) |
+| Zoomed out | ![Uptown zoomed out — visited rooms](docs/screenshots/3-1-uptown-zoom-out-visited.png) | ![Uptown zoomed out — all rooms](docs/screenshots/3-2-uptown-zoom-out-all.png) |
 
-![업타운 창고 주변 — 퍼즐·적 표시](docs/screenshots/4.png)
+![Around the Uptown store room — puzzles and enemies](docs/screenshots/4.png)
 
-## 표시 범위와 기본값
+## Visibility and defaults
 
-새 설정은 **영어, 이름 크기 100%, 이름 불투명도 70%, 아이콘 크기·불투명도 100%, 방문한 방만 표시, 방 이름만 켬, 아이템 이름 숨김**으로 시작합니다. `\`(한국 키보드에서는 `₩`) 키로 한국어로 바꾸고, `2`–`8`로 다른 항목을 켭니다. `9`로 범위를 바꿉니다. **모든 방**은 미방문 구역과 아이템을 미리 보여주므로 스포일러가 포함됩니다.
+A new configuration starts in **English, name size 100%, name opacity 70%, icon size and opacity 100%, visited rooms only, with only Rooms on and item names hidden**. Press `\` (the `₩` key on Korean keyboards) for Korean and `2`–`8` to turn on other categories. Press `9` to change scope. **All rooms** reveals unexplored rooms and items and contains spoilers.
 
-## 설치
+## Installation
 
-1. **Classic REbirth**(바이오하자드 3용, 1.0.3에서 확인)를 먼저 설치합니다. [공식 다운로드](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
-2. 게임을 종료하고 [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest)에서 `RE3-Annotated-Map-<버전>.zip`을 받아 압축을 풉니다. `Source code`는 설치 파일이 아닙니다.
-3. **`RE3.AnnotatedMap.asi` 파일과 `hires` 폴더**를 `BIOHAZARD(R) 3 PC.exe`가 있는 게임 폴더에 복사합니다. 기존 `hires` 폴더가 있으면 합치고, 같은 이름의 파일은 교체합니다. 다른 HD 모드를 사용한다면 먼저 기존 `hires` 폴더를 백업하세요. 기본 설정 파일 `RE3.AnnotatedMap.ini`는 게임 폴더에 아직 없을 때만 함께 복사하세요. 이미 있으면 덮어쓰지 마세요(내 설정이 사라집니다).
-4. Classic REbirth로 게임을 실행하고 지도를 열면 표시됩니다. 한글 번역 모드는 필수가 아닙니다.
+1. Install **Classic REbirth** for Resident Evil 3 first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
+2. Close the game. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest) and extract it. `Source code` is not the install package.
+3. Copy **`RE3.AnnotatedMap.asi` and the `hires` folder** into the game folder containing `BIOHAZARD(R) 3 PC.exe`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first. Also copy the default settings file `RE3.AnnotatedMap.ini` only if the game folder does not have one yet. Never overwrite an existing one (it holds your settings).
+4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
 ```text
-게임 폴더/
+game folder/
 ├─ BIOHAZARD(R) 3 PC.exe
 ├─ RE3.AnnotatedMap.asi
-├─ RE3.AnnotatedMap.ini   (기본 설정, 이미 있으면 덮어쓰지 않음)
+├─ RE3.AnnotatedMap.ini   (default settings; never overwrite an existing one)
 └─ hires/
    └─ misc/
-      └─ 지도 모드의 .webp 파일들
+      └─ the map mod's .webp files
 ```
 
-업그레이드할 때는 기존 `RE3.AnnotatedMap.ini`를 지우거나 ZIP의 기본 파일로 덮어쓰지 마세요. 지도 표시 설정이 들어 있습니다.
+When upgrading, keep your existing `RE3.AnnotatedMap.ini`: do not delete it or overwrite it with the default file from the ZIP. It holds your map settings.
 
-제거: `RE3.AnnotatedMap.asi`, `.ini`, `.log`와 지도 모드 ZIP에 포함된 `.webp` 파일만 지우세요. 기존 HD 파일을 백업했다면 복원합니다. `hires` 폴더 전체를 지우면 다른 HD 모드도 영향을 받습니다.
+Uninstall: remove `RE3.AnnotatedMap.asi`, `.ini`, `.log` and only the `.webp` files included in the map ZIP. Restore backed-up HD files if applicable. Do not delete the entire `hires` folder: other HD mods also use it.
 
-## 문제 해결
+## Troubleshooting
 
-- **지도가 전혀 나오지 않을 때**: 이 모드는 SourceNext `BIOHAZARD(R) 3 PC.exe`의 한 가지 빌드(실행 파일 시간표시 `0x44642AAC`, 이미지 크기 `0xB01000`)에서만 동작합니다. 다른 빌드에서는 아무것도 그리지 않고 `RE3.AnnotatedMap.log`에 `Unsupported executable`을 남깁니다. 또 Classic REbirth 1.0.3의 `ddraw.dll`에는 ASI 로더가 들어 있지 않으므로, `.asi`를 읽어 주는 ASI 로더(예: Ultimate ASI Loader를 `dsound.dll`이라는 이름으로)가 따로 필요합니다.
-- **지도 글자·아이콘이 흐릿할 때**: 선명한 글자는 REbirth의 HD 텍스처 기능이 `hires\misc\`의 `.webp` 파일을 읽을 때만 나옵니다. 읽지 못하면 저해상도 글자를 그대로 확대해 흐릿하게 보입니다. 확인하세요. (1) 게임 폴더 `config.ini`의 `[DLL]` 항목에 `HDTextures = 1`이 있는지(`HDTextures = 0`이면 지도 왼쪽 위에 `HD textures off: set HDTextures=1 in config.ini` 안내가 크게 표시되고 `RE3.AnnotatedMap.log`에도 경고가 남습니다). (2) `hires\misc\`에 이 모드의 `.webp` 파일이 들어 있는지(`.asi`만 복사하면 흐릿합니다). (3) REbirth 설정에서 저해상도·레트로 모드가 꺼져 있는지.
+- **Nothing appears on the map**: the mod only runs on one build of the SourceNext `BIOHAZARD(R) 3 PC.exe` (PE timestamp `0x44642AAC`, image size `0xB01000`). On any other build it draws nothing and writes `Unsupported executable` to `RE3.AnnotatedMap.log`. Classic REbirth 1.0.3's `ddraw.dll` does not load `.asi` files, so a separate ASI loader (for example Ultimate ASI Loader named `dsound.dll`) is required.
+- **Map text or icons look blurry**: sharp text appears only when REbirth's HD texture feature reads the `.webp` files in `hires\misc\`. Without them the low-resolution text is simply scaled up. Check: (1) `config.ini` in the game folder has `HDTextures = 1` under `[DLL]` (with `HDTextures = 0` the map shows a large notice at the top left, `HD textures off: set HDTextures=1 in config.ini`, and `RE3.AnnotatedMap.log` gets a warning). (2) `hires\misc\` contains this mod's `.webp` files (copying only the `.asi` looks blurry). (3) REbirth's low-resolution and retro modes are off.
 
-## 단축키
+## Controls
 
-지도 화면에서만 작동하며, 현재 상태가 범례에 표시됩니다.
+Keys work on the map screen only. The legend shows the current state.
 
-| 키 | 동작 |
+| Key | Action |
 |---|---|
-| 0 | 전체 표시 켜기/끄기 |
-| 1 | 방 이름·타자기·아이템 상자 |
-| 2 | 잠긴 문·필요한 열쇠 |
-| 3 | 핵심 아이템 |
-| 4 | 문서·지도 |
-| 5 | 퍼즐(아이템이나 풀이가 필요한 장치) |
-| 6 | 이벤트(스포일러가 되는 장면, Live Selection) |
-| 7 | 일반 아이템(탄약·회복·리본·화약) |
-| 8 | 적 |
-| 9 | 방문한 방 → 공개된 방(지역 지도 획득) → 모든 방 |
-| \\(₩) | 한국어 / English |
-| - · = (+), 숫자패드 - · + | 이름 크기 10%씩(50–200%) |
-| [ · ] | 이름 불투명도 10%씩(10–100%) |
-| Shift + - · = (+) | 아이콘 크기 10%씩(50–200%) |
-| Shift + [ · ] | 아이콘 불투명도 10%씩(10–100%) |
-| H | 아이템 이름 3단계 전환: 모두 표시 → 일반 아이템 제외 → 모두 숨김(열쇠·잠긴 문·문서·퍼즐·일반 아이템) |
-| ~ | 범례와 범례 오른쪽의 크기·불투명도 수치 접기/펴기 |
+| 0 | All annotations on/off |
+| 1 | Room names, typewriters and item boxes |
+| 2 | Locked doors and required keys |
+| 3 | Key items |
+| 4 | Documents and maps |
+| 5 | Puzzles (devices that need an item or a solution) |
+| 6 | Events (story scenes that can spoil, Live Selections) |
+| 7 | Common items (ammo, healing, ribbons, gunpowder) |
+| 8 | Enemies |
+| 9 | Visited → revealed by an area map → all rooms |
+| \\(₩) | Korean / English |
+| - · = (+), numpad - · + | Name size in 10% steps (50–200%) |
+| [ · ] | Name opacity in 10% steps (10–100%) |
+| Shift + - · = (+) | Icon size in 10% steps (50–200%) |
+| Shift + [ · ] | Icon opacity in 10% steps (10–100%) |
+| H | Item names, 3 states per press: all → all except common items → hidden (keys, locked doors, documents, puzzles, common items) |
+| ~ | Fold or unfold the legend and the size and opacity readouts beside it |
 
-## 설정
+## Settings
 
-지도 화면에서 바꾼 설정은 자동으로 저장됩니다. 설정 파일은 게임 폴더의 `RE3.AnnotatedMap.ini`입니다. 직접 편집하려면 게임을 종료한 뒤 메모장으로 여세요. 설정 파일에서만 바꿀 수 있는 항목:
+Changes made on the map are saved automatically to `RE3.AnnotatedMap.ini` in the game folder. Close the game before opening it in Notepad to edit it manually. Options available only in the file:
 
-- `Modifier=Shift`: 아이콘 크기·불투명도에 함께 누르는 키. `Ctrl`로 바꿀 수 있습니다.
-- `LockMarker=Door`: 잠긴 문 아이콘을 문 위치에 표시합니다. `Unvisited`로 바꾸면 문 너머 방(그 방만 방문했다면 문 이쪽)에 표시합니다.
+- `Modifier=Shift`: the key held for icon size and opacity. It can be `Ctrl`.
+- `LockMarker=Door`: locked-door icons sit on the door. With `Unvisited` they sit in the room beyond the door (or on this side if only that room was visited).
 
-이전 버전에서 업그레이드하면 기존 설정은 유지되고, 열쇠·잠긴 문 이름은 꺼진 상태로 시작합니다(`H`로 켬). 이름 불투명도는 이제 `[` · `]`이고, Shift + `-` · `+`는 아이콘 크기입니다.
+When upgrading from an earlier version, your settings are kept and key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
 
-이름을 크게 하면 서로 겹칠 수 있습니다.
+Enlarged names may overlap.
 
-## 표시 안내
+## Marker guide
 
-방 이름은 방 안의 정해진 자리에 표시되고, 너무 좁은 방은 짧은 선으로 이어진 바깥 자리에 표시됩니다. 아이콘과 아이템 이름이 방 이름을 가릴 수 있습니다. 퍼즐 표식은 필요한 아이템이 아니라 그 자리의 장치 이름(예: 책 받침대, 소화전)을 표시합니다. 같은 자리에 두 번 놓인 같은 아이템은 이름을 한 번만 표시합니다. 핵심 아이템·퍼즐 아이콘과 겹친 일반 아이템·적 아이콘은 숨기고, 범례·수치 패널 아래에 오는 표시는 그리지 않습니다.
+Room names sit at a fixed spot inside their room; a room too narrow for its name gets a short line to a spot outside. Icons and item names may cover room names. Puzzle markers show the name of the device (for example Book Stand, Fire Hydrant), not the item it needs. The same item listed twice at one spot is named once. Common item and enemy icons that fall on a key item or puzzle icon are hidden, and nothing is drawn under the legend or the readouts.
 
-주황색 `!`는 퍼즐, 보라색 `?`는 이벤트(Live Selection 선택 장면과 영상·긴 연출이 시작되는 자리)입니다. 이벤트는 스포일러가 될 수 있어 기본으로 꺼져 있고(`6`), 한 번 지나가면 사라집니다. 이벤트 표식에는 이름이 없고(`H`로도 나타나지 않음) 보라색 `?`만 표시됩니다. 이벤트 표시는 대략적인 위치를 안내하며, 선택 결과는 알려주지 않습니다. 게임 데이터에서 찾을 수 있는 장면만 표시하며(일부 장면은 한 번 봤는지 알 수 없어 제외), 방에 들어가면 자동으로 시작되는 장면은 방 대략 위치에 표시합니다.
+Orange `!` marks puzzles; purple `?` marks events (Live Selection scenes and the spots where a movie or long cutscene starts). Events can spoil the story, so they start off (`6`) and disappear once you have passed them. Event markers have no name (the `H` toggle does not add one), only the purple `?`. Event markers show approximate locations, not choice outcomes. Only scenes that can be found in the game data are marked (some scenes are left out because the game gives no way to tell whether you have seen them); scenes that start by themselves when you enter a room are marked at the room's approximate centre.
 
-몬스터 표시는 일부 출현을 빠뜨릴 수 있습니다. 네메시스의 예정 출현 위치는 일부만 표시하며, 네메시스가 떨어뜨리는 아이템은 표시하지 않습니다.
+Some monster encounters may be missing. Only some upcoming Nemesis appearances are shown. Items dropped by Nemesis are not shown.
 
-## 위키와 지원
+## Wiki and support
 
-[한국어 위키](docs/wiki/README.md) · [English wiki](docs/wiki/README.en.md): 방, 잠금·열쇠, 아이템, 퍼즐·이벤트, 문서·지도, 세이브 지점과 몬스터. 표에는 스포일러가 있습니다.
+[English wiki](docs/wiki/README.en.md) · [한국어 위키](docs/wiki/README.md): rooms, locks/keys, items, puzzles/events, documents/maps, save points and monsters. Tables contain spoilers.
 
-문제를 알릴 때는 어느 장소에서 어떤 표시가 잘못됐는지 스크린샷과 함께 설명해 주세요.
+When reporting an issue, describe the location and what is missing or incorrect, with a screenshot.
 
-## 빌드
+## Build
 
-소스에서 직접 빌드하려면 [개발 안내](docs/DEVELOPMENT.md)를 참고하세요.
+To build from source, see the [development guide](docs/DEVELOPMENT.md).
 
-## 다른 지도 모드
+## Other map mods
 
-- [RE1 Annotated Map - Survivor's Notes](https://github.com/eggu/resident-evil-annotated-map) — 바이오하자드 1 (1996)
-- [RE2 Annotated Map - Survivor's Notes](https://github.com/eggu/resident-evil-2-annotated-map) — 바이오하자드 2 (1998)
+- [RE1 Annotated Map - Survivor's Notes](https://github.com/eggu/resident-evil-annotated-map) — Resident Evil (1996)
+- [RE2 Annotated Map - Survivor's Notes](https://github.com/eggu/resident-evil-2-annotated-map) — Resident Evil 2 (1998)
 
-## 크레딧과 권리
+## Credits and rights
 
-제작: **커트씨**. 비공식 팬 모드이며 Capcom 또는 Classic REbirth와 관련이 없습니다. 소스 코드는 [MIT 라이선스](LICENSE)입니다. 참고 자료와 글꼴 출처는 [NOTICE](NOTICE.md)에 있습니다.
+Created by **커트씨**. An unofficial fan mod, unaffiliated with Capcom or Classic REbirth. Source code is under the [MIT License](LICENSE). References and font credits are listed in [NOTICE](NOTICE.md).
