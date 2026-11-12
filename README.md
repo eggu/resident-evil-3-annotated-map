@@ -37,7 +37,7 @@ A new configuration starts in **English, name size 100%, name opacity 70%, icon 
 The mod follows Classic REbirth's `HDTextures` setting in `config.ini` at game start.
 
 - **HD** (`HDTextures = 1`): sharp text and icons from the `.webp` files in `hires\misc\`.
-- **SD** (`HDTextures = 0` or missing): low-resolution 1x pixel markers and a pixel font (Galmuri9). Room names sit next to their room on a short line and appear only when the map is zoomed in. In SD, name and icon size, opacity and item names are not available.
+- **SD** (`HDTextures = 0` or missing): low-resolution 1x pixel markers and a pixel font (Galmuri9). Room names sit next to their room on a short line and are hidden when the map is zoomed out. In SD, name and icon size, opacity and item names are not available.
 
 ## Installation
 

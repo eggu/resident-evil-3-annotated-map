@@ -1,5 +1,12 @@
 RE3 Annotated Map - Survivor's Notes — 한국어
 
+## HD와 SD
+
+게임을 시작할 때 Classic REbirth `config.ini`의 `HDTextures` 설정을 따릅니다.
+
+- **HD** (`HDTextures = 1`): `hires\misc\`의 `.webp` 파일로 글자와 아이콘을 선명하게 표시합니다.
+- **SD** (`HDTextures = 0`이거나 항목이 없을 때): 저해상도용 1배 픽셀 마커와 픽셀 글꼴(Galmuri9)로 표시합니다. 방 이름은 짧은 선으로 방 옆에 붙고, 지도를 축소하면 숨겨집니다. SD에서는 이름·아이콘 크기, 불투명도, 아이템 이름을 쓸 수 없습니다.
+
 ## 설치
 
 1. **Classic REbirth**(바이오하자드 3용, 1.0.3에서 확인)를 먼저 설치합니다. [공식 다운로드](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
@@ -29,7 +36,7 @@ RE3 Annotated Map - Survivor's Notes — 한국어
 ## 문제 해결
 
 - **지도가 전혀 나오지 않을 때**: 이 모드는 SourceNext `BIOHAZARD(R) 3 PC.exe`의 한 가지 빌드(실행 파일 시간표시 `0x44642AAC`, 이미지 크기 `0xB01000`)에서만 동작합니다. 다른 빌드에서는 아무것도 그리지 않고 `RE3.AnnotatedMap.log`에 `Unsupported executable`을 남깁니다. 또 Classic REbirth 1.0.3의 `ddraw.dll`에는 ASI 로더가 들어 있지 않아, ZIP에 Ultimate ASI Loader를 `dsound.dll`로 포함했습니다. `dsound.dll`이 `BIOHAZARD(R) 3 PC.exe`와 같은 폴더에 있는지, 다른 `dsound.dll`로 바뀌지 않았는지 확인하세요.
-- **지도 글자·아이콘이 흐릿할 때**: 선명한 글자는 REbirth의 HD 텍스처 기능이 `hires\misc\`의 `.webp` 파일을 읽을 때만 나옵니다. 읽지 못하면 저해상도 글자를 그대로 확대해 흐릿하게 보입니다. 확인하세요. (1) 게임 폴더 `config.ini`의 `[DLL]` 항목에 `HDTextures = 1`이 있는지(`HDTextures = 0`이면 지도 왼쪽 위에 `HD textures off: set HDTextures=1 in config.ini` 안내가 크게 표시되고 `RE3.AnnotatedMap.log`에도 경고가 남습니다). (2) `hires\misc\`에 이 모드의 `.webp` 파일이 들어 있는지(`.asi`만 복사하면 흐릿합니다). (3) REbirth 설정에서 저해상도·레트로 모드가 꺼져 있는지.
+- **`HDTextures = 1`인데 지도 글자·아이콘이 흐릿할 때**: 선명한 글자는 REbirth가 `hires\misc\`의 `.webp` 파일을 읽어야 나옵니다. `hires\misc\`에 이 모드의 `.webp` 파일이 들어 있는지(`.asi`만 복사하면 흐릿합니다), REbirth 설정에서 저해상도·레트로 모드가 꺼져 있는지 확인하세요. `HDTextures = 0`이면 SD용 픽셀 마커와 글꼴로 표시됩니다.
 
 ## 단축키
 
@@ -61,6 +68,7 @@ RE3 Annotated Map - Survivor's Notes — 한국어
 
 - `Modifier=Shift`: 아이콘 크기·불투명도에 함께 누르는 키. `Ctrl`로 바꿀 수 있습니다.
 - `LockMarker=Door`: 잠긴 문 아이콘을 문 위치에 표시합니다. `Unvisited`로 바꾸면 문 너머 방(그 방만 방문했다면 문 이쪽)에 표시합니다.
+- `DisplayMode=Auto`: `HDTextures`를 따릅니다(HD와 SD 참고). `HD`나 `SD`로 고정할 수 있습니다.
 
 이전 버전에서 업그레이드하면 기존 설정은 유지되며 한 번 자동 변환됩니다. 이벤트는 예전 퍼즐 설정값으로 시작하고, 이름·아이템 아이콘 크기는 지금 보이는 크기가 유지됩니다. 열쇠·잠긴 문 이름은 꺼진 상태로 시작합니다(`H`로 켬). 이름 불투명도는 이제 `[` · `]`이고, Shift + `-` · `+`는 아이콘 크기입니다.
 
@@ -77,6 +85,13 @@ RE3 Annotated Map - Survivor's Notes — 한국어
 
 
 RE3 Annotated Map - Survivor's Notes — English
+
+## HD and SD
+
+The mod follows Classic REbirth's `HDTextures` setting in `config.ini` at game start.
+
+- **HD** (`HDTextures = 1`): sharp text and icons from the `.webp` files in `hires\misc\`.
+- **SD** (`HDTextures = 0` or missing): low-resolution 1x pixel markers and a pixel font (Galmuri9). Room names sit next to their room on a short line and are hidden when the map is zoomed out. In SD, name and icon size, opacity and item names are not available.
 
 ## Installation
 
@@ -107,7 +122,7 @@ Uninstall: remove `RE3.AnnotatedMap.asi`, `.ini`, `.log`, `scripts/UltimateASILo
 ## Troubleshooting
 
 - **Nothing appears on the map**: the mod only runs on one build of the SourceNext `BIOHAZARD(R) 3 PC.exe` (PE timestamp `0x44642AAC`, image size `0xB01000`). On any other build it draws nothing and writes `Unsupported executable` to `RE3.AnnotatedMap.log`. Classic REbirth 1.0.3's `ddraw.dll` does not load `.asi` files, so the ZIP includes Ultimate ASI Loader as `dsound.dll`. Check that `dsound.dll` sits next to `BIOHAZARD(R) 3 PC.exe` and was not replaced by a different `dsound.dll`.
-- **Map text or icons look blurry**: sharp text appears only when REbirth's HD texture feature reads the `.webp` files in `hires\misc\`. Without them the low-resolution text is simply scaled up. Check: (1) `config.ini` in the game folder has `HDTextures = 1` under `[DLL]` (with `HDTextures = 0` the map shows a large notice at the top left, `HD textures off: set HDTextures=1 in config.ini`, and `RE3.AnnotatedMap.log` gets a warning). (2) `hires\misc\` contains this mod's `.webp` files (copying only the `.asi` looks blurry). (3) REbirth's low-resolution and retro modes are off.
+- **Map text or icons look blurry with `HDTextures = 1`**: sharp text needs REbirth to read the `.webp` files in `hires\misc\`. Check that this mod's `.webp` files are in `hires\misc\` (copying only the `.asi` looks blurry) and that REbirth's low-resolution and retro modes are off. With `HDTextures = 0` the mod uses its SD pixel markers and font instead.
 
 ## Controls
 
@@ -139,6 +154,7 @@ Changes made on the map are saved automatically to `RE3.AnnotatedMap.ini` in the
 
 - `Modifier=Shift`: the key held for icon size and opacity. It can be `Ctrl`.
 - `LockMarker=Door`: locked-door icons sit on the door. With `Unvisited` they sit in the room beyond the door (or on this side if only that room was visited).
+- `DisplayMode=Auto`: follows `HDTextures` (see HD and SD). `HD` or `SD` forces one.
 
 When upgrading from an earlier version, your settings are kept and converted once: Events starts with your old Puzzles setting, and name and item-icon sizes keep the size you had. Key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
 
