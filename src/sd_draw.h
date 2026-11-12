@@ -83,7 +83,7 @@ static void sd_room_names(const unsigned char *s, unsigned page) {
     for (unsigned i = 0; i < SD_ROOM_COUNT; i++) {
         const SdRoom *r = &sd_rooms[i];
         if (r->page != page || !room_shown(r->page, r->idx)) continue;
-        for (unsigned k = 0; k < ROOM_COUNT; k++)   /* areas named only in SD (data/sd-extra-names.json) are not room names */
+        for (unsigned k = 0; k < ROOM_NAMED_COUNT; k++)   /* areas named only in SD (data/sd-extra-names.json) are not room names */
             if (room_labels[k].page == r->page && room_labels[k].idx == r->idx) { shown_counts[9]++; break; }
         if (map_zoom < 100) continue;
         const SdSprite *sp = &sd_sprites[r->sprite[korean]];

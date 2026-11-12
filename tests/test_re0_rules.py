@@ -181,6 +181,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 import build_assets
 overlay = json.loads((ROOT / 'data/overlay.json').read_text())
 names_json = json.loads((ROOT / 'data/names.json').read_text())
+overlay, names_json = build_assets.with_area_names(overlay, names_json)
 def table(layout):
     return {(p, i, l): (round(o['x'] * 2), round(o['y'] * 2), o['line'] and tuple(o['line'])) for (p, i, l), o in layout.items()}
 want = {(r[0], r[1], l): (r[4 + l], r[6 + l], (r[10 + l] if r[2 + l] else None)) for r in rooms for l in (0, 1)}

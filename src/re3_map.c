@@ -283,7 +283,7 @@ static void room_names(const unsigned char *s, unsigned page, const uint8_t *nem
     for (unsigned i = 0; i < ROOM_COUNT; i++) {
         const RoomLabel *r = &room_labels[i];
         if (r->page != page || !room_shown(r->page, r->idx)) continue;
-        shown_counts[9]++;
+        if (i < ROOM_NAMED_COUNT) shown_counts[9]++;
         if (test_no_room_names) continue;
         unsigned id = r->label[korean];
         int sw = sprites[id].w, sh = sprites[id].h, w = name_dimension(sw), h = name_dimension(sh), cx, cy;

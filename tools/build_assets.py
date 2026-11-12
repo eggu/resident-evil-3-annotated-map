@@ -320,10 +320,21 @@ def mark_text(names, pz_text, cat, ident, lang):
     return item_text(names, ident, lang)
 
 
+def with_area_names(overlay, names):
+    """Areas named only for orientation (data/sd-extra-names.json, user 2026-11-13: Uptown's police station block, HD
+    and SD) go after the real rooms so the room count skips them (ROOM_NAMED_COUNT)."""
+    extra = [(int(pg), int(i), n) for pg, rs in json.loads((ROOT / 'data/sd-extra-names.json').read_text()).items()
+             if not pg.startswith('_') for i, n in rs.items()]
+    rooms = [r for r in overlay['rooms'] if r['name']]
+    return ({**overlay, 'rooms': rooms + [dict(page=pg, idx=i, name=n['en']) for pg, i, n in extra], 'named_rooms': len(rooms)},
+            {**names, 'rooms': {**names['rooms'], **{n['en']: n['ko'] for _, _, n in extra}}})
+
+
 def main():
     names = json.loads((ROOT / 'data/names.json').read_text())
     overlay = json.loads((ROOT / 'data/overlay.json').read_text())
     pages_map = json.loads((ROOT / 'data/map-pages.json').read_text())
+    overlay, names = with_area_names(overlay, names)
     sprites, index = [], {}
     def add(key, sp):
         if key not in index:
@@ -553,6 +564,7 @@ def write_header(sd, rects, sprites, index, overlay, pages_map, layout, mark_nam
     rooms = [r for r in overlay['rooms'] if r['name']]
     L.append('typedef struct { uint8_t page, idx, lead[2]; int16_t x2[2], y2[2]; uint16_t label[2]; int16_t line[2][4]; } RoomLabel;')
     L.append(f'#define ROOM_COUNT {len(rooms)}')
+    L.append(f'#define ROOM_NAMED_COUNT {overlay["named_rooms"]}   /* rooms after this are area names (data/sd-extra-names.json) */')
     rows = []
     for r in rooms:
         o = [layout[r['page'], r['idx'], lang] for lang in (0, 1)]

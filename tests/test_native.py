@@ -108,6 +108,7 @@ rooms = [(int(m[0]), int(m[1]), int(m[2]), int(m[3]), int(m[4]), int(m[5]), int(
 sprites = [tuple(int(x) for x in m) for m in re.findall(r'\{(\d+),(\d+),(\d+),(\d+),(\d+)\}', H.split('sprites[SPRITE_COUNT]', 1)[1].split('};', 1)[0])]
 assert int(re.search(r'MARKER_COUNT (\d+)', H)[1]) == len(markers) > 300
 assert int(re.search(r'ROOM_COUNT (\d+)', H)[1]) == len(rooms) > 100
+ROOM_NAMED = int(re.search(r'ROOM_NAMED_COUNT (\d+)', H)[1])   # area names (data/sd-extra-names.json) come after the rooms
 TABLE = 0x52EAAC
 bank_addr = [struct.unpack('<I', u.mem_read(TABLE + 4 * b, 4))[0] for b in range(50)]
 assert bank_addr[0] == 0xA61CA0 and bank_addr[7] == 0xA67458 and bank_addr[9] == 0xA6751C
@@ -153,7 +154,7 @@ def model(page, scope, korean, toggles=(1,) * 9, aj=False):
                 return False
         return True
     if toggles[0] and toggles[1]:
-        kinds['room'] = sum(1 for r in rooms if r[0] == page and shown(r[0], r[1]))
+        kinds['room'] = sum(1 for r in rooms[:ROOM_NAMED] if r[0] == page and shown(r[0], r[1]))
     drawn_group = False
     for n, m in enumerate(markers):
         kind, pg, idx, sets, x, y, extra, flag = m[:8]
