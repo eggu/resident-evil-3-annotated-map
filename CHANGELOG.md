@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1
+
+- `DisplayMode=Auto` uses HD only when Classic REbirth is running with `HDTextures = 1` and `RetroMode` and `LowResEnable` off. Every other case, including playing without Classic REbirth, uses SD.
+
+- `DisplayMode=Auto`는 Classic REbirth가 `HDTextures = 1`이고 `RetroMode`·`LowResEnable`이 꺼진 상태로 실행될 때만 HD를 씁니다. Classic REbirth 없이 실행할 때를 포함해 그 밖의 경우는 모두 SD입니다.
+
 ## 1.2.0
 
 - SD mode: with Classic REbirth's `HDTextures = 0` (or missing) the map uses 1x pixel markers and a pixel font (Galmuri9) instead of blurry HD text. Room names sit next to their room on a short line and show only at 100% zoom or more. `DisplayMode` in the INI can force HD or SD.

@@ -1,5 +1,21 @@
 # Release notes
 
+## 1.2.1
+
+**Upgrading:** replace `RE3.AnnotatedMap.asi` in the game folder. Your `RE3.AnnotatedMap.ini` stays as it is.
+
+- **Auto display mode.** With `DisplayMode=Auto` (the default), the map uses HD only when Classic REbirth is running with `HDTextures = 1` and both `RetroMode` and `LowResEnable` are off. In every other case it uses SD: `HDTextures = 0` or missing, retro or low-resolution mode on, or playing without Classic REbirth (a leftover `config.ini` no longer turns HD on). `DisplayMode=HD` or `SD` still forces one.
+
+---
+
+## 1.2.1 (한국어)
+
+**업그레이드:** 게임 폴더의 `RE3.AnnotatedMap.asi`만 바꾸면 됩니다. `RE3.AnnotatedMap.ini`는 그대로 둡니다.
+
+- **자동 표시 방식.** `DisplayMode=Auto`(기본)는 Classic REbirth가 `HDTextures = 1`이고 `RetroMode`·`LowResEnable`이 모두 꺼진 상태로 실행될 때만 HD를 씁니다. 그 밖의 경우는 모두 SD입니다: `HDTextures = 0`이거나 항목이 없을 때, 레트로·저해상도 모드가 켜져 있을 때, Classic REbirth 없이 실행할 때(남아 있는 `config.ini`만으로는 더 이상 HD가 켜지지 않음). `DisplayMode=HD`나 `SD`로 고정할 수 있습니다.
+
+---
+
 ## 1.2.0
 
 **Upgrading:** copy the ZIP contents into the game folder (`RE3.AnnotatedMap.asi` and the `hires` folder) and keep your existing `RE3.AnnotatedMap.ini`. Your settings stay as they are; the new `DisplayMode` setting starts at `Auto` (the included INI explains it).
