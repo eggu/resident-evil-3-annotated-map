@@ -37,6 +37,13 @@ def rgb(c):
     return ((c & 31) * 255 // 31, (c >> 5 & 31) * 255 // 31, (c >> 10 & 31) * 255 // 31, 0 if c == 0 else 255)
 
 
+def indices(t):
+    """4bpp texel indices. Each holds two 2-bit layers: CLUT rows 0-7 read bits 0-1, rows 8-15 bits 2-3; a map part
+    takes the high layer when its attr bit 0 is set (tools/build_assets.py part_mask)."""
+    assert t['bpp'] == 0
+    return [(t['px'][(y * t['w'] + x) // 2] >> (4 * (x & 1))) & 15 for y in range(t['h']) for x in range(t['w'])]
+
+
 def image(t, row=0):
     im = Image.new('RGBA', (t['w'], t['h']))
     pal = [rgb(c) for c in t['clut'][row]] if t['clut'] else None
@@ -87,6 +94,7 @@ def main():
         pages.append(page)
         src = image(t)
         src.save(out_dir / f'page{page["page"]}-tim.png')
+        Image.frombytes('L', (t['w'], t['h']), bytes(indices(t))).save(out_dir / f'page{page["page"]}-tim-index.png')
         parts = [(r['index'], p) for r in page['rooms'] for p in r['parts'] if p[2] >= p[0] and p[3] >= p[1]]
         if not parts:
             continue
@@ -95,7 +103,9 @@ def main():
         page['bounds'] = [x0, y0, x1, y1]
         canvas = Image.new('RGBA', (x1 - x0, y1 - y0), (0, 0, 0, 255))
         for _, (u0, v0, u1, v1, x, y, typ, attr, _x) in parts:
-            canvas.alpha_composite(src.crop((u0, v0, u1 + 1, v1 + 1)), (x - x0, y - y0))
+            if typ == 7: continue   # highlight copies, not drawn on the plain map
+            o = 256 * ((attr >> 1) & 1)   # attr bit 1: right half of the TIM, bit 0: high 2-bit layer (CLUT rows 8-15)
+            canvas.alpha_composite(image(t, 8 if attr & 1 else 0).crop((u0 + o, v0, u1 + 1 + o, v1 + 1)), (x - x0, y - y0))
         big = canvas.resize((canvas.width * 3, canvas.height * 3), Image.NEAREST)
         draw = ImageDraw.Draw(big)
         for r in page['rooms']:

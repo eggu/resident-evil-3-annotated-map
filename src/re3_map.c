@@ -109,6 +109,27 @@ static void quad_row(int x, int y, unsigned sprite_id, int w, int h, unsigned ro
     p->clut = (uint16_t)(((CLUT_Y + row) << 6) | (CLUT_X >> 4));
     p->tpage = (uint16_t)((ATLAS_X0 / 64) + s->page);
 }
+/* A 1 px leader at any angle: one POLY_FT4 as a parallelogram one pixel wide across its major axis, every corner
+ * sampling the middle of the solid leader sprite. Steep segments widen along x, shallow ones along y. */
+static void line_quad(int x0, int y0, int x1, int y1) {
+    if (prim_count >= MAX_PRIMS) return;
+    int dx = x1 - x0, dy = y1 - y0, steep = (dx < 0 ? -dx : dx) <= (dy < 0 ? -dy : dy);
+    if (steep ? y1 < y0 : x1 < x0) { int t = x0; x0 = x1; x1 = t; t = y0; y0 = y1; y1 = t; }
+    const Sprite *s = &sprites[LEADER_SPRITE];
+    PolyFT4 *p = &frame_prims[prim_count++];
+    memset(p, 0, sizeof *p);
+    set_poly_ft4(p);
+    p->r = p->g = p->b = 0x80;
+    if (steep) { p->x0 = (int16_t)x0; p->y0 = (int16_t)y0; p->x1 = (int16_t)(x0 + 1); p->y1 = (int16_t)y0;
+                 p->x2 = (int16_t)x1; p->y2 = (int16_t)(y1 + 1); p->x3 = (int16_t)(x1 + 1); p->y3 = (int16_t)(y1 + 1); }
+    else       { p->x0 = (int16_t)x0; p->y0 = (int16_t)y0; p->x1 = (int16_t)(x1 + 1); p->y1 = (int16_t)y1;
+                 p->x2 = (int16_t)x0; p->y2 = (int16_t)(y0 + 1); p->x3 = (int16_t)(x1 + 1); p->y3 = (int16_t)(y1 + 1); }
+    p->u0 = p->u1 = p->u2 = p->u3 = (uint8_t)(s->u + s->w / 2);
+    p->v0 = p->v1 = p->v2 = p->v3 = (uint8_t)(s->v + s->h / 2);
+    p->clut = (uint16_t)(((CLUT_Y + CLUT_NAMES) << 6) | (CLUT_X >> 4));
+    p->tpage = (uint16_t)((ATLAS_X0 / 64) + s->page);
+}
+/* TestLeaders=1: a fan of 24 directions, two bent leaders and a shallow/steep pair, for SD/HD rasterisation checks. */
 /* Names (room, marker) take the name-opacity CLUT, icons the icon-opacity CLUT, the legend the opaque base. */
 static void quad(int x, int y, unsigned id, int w, int h) { quad_row(x, y, id, w, h, sprites[id].page >= NAME_PAGE_FIRST ? CLUT_NAMES : CLUT_UI); }
 static void icon_quad(int x, int y, unsigned id, int side) { quad_row(x, y, id, side, side, CLUT_ICONS); }
@@ -125,7 +146,10 @@ static int map_y(const unsigned char *s, int y) { int o = *(int *)(s + 0x98); re
 
 /* ---------- atlas upload: once per map session (VRAM x 64.. is free while the status screen is open) */
 static int uploaded;
+static int sd_decide(void);
+static void upload_sd(void);
 static void upload_atlas(void) {
+    if (sd_decide()) { upload_sd(); uploaded = 1; return; }
     for (int p = 0; p < ATLAS_PAGES; p++) {
         int16_t rect[4] = {(int16_t)(ATLAS_X0 + 64 * p), 0, 64, 256};
         load_image(rect, atlas_pixels[p]);
@@ -162,6 +186,7 @@ static Rect notice_rect(void) {
 
 /* ---------- panels: legend bottom-left, readouts bottom-right (RE0 candidate 49 layout, 320x240 lines of 7 px) */
 static void panel(int x, int y, int w, int h) {
+    if (sd_mode > 0) { sd_panel(x, y, w, h); return; }
     quad(x, y, ICON_PANEL, w, h);
     if (!prim_count) return;
     PolyFT4 *p = &frame_prims[prim_count - 1];   /* semi-transparent, sampled inside the panel tile */
@@ -306,8 +331,11 @@ static void overlay(unsigned char *s) {
     int all = toggles[T_ALL];
     for (unsigned i = 0; i < 11; i++) shown_counts[i] = 0;
     occ_count = 0; mark_count = 0; mark_dups = 0;
-    panel_boxes[0] = lrect(legend_rect()); panel_boxes[1] = legend_on ? lrect(readout_rect()) : readout_rect();
-    panel_boxes[2] = hd_off_now() ? notice_rect() : (Rect){0, 0, 0, 0};
+    if (sd_mode > 0) { panel_boxes[0] = sd_legend_rect(); panel_boxes[1] = panel_boxes[2] = (Rect){0, 0, 0, 0}; }
+    else {
+        panel_boxes[0] = lrect(legend_rect()); panel_boxes[1] = legend_on ? lrect(readout_rect()) : readout_rect();
+        panel_boxes[2] = hd_off_now() ? notice_rect() : (Rect){0, 0, 0, 0};
+    }
     occupy(panel_boxes[0], 8); occupy(panel_boxes[1], 8);
     occupy(panel_boxes[2], 8);
     /* painter order: room names, then marks with their names (lowest tier first), legend and readouts last (top) */
@@ -365,11 +393,10 @@ static void overlay(unsigned char *s) {
         group_drawn = 1;
     }
     shown_counts[K_ENEMY] += live_count;
-    if (all && toggles[T_ROOMS]) room_names(s, page, nemesis_badges);
+    if (all && toggles[T_ROOMS]) { if (sd_mode > 0) sd_room_names(s, page); else room_names(s, page, nemesis_badges); }
     draw_marks();
-    legend();
-    readouts();
-    if (hd_off_now()) { Rect n = notice_rect(); panel(n.l, n.t, n.r - n.l, n.b - n.t); quad(n.l + 2, n.t + 2, NOTICE_SPRITE, sprites[NOTICE_SPRITE].w, sprites[NOTICE_SPRITE].h); }
+    if (sd_mode > 0) sd_draw_legend(); else { legend(); readouts(); }
+    if (sd_mode <= 0 && hd_off_now()) { Rect n = notice_rect(); panel(n.l, n.t, n.r - n.l, n.b - n.t); quad(n.l + 2, n.t + 2, NOTICE_SPRITE, sprites[NOTICE_SPRITE].w, sprites[NOTICE_SPRITE].h); }
     /* Insert after the native player arrow slot (exe 0x4EB0AE); later inserts are drawn earlier, so
      * walk our painter-ordered list from the top down. */
     void *anchor = (void *)G32(G32(OT2) + 4);
@@ -412,6 +439,8 @@ static void __cdecl hook_map(void *s) {
 /* ---------- test exports (tests/test_native.py drives these under Unicorn) */
 __declspec(dllexport) void __cdecl AnnotatedMapTestDraw(void *s) { hook_map(s); }
 __declspec(dllexport) unsigned __cdecl AnnotatedMapTestPrims(void **out) { *out = frame_prims; return prim_count; }
+/* tests: force HD (0) or SD (1) for the rest of the run; the atlas is uploaded again on the next frame. -1 only reads. */
+__declspec(dllexport) int __cdecl AnnotatedMapTestSdMode(int m) { if (m >= 0) { sd_mode = m; uploaded = 0; } return sd_mode; }
 __declspec(dllexport) int __cdecl AnnotatedMapTestSize(void) { return name_size; }
 __declspec(dllexport) int __cdecl AnnotatedMapTestScope(void) { return scope; }
 __declspec(dllexport) void __cdecl AnnotatedMapTestLoadSettings(void) { load_settings(); }

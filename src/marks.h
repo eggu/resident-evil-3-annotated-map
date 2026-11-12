@@ -29,13 +29,19 @@ static Mark marks[MAX_MARKS];
 static unsigned mark_count, mark_drops, mark_dups;
 #define DUP_MAP_PX 4
 static Rect panel_boxes[3];   /* legend, readout panel (empty when folded), HD-off notice (empty when not shown) */
+#include "sd_draw.h"
 
 /* Mark side: the zoom-following base size (zoomed) times the icon size setting. */
-static int mark_side(int base) { int s = (zoomed(base) * icon_size + 50) / 100; return s < 3 ? 3 : s; }
+static int mark_side(int base) { if (sd_mode > 0) return 9; int s = (zoomed(base) * icon_size + 50) / 100; return s < 3 ? 3 : s; }
 /* Item icons (keys, lock keys, common items) are drawn at ITEM_ICON_BASE percent of that: setting 100 = the old 130%. */
 static int item_side(int base) { int s = (zoomed(base) * icon_size * ITEM_ICON_BASE + 5000) / 10000; return s < 3 ? 3 : s; }
 static void push_mark(unsigned cat, int event, int cx, int cy, unsigned sprite, int base, unsigned kind, unsigned item) {
     int side = kind == K_KEY || kind == K_LOCK || kind == K_COMMON ? item_side(base) : mark_side(base);
+    if (sd_mode > 0) {   /* SD: the 1x marker of what it is, never scaled */
+        sprite = sd_icon(kind, item, event);
+        if (sprite == 0xFFFF) return;
+        side = sd_sprites[sprite].w;
+    }
     Rect m = {(int16_t)(cx - side / 2), (int16_t)(cy - side / 2), (int16_t)(cx - side / 2 + side), (int16_t)(cy - side / 2 + side)};
     /* off screen when zoomed, or under the legend or the readouts: neither the mark nor a name pulled back */
     if (m.l < 0 || m.t < 0 || m.r > 320 || m.b > 240 || rects_hit(m, panel_boxes[0]) || rects_hit(m, panel_boxes[1]) || rects_hit(m, panel_boxes[2])) return;
@@ -117,7 +123,7 @@ static void draw_marks(void) {
     const unsigned marks_end = occ_count;
     /* Names by tier: key items, puzzles, then locks and documents. */
     static const uint8_t tiers[4] = {CAT_KEY, CAT_PUZZLE, CAT_LOCK, CAT_FILE};
-    if (item_names) for (unsigned t = 0; t < 4; t++) for (unsigned i = 0; i < mark_count; i++)
+    if (item_names && sd_mode <= 0) for (unsigned t = 0; t < 4; t++) for (unsigned i = 0; i < mark_count; i++)
         if (marks[i].cat == tiers[t] && !marks[i].event) place_name(&marks[i], t < 2 ? 8 : 2);
     /* A lower icon on a key or puzzle mark, or under an unmoved key name, is not drawn; a document or facility
      * centred on one moves to a badge down and right. Decided on each icon's middle, so a bigger picture never
@@ -145,7 +151,7 @@ static void draw_marks(void) {
         if (k->state == NAMED) { k->name.l += d; k->name.r += d; k->name.t += d; k->name.b += d; }   /* its name was placed first: it follows the badge */
     }
     /* Common item names last: only into space that covers nothing above them, otherwise hidden. */
-    if (item_names == 1) for (unsigned i = 0; i < mark_count; i++) {   /* state 2 leaves common items unnamed */
+    if (item_names == 1 && sd_mode <= 0) for (unsigned i = 0; i < mark_count; i++) {   /* state 2 leaves common items unnamed */
         Mark *k = &marks[i];
         const MarkName *n = k->state == KEEP && k->cat == CAT_ITEM ? mark_name(k) : 0;
         if (!n) continue;
@@ -164,7 +170,7 @@ static void draw_marks(void) {
     for (unsigned pass = 0; pass < 2; pass++) for (unsigned i = 0; i < mark_count; i++) {
         const Mark *k = &marks[i];
         if (k->state == DROP || (unsigned)top_tier(k->cat) != pass) continue;
-        icon_quad(k->m.l, k->m.t, k->sprite, k->m.r - k->m.l);
+        if (sd_mode > 0) sd_quad(k->m.l, k->m.t, k->sprite); else icon_quad(k->m.l, k->m.t, k->sprite, k->m.r - k->m.l);
         if (k->state == NAMED) draw_name(k);
     }
 }

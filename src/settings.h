@@ -10,6 +10,7 @@ static const int toggle_default[T_COUNT] = {1, 1, 0, 0, 0, 0, 0, 0, 0};   /* RE1
 #define NAME_BASE 80
 #define ITEM_ICON_BASE 130
 static int toggles[T_COUNT], scope = 1, korean, name_size = 100, name_opacity = 70, icon_size = 100, icon_opacity = 100;
+static int display_mode;   /* DisplayMode: 0 Auto (Classic REbirth HDTextures), 1 HD, 2 SD */
 static int item_names, legend_on = 1, modifier_ctrl, lock_far_side, clut_dirty;
 static char ini_path[MAX_PATH], tmp_path[MAX_PATH], log_path[MAX_PATH];
 static unsigned log_lines;
@@ -39,6 +40,7 @@ static void save_settings(void) {
     put_int("ItemNames", item_names); put_int("Legend", legend_on);
     WritePrivateProfileStringA("AnnotatedMap", "Modifier", modifier_ctrl ? "Ctrl" : "Shift", tmp_path);
     WritePrivateProfileStringA("AnnotatedMap", "LockMarker", lock_far_side ? "Unvisited" : "Door", tmp_path);
+    WritePrivateProfileStringA("AnnotatedMap", "DisplayMode", display_mode == 1 ? "HD" : display_mode == 2 ? "SD" : "Auto", tmp_path);
     WritePrivateProfileStringA(NULL, NULL, NULL, tmp_path);   /* flush */
     if (!MoveFileExA(tmp_path, ini_path, MOVEFILE_REPLACE_EXISTING | MOVEFILE_WRITE_THROUGH)) {
         DeleteFileA(tmp_path);
@@ -67,6 +69,8 @@ static void load_settings(void) {
     char text[16];
     GetPrivateProfileStringA("AnnotatedMap", "Language", "en", text, sizeof text, ini_path);
     korean = text[0] != 'e';
+    GetPrivateProfileStringA("AnnotatedMap", "DisplayMode", "Auto", text, sizeof text, ini_path);
+    display_mode = text[0] == 'H' || text[0] == 'h' ? 1 : text[0] == 'S' || text[0] == 's' ? 2 : 0;
     GetPrivateProfileStringA("AnnotatedMap", "Modifier", "Shift", text, sizeof text, ini_path);
     modifier_ctrl = text[0] == 'C' || text[0] == 'c';
     GetPrivateProfileStringA("AnnotatedMap", "LockMarker", "Door", text, sizeof text, ini_path);

@@ -1,0 +1,4064 @@
+{
+"0": {
+"0": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+466,
+337
+],
+[
+449,
+337
+]
+],
+"text": "Warehouse\nOffice",
+"x": 396,
+"y": 326
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+466,
+337
+],
+[
+449,
+337
+]
+],
+"text": "창고 사무실",
+"x": 394,
+"y": 332
+}
+},
+"1": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+521,
+348
+],
+[
+533,
+380
+]
+],
+"text": "Warehouse",
+"x": 501,
+"y": 381
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+521,
+348
+],
+[
+525,
+348
+]
+],
+"text": "창고",
+"x": 526,
+"y": 343
+}
+},
+"10": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+359,
+161
+],
+[
+355,
+161
+]
+],
+"text": "Book Shop Street",
+"x": 268,
+"y": 156
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+321,
+149
+],
+[
+321,
+153
+]
+],
+"text": "서점 거리",
+"x": 299,
+"y": 154
+}
+},
+"11": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+168,
+234
+],
+[
+168,
+238
+]
+],
+"text": "Sales Office Patio",
+"x": 124,
+"y": 239
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+168,
+234
+],
+[
+168,
+238
+]
+],
+"text": "영업소 안뜰",
+"x": 141,
+"y": 239
+}
+},
+"12": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+319,
+177
+],
+[
+315,
+177
+]
+],
+"text": "Uptown Store Rm",
+"x": 230,
+"y": 171
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+319,
+177
+],
+[
+315,
+177
+]
+],
+"text": "업타운 창고방",
+"x": 250,
+"y": 171
+}
+},
+"13": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+615,
+225
+],
+[
+615,
+221
+]
+],
+"text": "'T' Dumpster\nAlley",
+"x": 584,
+"y": 199
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+615,
+225
+],
+[
+615,
+221
+]
+],
+"text": "T자\n쓰레기통 골목",
+"x": 583,
+"y": 199
+}
+},
+"14": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+214,
+186
+],
+[
+214,
+182
+]
+],
+"text": "Dark\nAlley",
+"x": 202,
+"y": 160
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+214,
+186
+],
+[
+214,
+182
+]
+],
+"text": "어두운 골목",
+"x": 187,
+"y": 171
+}
+},
+"15": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+281,
+352
+],
+[
+262,
+360
+]
+],
+"text": "Boutique",
+"x": 218,
+"y": 359
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+276,
+323
+],
+[
+276,
+318
+]
+],
+"text": "부티크",
+"x": 261,
+"y": 307
+}
+},
+"2": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+493,
+376
+],
+[
+493,
+393
+]
+],
+"text": "Back\nAlleyway",
+"x": 472,
+"y": 394
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+521,
+375
+],
+[
+532,
+375
+],
+[
+532,
+398
+]
+],
+"text": "뒷골목",
+"x": 517,
+"y": 399
+}
+},
+"27": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+136,
+215
+],
+[
+123,
+215
+]
+],
+"text": "Sales\nOffice",
+"x": 92,
+"y": 201
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+142,
+170
+],
+[
+144,
+165
+]
+],
+"text": "영업소",
+"x": 129,
+"y": 154
+}
+},
+"28": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+147,
+168
+],
+[
+143,
+168
+]
+],
+"text": "Sales Office\nStore Rm",
+"x": 83,
+"y": 147
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+127,
+191
+],
+[
+123,
+191
+]
+],
+"text": "영업소\n창고",
+"x": 92,
+"y": 180
+}
+},
+"3": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+453,
+399
+],
+[
+449,
+399
+]
+],
+"text": "Business\nMain Street",
+"x": 392,
+"y": 397
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+460,
+391
+],
+[
+464,
+391
+]
+],
+"text": "상업지구 큰길",
+"x": 465,
+"y": 386
+}
+},
+"38": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+487,
+80
+],
+[
+491,
+80
+]
+],
+"text": "Parking\nArea",
+"x": 492,
+"y": 69
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+487,
+80
+],
+[
+491,
+80
+]
+],
+"text": "주차장",
+"x": 492,
+"y": 75
+}
+},
+"39": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+477,
+182
+],
+[
+481,
+182
+]
+],
+"text": "Straight\nAlleyway",
+"x": 482,
+"y": 171
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+471,
+164
+],
+[
+467,
+164
+]
+],
+"text": "곧은 골목",
+"x": 422,
+"y": 159
+}
+},
+"4": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+344,
+378
+],
+[
+335,
+402
+]
+],
+"text": "Business\nBack Street",
+"x": 304,
+"y": 403
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+431,
+392
+],
+[
+431,
+396
+]
+],
+"text": "상업지구\n뒷길",
+"x": 408,
+"y": 397
+}
+},
+"40": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+422,
+223
+],
+[
+422,
+227
+]
+],
+"text": "Zigzag Alley",
+"x": 392,
+"y": 228
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+422,
+223
+],
+[
+422,
+227
+]
+],
+"text": "지그재그 골목",
+"x": 390,
+"y": 228
+}
+},
+"5": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+295,
+289
+],
+[
+295,
+285
+]
+],
+"text": "Private\nBackyard",
+"x": 272,
+"y": 263
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+295,
+289
+],
+[
+295,
+285
+]
+],
+"text": "개인 뒷마당",
+"x": 268,
+"y": 274
+}
+},
+"6": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+245,
+301
+],
+[
+241,
+301
+]
+],
+"text": "Residential Street",
+"x": 151,
+"y": 296
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+245,
+301
+],
+[
+241,
+301
+]
+],
+"text": "주택가",
+"x": 210,
+"y": 296
+}
+},
+"7": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+283,
+356
+],
+[
+273,
+371
+]
+],
+"text": "Black\nJack's Bar",
+"x": 224,
+"y": 372
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+313,
+371
+],
+[
+319,
+387
+]
+],
+"text": "블랙잭\n바",
+"x": 318,
+"y": 388
+}
+},
+"8": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+292,
+234
+],
+[
+292,
+238
+]
+],
+"text": "Barricaded\nBack Pass.",
+"x": 265,
+"y": 239
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+292,
+234
+],
+[
+292,
+238
+]
+],
+"text": "바리케이드\n뒷길",
+"x": 267,
+"y": 239
+}
+},
+"9": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+278,
+210
+],
+[
+274,
+210
+]
+],
+"text": "Forked Alley",
+"x": 212,
+"y": 205
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+278,
+210
+],
+[
+274,
+210
+]
+],
+"text": "갈림길 골목",
+"x": 219,
+"y": 205
+}
+}
+},
+"1": {
+"1": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+423,
+376
+],
+[
+423,
+381
+],
+[
+469,
+381
+]
+],
+"text": "Garage",
+"x": 470,
+"y": 376
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+404,
+339
+],
+[
+404,
+335
+]
+],
+"text": "차고",
+"x": 394,
+"y": 324
+}
+},
+"10": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+98,
+165
+],
+[
+98,
+161
+]
+],
+"text": "Lonsdale\nYard",
+"x": 76,
+"y": 139
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+98,
+165
+],
+[
+98,
+161
+]
+],
+"text": "론스데일\n야적장",
+"x": 78,
+"y": 139
+}
+},
+"11": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+26,
+134
+],
+[
+22,
+134
+]
+],
+"text": "Cable\nCar Area",
+"x": -23,
+"y": 123
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+26,
+134
+],
+[
+22,
+134
+]
+],
+"text": "노면전차\n승강장",
+"x": -19,
+"y": 123
+}
+},
+"12": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+119,
+99
+],
+[
+119,
+88
+]
+],
+"text": "Cable Car\nRear Carriage",
+"x": 84,
+"y": 66
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+106,
+97
+],
+[
+102,
+88
+]
+],
+"text": "노면전차",
+"x": 82,
+"y": 77
+}
+},
+"13": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+249,
+35
+],
+[
+253,
+35
+]
+],
+"text": "Gas Station Shop",
+"x": 254,
+"y": 30
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+249,
+35
+],
+[
+253,
+35
+]
+],
+"text": "주유소 매점",
+"x": 254,
+"y": 30
+}
+},
+"14": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+168,
+49
+],
+[
+164,
+49
+]
+],
+"text": "Gas Station",
+"x": 107,
+"y": 44
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+209,
+93
+],
+[
+209,
+97
+]
+],
+"text": "주유소",
+"x": 194,
+"y": 98
+}
+},
+"16": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+391,
+27
+],
+[
+391,
+23
+]
+],
+"text": "Press Office",
+"x": 360,
+"y": 12
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+391,
+27
+],
+[
+391,
+23
+]
+],
+"text": "신문사",
+"x": 376,
+"y": 12
+}
+},
+"17": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+523,
+143
+],
+[
+523,
+147
+]
+],
+"text": "Restaurant",
+"x": 495,
+"y": 148
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+523,
+143
+],
+[
+523,
+147
+]
+],
+"text": "레스토랑",
+"x": 503,
+"y": 148
+}
+},
+"18": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+493,
+133
+],
+[
+480,
+142
+]
+],
+"text": "Restaurant Bsmt.",
+"x": 391,
+"y": 141
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+493,
+133
+],
+[
+480,
+142
+]
+],
+"text": "레스토랑 지하",
+"x": 415,
+"y": 141
+}
+},
+"19": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+548,
+281
+],
+[
+548,
+318
+]
+],
+"text": "Sub Station\nGate Area",
+"x": 505,
+"y": 319
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+534,
+281
+],
+[
+522,
+281
+]
+],
+"text": "변전소\n정문",
+"x": 491,
+"y": 280
+}
+},
+"2": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+418,
+258
+],
+[
+418,
+254
+]
+],
+"text": "Construction\nStreet",
+"x": 386,
+"y": 232
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+465,
+239
+],
+[
+469,
+239
+]
+],
+"text": "공사 중인 거리",
+"x": 470,
+"y": 237
+}
+},
+"20": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+559,
+313
+],
+[
+563,
+314
+]
+],
+"text": "Sub Station",
+"x": 564,
+"y": 313
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+571,
+289
+],
+[
+575,
+289
+]
+],
+"text": "변전소",
+"x": 576,
+"y": 284
+}
+},
+"22": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+442,
+124
+],
+[
+435,
+124
+]
+],
+"text": "Downtown\nStore Rm",
+"x": 387,
+"y": 107
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+446,
+120
+],
+[
+446,
+114
+]
+],
+"text": "다운타운 창고방",
+"x": 402,
+"y": 103
+}
+},
+"27": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+450,
+287
+],
+[
+469,
+287
+]
+],
+"text": "Garage\nOffice",
+"x": 470,
+"y": 280
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+440,
+281
+],
+[
+440,
+254
+]
+],
+"text": "차고\n사무실",
+"x": 421,
+"y": 232
+}
+},
+"3": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+526,
+232
+],
+[
+526,
+236
+]
+],
+"text": "Maint. Area",
+"x": 498,
+"y": 237
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+509,
+189
+],
+[
+509,
+172
+]
+],
+"text": "정비 구역",
+"x": 492,
+"y": 161
+}
+},
+"4": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+528,
+275
+],
+[
+481,
+342
+]
+],
+"text": "Sub Station\nEntrance",
+"x": 470,
+"y": 343
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+580,
+224
+],
+[
+584,
+224
+]
+],
+"text": "변전소\n입구",
+"x": 585,
+"y": 213
+}
+},
+"5": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+584,
+132
+],
+[
+605,
+78
+]
+],
+"text": "Water\nFeature Area",
+"x": 555,
+"y": 56
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+584,
+132
+],
+[
+588,
+132
+]
+],
+"text": "분수\n광장",
+"x": 589,
+"y": 121
+}
+},
+"6": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+484,
+157
+],
+[
+480,
+157
+]
+],
+"text": "Shopping District",
+"x": 396,
+"y": 154
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+417,
+133
+],
+[
+417,
+129
+]
+],
+"text": "상점가",
+"x": 402,
+"y": 118
+}
+},
+"7": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+353,
+160
+],
+[
+349,
+160
+]
+],
+"text": "City Hall Gate",
+"x": 280,
+"y": 155
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+353,
+160
+],
+[
+349,
+160
+]
+],
+"text": "시청 정문",
+"x": 304,
+"y": 155
+}
+},
+"8": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+257,
+118
+],
+[
+253,
+118
+]
+],
+"text": "Three Points\nStreet",
+"x": 189,
+"y": 107
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+305,
+137
+],
+[
+305,
+141
+]
+],
+"text": "삼거리",
+"x": 290,
+"y": 142
+}
+},
+"9": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+193,
+147
+],
+[
+193,
+157
+]
+],
+"text": "Dirty\nAlley",
+"x": 184,
+"y": 158
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+179,
+133
+],
+[
+183,
+133
+]
+],
+"text": "지저분한 골목",
+"x": 184,
+"y": 125
+}
+}
+},
+"2": {
+"0": {
+"en": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+325,
+281
+],
+[
+321,
+281
+]
+],
+"text": "Chapel",
+"x": 287,
+"y": 276
+},
+"ko": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+334,
+293
+],
+[
+334,
+297
+]
+],
+"text": "예배당",
+"x": 319,
+"y": 298
+}
+},
+"1": {
+"en": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+325,
+246
+],
+[
+321,
+246
+]
+],
+"text": "Piano\nRoom",
+"x": 294,
+"y": 235
+},
+"ko": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+325,
+246
+],
+[
+321,
+246
+]
+],
+"text": "피아노실",
+"x": 280,
+"y": 241
+}
+},
+"10": {
+"en": {
+"colour": 3,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+351,
+205
+],
+[
+347,
+205
+]
+],
+"text": "Main Hall Second Floor",
+"x": 236,
+"y": 200
+},
+"ko": {
+"colour": 4,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+351,
+205
+],
+[
+347,
+205
+]
+],
+"text": "중앙 홀 2층",
+"x": 292,
+"y": 200
+}
+},
+"11": {
+"en": {
+"colour": 3,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+380,
+240
+],
+[
+380,
+244
+]
+],
+"text": "Balcony",
+"x": 360,
+"y": 245
+},
+"ko": {
+"colour": 3,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+380,
+240
+],
+[
+380,
+244
+]
+],
+"text": "발코니",
+"x": 365,
+"y": 245
+}
+},
+"12": {
+"en": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+390,
+211
+],
+[
+396,
+211
+]
+],
+"text": "Cog Room",
+"x": 397,
+"y": 206
+},
+"ko": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+390,
+211
+],
+[
+396,
+211
+]
+],
+"text": "톱니바퀴실",
+"x": 397,
+"y": 206
+}
+},
+"2": {
+"en": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+311,
+207
+],
+[
+306,
+207
+]
+],
+"text": "Dining Room",
+"x": 247,
+"y": 202
+},
+"ko": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+328,
+198
+],
+[
+328,
+194
+]
+],
+"text": "식당",
+"x": 318,
+"y": 183
+}
+},
+"3": {
+"en": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+379,
+292
+],
+[
+379,
+297
+]
+],
+"text": "Courtyard",
+"x": 345,
+"y": 298
+},
+"ko": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+379,
+292
+],
+[
+379,
+296
+]
+],
+"text": "안뜰",
+"x": 369,
+"y": 297
+}
+},
+"4": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+380,
+175
+],
+[
+380,
+172
+],
+[
+355,
+172
+]
+],
+"text": "Main Hall",
+"x": 312,
+"y": 165
+},
+"ko": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+380,
+175
+],
+[
+380,
+172
+],
+[
+355,
+172
+]
+],
+"text": "중앙 홀",
+"x": 320,
+"y": 165
+}
+},
+"5": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+430,
+279
+],
+[
+434,
+280
+]
+],
+"text": "Bedroom",
+"x": 435,
+"y": 279
+},
+"ko": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+430,
+279
+],
+[
+434,
+280
+]
+],
+"text": "침실",
+"x": 435,
+"y": 279
+}
+},
+"6": {
+"en": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+438,
+254
+],
+[
+442,
+254
+]
+],
+"text": "Living Room",
+"x": 443,
+"y": 249
+},
+"ko": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+438,
+254
+],
+[
+442,
+254
+]
+],
+"text": "거실",
+"x": 443,
+"y": 249
+}
+},
+"7": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+438,
+213
+],
+[
+442,
+213
+]
+],
+"text": "Small Library",
+"x": 443,
+"y": 208
+},
+"ko": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+438,
+213
+],
+[
+442,
+213
+]
+],
+"text": "작은 서재",
+"x": 443,
+"y": 208
+}
+},
+"8": {
+"en": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+433,
+190
+],
+[
+437,
+190
+]
+],
+"text": "Spider Corridor",
+"x": 438,
+"y": 185
+},
+"ko": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+433,
+190
+],
+[
+437,
+190
+]
+],
+"text": "거미 복도",
+"x": 438,
+"y": 185
+}
+},
+"9": {
+"en": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+408,
+147
+],
+[
+441,
+147
+]
+],
+"text": "Clock\nRoom",
+"x": 442,
+"y": 136
+},
+"ko": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+408,
+147
+],
+[
+441,
+147
+]
+],
+"text": "시계실",
+"x": 442,
+"y": 142
+}
+}
+},
+"3": {
+"0": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+397,
+324
+],
+[
+397,
+321
+]
+],
+"text": "Park Alleyway",
+"x": 363,
+"y": 310
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+190,
+234
+],
+[
+190,
+231
+]
+],
+"text": "공원 골목",
+"x": 168,
+"y": 220
+}
+},
+"1": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+293,
+313
+],
+[
+287,
+306
+]
+],
+"text": "Park\nOffice",
+"x": 258,
+"y": 284
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+293,
+313
+],
+[
+287,
+306
+]
+],
+"text": "공원\n관리소",
+"x": 258,
+"y": 284
+}
+},
+"12": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+346,
+266
+],
+[
+350,
+266
+]
+],
+"text": "Main Park",
+"x": 351,
+"y": 263
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+346,
+266
+],
+[
+350,
+266
+]
+],
+"text": "공원 광장",
+"x": 351,
+"y": 263
+}
+},
+"13": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+275,
+236
+],
+[
+253,
+220
+]
+],
+"text": "Fountain",
+"x": 210,
+"y": 215
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+275,
+236
+],
+[
+275,
+232
+]
+],
+"text": "분수",
+"x": 274,
+"y": 221
+}
+},
+"14": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+417,
+242
+],
+[
+421,
+242
+]
+],
+"text": "Wooden Jetty",
+"x": 422,
+"y": 237
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+414,
+237
+],
+[
+410,
+237
+]
+],
+"text": "나무 선착장",
+"x": 355,
+"y": 232
+}
+},
+"15": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+444,
+196
+],
+[
+440,
+196
+]
+],
+"text": "Forest Path",
+"x": 380,
+"y": 191
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+450,
+187
+],
+[
+450,
+183
+]
+],
+"text": "숲길",
+"x": 440,
+"y": 172
+}
+},
+"16": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+264,
+206
+],
+[
+253,
+206
+]
+],
+"text": "Drainage Pass.",
+"x": 179,
+"y": 201
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+279,
+183
+],
+[
+279,
+179
+]
+],
+"text": "배수로",
+"x": 264,
+"y": 168
+}
+},
+"17": {
+"en": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+351,
+177
+],
+[
+377,
+177
+]
+],
+"text": "Graveyard",
+"x": 378,
+"y": 176
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+351,
+177
+],
+[
+377,
+177
+]
+],
+"text": "묘지",
+"x": 378,
+"y": 176
+}
+},
+"18": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+362,
+151
+],
+[
+368,
+145
+]
+],
+"text": "Graveyard Cabin",
+"x": 369,
+"y": 136
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+362,
+151
+],
+[
+362,
+147
+]
+],
+"text": "묘지 오두막",
+"x": 356,
+"y": 136
+}
+},
+"19": {
+"en": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+390,
+156
+],
+[
+395,
+156
+]
+],
+"text": "Graveyard\nCabin Store Rm",
+"x": 396,
+"y": 149
+},
+"ko": {
+"colour": 2,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+390,
+156
+],
+[
+395,
+156
+]
+],
+"text": "오두막 창고",
+"x": 396,
+"y": 151
+}
+},
+"20": {
+"en": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+330,
+151
+],
+[
+326,
+151
+]
+],
+"text": "Secret\nComms Rm",
+"x": 274,
+"y": 140
+},
+"ko": {
+"colour": 1,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+330,
+151
+],
+[
+326,
+151
+]
+],
+"text": "비밀 통신실",
+"x": 271,
+"y": 146
+}
+},
+"21": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+331,
+182
+],
+[
+325,
+176
+]
+],
+"text": "Graveyard",
+"x": 272,
+"y": 167
+},
+"ko": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+331,
+182
+],
+[
+325,
+176
+]
+],
+"text": "묘지",
+"x": 304,
+"y": 167
+}
+},
+"22": {
+"en": {
+"colour": 3,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+577,
+217
+],
+[
+577,
+221
+]
+],
+"text": "Park Exit Walkway",
+"x": 534,
+"y": 222
+},
+"ko": {
+"colour": 4,
+"floor": -1,
+"forced": false,
+"leader": [
+[
+577,
+217
+],
+[
+577,
+221
+]
+],
+"text": "공원 출구 통로",
+"x": 543,
+"y": 222
+}
+}
+},
+"4": {
+"0": {
+"en": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+294,
+258
+],
+[
+309,
+268
+]
+],
+"text": "Entry\nCorridor",
+"x": 310,
+"y": 262
+},
+"ko": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+290,
+200
+],
+[
+286,
+200
+]
+],
+"text": "입구 복도",
+"x": 241,
+"y": 195
+}
+},
+"1": {
+"en": {
+"colour": 2,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+292,
+181
+],
+[
+288,
+181
+]
+],
+"text": "Resting\nRoom",
+"x": 251,
+"y": 170
+},
+"ko": {
+"colour": 1,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+292,
+181
+],
+[
+288,
+181
+]
+],
+"text": "휴게실",
+"x": 257,
+"y": 176
+}
+},
+"10": {
+"en": {
+"colour": 4,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+294,
+291
+],
+[
+294,
+295
+]
+],
+"text": "Communications\nTower",
+"x": 255,
+"y": 296
+},
+"ko": {
+"colour": 1,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+294,
+291
+],
+[
+294,
+295
+]
+],
+"text": "통신탑",
+"x": 279,
+"y": 296
+}
+},
+"11": {
+"en": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+320,
+287
+],
+[
+320,
+294
+]
+],
+"text": "Emergency Tunnel",
+"x": 274,
+"y": 295
+},
+"ko": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+290,
+281
+],
+[
+286,
+281
+]
+],
+"text": "비상 통로",
+"x": 241,
+"y": 276
+}
+},
+"12": {
+"en": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+389,
+308
+],
+[
+383,
+314
+]
+],
+"text": "Car Yard",
+"x": 338,
+"y": 313
+},
+"ko": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+371,
+275
+],
+[
+371,
+271
+]
+],
+"text": "폐차장",
+"x": 356,
+"y": 260
+}
+},
+"13": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+411,
+317
+],
+[
+385,
+327
+]
+],
+"text": "Rail Cannon Room",
+"x": 297,
+"y": 326
+},
+"ko": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+438,
+285
+],
+[
+438,
+281
+]
+],
+"text": "레일 캐논실",
+"x": 411,
+"y": 270
+}
+},
+"14": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+471,
+275
+],
+[
+475,
+275
+]
+],
+"text": "Helicopter\nLanding Zone",
+"x": 476,
+"y": 264
+},
+"ko": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+471,
+275
+],
+[
+475,
+275
+]
+],
+"text": "헬기 착륙장",
+"x": 476,
+"y": 270
+}
+},
+"15": {
+"en": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+471,
+295
+],
+[
+479,
+295
+]
+],
+"text": "Maintenance\nElevator",
+"x": 480,
+"y": 288
+},
+"ko": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+471,
+295
+],
+[
+475,
+295
+]
+],
+"text": "정비용 승강기",
+"x": 476,
+"y": 287
+}
+},
+"17": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+349,
+178
+],
+[
+353,
+178
+]
+],
+"text": "Weapons Storage",
+"x": 354,
+"y": 173
+},
+"ko": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+323,
+182
+],
+[
+319,
+182
+]
+],
+"text": "무기 보관실",
+"x": 264,
+"y": 177
+}
+},
+"2": {
+"en": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+349,
+178
+],
+[
+353,
+178
+]
+],
+"text": "Steam Room",
+"x": 354,
+"y": 173
+},
+"ko": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+349,
+178
+],
+[
+353,
+178
+]
+],
+"text": "증기실",
+"x": 354,
+"y": 173
+}
+},
+"3": {
+"en": {
+"colour": 3,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+325,
+231
+],
+[
+325,
+237
+]
+],
+"text": "Control\nRoom",
+"x": 306,
+"y": 238
+},
+"ko": {
+"colour": 3,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+325,
+231
+],
+[
+325,
+237
+]
+],
+"text": "제어실",
+"x": 310,
+"y": 238
+}
+},
+"4": {
+"en": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+268,
+239
+],
+[
+243,
+239
+],
+[
+243,
+201
+]
+],
+"text": "Water Filter\nPassage",
+"x": 241,
+"y": 179
+},
+"ko": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+311,
+232
+],
+[
+311,
+201
+]
+],
+"text": "정수 통로",
+"x": 274,
+"y": 190
+}
+},
+"5": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+303,
+247
+],
+[
+295,
+232
+]
+],
+"text": "Monitoring\nRoom",
+"x": 246,
+"y": 210
+},
+"ko": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+315,
+260
+],
+[
+322,
+260
+]
+],
+"text": "감시실",
+"x": 323,
+"y": 259
+}
+},
+"6": {
+"en": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+365,
+254
+],
+[
+365,
+258
+]
+],
+"text": "Water Control Room",
+"x": 323,
+"y": 259
+},
+"ko": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+365,
+237
+],
+[
+365,
+233
+]
+],
+"text": "수질\n관리실",
+"x": 354,
+"y": 211
+}
+},
+"7": {
+"en": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+349,
+218
+],
+[
+353,
+218
+]
+],
+"text": "Water\nPollution Pool",
+"x": 354,
+"y": 207
+},
+"ko": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+301,
+216
+],
+[
+297,
+216
+]
+],
+"text": "오수 처리조",
+"x": 242,
+"y": 211
+}
+},
+"8": {
+"en": {
+"colour": 4,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+387,
+195
+],
+[
+391,
+195
+]
+],
+"text": "Treatment Room Entry",
+"x": 392,
+"y": 186
+},
+"ko": {
+"colour": 3,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+387,
+195
+],
+[
+391,
+195
+]
+],
+"text": "처리실 입구",
+"x": 392,
+"y": 186
+}
+},
+"9": {
+"en": {
+"colour": 2,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+415,
+239
+],
+[
+419,
+239
+]
+],
+"text": "Treatment Room",
+"x": 420,
+"y": 234
+},
+"ko": {
+"colour": 1,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+398,
+259
+],
+[
+398,
+263
+]
+],
+"text": "처리실",
+"x": 383,
+"y": 264
+}
+}
+},
+"5": {
+"0": {
+"en": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+298,
+292
+],
+[
+294,
+292
+]
+],
+"text": "Courtyard",
+"x": 242,
+"y": 287
+},
+"ko": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+298,
+292
+],
+[
+294,
+292
+]
+],
+"text": "안뜰",
+"x": 273,
+"y": 287
+}
+},
+"1": {
+"en": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+336,
+219
+],
+[
+340,
+219
+]
+],
+"text": "Main Hall",
+"x": 341,
+"y": 214
+},
+"ko": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+336,
+219
+],
+[
+340,
+219
+]
+],
+"text": "중앙 홀",
+"x": 341,
+"y": 214
+}
+},
+"10": {
+"en": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+234,
+229
+],
+[
+238,
+229
+]
+],
+"text": "S.T.A.R.S. Office",
+"x": 239,
+"y": 224
+},
+"ko": {
+"colour": 1,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+234,
+229
+],
+[
+238,
+229
+]
+],
+"text": "S.T.A.R.S. 사무실",
+"x": 239,
+"y": 224
+}
+},
+"2": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+242,
+227
+],
+[
+238,
+227
+]
+],
+"text": "West\nOffice",
+"x": 207,
+"y": 223
+},
+"ko": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+250,
+243
+],
+[
+250,
+250
+]
+],
+"text": "서쪽 사무실",
+"x": 223,
+"y": 251
+}
+},
+"3": {
+"en": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+251,
+205
+],
+[
+251,
+250
+]
+],
+"text": "Evidence\nRoom",
+"x": 229,
+"y": 251
+},
+"ko": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+242,
+202
+],
+[
+228,
+222
+]
+],
+"text": "증거물\n보관실",
+"x": 207,
+"y": 223
+}
+},
+"4": {
+"en": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+288,
+173
+],
+[
+292,
+169
+]
+],
+"text": "West Stairway 1F",
+"x": 293,
+"y": 160
+},
+"ko": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+277,
+167
+],
+[
+277,
+163
+]
+],
+"text": "서쪽 계단 1층",
+"x": 246,
+"y": 152
+}
+},
+"5": {
+"en": {
+"colour": 2,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+213,
+206
+],
+[
+190,
+246
+]
+],
+"text": "Winding\nCorridor",
+"x": 182,
+"y": 247
+},
+"ko": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+210,
+187
+],
+[
+206,
+187
+]
+],
+"text": "굽은\n복도",
+"x": 185,
+"y": 176
+}
+},
+"6": {
+"en": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+241,
+173
+],
+[
+241,
+163
+]
+],
+"text": "Operations Room",
+"x": 199,
+"y": 152
+},
+"ko": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+219,
+173
+],
+[
+219,
+163
+]
+],
+"text": "작전실",
+"x": 204,
+"y": 152
+}
+},
+"7": {
+"en": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+288,
+183
+],
+[
+292,
+182
+]
+],
+"text": "Dark Room",
+"x": 293,
+"y": 173
+},
+"ko": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+288,
+183
+],
+[
+292,
+182
+]
+],
+"text": "암실",
+"x": 293,
+"y": 173
+}
+},
+"8": {
+"en": {
+"colour": 1,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+281,
+167
+],
+[
+281,
+163
+]
+],
+"text": "West Stairway 2F",
+"x": 240,
+"y": 152
+},
+"ko": {
+"colour": 2,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+281,
+167
+],
+[
+281,
+163
+]
+],
+"text": "서쪽 계단 2층",
+"x": 249,
+"y": 152
+}
+},
+"9": {
+"en": {
+"colour": 4,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+220,
+254
+],
+[
+220,
+258
+]
+],
+"text": "Office Corridor",
+"x": 182,
+"y": 259
+},
+"ko": {
+"colour": 4,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+220,
+254
+],
+[
+220,
+258
+]
+],
+"text": "사무실 복도",
+"x": 193,
+"y": 259
+}
+}
+},
+"6": {
+"10": {
+"en": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+187,
+293
+],
+[
+187,
+300
+]
+],
+"text": "Basement\nStoreroom",
+"x": 161,
+"y": 301
+},
+"ko": {
+"colour": 4,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+187,
+293
+],
+[
+187,
+300
+]
+],
+"text": "지하\n창고",
+"x": 179,
+"y": 301
+}
+},
+"11": {
+"en": {
+"colour": 1,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+218,
+258
+],
+[
+238,
+258
+]
+],
+"text": "Experiment\nRoom",
+"x": 239,
+"y": 247
+},
+"ko": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+218,
+258
+],
+[
+238,
+258
+]
+],
+"text": "실험실",
+"x": 239,
+"y": 253
+}
+},
+"2": {
+"en": {
+"colour": 4,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+207,
+298
+],
+[
+207,
+302
+]
+],
+"text": "Waiting\nRoom",
+"x": 190,
+"y": 303
+},
+"ko": {
+"colour": 1,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+207,
+298
+],
+[
+207,
+302
+]
+],
+"text": "대기실",
+"x": 192,
+"y": 303
+}
+},
+"3": {
+"en": {
+"colour": 3,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+211,
+261
+],
+[
+238,
+261
+]
+],
+"text": "Reception Office",
+"x": 239,
+"y": 256
+},
+"ko": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+204,
+252
+],
+[
+204,
+248
+]
+],
+"text": "접수실",
+"x": 195,
+"y": 237
+}
+},
+"4": {
+"en": {
+"colour": 0,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+154,
+255
+],
+[
+142,
+255
+]
+],
+"text": "Doctor's Lounge",
+"x": 61,
+"y": 250
+},
+"ko": {
+"colour": 2,
+"floor": 1,
+"forced": false,
+"leader": [
+[
+154,
+255
+],
+[
+142,
+255
+]
+],
+"text": "의사 휴게실",
+"x": 87,
+"y": 250
+}
+},
+"5": {
+"en": {
+"colour": 2,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+215,
+260
+],
+[
+238,
+260
+]
+],
+"text": "Entry Hallway",
+"x": 239,
+"y": 255
+},
+"ko": {
+"colour": 2,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+179,
+288
+],
+[
+173,
+294
+]
+],
+"text": "입구\n복도",
+"x": 152,
+"y": 293
+}
+},
+"6": {
+"en": {
+"colour": 1,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+209,
+284
+],
+[
+209,
+290
+]
+],
+"text": "Room\n402",
+"x": 192,
+"y": 291
+},
+"ko": {
+"colour": 0,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+209,
+284
+],
+[
+209,
+292
+]
+],
+"text": "402호실",
+"x": 179,
+"y": 293
+}
+},
+"7": {
+"en": {
+"colour": 2,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+192,
+284
+],
+[
+187,
+292
+]
+],
+"text": "Room\n401",
+"x": 163,
+"y": 293
+},
+"ko": {
+"colour": 1,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+192,
+268
+],
+[
+196,
+255
+]
+],
+"text": "401호실",
+"x": 195,
+"y": 244
+}
+},
+"8": {
+"en": {
+"colour": 4,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+146,
+272
+],
+[
+142,
+272
+]
+],
+"text": "Data Room",
+"x": 88,
+"y": 267
+},
+"ko": {
+"colour": 4,
+"floor": 2,
+"forced": false,
+"leader": [
+[
+146,
+272
+],
+[
+142,
+272
+]
+],
+"text": "자료실",
+"x": 111,
+"y": 267
+}
+},
+"9": {
+"en": {
+"colour": 0,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+164,
+279
+],
+[
+142,
+279
+]
+],
+"text": "Basement Hallway",
+"x": 53,
+"y": 274
+},
+"ko": {
+"colour": 3,
+"floor": 0,
+"forced": false,
+"leader": [
+[
+166,
+293
+],
+[
+166,
+297
+]
+],
+"text": "지하\n복도",
+"x": 156,
+"y": 298
+}
+}
+}
+}

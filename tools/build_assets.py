@@ -38,8 +38,8 @@ CLUT = [0] + [bgr555(c) or 0x0421 for c in PALETTE[1:]]
 
 
 # per opacity level 10..100%: outline colour (index 1) nudged within near-black so every level has its own key
-NAME_CLUTS = [[CLUT[0], (1 + (k & 3)) | (1 + (k >> 2)) << 5 | 1 << 10] + CLUT[2:] for k in range(10)]
-# per icon opacity level: the same nudge with blue 3 (names use 1, the base outline 2), so no two keys collide
+NAME_CLUTS = [[CLUT[0], (1 + (k & 3)) | (1 + (k >> 2)) << 5 | 4 << 10] + CLUT[2:] for k in range(10)]
+# per icon opacity level: the same nudge with blue 3 (names use 4, the base outline 2), so no two keys collide
 ICON_CLUTS = [[CLUT[0], (1 + (k & 3)) | (1 + (k >> 2)) << 5 | 3 << 10] + CLUT[2:] for k in range(10)]
 MAX_PAGES = 4   # VRAM x 64..319 at y 0..255 (status-screen probe, local/internal-docs/docs/NATIVE.md)
 
@@ -434,11 +434,12 @@ def main():
 
 def room_cells(room, shared, page):
     """Pixels of a room's own shape: opaque texels of its parts, building outlines several rooms share excluded."""
-    ps = [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1] and tuple(p[:6]) not in shared] or \
-         [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1]]
+    ps = [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1] and p[6] != 7 and tuple(p[:6]) not in shared] or \
+         [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1] and p[6] != 7]
     alpha, cells = tim_alpha(page), set()
-    for u0, v0, u1, v1, x, y in (p[:6] for p in ps):
-        ys, xs = np.nonzero(alpha[v0:v1 + 1, u0:u1 + 1])
+    for u0, v0, u1, v1, x, y, _t, attr in (p[:8] for p in ps):
+        o = tex_offset(attr)
+        ys, xs = np.nonzero(part_layer(alpha, u0 + o, v0, u1 + o, v1, attr))
         cells |= {(int(a + x), int(b + y)) for a, b in zip(xs, ys)}
     if not cells:
         for u0, v0, u1, v1, x, y in (p[:6] for p in ps):
@@ -472,25 +473,38 @@ def room_layouts(overlay, pages_map, names):
 _tims = {}
 
 
+def tex_offset(attr):
+    """Part attribute bit 1 selects the right half of the 512-texel map TIM (u + 256), as the game draws the Park map."""
+    return 256 * ((attr >> 1) & 1)
+
+
 def tim_alpha(page):
-    """Opaque mask of the decoded map TIM (local/map-preview/page<n>-tim.png, palette index 0 = transparent)."""
+    """Texel indices of the map TIM (local/map-preview/page<n>-tim-index.png from tools/decode_map.py)."""
     if page not in _tims:
-        _tims[page] = np.asarray(Image.open(ROOT / f'local/map-preview/page{page}-tim.png'))[..., 3] > 0
+        _tims[page] = np.asarray(Image.open(ROOT / f'local/map-preview/page{page}-tim-index.png'))
     return _tims[page]
+
+
+def part_layer(idx, u0, v0, u1, v1, attr):
+    """Drawn texels of a map part: each 4bpp texel holds two 2-bit layers and attr bit 0 picks the high one (the game's
+    CLUT rows 8-15); value 0 is transparent. Park's big frame polygons are outlines only in that layer."""
+    t = idx[v0:v1 + 1, u0:u1 + 1]
+    return ((t >> 2) if attr & 1 else (t & 3)) > 0
 
 
 def anchor(room, shared, page, w, h):
     """Label anchor: the room pixel farthest from the room's edge (map space). Rooms are drawn as textured
     rectangles whose transparent texels carve the real shape (a corridor rectangle can enclose another room),
     so the mask uses the texture's opaque texels; parts several rooms share (building outlines) are ignored."""
-    ps = [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1] and tuple(p[:6]) not in shared] or \
-         [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1]]
+    ps = [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1] and p[6] != 7 and tuple(p[:6]) not in shared] or \
+         [p for p in room['parts'] if p[2] >= p[0] and p[3] >= p[1] and p[6] != 7]
     x0 = min(p[4] for p in ps); y0 = min(p[5] for p in ps)
     x1 = max(p[4] + p[2] - p[0] + 1 for p in ps); y1 = max(p[5] + p[3] - p[1] + 1 for p in ps)
     mask = np.zeros((y1 - y0 + 2, x1 - x0 + 2), bool)
     alpha = tim_alpha(page)
-    for u0, v0, u1, v1, x, y in (p[:6] for p in ps):
-        mask[y - y0 + 1:y - y0 + 2 + v1 - v0, x - x0 + 1:x - x0 + 2 + u1 - u0] |= alpha[v0:v1 + 1, u0:u1 + 1]
+    for u0, v0, u1, v1, x, y, _t, attr in (p[:8] for p in ps):
+        o = tex_offset(attr)
+        mask[y - y0 + 1:y - y0 + 2 + v1 - v0, x - x0 + 1:x - x0 + 2 + u1 - u0] |= part_layer(alpha, u0 + o, v0, u1 + o, v1, attr)
     if not mask.any():
         for u0, v0, u1, v1, x, y in (p[:6] for p in ps):
             mask[y - y0 + 1:y - y0 + 2 + v1 - v0, x - x0 + 1:x - x0 + 2 + u1 - u0] = True
@@ -638,8 +652,9 @@ def snap(m, pages_map):
         counts = Counter(tuple(p[:6]) for room in rooms for p in room['parts'])
         own = [p for p in parts if counts[tuple(p[:6])] == 1] or parts
         alpha, points = tim_alpha(m['page']), []
-        for u0, v0, u1, v1, x, y, *_ in own:
-            ys, xs = np.nonzero(alpha[v0:v1 + 1, u0:u1 + 1])
+        for u0, v0, u1, v1, x, y, _t, attr, *_ in own:
+            o = tex_offset(attr)
+            ys, xs = np.nonzero(part_layer(alpha, u0 + o, v0, u1 + o, v1, attr))
             if len(xs): points.append(np.column_stack((xs + x, ys + y)))
         _snap_pixels[key] = np.concatenate(points) if points else np.empty((0, 2), dtype=int)
     points = _snap_pixels[key]

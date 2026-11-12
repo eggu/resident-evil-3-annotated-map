@@ -65,7 +65,7 @@ for lang in (0,1):
             call('AnnotatedMapTestKeys',1 << (10 if call('AnnotatedMapTestSize')<size else 11));call('AnnotatedMapTestKeys',0)
         for zoom in (50,100):
             set_bit(3,125)
-            setup(1,zoom=zoom,ox=-250,oy=-180)
+            setup(1,zoom=zoom,ox=-250,oy=-150)   # the R108 name sits higher since the 2-bit map layers (2026-11-12): keep it on screen at 50%
             call('AnnotatedMapTestSet',1,3,lang);call('AnnotatedMapTestDraw',S)
             heads=sprite_quads(t['head_ids'][7]);labels=sprite_quads(room_label[8+lang])   # RoomLabel tuple: label ids at 8, 9
             assert len(heads)==len(labels)==1,(lang,size,zoom,len(heads),len(labels))

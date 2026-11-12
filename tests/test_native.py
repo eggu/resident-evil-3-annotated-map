@@ -236,6 +236,7 @@ for api in ('GetPrivateProfileIntA', 'GetPrivateProfileStringA', 'WritePrivatePr
     u.mem_write(imports[api], b'\x90\x90')  # preserve mock return value instead of xor eax,eax
     u.hook_add(UC_HOOK_CODE, ini_api, user_data=api, begin=imports[api], end=imports[api])
 checks = Counter()
+call('AnnotatedMapTestSdMode', 0)   # HD checks first (no config.ini here would otherwise mean SD)
 # 1. Nothing visited: only the legend, uploaded once (2 atlas pages + CLUT).
 setup(0)
 run(0)
@@ -558,6 +559,24 @@ TICK_STEP[0] = 100; ko = setting(4); tap(1 << 15); tap(1 << 15); assert setting(
 TICK_STEP[0] = 400; tap(1 << 15); assert setting(4) == (ko + 2) % 3
 profile.clear(); call('AnnotatedMapTestLoadSettings')
 checks['keys+ini'] += 1
+# SD mode (HDTextures=0, user 2026-11-12): SD atlas, SD legend (title, [~], 9 rows, [9], [\\] on one panel), no readouts;
+# every mark is a 1x SD sprite (side 9, enemies 5) and room names come with their leaders.
+call('AnnotatedMapTestSdMode', 1)
+setup(0); run(0); base, n = prims()
+assert n == 1 + 2 + 9 + 2, n
+SDH = (ROOT / 'src/sd_assets.h').read_text()
+assert 'SD_ROOM_COUNT' in SDH
+for page in range(7):
+    setup(page)
+    got = run(page, scope=3, toggles=[1] * 9)
+    base, n = prims()
+    assert 0 < n < 1400, (page, n)
+    for i in range(n):
+        b = u.mem_read(base + 40 * i, 40)
+        xs = [struct.unpack_from('<h', b, o)[0] for o in (8, 16, 24, 32)]; ys = [struct.unpack_from('<h', b, o)[0] for o in (10, 18, 26, 34)]
+        assert max(xs) >= 0 and min(xs) < 320 and max(ys) >= 0 and min(ys) < 240, (page, i, xs, ys)   # nothing wholly off screen
+checks['sd'] += 1
+call('AnnotatedMapTestSdMode', 0)
 print(dict(checks), 'OK')
 
 # Render every submitted legend state from the shipped HD/SD atlases, using x86-produced geometry.

@@ -123,7 +123,9 @@ for mi, idx2, fx, fy in far:
     near = lambda pts, p: any(abs(a - p[0]) <= 1 and abs(b - p[1]) <= 1 for a, b in pts)
     if not lock_box(0, 1, 0): continue   # its story guard is not met in this synthetic state
     assert near(lock_box(0, 1, 0), door), (m, door)
-    assert near(lock_box(1, 1, 0), dest), (m, dest)
+    # the same lock seen from both sides of a short door merges within DUP_MAP_PX (4 px, rule 14): Park Graveyard -> Cabin
+    near4 = lambda pts, p: any(abs(a - p[0]) <= 4 and abs(b - p[1]) <= 4 for a, b in pts)
+    assert near(lock_box(1, 1, 0), dest) or (abs(door[0] - dest[0]) + abs(door[1] - dest[1]) <= 16 and near4(lock_box(1, 1, 0), dest)), (m, dest)
     assert near(lock_box(1, 0, 1), door), (m, door)
     moved += 1
 assert moved, 'no lock exercised'

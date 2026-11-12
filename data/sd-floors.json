@@ -1,0 +1,49 @@
+{
+ "_note": "SD room-name layout floors. Only indoor pages are split into floors (outdoor pages show interiors on the same screen as the streets, e.g. Uptown Black Jack's Bar with Residential Street). Listed rooms override the touch/overlap guess of tools/sd_layout.py floors_of; source: in-game SD screenshots 2026-11-12 (Dead Factory, Police Station).",
+ "floor_pages": [
+  2,
+  4,
+  5,
+  6
+ ],
+ "4": {
+  "1F": [
+   "Weapons Storage",
+   "Water Filter Passage",
+   "Water Pollution Pool",
+   "Water Control Room",
+   "Monitoring Room",
+   "Emergency Tunnel",
+   "Car Yard",
+   "Helicopter Landing Zone",
+   "Maintenance Elevator",
+   "Rail Cannon Room"
+  ],
+  "2F": [
+   "Entry Corridor",
+   "Resting Room",
+   "Steam Room",
+   "Control Room",
+   "Treatment Room Entry",
+   "Treatment Room",
+   "Communications Tower"
+  ]
+ },
+ "5": {
+  "1F": [
+   "Courtyard",
+   "Main Hall",
+   "West Office",
+   "Evidence Room",
+   "West Stairway 1F",
+   "Winding Corridor",
+   "Operations Room",
+   "Dark Room"
+  ],
+  "2F": [
+   "S.T.A.R.S. Office",
+   "Office Corridor",
+   "West Stairway 2F"
+  ]
+ }
+}
