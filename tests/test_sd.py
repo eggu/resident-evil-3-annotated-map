@@ -18,6 +18,8 @@ checked = 0
 for page in sorted({r['page'] for r in overlay['rooms'] if r['name']}):
     named = {r['idx'] for r in overlay['rooms'] if r['page'] == page and r['name']}
     got = layout[str(page)]
+    extra = {int(i) for i in json.loads((ROOT / 'data/sd-extra-names.json').read_text()).get(str(page), {})}
+    assert all(str(i) in got for i in extra), (page, extra)
     bx0, by0, bx1, by1 = pages_map[page]['bounds']
     small = bx1 - bx0 <= SCREEN_W and by1 - by0 <= SCREEN_H
     sx, sy = ((SCREEN_W - (bx1 - bx0)) // 2 - bx0, (SCREEN_H - (by1 - by0)) // 2 - by0) if small else (0, 0)

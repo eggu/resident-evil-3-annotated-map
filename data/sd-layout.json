@@ -304,6 +304,26 @@
 "y": 307
 }
 },
+"16": {
+"en": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [],
+"text": "Police Station",
+"x": 283,
+"y": 65
+},
+"ko": {
+"colour": 0,
+"floor": -1,
+"forced": false,
+"leader": [],
+"text": "경찰서",
+"x": 302,
+"y": 65
+}
+},
 "2": {
 "en": {
 "colour": 3,

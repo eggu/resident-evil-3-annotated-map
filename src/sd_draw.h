@@ -83,25 +83,17 @@ static void sd_room_names(const unsigned char *s, unsigned page) {
     for (unsigned i = 0; i < SD_ROOM_COUNT; i++) {
         const SdRoom *r = &sd_rooms[i];
         if (r->page != page || !room_shown(r->page, r->idx)) continue;
-        shown_counts[9]++;
+        for (unsigned k = 0; k < ROOM_COUNT; k++)   /* areas named only in SD (data/sd-extra-names.json) are not room names */
+            if (room_labels[k].page == r->page && room_labels[k].idx == r->idx) { shown_counts[9]++; break; }
         if (map_zoom < 100) continue;
         const SdSprite *sp = &sd_sprites[r->sprite[korean]];
         unsigned c = r->colour[korean], n = r->points[korean];
         int pts[6], x = map_x(s, r->x[korean]), y = map_y(s, r->y[korean]);
         for (unsigned k = 0; k < n; k++) { pts[2 * k] = map_x(s, r->pt[korean][2 * k]); pts[2 * k + 1] = map_y(s, r->pt[korean][2 * k + 1]); }
-        /* Scrolled maps (user 2026-11-12): a name cut by the screen edge or under the legend moves inside, and its
-         * leader ends on the moved name's nearest edge. A room itself off screen keeps its name off screen. */
-        if (n && pts[0] >= 0 && pts[0] < 320 && pts[1] >= 0 && pts[1] < 240) {
-            int nx = x < 2 ? 2 : x + sp->w > 318 ? 318 - sp->w : x, ny = y < 2 ? 2 : y + sp->h > 238 ? 238 - sp->h : y;
-            Rect b = {(int16_t)nx, (int16_t)ny, (int16_t)(nx + sp->w), (int16_t)(ny + sp->h)};
-            if (rects_hit(b, panel_boxes[0])) { ny = panel_boxes[0].t - 2 - sp->h; b.t = (int16_t)ny; b.b = (int16_t)(ny + sp->h); }
-            if (nx != x || ny != y) {
-                int px = pts[2 * n - 4 < 0 ? 0 : 2 * n - 4], py = pts[2 * n - 3 < 1 ? 1 : 2 * n - 3];
-                pts[2 * n - 2] = px < nx ? nx - 1 : px >= nx + sp->w ? nx + sp->w : px;
-                pts[2 * n - 1] = py < ny ? ny - 1 : py >= ny + sp->h ? ny + sp->h : py;
-                x = nx; y = ny;
-            }
-        }
+        /* Names belong to the map (user 2026-11-13): they scroll with their room and are never moved on screen; a name
+         * under the open legend is not drawn. */
+        Rect b = {(int16_t)x, (int16_t)y, (int16_t)(x + sp->w), (int16_t)(y + sp->h)};
+        if (rects_hit(b, panel_boxes[0])) continue;
         for (unsigned k = 1; k < n; k++) sd_line(pts[2 * k - 2], pts[2 * k - 1], pts[2 * k], pts[2 * k + 1], c);
         sd_quad_c(x, y, r->sprite[korean], c);
     }

@@ -17,6 +17,7 @@ LINE_H = 11   # 10 px Galmuri9 + 1 px shadow
 LEADER_INSET = 3   # leaders start this far inside their room
 SCREEN_W, SCREEN_H = 320, 240
 FLOORS = json.loads((ROOT / 'data/sd-floors.json').read_text())
+EXTRA = {k: v for k, v in json.loads((ROOT / 'data/sd-extra-names.json').read_text()).items() if not k.startswith('_')}
 
 
 def size_of(text):
@@ -173,6 +174,13 @@ def page_layout(page, overlay, pages_map, names, langs=('ko', 'en')):
             done.update(placed)
             print(f'page {page} {lang} floor {f}: {len(placed)} names, forced {[o["text"] for o in placed.values() if o.get("forced")]}', flush=True)
         colour(done)
+        for idx, ns in EXTRA.get(str(page), {}).items():   # unnamed areas: the name inside, centred, no leader
+            cs = cells.get(int(idx))
+            if not cs: continue
+            w, h = size_of(ns[lang])
+            mx = sum(c[0] for c in cs) // len(cs); my = sum(c[1] for c in cs) // len(cs)
+            done[int(idx)] = dict(text=ns[lang], x=mx, y=my, poly=None, box=(mx - w // 2, my - h // 2, w, h), col=PAL[0])
+            floor.setdefault(int(idx), -1)
         for idx, o in done.items():
             out.setdefault(str(idx), {})[lang] = dict(
                 text=o['text'], x=(o['box'][0] - sx) if o.get('box') else round(o['x'] - sx - size_of(o['text'])[0] / 2),

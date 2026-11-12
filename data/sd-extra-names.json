@@ -1,0 +1,4 @@
+{
+ "_note": "SD names for map areas that have no room name in data/overlay.json, drawn inside the area (user 2026-11-13: Uptown shows the police station block). page -> room index -> names.",
+ "0": {"16": {"en": "Police Station", "ko": "경찰서"}}
+}
