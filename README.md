@@ -23,9 +23,8 @@ A Korean/English ASI map mod for the original Resident Evil 3 PC release (Source
 
 SD mode (Classic REbirth without HD textures):
 
-| | |
+| Zoomed in | Zoomed out (no room names) |
 |---|---|
-| ![SD — Police Station 1F](docs/screenshots/sd-1-police-1f.png) | ![SD — Police Station 1F zoomed in](docs/screenshots/sd-2-police-1f-zoom-in.png) |
 | ![SD — Uptown zoomed in](docs/screenshots/sd-3-uptown-zoom-in.png) | ![SD — Uptown zoomed out, no room names](docs/screenshots/sd-4-uptown-zoom-out.png) |
 
 ## Visibility and defaults

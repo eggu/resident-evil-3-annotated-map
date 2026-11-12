@@ -23,9 +23,8 @@
 
 SD 모드(HD 텍스처 없이 Classic REbirth 사용):
 
-| | |
+| 확대 | 축소(방 이름 없음) |
 |---|---|
-| ![SD — 경찰서 1층](docs/screenshots/sd-1-police-1f.png) | ![SD — 경찰서 1층 확대](docs/screenshots/sd-2-police-1f-zoom-in.png) |
 | ![SD — 업타운 확대](docs/screenshots/sd-3-uptown-zoom-in.png) | ![SD — 업타운 축소, 방 이름 없음](docs/screenshots/sd-4-uptown-zoom-out.png) |
 
 ## 표시 범위와 기본값
