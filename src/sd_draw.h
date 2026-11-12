@@ -4,14 +4,29 @@
 #include "sd_assets.h"
 
 static int sd_mode = -1;   /* -1 undecided; fixed for the session (REbirth cannot switch HD while running) */
+/* Classic REbirth is the ddraw.dll beside the game exe; a system ddraw.dll (or none) means no REbirth. */
+static int rebirth_loaded(void) {
+    HMODULE m = GetModuleHandleA("ddraw.dll");
+    char dll[MAX_PATH], exe[MAX_PATH];
+    if (!m || !GetModuleFileNameA(m, dll, MAX_PATH) || !GetModuleFileNameA(NULL, exe, MAX_PATH)) return 0;
+    char *da = dll, *db = exe;
+    for (char *q = dll; *q; q++) if (*q == '\\' || *q == '/') da = q;
+    for (char *q = exe; *q; q++) if (*q == '\\' || *q == '/') db = q;
+    *da = *db = 0;
+    return !lstrcmpiA(dll, exe);
+}
+/* Auto (user 2026-11-13, RE1-RE3): HD only when REbirth runs with HD textures on and neither retro nor low-res mode; else SD. */
+static int sd_auto(int rebirth, int hd_textures, int retro, int low_res) { return !(rebirth && hd_textures == 1 && !retro && !low_res); }
 static int sd_decide(void) {
     if (sd_mode < 0) {
-        int hd = rebirth_hd_textures();
-        sd_mode = display_mode == 2 || (display_mode == 0 && hd <= 0);   /* HDTextures missing counts as SD */
-        log_text(sd_mode ? "SD mode: 1x markers and names (HDTextures=0 or DisplayMode=SD)" : "HD mode");
+        int rebirth = rebirth_loaded(), hd = rebirth_hd_textures();
+        int retro = (int)GetPrivateProfileIntA("DLL", "RetroMode", 0, config_path), low = (int)GetPrivateProfileIntA("DLL", "LowResEnable", 0, config_path);
+        sd_mode = display_mode == 2 || (display_mode == 0 && sd_auto(rebirth, hd, retro, low));
+        log_fmt(sd_mode ? "SD mode (REbirth=%d HDTextures=%d RetroMode=%d LowResEnable=%d)" : "HD mode (REbirth=%d HDTextures=%d RetroMode=%d LowResEnable=%d)", rebirth, hd, retro, low);
     }
     return sd_mode;
 }
+__declspec(dllexport) int __cdecl AnnotatedMapTestSdAuto(int rebirth, int hd, int retro, int low) { return sd_auto(rebirth, hd, retro, low); }
 #define SD_CLUT_X 192   /* the CLUT spot the live test proved (TestSD, 2026-11-12) */
 #define SD_CLUT_Y 256
 enum { SD_ROW_ICONS = 5, SD_ROW_LEGEND = 6 };   /* CLUT rows 0-4: one per leader colour */

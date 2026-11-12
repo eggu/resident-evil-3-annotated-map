@@ -33,10 +33,10 @@ SD 모드(HD 텍스처 없이 Classic REbirth 사용):
 
 ## HD와 SD
 
-게임을 시작할 때 Classic REbirth `config.ini`의 `HDTextures` 설정을 따릅니다.
+게임을 시작할 때 Classic REbirth와 `config.ini` 설정을 보고 HD나 SD를 고릅니다.
 
-- **HD** (`HDTextures = 1`): `hires\misc\`의 `.webp` 파일로 글자와 아이콘을 선명하게 표시합니다.
-- **SD** (`HDTextures = 0`이거나 항목이 없을 때): 저해상도용 1배 픽셀 마커와 픽셀 글꼴(Galmuri9)로 표시합니다. 방 이름은 짧은 선으로 방 옆에 붙고, 지도를 축소하면 숨겨집니다. SD에서는 이름·아이콘 크기, 불투명도, 아이템 이름을 쓸 수 없습니다.
+- **HD** (Classic REbirth에서 `HDTextures = 1`이고 `RetroMode`·`LowResEnable`이 꺼져 있을 때): `hires\misc\`의 `.webp` 파일로 글자와 아이콘을 선명하게 표시합니다.
+- **SD** (그 밖의 모든 경우, Classic REbirth 없이 실행할 때 포함): 저해상도용 1배 픽셀 마커와 픽셀 글꼴(Galmuri9)로 표시합니다. 방 이름은 짧은 선으로 방 옆에 붙고, 지도를 축소하면 숨겨집니다. SD에서는 이름·아이콘 크기, 불투명도, 아이템 이름을 쓸 수 없습니다.
 
 ## 설치
 
@@ -99,7 +99,7 @@ SD 모드(HD 텍스처 없이 Classic REbirth 사용):
 
 - `Modifier=Shift`: 아이콘 크기·불투명도에 함께 누르는 키. `Ctrl`로 바꿀 수 있습니다.
 - `LockMarker=Door`: 잠긴 문 아이콘을 문 위치에 표시합니다. `Unvisited`로 바꾸면 문 너머 방(그 방만 방문했다면 문 이쪽)에 표시합니다.
-- `DisplayMode=Auto`: `HDTextures`를 따릅니다(HD와 SD 참고). `HD`나 `SD`로 고정할 수 있습니다.
+- `DisplayMode=Auto`: HD나 SD를 자동으로 고릅니다(HD와 SD 참고). `HD`나 `SD`로 고정할 수 있습니다.
 
 이전 버전에서 업그레이드하면 기존 설정은 유지되며 한 번 자동 변환됩니다. 이벤트는 예전 퍼즐 설정값으로 시작하고, 이름·아이템 아이콘 크기는 지금 보이는 크기가 유지됩니다. 열쇠·잠긴 문 이름은 꺼진 상태로 시작합니다(`H`로 켬). 이름 불투명도는 이제 `[` · `]`이고, Shift + `-` · `+`는 아이콘 크기입니다.
 

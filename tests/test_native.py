@@ -14,7 +14,7 @@ DLL = ROOT / 'build/RE3.AnnotatedMap.asi'
 ARGS = dict(GetAsyncKeyState=1, GetTickCount=0, WritePrivateProfileStringA=4, GetPrivateProfileIntA=4,
             GetPrivateProfileStringA=6, CreateFileA=7, WriteFile=5, CloseHandle=1, lstrlenA=1, wsprintfA=-1,
             VirtualProtect=4, FlushInstructionCache=3, GetCurrentProcess=0, GetModuleHandleA=1,
-            GetModuleFileNameA=3, DisableThreadLibraryCalls=1, lstrcpyA=2, DeleteFileA=1, MoveFileExA=3, CopyFileA=3)
+            GetModuleFileNameA=3, DisableThreadLibraryCalls=1, lstrcpyA=2, lstrcmpiA=2, DeleteFileA=1, MoveFileExA=3, CopyFileA=3)
 
 
 def load(blob, base):
@@ -493,6 +493,10 @@ profile.clear(); profile.update(before); call('AnnotatedMapTestLoadSettings')
 profile.clear(); assert call('AnnotatedMapTestHdTextures') == 0xFFFFFFFF   # not found: -1
 profile['HDTextures'] = 1; assert call('AnnotatedMapTestHdTextures') == 1
 profile['HDTextures'] = 0; assert call('AnnotatedMapTestHdTextures') == 0
+# Auto picks HD only with REbirth loaded, HDTextures=1 and no retro/low-res mode (user 2026-11-13); no REbirth is SD.
+assert call('AnnotatedMapTestSdAuto', 1, 1, 0, 0) == 0
+for args in ((0, 1, 0, 0), (1, 0, 0, 0), (1, 0xFFFFFFFF, 0, 0), (1, 1, 1, 0), (1, 1, 0, 1), (0, 0xFFFFFFFF, 0, 0)):
+    assert call('AnnotatedMapTestSdAuto', *args) == 1, args
 profile.clear(); profile.update(before)
 # Modifier and lock side come from the INI; out-of-range values are clamped.
 profile.update(Modifier='Ctrl', LockMarker='Unvisited', IconSize=999, IconOpacity=0, ItemNames=1, Legend=0); call('AnnotatedMapTestLoadSettings')

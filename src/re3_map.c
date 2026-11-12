@@ -521,8 +521,7 @@ BOOL WINAPI DllMain(HINSTANCE module, DWORD reason, LPVOID reserved) {
     DeleteFileA(log_path);
     load_settings();
     { int hd = rebirth_hd_textures();
-      if (hd == 0) log_text("Classic REbirth config.ini has HDTextures=0: the map text is drawn from the low-resolution atlas (blurry). Set HDTextures=1.");
-      else if (hd < 0) log_text("Classic REbirth config.ini [DLL] HDTextures not found: HD map text needs HDTextures=1 (or the file is missing)."); }
+      if (hd <= 0) log_text("Classic REbirth config.ini HDTextures is 0 or missing: the map uses SD markers and names (DisplayMode=Auto)."); }
     if (!supported_exe()) { log_text("Unsupported executable; no patch applied"); return TRUE; }
     for (unsigned i = 0; i < 2; i++) {
         unsigned char *p = (unsigned char *)hook_sites[i];

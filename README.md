@@ -33,10 +33,10 @@ A new configuration starts in **English, name size 100%, name opacity 70%, icon 
 
 ## HD and SD
 
-The mod follows Classic REbirth's `HDTextures` setting in `config.ini` at game start.
+The mod picks HD or SD at game start from Classic REbirth and its `config.ini`.
 
-- **HD** (`HDTextures = 1`): sharp text and icons from the `.webp` files in `hires\misc\`.
-- **SD** (`HDTextures = 0` or missing): low-resolution 1x pixel markers and a pixel font (Galmuri9). Room names sit next to their room on a short line and are hidden when the map is zoomed out. In SD, name and icon size, opacity and item names are not available.
+- **HD** (Classic REbirth with `HDTextures = 1`, `RetroMode` and `LowResEnable` off): sharp text and icons from the `.webp` files in `hires\misc\`.
+- **SD** (every other case, including playing without Classic REbirth): low-resolution 1x pixel markers and a pixel font (Galmuri9). Room names sit next to their room on a short line and are hidden when the map is zoomed out. In SD, name and icon size, opacity and item names are not available.
 
 ## Installation
 
@@ -99,7 +99,7 @@ Changes made on the map are saved automatically to `RE3.AnnotatedMap.ini` in the
 
 - `Modifier=Shift`: the key held for icon size and opacity. It can be `Ctrl`.
 - `LockMarker=Door`: locked-door icons sit on the door. With `Unvisited` they sit in the room beyond the door (or on this side if only that room was visited).
-- `DisplayMode=Auto`: follows `HDTextures` (see HD and SD). `HD` or `SD` forces one.
+- `DisplayMode=Auto`: picks HD or SD (see HD and SD). `HD` or `SD` forces one.
 
 When upgrading from an earlier version, your settings are kept and converted once: Events starts with your old Puzzles setting, and name and item-icon sizes keep the size you had. Key and locked-door names start off (press `H`). Name opacity is now `[` · `]`; Shift + `-` · `+` changes icon size.
 
