@@ -43,10 +43,9 @@ def diamond(f, glyph):
 def herb(f): return '|'.join(['.........', '.kkkkkkk.', '.k' + f * 5 + 'k.', '..k' + f * 3 + 'k..', '..k' + f * 3 + 'k..', '...k' + f + 'k...', '...k' + f + 'k...', '....k....', '.........'])
 def ammo(f): return '|'.join(['.........', '.........', '.Y.Y.Y.Y.', 'kkkkkkkkk', 'k' + f * 7 + 'k', 'k' + f * 7 + 'k', 'kkkkkkkkk', '.........', '.........'])
 def grenade(f): return '...kkk...|..k' + f * 3 + 'k..|.k' + f * 5 + 'k.|.k' + f * 5 + 'k.|.knnnnnk.|.knnnnnk.|.knnnnnk.|..kkkkk..|.........'
-def powder(glyph, f):
-    """Gunpowder (user 2026-11-12): a tall aluminium can with its letter (A red, B yellow)."""
-    g = glyph.split('|')
-    return '|'.join(['..kkkkk..', '..ksssk..'] + ['..k' + ''.join(f if c == 'x' else 's' for c in r) + 'k..' for r in g] + ['..ksssk..', '..kkkkk..'])
+def powder(f):
+    """Gunpowder (user 2026-11-12): a tall aluminium can (7 wide) with a colour band (A red, B yellow)."""
+    return '|'.join(['.kkkkkkk.', '.ksssssk.', '.ksssssk.'] + ['.k' + f * 5 + 'k.'] * 3 + ['.ksssssk.', '.ksssssk.', '.kkkkkkk.'])
 
 
 def lock(body, sym, fg):
@@ -68,7 +67,7 @@ ICONS = {
     'ammo_mt': '...kkk...|..krrrk..|..krrrk..|..krrrk..|..kXXXk..|..kXXXk..|..kXXXk..|..kkkkk..|.........',   # mine thrower: narrow round, red, black case
     'grenade': grenade('m'), 'grenade_acid': grenade('Y'), 'grenade_flame': grenade('r'),
     'grenade_freeze': grenade('c'),             # freeze rounds: ice-coloured grenade
-    'powder_a': powder('.x.|x.x|xxx|x.x|x.x', 'r'), 'powder_b': powder('xx.|x.x|xx.|x.x|xx.', 'Y'),
+    'powder_a': powder('r'), 'powder_b': powder('Y'),
     'spray': '...kkk...|...kmk...|..kkkkk..|..kwwwk..|..kwrwk..|..krrrk..|..kwrwk..|..kwwwk..|..kkkkk..',
     'ribbon': '..kkkkk..|.kmmmmmk.|kmwwwwwmk|kmwkkkwmk|kmwkmkwmk|kmwkkkwmk|kmwwwwwmk|.kmmmmmk.|..kkkkk..',
     'file': '.kkkkkk..|.kwwwwkk.|.kwkkwwk.|.kwwwwwk.|.kwkkkwk.|.kwwwwwk.|.kwkkkwk.|.kwwwwwk.|.kkkkkkk.',
