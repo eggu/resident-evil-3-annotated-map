@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.2.0
+
+- SD mode: with Classic REbirth's `HDTextures = 0` (or missing) the map uses 1x pixel markers and a pixel font (Galmuri9) instead of blurry HD text. Room names sit next to their room on a short line and show only at 100% zoom or more. `DisplayMode` in the INI can force HD or SD.
+- SD markers share their shapes with the RE1 and RE2 map mods: key items are circles, locked doors are padlocks in the key's colour, herbs are inverted triangles, ammo is a cartridge box, enemies are a small red X.
+- The Uptown map names the police station block.
+- Room shapes are read more accurately from the game's map textures, so some room names in HD sit better.
+
+- SD 모드: Classic REbirth의 `HDTextures = 0`(또는 없음)이면 흐릿한 HD 글자 대신 1배 픽셀 표식과 픽셀 글꼴(Galmuri9)을 씁니다. 방 이름은 방 옆에 짧은 선으로 붙고, 확대 100% 이상에서만 표시됩니다. INI의 `DisplayMode`로 HD나 SD를 강제할 수 있습니다.
+- SD 표식은 RE1·RE2 지도 모드와 같은 모양: 핵심 아이템은 원, 잠긴 문은 열쇠 색의 자물쇠, 허브는 역삼각형, 탄약은 탄약 상자, 적은 작은 빨간 X.
+- 업타운 지도에 경찰서 구역 이름 표시.
+- 게임 지도 텍스처에서 방 모양을 더 정확히 읽어 HD의 일부 방 이름 위치가 나아졌습니다.
+
 ## 1.1.0
 
 - New keys: `6` Events (new category, off by default), `7` common items, `8` enemies, `9` scope. Language switch moved to `\` (`₩` on Korean keyboards).

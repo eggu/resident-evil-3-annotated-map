@@ -1,5 +1,29 @@
 # Release notes
 
+## 1.2.0
+
+**Upgrading:** copy the ZIP contents into the game folder (`RE3.AnnotatedMap.asi` and the `hires` folder) and keep your existing `RE3.AnnotatedMap.ini`. Your settings stay as they are; the new `DisplayMode` setting starts at `Auto` (the included INI explains it).
+
+- **SD mode.** If you play with Classic REbirth's `HDTextures = 0` (or the key is missing), the map no longer shows blurry HD text. It switches to 1x pixel markers and a pixel font (Galmuri9) drawn at the game's own resolution. Room names sit next to their room with a short line and appear at 100% zoom or more; at 50% only the markers are shown. In SD, name and icon size, opacity and item names are not available.
+- **SD markers** use the same shapes as the RE1 and RE2 map mods: key items are circles, locked doors are padlocks in the colour of their key, herbs are inverted triangles, ammo is a cartridge box in the ammo's colour, and enemies are a small red X.
+- **`DisplayMode`** in the INI: `Auto` (default) follows `HDTextures`; `HD` or `SD` forces one.
+- **Uptown** now names the police station block.
+- **Room shapes** are read more accurately from the game's map textures, so some room names in HD sit better.
+
+---
+
+## 1.2.0 (한국어)
+
+**업그레이드:** ZIP의 내용(`RE3.AnnotatedMap.asi`, `hires` 폴더)을 게임 폴더에 복사하고 기존 `RE3.AnnotatedMap.ini`는 그대로 두세요. 설정은 그대로 유지되고, 새 `DisplayMode` 설정은 `Auto`로 시작합니다(포함된 INI에 설명이 있습니다).
+
+- **SD 모드.** Classic REbirth의 `HDTextures = 0`(또는 키 없음)으로 플레이하면 흐릿한 HD 글자 대신 게임 해상도에 맞춘 1배 픽셀 표식과 픽셀 글꼴(Galmuri9)로 표시합니다. 방 이름은 방 옆에 짧은 선으로 붙고 확대 100% 이상에서 표시되며, 50%에서는 표식만 표시합니다. SD에서는 이름·아이콘 크기, 불투명도, 아이템 이름을 쓸 수 없습니다.
+- **SD 표식**은 RE1·RE2 지도 모드와 같은 모양입니다: 핵심 아이템은 원, 잠긴 문은 열쇠 색의 자물쇠, 허브는 역삼각형, 탄약은 탄약 색의 탄약 상자, 적은 작은 빨간 X.
+- **INI의 `DisplayMode`**: `Auto`(기본)는 `HDTextures`를 따르고, `HD`나 `SD`는 해당 모드를 강제합니다.
+- **업타운** 지도에 경찰서 구역 이름을 표시합니다.
+- 게임 지도 텍스처에서 **방 모양**을 더 정확히 읽어 HD의 일부 방 이름 위치가 나아졌습니다.
+
+---
+
 ## 1.1.0
 
 **Upgrading:** copy the ZIP contents into the game folder (`RE3.AnnotatedMap.asi`, the `hires` folder, `dsound.dll`, `scripts`), and keep your existing `RE3.AnnotatedMap.ini`. Your settings are converted automatically the first time you open the map (Events starts with your old Puzzles setting; name and item-icon sizes look the same as before). The ZIP now also contains a default `RE3.AnnotatedMap.ini` with every setting explained; copy it only if you do not have one yet.

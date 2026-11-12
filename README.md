@@ -21,6 +21,13 @@ A Korean/English ASI map mod for the original Resident Evil 3 PC release (Source
 
 ![Around the Uptown store room — puzzles and enemies](docs/screenshots/4.png)
 
+SD mode (Classic REbirth without HD textures):
+
+| | |
+|---|---|
+| ![SD — Police Station 1F](docs/screenshots/sd-1-police-1f.png) | ![SD — Police Station 1F zoomed in](docs/screenshots/sd-2-police-1f-zoom-in.png) |
+| ![SD — Uptown zoomed in](docs/screenshots/sd-3-uptown-zoom-in.png) | ![SD — Uptown zoomed out, no room names](docs/screenshots/sd-4-uptown-zoom-out.png) |
+
 ## Visibility and defaults
 
 A new configuration starts in **English, name size 100%, name opacity 70%, icon size and opacity 100%, visited rooms only, with only Rooms on and item names hidden**. Press `\` (the `₩` key on Korean keyboards) for Korean and `2`–`8` to turn on other categories. Press `9` to change scope. **All rooms** reveals unexplored rooms and items and contains spoilers.

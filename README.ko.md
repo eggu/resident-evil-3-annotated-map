@@ -21,6 +21,13 @@
 
 ![업타운 창고 주변 — 퍼즐·적 표시](docs/screenshots/4.png)
 
+SD 모드(HD 텍스처 없이 Classic REbirth 사용):
+
+| | |
+|---|---|
+| ![SD — 경찰서 1층](docs/screenshots/sd-1-police-1f.png) | ![SD — 경찰서 1층 확대](docs/screenshots/sd-2-police-1f-zoom-in.png) |
+| ![SD — 업타운 확대](docs/screenshots/sd-3-uptown-zoom-in.png) | ![SD — 업타운 축소, 방 이름 없음](docs/screenshots/sd-4-uptown-zoom-out.png) |
+
 ## 표시 범위와 기본값
 
 새 설정은 **영어, 이름 크기 100%, 이름 불투명도 70%, 아이콘 크기·불투명도 100%, 방문한 방만 표시, 방 이름만 켬, 아이템 이름 숨김**으로 시작합니다. `\`(한국 키보드에서는 `₩`) 키로 한국어로 바꾸고, `2`–`8`로 다른 항목을 켭니다. `9`로 범위를 바꿉니다. **모든 방**은 미방문 구역과 아이템을 미리 보여주므로 스포일러가 포함됩니다.
