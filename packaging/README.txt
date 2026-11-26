@@ -9,14 +9,14 @@ RE3 Annotated Map - Survivor's Notes — 한국어
 
 ## 설치
 
-1. 바이오하자드 3용 **Classic REbirth**가 아직 없다면 먼저 설치하세요(1.0.3에서 확인). [공식 다운로드](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
+1. HD 지도(선명한 아이콘·이름)를 쓰려면 바이오하자드 3용 **Classic REbirth**를 설치하세요(권장, 1.0.3에서 확인). 없으면 SD 표식과 픽셀 글꼴로 표시됩니다. [공식 다운로드](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
 2. 게임을 종료하고 [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest)에서 `RE3-Annotated-Map-<버전>.zip`을 받아 압축을 풉니다. `Source code`는 설치 파일이 아닙니다.
 3. ZIP의 내용(`dsound.dll`, `RE3.AnnotatedMap.asi`, `hires`, `scripts`)을 `BIOHAZARD(R) 3 PC.exe`가 있는 게임 폴더에 폴더 구조 그대로 복사합니다. ASI 로더인 [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) v9.7.4(MIT)가 `dsound.dll`로 포함되어 있습니다. 기존 `hires` 폴더가 있으면 합치고, 같은 이름의 파일은 교체합니다. 다른 HD 모드를 사용한다면 먼저 기존 `hires` 폴더를 백업하세요. 기본 설정 파일 `RE3.AnnotatedMap.ini`는 게임 폴더에 아직 없을 때만 복사하세요. 이미 있으면 덮어쓰지 마세요(내 설정이 사라집니다).
    - Ultimate ASI Loader가 이미 설치되어 있으면 ZIP의 `dsound.dll`은 건너뛰세요. Mulder의 Steam Enhancement Pack에서 HD 모드를 설치한 경우 기존 `dinput8.dll`이 ASI 로더입니다.
    - ASI 로더가 아닌 다른 `dsound.dll`(예: DSOAL)이 있으면 덮어쓰지 말고, 포함된 `dsound.dll`을 `winmm.dll` 이름으로 복사하세요.
 4. Classic REbirth로 게임을 실행하고 지도를 여세요. 한글 번역 모드는 필수가 아닙니다.
 
-**Steam판을 Classic REbirth 없이 실행하는 경우**, Steam 라이브러리에서 게임을 우클릭하고 **관리 → 로컬 파일 보기**를 선택하세요. 사용하는 언어 폴더(예: `english`)에 `dsound.dll`(ASI 로더), `RE3.AnnotatedMap.asi`, `RE3.AnnotatedMap.ini`를 복사하고 Steam에서 게임을 실행하세요. 이때는 SD용 픽셀 마커와 글꼴로 표시되므로 `hires`는 필요 없습니다. 영어판에서 확인했습니다.
+**Steam판·GOG판을 Classic REbirth 없이 실행하는 경우**, Steam 라이브러리에서 게임을 우클릭하고 **관리 → 로컬 파일 보기**를 선택하세요. 사용하는 언어 폴더(예: `english`)에 `dsound.dll`(ASI 로더), `RE3.AnnotatedMap.asi`, `RE3.AnnotatedMap.ini`를 복사하고 Steam에서 게임을 실행하세요. 이때는 SD용 픽셀 마커와 글꼴로 표시되므로 `hires`는 필요 없습니다. 영어판에서 확인했습니다. GOG판은 같은 세 파일을 게임 실행 파일(`.exe`)이 있는 게임 폴더에 복사하세요.
 
 **Mulder의 Steam Enhancement Pack을 쓰는 경우**, Steam 라이브러리에서 게임을 우클릭하고 **관리 → 로컬 파일 보기**를 선택하세요. 위 파일을 게임 폴더 안의 `rebirth`에 복사한 뒤, Mulder 런처에서 **Classic REbirth**로 실행하세요.
 
@@ -99,14 +99,14 @@ The mod picks HD or SD at game start from Classic REbirth and its `config.ini`.
 
 ## Installation
 
-1. If you do not already have **Classic REbirth** for Resident Evil 3, install it first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
+1. Recommended for the HD map (sharp icons and names): install **Classic REbirth** for Resident Evil 3 (tested with 1.0.3). Without it, the map uses SD markers and the pixel font. [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
 2. Close the game. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest) and extract it. `Source code` is not the install package.
 3. Copy the ZIP contents (`dsound.dll`, `RE3.AnnotatedMap.asi`, `hires`, `scripts`) into the game folder containing `BIOHAZARD(R) 3 PC.exe`, preserving the folder structure. [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) v9.7.4 (MIT) is included as `dsound.dll`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first. Copy the default settings file `RE3.AnnotatedMap.ini` only if the game folder does not have one yet. Never overwrite an existing one (it holds your settings).
    - If Ultimate ASI Loader is already installed, skip the ZIP’s `dsound.dll`. If you installed the HD mod through Mulder’s Steam Enhancement Pack, its `dinput8.dll` is the ASI loader.
    - If you have a different `dsound.dll` (e.g. DSOAL), do not overwrite it: copy the included one as `winmm.dll`.
 4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
-**Playing the Steam release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll` (the ASI loader), `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version.
+**Playing the Steam or GOG release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll` (the ASI loader), `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version. On the GOG release, copy the same three files into the game folder next to the game’s `.exe`.
 
 **Using Mulder’s Steam Enhancement Pack?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy the files above into the `rebirth` subfolder, then select **Classic REbirth** in Mulder’s launcher.
 

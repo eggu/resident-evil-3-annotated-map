@@ -4,7 +4,7 @@ English | [한국어](README.ko.md)
 
 <p align="center"><img src="docs/logo.png" alt="RE3 Annotated Map — Survivor’s Notes" width="320"></p>
 
-A Korean/English ASI map mod for the original Resident Evil 3 on PC. Tested with the SourceNext release + Classic REbirth 1.0.3 and the Steam English release. Adds room names, locked doors and keys, items, documents/maps, puzzles/Live Selections, typewriters, item boxes and monsters to the game's map. Not for the 2020 remake.
+A Korean/English ASI map mod for the original Resident Evil 3 on PC. Tested with the SourceNext release + Classic REbirth 1.0.3 and the Steam English release. The Steam and GOG releases also work without Classic REbirth. Adds room names, locked doors and keys, items, documents/maps, puzzles/Live Selections, typewriters, item boxes and monsters to the game's map. Not for the 2020 remake.
 
 - Annotations appear on the game's own map. Picked-up items, opened doors, completed puzzles and defeated monsters disappear from the map.
 - Choose visited rooms, rooms revealed by an area map, or all rooms.
@@ -40,14 +40,14 @@ The mod picks HD or SD at game start from Classic REbirth and its `config.ini`.
 
 ## Installation
 
-1. If you do not already have **Classic REbirth** for Resident Evil 3, install it first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
+1. Recommended for the HD map (sharp icons and names): install **Classic REbirth** for Resident Evil 3 (tested with 1.0.3). Without it, the map uses SD markers and the pixel font. [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
 2. Close the game. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest) and extract it. `Source code` is not the install package.
 3. Copy the ZIP contents (`dsound.dll`, `RE3.AnnotatedMap.asi`, `hires`, `scripts`) into the game folder containing `BIOHAZARD(R) 3 PC.exe`, preserving the folder structure. [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) v9.7.4 (MIT) is included as `dsound.dll`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first. Copy the default settings file `RE3.AnnotatedMap.ini` only if the game folder does not have one yet. Never overwrite an existing one (it holds your settings).
    - If Ultimate ASI Loader is already installed, skip the ZIP’s `dsound.dll`. If you installed the HD mod through Mulder’s Steam Enhancement Pack, its `dinput8.dll` is the ASI loader.
    - If you have a different `dsound.dll` (e.g. DSOAL), do not overwrite it: copy the included one as `winmm.dll`.
 4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
-**Playing the Steam release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll` (the ASI loader), `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version.
+**Playing the Steam or GOG release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll` (the ASI loader), `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version. On the GOG release, copy the same three files into the game folder next to the game’s `.exe`.
 
 **Using Mulder’s Steam Enhancement Pack?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy the files above into the `rebirth` subfolder, then select **Classic REbirth** in Mulder’s launcher.
 
