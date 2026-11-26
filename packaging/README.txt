@@ -16,7 +16,7 @@ RE3 Annotated Map - Survivor's Notes — 한국어
    - ASI 로더가 아닌 다른 `dsound.dll`(예: DSOAL)이 있으면 덮어쓰지 말고, 포함된 `dsound.dll`을 `winmm.dll` 이름으로 복사하세요.
 4. Classic REbirth로 게임을 실행하고 지도를 여세요. 한글 번역 모드는 필수가 아닙니다.
 
-**Steam판을 Classic REbirth 없이 실행하는 경우**, Steam 라이브러리에서 게임을 우클릭하고 **관리 → 로컬 파일 보기**를 선택하세요. 사용하는 언어 폴더(예: `english`)에 `dsound.dll`, `RE3.AnnotatedMap.asi`, `RE3.AnnotatedMap.ini`를 복사하고 Steam에서 게임을 실행하세요. 이때는 SD용 픽셀 마커와 글꼴로 표시되므로 `hires`는 필요 없습니다. 영어판에서 확인했습니다.
+**Steam판을 Classic REbirth 없이 실행하는 경우**, Steam 라이브러리에서 게임을 우클릭하고 **관리 → 로컬 파일 보기**를 선택하세요. 사용하는 언어 폴더(예: `english`)에 `dsound.dll`(ASI 로더), `RE3.AnnotatedMap.asi`, `RE3.AnnotatedMap.ini`를 복사하고 Steam에서 게임을 실행하세요. 이때는 SD용 픽셀 마커와 글꼴로 표시되므로 `hires`는 필요 없습니다. 영어판에서 확인했습니다.
 
 **Mulder의 Steam Enhancement Pack을 쓰는 경우**, Steam 라이브러리에서 게임을 우클릭하고 **관리 → 로컬 파일 보기**를 선택하세요. 위 파일을 게임 폴더 안의 `rebirth`에 복사한 뒤, Mulder 런처에서 **Classic REbirth**로 실행하세요.
 
@@ -106,7 +106,7 @@ The mod picks HD or SD at game start from Classic REbirth and its `config.ini`.
    - If you have a different `dsound.dll` (e.g. DSOAL), do not overwrite it: copy the included one as `winmm.dll`.
 4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
-**Playing the Steam release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll`, `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version.
+**Playing the Steam release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll` (the ASI loader), `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version.
 
 **Using Mulder’s Steam Enhancement Pack?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy the files above into the `rebirth` subfolder, then select **Classic REbirth** in Mulder’s launcher.
 

@@ -47,7 +47,7 @@ The mod picks HD or SD at game start from Classic REbirth and its `config.ini`.
    - If you have a different `dsound.dll` (e.g. DSOAL), do not overwrite it: copy the included one as `winmm.dll`.
 4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
 
-**Playing the Steam release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll`, `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version.
+**Playing the Steam release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll` (the ASI loader), `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version.
 
 **Using Mulder’s Steam Enhancement Pack?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy the files above into the `rebirth` subfolder, then select **Classic REbirth** in Mulder’s launcher.
 
