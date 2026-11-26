@@ -25,3 +25,6 @@ for t in tests/test_*.py; do local/.venv/bin/python "$t" || break; done
 ```
 
 Unicorn tests execute the actual x86 map code and check overlay state, flags, scope, controls and primitive submission. They do not verify GPU output or behavior in a running game.
+
+Set `RE3_CLASSIC_JP_EXE` to the classic Japanese `Bio3_PC.exe` to also exercise its map hooks and SD primitive submission in `tests/test_executable_layout.py`.
+Set `RE3_STEAM_DUMP` to an unpacked memory image of a running Steam `ResidentEvil3.exe` (`0x400000` to `SizeOfImage`) to run the same check on the Steam build. The Steam executables are packed on disk, so the file itself cannot be used.

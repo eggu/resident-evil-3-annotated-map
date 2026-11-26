@@ -14,7 +14,7 @@ DLL = ROOT / 'build/RE3.AnnotatedMap.asi'
 ARGS = dict(GetAsyncKeyState=1, GetTickCount=0, WritePrivateProfileStringA=4, GetPrivateProfileIntA=4,
             GetPrivateProfileStringA=6, CreateFileA=7, WriteFile=5, CloseHandle=1, lstrlenA=1, wsprintfA=-1,
             VirtualProtect=4, FlushInstructionCache=3, GetCurrentProcess=0, GetModuleHandleA=1,
-            GetModuleFileNameA=3, DisableThreadLibraryCalls=1, lstrcpyA=2, lstrcmpiA=2, DeleteFileA=1, MoveFileExA=3, CopyFileA=3)
+            GetModuleFileNameA=3, DisableThreadLibraryCalls=1, lstrcpyA=2, lstrcmpiA=2, DeleteFileA=1, MoveFileExA=3, CopyFileA=3, CreateThread=6, Sleep=1)
 
 
 def load(blob, base):

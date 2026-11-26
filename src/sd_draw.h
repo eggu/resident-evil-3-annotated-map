@@ -31,14 +31,14 @@ __declspec(dllexport) int __cdecl AnnotatedMapTestSdAuto(int rebirth, int hd, in
 #define SD_CLUT_Y 256
 enum { SD_ROW_ICONS = 5, SD_ROW_LEGEND = 6 };   /* CLUT rows 0-4: one per leader colour */
 static void upload_sd(void) {
-    for (int p = 0; p < SD_PAGES; p++) { int16_t r[4] = {sd_vram[p][0], sd_vram[p][1], 64, sd_vram[p][2]}; load_image(r, sd_pixels[p]); }
-    for (int i = 0; i < 7; i++) { int16_t r[4] = {SD_CLUT_X, (int16_t)(SD_CLUT_Y + i), 16, 1}; load_image(r, sd_cluts[i]); }
+    for (int p = 0; p < SD_PAGES; p++) { int16_t r[4] = {sd_vram[p][0], sd_vram[p][1], 64, sd_vram[p][2]}; layout->load_image(r, sd_pixels[p]); }
+    for (int i = 0; i < 7; i++) { int16_t r[4] = {SD_CLUT_X, (int16_t)(SD_CLUT_Y + i), 16, 1}; layout->load_image(r, sd_cluts[i]); }
 }
 static PolyFT4 *sd_prim(const SdSprite *s, unsigned row) {
     if (prim_count >= MAX_PRIMS) return 0;
     PolyFT4 *p = &frame_prims[prim_count++];
     memset(p, 0, sizeof *p);
-    set_poly_ft4(p);
+    layout->poly_ft4(p);
     p->r = p->g = p->b = 0x80;
     p->clut = (uint16_t)(((SD_CLUT_Y + row) << 6) | (SD_CLUT_X >> 4));
     p->tpage = (uint16_t)((sd_vram[s->page][0] / 64) | (sd_vram[s->page][1] / 256) << 4);

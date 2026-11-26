@@ -4,7 +4,7 @@ English | [한국어](README.ko.md)
 
 <p align="center"><img src="docs/logo.png" alt="RE3 Annotated Map — Survivor’s Notes" width="320"></p>
 
-A Korean/English ASI map mod for the original Resident Evil 3 PC release (SourceNext `BIOHAZARD(R) 3 PC.exe` + Classic REbirth 1.0.3). Adds room names, locked doors and keys, items, documents/maps, puzzles/Live Selections, typewriters, item boxes and monsters to the game's map. Not for the 2020 remake.
+A Korean/English ASI map mod for the original Resident Evil 3 on PC. Tested with the SourceNext release + Classic REbirth 1.0.3 and the Steam English release. Adds room names, locked doors and keys, items, documents/maps, puzzles/Live Selections, typewriters, item boxes and monsters to the game's map. Not for the 2020 remake.
 
 - Annotations appear on the game's own map. Picked-up items, opened doors, completed puzzles and defeated monsters disappear from the map.
 - Choose visited rooms, rooms revealed by an area map, or all rooms.
@@ -40,12 +40,16 @@ The mod picks HD or SD at game start from Classic REbirth and its `config.ini`.
 
 ## Installation
 
-1. Install **Classic REbirth** for Resident Evil 3 first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
+1. If you do not already have **Classic REbirth** for Resident Evil 3, install it first (tested with 1.0.3). [Official download](https://classicrebirth.com/index.php/downloads/resident-evil-3-classic-rebirth/)
 2. Close the game. Download `RE3-Annotated-Map-<version>.zip` from [Releases](https://github.com/eggu/resident-evil-3-annotated-map/releases/latest) and extract it. `Source code` is not the install package.
 3. Copy the ZIP contents (`dsound.dll`, `RE3.AnnotatedMap.asi`, `hires`, `scripts`) into the game folder containing `BIOHAZARD(R) 3 PC.exe`, preserving the folder structure. [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) v9.7.4 (MIT) is included as `dsound.dll`. Merge with an existing `hires` folder and replace matching files. If you use another HD mod, back up your existing `hires` folder first. Copy the default settings file `RE3.AnnotatedMap.ini` only if the game folder does not have one yet. Never overwrite an existing one (it holds your settings).
-   - If Ultimate ASI Loader is already installed as `dsound.dll` (e.g. by a translation patch), keep yours and skip `dsound.dll`.
+   - If Ultimate ASI Loader is already installed, skip the ZIP’s `dsound.dll`. If you installed the HD mod through Mulder’s Steam Enhancement Pack, its `dinput8.dll` is the ASI loader.
    - If you have a different `dsound.dll` (e.g. DSOAL), do not overwrite it: copy the included one as `winmm.dll`.
 4. Launch the game with Classic REbirth and open the map. The Korean translation mod is not required.
+
+**Playing the Steam release without Classic REbirth?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy `dsound.dll`, `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (e.g. `english`), then launch the game from Steam. The map uses the SD pixel markers and font in this setup, so `hires` is not needed. Tested with the English version.
+
+**Using Mulder’s Steam Enhancement Pack?** Right-click the game in your Steam Library and choose **Manage → Browse local files**. Copy the files above into the `rebirth` subfolder, then select **Classic REbirth** in Mulder’s launcher.
 
 ```text
 game folder/
@@ -66,7 +70,7 @@ Uninstall: remove `RE3.AnnotatedMap.asi`, `.ini`, `.log`, `scripts/UltimateASILo
 
 ## Troubleshooting
 
-- **Nothing appears on the map**: the mod only runs on one build of the SourceNext `BIOHAZARD(R) 3 PC.exe` (PE timestamp `0x44642AAC`, image size `0xB01000`). On any other build it draws nothing and writes `Unsupported executable` to `RE3.AnnotatedMap.log`. Classic REbirth 1.0.3's `ddraw.dll` does not load `.asi` files, so the ZIP includes Ultimate ASI Loader as `dsound.dll`. Check that `dsound.dll` sits next to `BIOHAZARD(R) 3 PC.exe` and was not replaced by a different `dsound.dll`.
+- **Nothing appears on the map**. Check `RE3.AnnotatedMap.log` next to the ASI. If it says `Unsupported executable layout`, the mod did not find the map code in your game build: please include the log when reporting the issue. If the log is missing, check that the ASI and its loader are both next to the executable (`dsound.dll` from this ZIP or Mulder’s `dinput8.dll`).
 - **Map text or icons look blurry with `HDTextures = 1`**: sharp text needs REbirth to read the `.webp` files in `hires\misc\`. Check that this mod's `.webp` files are in `hires\misc\` (copying only the `.asi` looks blurry) and that REbirth's low-resolution and retro modes are off. With `HDTextures = 0` the mod uses its SD pixel markers and font instead.
 
 ## Controls

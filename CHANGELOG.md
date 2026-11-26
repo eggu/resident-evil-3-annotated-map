@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.0
+
+- Works with the Steam release without Classic REbirth (tested with the English version). Copy the files into the language folder (e.g. `english`); the map uses SD.
+- The mod now finds the map code in the running game instead of checking for one specific executable, so patched builds such as the 4GB-patched one in Mulder's Steam Enhancement Pack are accepted.
+- If the map code is not found, `RE3.AnnotatedMap.log` names the missing part.
+
+- Classic REbirth 없이 Steam판에서 동작합니다(영어판에서 확인). 언어 폴더(예: `english`)에 파일을 복사하면 SD로 표시됩니다.
+- 특정 실행 파일 하나만 확인하던 방식 대신 실행 중인 게임에서 지도 코드를 찾습니다. Mulder의 Steam Enhancement Pack에 들어 있는 4GB 패치본처럼 수정된 빌드도 인식합니다.
+- 지도 코드를 찾지 못하면 `RE3.AnnotatedMap.log`에 무엇을 찾지 못했는지 남깁니다.
+
 ## 1.2.1
 
 - `DisplayMode=Auto` uses HD only when Classic REbirth is running with `HDTextures = 1` and `RetroMode` and `LowResEnable` off. Every other case, including playing without Classic REbirth, uses SD.

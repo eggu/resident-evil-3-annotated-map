@@ -1,4 +1,4 @@
-/* Annotated Map for Resident Evil 3 (SourceNext BIOHAZARD(R) 3 PC.exe + Classic REbirth 1.0.3).
+/* Annotated Map for the original Resident Evil 3 on PC.
  * ASI plugin: draws room names, locked doors, items, files, puzzles, save points and monsters over the
  * native status-screen map. No CRT; KERNEL32/USER32 only. */
 #include <windows.h>
@@ -8,32 +8,50 @@
 #define G8(a) (*(volatile uint8_t *)(a))
 #define G16(a) (*(volatile int16_t *)(a))
 #define G32(a) (*(volatile uint32_t *)(a))
-#define FLAG_TABLE 0x52EAAC          /* SCD ck/set bank pointers */
-#define VISITED 0xA6752C             /* map visited bits, page*2 dwords */
-#define MAP_OWNED 0xA67574           /* Flg_ck(MAP_OWNED, page) */
-#define STAGE_NO 0xA673C6
-#define DATA_AJ 0xA67A44
-#define OT2 0xA5FBC0
+#define IMAGE_BASE 0x400000u
+#define STATE_ADDRESS(source_va) ((source_va) - layout->state_shift)
+#define FLAG_TABLE layout->flag_table
+#define VISITED STATE_ADDRESS(0xA6752C)
+#define MAP_OWNED STATE_ADDRESS(0xA67574)
+#define STAGE_NO STATE_ADDRESS(0xA673C6)
+#define DATA_AJ STATE_ADDRESS(0xA67A44)
+#define OT2 STATE_ADDRESS(0xA5FBC0)
 #define ATLAS_X0 64                  /* VRAM x of atlas page 0 (4bpp: 64 words per page) */
 #define CLUT_X 0
 #define CLUT_Y 0
 #define MAX_PRIMS 1400
-
-static const uintptr_t hook_sites[2] = {0x461780, 0x4617C5};
-static const uintptr_t map_draw_va = 0x4EAC60;
 
 typedef int(__cdecl *flg_ck_fn)(void *, unsigned);
 typedef int(__cdecl *room_fn)(unsigned, unsigned);
 typedef void(__cdecl *prim_fn)(void *);
 typedef void(__cdecl *add_prim_fn)(void *, void *);
 typedef void(__cdecl *load_image_fn)(const int16_t *, const void *);
-static flg_ck_fn flg_ck = (flg_ck_fn)0x428DE0;
-static room_fn room_exists = (room_fn)0x4EB9F0;
-static prim_fn set_poly_ft4 = (prim_fn)0x425640;
-static add_prim_fn add_prim = (add_prim_fn)0x425580;
-static load_image_fn load_image = (load_image_fn)0x425450;
-static void(__cdecl *map_draw)(void *) = (void(__cdecl *)(void *))0x4EAC60;
+typedef void(__cdecl *map_draw_fn)(void *);
 
+typedef struct {
+    uintptr_t state_shift;  /* The shared game-state block moves together. */
+    uintptr_t flag_table, room_remap, actor_update;
+    map_draw_fn draw;
+    flg_ck_fn flag_check;
+    room_fn room_exists, room_visited;
+    prim_fn poly_ft4;
+    add_prim_fn add_prim;
+    load_image_fn load_image;
+    uintptr_t map_calls[2], outline_calls[3];
+} MapLayout;
+
+/* Filled at startup from the running executable's code (find_layout). The SourceNext addresses are only the
+ * default for the test exports, which run without DllMain. */
+static MapLayout found = {
+    .state_shift = 0, .flag_table = 0x52EAAC, .room_remap = 0x5351AC, .actor_update = 0x42DCAE,
+    .draw = (map_draw_fn)0x4EAC60, .flag_check = (flg_ck_fn)0x428DE0,
+    .room_exists = (room_fn)0x4EB9F0, .room_visited = (room_fn)0x4EB9C0,
+    .poly_ft4 = (prim_fn)0x425640, .add_prim = (add_prim_fn)0x425580, .load_image = (load_image_fn)0x425450,
+    .map_calls = {0x461780, 0x4617C5}, .outline_calls = {0x4EAD35, 0x4EBB9C, 0x4EAD7A},
+};
+static const MapLayout *layout = &found;
+
+void *__cdecl memcpy(void *d, const void *src, size_t n) { unsigned char *a = d; const unsigned char *b = src; while (n--) *a++ = *b++; return d; }
 void *__cdecl memset(void *d, int c, size_t n) { unsigned char *p = d; while (n--) *p++ = (unsigned char)c; return d; }
 
 #include "settings.h"
@@ -56,7 +74,7 @@ static int guard_ok(const Marker *m) {
             const Literal *lit = &literals[cl->first + l];
             if (lit->bank < 50) any = bank_bit(lit->bank, lit->bit) == lit->value;
             else {
-                int v = G16(0xA67396 + lit->bit * 2), n = lit->value;
+                int v = G16(STATE_ADDRESS(0xA67396) + lit->bit * 2), n = lit->value;
                 switch (lit->bank - 50) {
                 case 0: any = v == n; break;
                 case 1: any = v > n; break;
@@ -73,22 +91,22 @@ static int guard_ok(const Marker *m) {
     }
     return 1;
 }
-static int second_set(unsigned stage) { return stage >= 2 && !(G8(0xA61CA0) & 0x80); }  /* exe 0x46EAE0 / 0x46DEC6 */
+static int second_set(unsigned stage) { return stage >= 2 && !(G8(STATE_ADDRESS(0xA61CA0)) & 0x80); }  /* exe 0x46EAE0 / 0x46DEC6 */
 static int picked(const Marker *m) { return bank_bit(second_set(m->sets >> 4) ? 8 : 7, m->flag); }
 static int visited(unsigned page, unsigned idx) {
     return (G32(VISITED + (page * 2 + (idx >> 5)) * 4) & (0x80000000u >> (idx & 31))) != 0;
 }
 /* 0x4EB9F0 is the native per-room gate: story state and, on multi-floor pages, the displayed floor. */
 static int room_shown(unsigned page, unsigned idx) {
-    if (!room_exists(page, idx)) return 0;
-    return scope >= 3 || visited(page, idx) || (scope == 2 && flg_ck((void *)MAP_OWNED, page));
+    if (!layout->room_exists(page, idx)) return 0;
+    return scope >= 3 || visited(page, idx) || (scope == 2 && layout->flag_check((void *)MAP_OWNED, page));
 }
 
 /* ---------- primitives */
 typedef struct { uint32_t tag; uint8_t r, g, b, code; int16_t x0, y0; uint8_t u0, v0; uint16_t clut;
                  int16_t x1, y1; uint8_t u1, v1; uint16_t tpage; int16_t x2, y2; uint8_t u2, v2; uint16_t pad1;
                  int16_t x3, y3; uint8_t u3, v3; uint16_t pad2; } PolyFT4;
-static PolyFT4 prims[2][MAX_PRIMS];
+static PolyFT4 prims[2][MAX_PRIMS + 1];   /* +1: the native DR_TPAGE repeated after our prims */
 static PolyFT4 *frame_prims;
 static unsigned prim_count;
 static int clip_x0, clip_y0, clip_x1 = 320, clip_y1 = 240;
@@ -100,7 +118,7 @@ static void quad_row(int x, int y, unsigned sprite_id, int w, int h, unsigned ro
     const Sprite *s = &sprites[sprite_id];
     PolyFT4 *p = &frame_prims[prim_count++];
     memset(p, 0, sizeof *p);
-    set_poly_ft4(p);
+    layout->poly_ft4(p);
     p->r = p->g = p->b = 0x80;
     p->x0 = p->x2 = (int16_t)x; p->x1 = p->x3 = (int16_t)(x + w);
     p->y0 = p->y1 = (int16_t)y; p->y2 = p->y3 = (int16_t)(y + h);
@@ -118,7 +136,7 @@ static void line_quad(int x0, int y0, int x1, int y1) {
     const Sprite *s = &sprites[LEADER_SPRITE];
     PolyFT4 *p = &frame_prims[prim_count++];
     memset(p, 0, sizeof *p);
-    set_poly_ft4(p);
+    layout->poly_ft4(p);
     p->r = p->g = p->b = 0x80;
     if (steep) { p->x0 = (int16_t)x0; p->y0 = (int16_t)y0; p->x1 = (int16_t)(x0 + 1); p->y1 = (int16_t)y0;
                  p->x2 = (int16_t)x1; p->y2 = (int16_t)(y1 + 1); p->x3 = (int16_t)(x1 + 1); p->y3 = (int16_t)(y1 + 1); }
@@ -152,14 +170,14 @@ static void upload_atlas(void) {
     if (sd_decide()) { upload_sd(); uploaded = 1; return; }
     for (int p = 0; p < ATLAS_PAGES; p++) {
         int16_t rect[4] = {(int16_t)(ATLAS_X0 + 64 * p), 0, 64, 256};
-        load_image(rect, atlas_pixels[p]);
+        layout->load_image(rect, atlas_pixels[p]);
     }
     int16_t clut_rect[4] = {CLUT_X, CLUT_Y + CLUT_UI, 16, 1};
-    load_image(clut_rect, atlas_clut);
+    layout->load_image(clut_rect, atlas_clut);
     int16_t name_rect[4] = {CLUT_X, CLUT_Y + CLUT_NAMES, 16, 1};
-    load_image(name_rect, name_cluts[name_opacity / 10 - 1]);
+    layout->load_image(name_rect, name_cluts[name_opacity / 10 - 1]);
     int16_t icon_rect[4] = {CLUT_X, CLUT_Y + CLUT_ICONS, 16, 1};
-    load_image(icon_rect, icon_cluts[icon_opacity / 10 - 1]);
+    layout->load_image(icon_rect, icon_cluts[icon_opacity / 10 - 1]);
     uploaded = 1;
 }
 
@@ -322,7 +340,7 @@ static DWORD last_draw_tick;
 static void overlay(unsigned char *s) {
     unsigned page = G8((uintptr_t)s + 0xAB);
     if (page >= 7) page -= 7;   /* segments 7/8 repeat Uptown/Downtown room tables */
-    frame_prims = prims[G8(0xA61C90) & 1];
+    frame_prims = prims[G8(STATE_ADDRESS(0xA61C90)) & 1];
     map_zoom = *(int *)(s + 0xA4);
     if (map_zoom < 50) map_zoom = 50;
     if (map_zoom > 100) map_zoom = 100;
@@ -367,14 +385,14 @@ static void overlay(unsigned char *s) {
             if (!toggles[T_PUZZLES]) continue;
             /* R509 reader has only room-local completion: remote eligibility cannot be proven. */
             if (m->page == 4 && m->idx == 9 && item == 96 &&
-                (G16(0xA673C6) != 4 || G16(0xA673C8) != 9 || bank_bit(4, 26))) continue;
+                (G16(STAGE_NO) != 4 || G16(STATE_ADDRESS(0xA673C8)) != 9 || bank_bit(4, 26))) continue;
             push_mark(CAT_PUZZLE, 0, map_x(s, mx), map_y(s, my), m->page == 4 && m->idx == 17 && item == 127 ? item_icons[10] : ICON_PUZZLE_MARKER, 8, m->kind,
                       puzzle_names[i] ? puzzle_names[i] : item); break;   /* named after the puzzle, not the item it needs */
         case K_LIVE:
             if (!toggles[T_EVENTS]) continue;
             /* Bank 4 belongs to the loaded room: never apply its completion state remotely. */
-            if (item == 9 && G16(0xA673C6) == 4 && G16(0xA673C8) == 0x0D && (bank_bit(4, 5) || (bank_bit(4, 4) && bank_bit(2, 7)))) continue;
-            if (item == 5 && G16(0xA673C6) == 1 && G16(0xA673C8) == 0x15 && bank_bit(2, 7)) continue;
+            if (item == 9 && G16(STAGE_NO) == 4 && G16(STATE_ADDRESS(0xA673C8)) == 0x0D && (bank_bit(4, 5) || (bank_bit(4, 4) && bank_bit(2, 7)))) continue;
+            if (item == 5 && G16(STAGE_NO) == 1 && G16(STATE_ADDRESS(0xA673C8)) == 0x15 && bank_bit(2, 7)) continue;
             push_mark(CAT_EVENT, 1, map_x(s, mx), map_y(s, my), ICON_SELECTION_MARKER, 8, m->kind, item); break;   /* purple ? diamond */
         case K_ENEMY:
             if (!toggles[T_MONSTERS] || item >= 12 ||
@@ -400,16 +418,20 @@ static void overlay(unsigned char *s) {
     /* Insert after the native player arrow slot (exe 0x4EB0AE); later inserts are drawn earlier, so
      * walk our painter-ordered list from the top down. */
     void *anchor = (void *)G32(G32(OT2) + 4);
-    for (unsigned i = prim_count; i-- > 0;) add_prim(anchor, &frame_prims[i]);
+    /* The anchor is the native DR_TPAGE (code 0xE1) for the title, compass and scale sprites after it. A textured
+     * polygon also sets the current texture page (PSX semantics, kept by the Steam build's renderer; REbirth
+     * ignores it), so those sprites showed our atlas: repeat the native command after our prims. */
+    if (anchor && ((PolyFT4 *)anchor)->code == 0xE1) layout->add_prim(anchor, memcpy(&frame_prims[MAX_PRIMS], anchor, 8));
+    for (unsigned i = prim_count; i-- > 0;) layout->add_prim(anchor, &frame_prims[i]);
     static unsigned logged_context = ~0u;
-    unsigned context = (unsigned)(uint16_t)G16(STAGE_NO) << 16 | (unsigned)(uint16_t)G16(0xA673C8) << 8 | page;
+    unsigned context = (unsigned)(uint16_t)G16(STAGE_NO) << 16 | (unsigned)(uint16_t)G16(STATE_ADDRESS(0xA673C8)) << 8 | page;
     if (logged_context != context || frame_no % 300 == 0) {
         logged_context = context;
-        log_fmt("Nemesis context stage=%d room=%d event=%d phase=%d", G16(STAGE_NO), G16(0xA673C8), G16(0xA67396 + 39 * 2), G16(0xA67396 + 42 * 2));
-        uintptr_t enemy_end = G32(0xA6228C);
+        log_fmt("Nemesis context stage=%d room=%d event=%d phase=%d", G16(STAGE_NO), G16(STATE_ADDRESS(0xA673C8)), G16(STATE_ADDRESS(0xA67396) + 39 * 2), G16(STATE_ADDRESS(0xA67396) + 42 * 2));
+        uintptr_t enemy_end = G32(STATE_ADDRESS(0xA6228C));
         log_fmt("Nemesis table end=%x live=%d cell=%d total enemies=%d", (int)enemy_end, live_count, live_nemesis_cell, shown_counts[K_ENEMY]);
-        if (enemy_end >= 0xA621EC && enemy_end <= 0xA6226C && !(enemy_end & 3))
-            for (uintptr_t slot = 0xA621EC; slot < enemy_end; slot += 4) {
+        if (enemy_end >= STATE_ADDRESS(0xA621EC) && enemy_end <= STATE_ADDRESS(0xA6226C) && !(enemy_end & 3))
+            for (uintptr_t slot = STATE_ADDRESS(0xA621EC); slot < enemy_end; slot += 4) {
                 uintptr_t em = G32(slot);
                 if (em && enemy_kind(G8(em + 0x4A)) == M_NEMESIS) {
                     log_fmt("Nemesis actor type=%x flags=%x ai=%x life=%d", G8(em + 0x4A), G32(em), G8(em + 0x47), (uint16_t)G16(em + 0xCC));
@@ -424,7 +446,7 @@ static void overlay(unsigned char *s) {
 
 static void __cdecl hook_map(void *s) {
     AnnotatedMapTestKeys(keys_down());
-    map_draw(s);
+    layout->draw(s);
     frame_no++;
     DWORD now = GetTickCount();
     if (now - last_draw_tick > 200) uploaded = 0;   /* map reopened after a gap: VRAM may have been reused */
@@ -474,15 +496,15 @@ static int patch_call(uintptr_t site, uintptr_t expected, void *hook) {
 /* Native geometry has separate ownership/visit gates from overlay marker scope. */
 static int __cdecl outline_owned(void *flags, unsigned page) {
     if (toggles[T_ALL] && scope == 3 && (uintptr_t)flags == MAP_OWNED) return 1;
-    return flg_ck(flags, page);
+    return layout->flag_check(flags, page);
 }
 static int __cdecl outline_visited(unsigned page, unsigned idx) {
     if (toggles[T_ALL] && scope == 3) return 1;
-    return ((room_fn)0x4EB9C0)(page, idx);
+    return layout->room_visited(page, idx);
 }
 static int install_outline_scope(void) {
-    const uintptr_t sites[] = {0x4EAD35, 0x4EBB9C, 0x4EAD7A};
-    const uintptr_t targets[] = {0x428DE0, 0x428DE0, 0x4EB9C0};
+    const uintptr_t *sites = layout->outline_calls;
+    const uintptr_t targets[] = {(uintptr_t)layout->flag_check, (uintptr_t)layout->flag_check, (uintptr_t)layout->room_visited};
     void *hooks[] = {(void *)outline_owned, (void *)outline_owned, (void *)outline_visited};
     for (unsigned i = 0; i < 3; i++) {
         const unsigned char *p = (const unsigned char *)sites[i];
@@ -492,18 +514,107 @@ static int install_outline_scope(void) {
     return 1;
 }
 __declspec(dllexport) int __cdecl AnnotatedMapTestInstallOutlineScope(void) { return install_outline_scope(); }
-static int supported_exe(void) {
-    unsigned char *base = (unsigned char *)GetModuleHandleA(NULL);
-    IMAGE_NT_HEADERS *nt = (IMAGE_NT_HEADERS *)(base + ((IMAGE_DOS_HEADER *)base)->e_lfanew);
-    /* SourceNext BIOHAZARD(R) 3 PC.exe: image base 0x400000, these call sites and the flag checker bytes */
-    if ((uintptr_t)base != 0x400000 || nt->FileHeader.TimeDateStamp != 0x44642AACu || nt->OptionalHeader.SizeOfImage != 0xB01000u) return 0;
-    static const unsigned char flg[] = {0x8B, 0x54, 0x24, 0x08, 0xB8, 0x00, 0x00, 0x00, 0x80};   /* Flg_ck 0x428DE0 */
-    static const unsigned char draw[] = {0x83, 0xEC, 0x28, 0x53, 0x55, 0x56, 0x8B, 0x74};        /* map draw 0x4EAC60 */
-    static const unsigned char actor[] = {0x8B,0x0F,0x81,0xE1,0xFF,0xFF,0xFF,0xCF,0x8A,0xC1,0x89,0x0F,0xA8,0x01,0x74,0x42,0xF6,0x47,0x47,0x80,0x75,0x3C};
-    for (unsigned i = 0; i < sizeof flg; i++) if (((unsigned char *)0x428DE0)[i] != flg[i]) return 0;
-    for (unsigned i = 0; i < sizeof draw; i++) if (((unsigned char *)0x4EAC60)[i] != draw[i]) return 0;
-    for (unsigned i = 0; i < sizeof actor; i++) if (((unsigned char *)0x42DCAE)[i] != actor[i]) return 0;
+/* ---------- layout: every address comes from map code in the running executable, so repacked, patched or
+ * relinked builds work when their map code matches. A failed check names itself in the log. */
+static const char *layout_error;
+static const unsigned char *scan_lo, *scan_hi;
+static int match_at(const unsigned char *p, const char *sig) {
+    for (; *sig; sig += sig[2] ? 3 : 2, p++) {
+        if (p >= scan_hi) return 0;
+        if (*sig == '?') continue;
+        unsigned v = 0;
+        for (int k = 0; k < 2; k++) v = v * 16 + (unsigned)(sig[k] <= '9' ? sig[k] - '0' : sig[k] - 'A' + 10);
+        if (*p != v) return 0;
+    }
     return 1;
+}
+/* ponytail: linear scan of the first section per signature (~1 MB, a few ms each); index first bytes if it grows. */
+static uintptr_t scan(const char *name, const char *sig, unsigned want, uintptr_t *second) {
+    uintptr_t hits[2] = {0, 0};
+    unsigned count = 0;
+    unsigned first = 0;
+    for (int k = 0; k < 2; k++) first = first * 16 + (unsigned)(sig[k] <= '9' ? sig[k] - '0' : sig[k] - 'A' + 10);
+    for (const unsigned char *p = scan_lo; p < scan_hi; p++)
+        if (*p == first && match_at(p, sig) && count++ < 2) hits[count - 1] = (uintptr_t)p;
+    if (count != want) { layout_error = name; return 0; }
+    if (second) *second = hits[1];
+    return hits[0];
+}
+static uintptr_t call_target(uintptr_t site) {
+    const unsigned char *p = (const unsigned char *)site;
+    return p[0] == 0xE8 ? site + 5 + *(const int32_t *)(p + 1) : 0;
+}
+#define READ32(a) (*(const uint32_t *)(a))
+static int find_layout(MapLayout *out) {
+    const unsigned char *base = (const unsigned char *)GetModuleHandleA(NULL);
+    layout_error = "image base";
+    if ((uintptr_t)base != IMAGE_BASE) return 0;
+    const IMAGE_NT_HEADERS *nt = (const IMAGE_NT_HEADERS *)(base + ((const IMAGE_DOS_HEADER *)base)->e_lfanew);
+    const IMAGE_SECTION_HEADER *code = IMAGE_FIRST_SECTION(nt);
+    DWORD image = nt->OptionalHeader.SizeOfImage;
+    layout_error = "code section";
+    if (!nt->FileHeader.NumberOfSections || code->VirtualAddress >= image || code->Misc.VirtualSize > image - code->VirtualAddress) return 0;
+    scan_lo = base + code->VirtualAddress;
+    scan_hi = scan_lo + code->Misc.VirtualSize;
+    MapLayout l = {0};
+    uintptr_t draw = scan("map draw", "83 EC 28 53 55 56 8B 74 24 38 57 68", 1, 0);
+    uintptr_t flag = scan("flag check", "8B 54 24 08 B8 00 00 00 80 8B CA 56", 1, 0);
+    uintptr_t actor = scan("actor update", "8B 0F 81 E1 FF FF FF CF 8A C1 89 0F A8 01 74 42 F6 47 47 80 75 3C", 1, 0);
+    uintptr_t add = scan("AddPrim", "8B 44 24 08 56 8B 08 83 E1 03 89 08 8B D1 8B 4C 24 08 8B 31 83 E6 FC", 1, 0);
+    uintptr_t poly = scan("SetPolyFT4", "8B 44 24 04 8B 08 C6 40 07 2C 83 C9 03 89 08 C3", 1, 0);
+    uintptr_t exists = scan("room gate", "66 0F B6 0D ?? ?? ?? ?? 33 C0 53 8A 25 ?? ?? ?? ?? 56 57 8B 7C 24 10", 1, 0);
+    uintptr_t visited = scan("room visited",
+        "8B 4C 24 08 8B 54 24 04 81 E1 FF 00 00 00 81 E2 FF 00 00 00 8B C1 83 E1 1F C1 E8 05 8D 04 50 BA 00 00 00 80 D3 EA 8B 04 85 ?? ?? ?? ?? 23 C2 C3", 1, 0);
+    uintptr_t remap = scan("room remap", "88 06 80 3D ?? ?? ?? ?? FF 74 32 B9", 1, 0);
+    uintptr_t table = scan("flag table", "8B 34 B5 ?? ?? ?? ?? 8B C2 8B CA", 1, 0);
+    uintptr_t call2, call1 = scan("map calls", "F7 46 18 00 00 20 00 74 ?? 56 E8", 2, &call2);
+    if (!draw || !flag || !actor || !add || !poly || !exists || !visited || !remap || !table || !call1) return 0;
+    layout_error = "LoadImage";
+    if (!match_at((const unsigned char *)add - 0x130, "8B 54 24 08 8B 0D ?? ?? ?? ?? 52 8B 54 24 08 8B 01 52 FF 50 4C C3")) return 0;
+    /* One shift moves the whole game-state block (checked from OT2 up to DATA_AJ in three builds); two
+     * anchors at its ends must agree before any state address is trusted. */
+    l.state_shift = 0xA6752C - READ32(visited + 41);
+    layout_error = "state block";
+    if (!match_at((const unsigned char *)draw + 0x87, "8B 15") || READ32(draw + 0x89) != 0xA5FBC0 - l.state_shift) return 0;
+    if (0xA67A44 - l.state_shift + 4 > IMAGE_BASE + image || 0xA5FBC0 - l.state_shift < IMAGE_BASE) return 0;
+    l.flag_table = READ32(table + 3); l.room_remap = READ32(remap + 4); l.actor_update = actor;
+    layout_error = "data tables";
+    if (l.flag_table < IMAGE_BASE || l.flag_table >= IMAGE_BASE + image || l.room_remap < IMAGE_BASE || l.room_remap >= IMAGE_BASE + image) return 0;
+    l.draw = (map_draw_fn)draw; l.flag_check = (flg_ck_fn)flag;
+    l.room_exists = (room_fn)exists; l.room_visited = (room_fn)visited;
+    l.poly_ft4 = (prim_fn)poly; l.add_prim = (add_prim_fn)add; l.load_image = (load_image_fn)(add - 0x130);
+    l.map_calls[0] = call1 + 10; l.map_calls[1] = call2 + 10;
+    l.outline_calls[0] = draw + 0xD5; l.outline_calls[1] = exists + 0x1AC; l.outline_calls[2] = draw + 0x11A;
+    /* Check all five call sites before writing any, so a retry never meets a half-patched image. */
+    layout_error = "call sites";
+    if (call_target(l.map_calls[0]) != draw || call_target(l.map_calls[1]) != draw ||
+        call_target(l.outline_calls[0]) != flag || call_target(l.outline_calls[1]) != flag ||
+        call_target(l.outline_calls[2]) != visited) return 0;
+    *out = l;
+    return 1;
+}
+
+static void log_layout_error(void) {
+    char buf[128];
+    wsprintfA(buf, "Unsupported executable layout (%s not found); no patch applied", layout_error);
+    log_text(buf);
+}
+static void install(void) {
+    if (!install_outline_scope()) { log_text("Unexpected native outline gates; no map hook applied"); return; }
+    for (unsigned i = 0; i < 2; i++) patch_call(layout->map_calls[i], (uintptr_t)layout->draw, (void *)hook_map);
+    log_fmt("RE3 Annotated Map loaded: markers=%d rooms=%d atlas pages=%d lang=%d", MARKER_COUNT, ROOM_COUNT, ATLAS_PAGES, korean);
+    log_fmt("Map code at %x, state shift %x, flag table %x, room remap %x", (int)(uintptr_t)layout->draw, (int)layout->state_shift, (int)layout->flag_table, (int)layout->room_remap);
+    log_text("Monster icons: scoped conditional encounters; Nemesis uses guarded encounters and active native actor.");
+}
+/* ponytail: 60 s of 250 ms polls, then give up; the map is never open that early. */
+static DWORD WINAPI wait_for_layout(LPVOID unused) {
+    (void)unused;
+    for (int i = 0; i < 240; i++) {
+        Sleep(250);
+        if (find_layout(&found)) { install(); return 0; }
+    }
+    log_layout_error();
+    return 0;
 }
 
 BOOL WINAPI DllMain(HINSTANCE module, DWORD reason, LPVOID reserved) {
@@ -522,14 +633,8 @@ BOOL WINAPI DllMain(HINSTANCE module, DWORD reason, LPVOID reserved) {
     load_settings();
     { int hd = rebirth_hd_textures();
       if (hd <= 0) log_text("Classic REbirth config.ini HDTextures is 0 or missing: the map uses SD markers and names (DisplayMode=Auto)."); }
-    if (!supported_exe()) { log_text("Unsupported executable; no patch applied"); return TRUE; }
-    for (unsigned i = 0; i < 2; i++) {
-        unsigned char *p = (unsigned char *)hook_sites[i];
-        if (p[0] != 0xE8 || hook_sites[i] + 5 + *(int32_t *)(p + 1) != map_draw_va) { log_text("Unexpected map call site; no patch applied"); return TRUE; }
-    }
-    if (!install_outline_scope()) { log_text("Unexpected native outline gates; no map hook applied"); return TRUE; }
-    for (unsigned i = 0; i < 2; i++) patch_call(hook_sites[i], map_draw_va, (void *)hook_map);
-    log_fmt("RE3 Annotated Map loaded: markers=%d rooms=%d atlas pages=%d lang=%d", MARKER_COUNT, ROOM_COUNT, ATLAS_PAGES, korean);
-    log_text("Monster icons: scoped conditional encounters; Nemesis uses guarded encounters and active native actor.");
+    if (find_layout(&found)) { install(); return TRUE; }
+    /* Packed builds (Steam) unpack their code after the loader runs: keep looking from a thread. */
+    if (!CreateThread(NULL, 0, wait_for_layout, NULL, 0, NULL)) log_layout_error();
     return TRUE;
 }

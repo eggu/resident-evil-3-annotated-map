@@ -21,8 +21,8 @@ static int live_nemesis_cell;
 
 static unsigned live_enemies(const unsigned char *s, unsigned page) {
     live_nemesis_cell = -1;
-    const uintptr_t first = 0xA621EC;
-    uintptr_t end = G32(0xA6228C);
+    const uintptr_t first = STATE_ADDRESS(0xA621EC);
+    uintptr_t end = G32(STATE_ADDRESS(0xA6228C));
     if (end < first || end > first + 32 * 4 || ((end - first) & 3)) return 0;
     unsigned drawn = 0;
     int nemesis_drawn = 0;
@@ -34,7 +34,7 @@ static unsigned live_enemies(const unsigned char *s, unsigned page) {
         if (duplicate) continue;
         int kind = enemy_kind(G8(em + 0x4A));
         if (kind != M_NEMESIS || !*(volatile uint16_t *)(em + 0xCC) || (kind == M_NEMESIS && nemesis_drawn)) continue;
-        unsigned stage = (uint16_t)G16(STAGE_NO), room = (uint16_t)G16(0xA673C8);
+        unsigned stage = (uint16_t)G16(STAGE_NO), room = (uint16_t)G16(STATE_ADDRESS(0xA673C8));
         unsigned kill = G8(em + 0x147);
         if (kill != 255 && bank_bit(second_set(stage) ? 6 : 5, kill)) continue;
         int x = (int32_t)G32(em + 0x34), z = (int32_t)G32(em + 0x3C);
@@ -45,7 +45,7 @@ static unsigned live_enemies(const unsigned char *s, unsigned page) {
         if (stage == 4 && room == 2 && bank_bit(4, 31)) idx = 0x11;
         if (stage == 2 && room == 0x17 && z > -11301 && !bank_bit(3, 200)) idx = 2;
         if (pg >= 5) pg -= 5;
-        for (uintptr_t r = 0x5351AC; r < 0x5351AC + 64 * 4 && G8(r) != 255; r += 4) {
+        for (uintptr_t r = layout->room_remap; r < layout->room_remap + 64 * 4 && G8(r) != 255; r += 4) {
             if (G8(r) == pg && G8(r + 1) == idx) { pg = G8(r + 2); idx = G8(r + 3); break; }
         }
         if (pg != page || !room_shown(pg, idx)) continue;

@@ -1,5 +1,25 @@
 # Release notes
 
+## 1.3.0
+
+**Upgrading:** replace `RE3.AnnotatedMap.asi` in the game folder. Your `RE3.AnnotatedMap.ini` stays as it is.
+
+- **Steam release support.** The map now works on the Steam release of Resident Evil 3 without Classic REbirth (tested with the English version). Open the game's local files from Steam and copy `dsound.dll`, `RE3.AnnotatedMap.asi` and `RE3.AnnotatedMap.ini` into the folder for your language (for example `english`). Without Classic REbirth the map uses SD markers and the pixel font, so `hires` is not needed.
+- **More game builds.** The mod no longer requires one specific `BIOHAZARD(R) 3 PC.exe`. It finds the map code in the running game, so patched builds such as the 4GB-patched one in Mulder's Steam Enhancement Pack are recognized too. With Mulder's pack, copy the files into the `rebirth` folder and keep the pack's `dinput8.dll` as the ASI loader.
+- **Clearer log.** If the map code cannot be found, `RE3.AnnotatedMap.log` says which part was missing. Please include it when reporting a problem.
+
+---
+
+## 1.3.0 (한국어)
+
+**업그레이드:** 게임 폴더의 `RE3.AnnotatedMap.asi`만 바꾸면 됩니다. `RE3.AnnotatedMap.ini`는 그대로 둡니다.
+
+- **Steam판 지원.** Classic REbirth 없이 Steam판 Resident Evil 3에서 지도가 동작합니다(영어판에서 확인). Steam에서 로컬 파일을 열고 사용하는 언어 폴더(예: `english`)에 `dsound.dll`, `RE3.AnnotatedMap.asi`, `RE3.AnnotatedMap.ini`를 복사하세요. Classic REbirth가 없으면 SD 표식과 픽셀 글꼴로 표시되므로 `hires`는 필요 없습니다.
+- **더 많은 게임 빌드.** 특정 `BIOHAZARD(R) 3 PC.exe` 하나만 요구하지 않고 실행 중인 게임에서 지도 코드를 찾습니다. Mulder의 Steam Enhancement Pack에 들어 있는 4GB 패치본처럼 수정된 빌드도 인식합니다. Mulder 팩에서는 `rebirth` 폴더에 복사하고 팩의 `dinput8.dll`을 ASI 로더로 그대로 쓰세요.
+- **더 분명한 로그.** 지도 코드를 찾지 못하면 `RE3.AnnotatedMap.log`에 어느 부분이 없었는지 남깁니다. 문제를 제보할 때 첨부해 주세요.
+
+---
+
 ## 1.2.1
 
 **Upgrading:** replace `RE3.AnnotatedMap.asi` in the game folder. Your `RE3.AnnotatedMap.ini` stays as it is.

@@ -10,9 +10,10 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 FONT = ImageFont.truetype(str(ROOT / 'fonts/Galmuri9.ttf'), 10)
-PAGE, MAX_PAGES = 256, 6
-# VRAM (x, y, usable height) per SD page: the HD atlas pages, then below them (game CLUT strips sit near y 480-490)
-VRAM_PAGES = [(64, 0, 256), (128, 0, 256), (192, 0, 256), (256, 0, 256), (128, 256, 224), (192, 256, 224)]
+PAGE, MAX_PAGES = 256, 5
+# VRAM (x, y, usable height) per SD page, clear of the map TIM at x 0-127 (renderers without REbirth sample it from
+# VRAM, so a page at x 64 corrupted the native map on Steam) and of the game CLUT strips near y 480-490.
+VRAM_PAGES = [(128, 0, 256), (192, 0, 256), (256, 0, 256), (128, 256, 224), (192, 256, 224)]
 TEXT = [(0, 0, 0), (8, 8, 8), (255, 240, 200), (120, 220, 255), (255, 150, 200), (170, 240, 110), (255, 180, 80),
         (250, 250, 250), (255, 205, 70), (90, 220, 255), (255, 140, 210), (255, 150, 40), (176, 112, 255), (184, 188, 196),
         (235, 60, 60), (106, 106, 106)]
